@@ -31,7 +31,7 @@ module controller (input logic       clk, reset,
 	// branch
 	condcheck cc(funct[1:0], branchRegVal, condBranch);
 	// ^ need to connect regVal to the datapath to check********
-	assign PCS = funct[3] & condBranch; // branch
+	assign PCS = funct[3] & (funct[2] | condBranch);
 	
 	// memory
 	
@@ -43,9 +43,20 @@ module condcheck (input logic[1:0] branchType,
 						output logic     condBranch);
 	logic zero, negative;
 	assign negative = branchRegVal[3];
-	// assign zero to bitwise and of branchRegVal
-	// I don't have my document with all the encoding with me so
-	// I'll finish this later **********************
+	assign zero = ~(|branchRegVal);
+	always_comb
+		case(branchType)
+			2'b00: // jeqzn
+				condBranch = zero; break;
+			2'b01: // jneqzn
+				condBranch = ~zero; break;
+			2'b10: // jgtzn
+				condBranch = ~negative & ~zero;
+			2'b11: // jltzn
+				condBranch = negative; // if negative then also nonzero
+			default:
+				condBranch = 1'bx;
+		endcase
 endmodule
 
 module alu (input logic [3:0]  d0, d1,
