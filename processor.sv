@@ -4,12 +4,19 @@ module top (input logic       clk, reset,
 				input logic       memWrite,
 				input logic [7:0] adr,
 				input logic [9:0] instruct);
+	controller c(clk, reset);
+	datapat dp(clk, reset);
 endmodule
 
-module datapath ();
+module datapath (input logic clk, reset);
+	logic [7:0] PC, PCNext;
+	
+	// next PC logic
+	flopr #(8) pcReg(clk, reset, PCNext, PC);
+	
 endmodule
 
-module controller ();
+module controller (input logic clk, reset);
 endmodule
 
 module alu (input logic [3:0]  d0, d1,
