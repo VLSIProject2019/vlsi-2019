@@ -1,6 +1,15 @@
 // microprocessor
 
-module top ();
+module top (input logic       clk, reset,
+				input logic       memWrite,
+				input logic [7:0] adr,
+				input logic [9:0] instruct);
+endmodule
+
+module datapath ();
+endmodule
+
+module controller ();
 endmodule
 
 module alu (input logic [3:0]  d0, d1,
