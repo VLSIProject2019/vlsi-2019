@@ -1,27 +1,31 @@
 // microprocessor
 
-module top (input logic       clk, reset,
-				input logic       memWrite,
-				input logic [7:0] adr,
-				input logic [9:0] instruct);
+module top (input logic        clk, reset,
+				output logic       memWrite,
+				output logic [7:0] adr,
+				input logic [9:0]  instruct,
+				input logic [3:0]  ReadData);
 	controller c(clk, reset, instruct[9:6],
 					 branchRegVal,
 					 PCS, RegWrite, MemWrite
-					 ALUOp, ALUSrc);
-	datapat dp(clk, reset, instruct[5:0],
+					 ALUOp, ALUSrc, RegWriteSrc);
+	datapath dp(clk, reset, instruct[5:0],
 				  PCS, RegWrite, MemWrite,
-				  ALUOp, ALUSrc,
-				  branchRegVal);
+				  ALUOp, ALUSrc, RegWriteSrc,
+				  ReadData, branchRegVal);
 endmodule
 
 module datapath (input logic       clk, reset,
 					  input logic[5:0]  instruct,
 					  input logic       PCS, RegWrite, MemWrite,
 					  input logic       ALUOp, ALUSrc,
+					  input logic[1:0]  RegWriteSrc,
+					  input logic[3:0]  ReadData,
 					  output logic[3:0] branchRegVal);
 	logic[7:0] PC, PCNext, PCPlus1;
 	logic[3:0] Result, SrcA, SrcB;
 	logic[3:0] RA1, RA2, WA3, WD3, RD1, RD2;
+	logic[3:0] extImm;
 	
 	// next PC logic
 	adder #(8) pcAdd(PC, 8'b1, PCPlus1);
@@ -31,10 +35,10 @@ module datapath (input logic       clk, reset,
 	assign WA3 = instruct[5:4];
 	assign RA1 = instruct[3:2];
 	assign RA2 = instruct[1:0];
-	// this next line will change when we add loadr and setn: ***
-	assign WD3 = Result;
+	mux3 #(4) wd3Mux(Result, ReadData, extImm, RegWriteSrc, WD3);
 	regfile rf(clk, RegWrite, RA1, RA2,
 				  WA3, WD3, RD1, RD2);
+	assign branchRegVal = RD1;
 	
 	// ALU logic
 	mux2 #(4) srcAMux(4'b0, RD1, ALUSrc, SrcA);
@@ -46,11 +50,11 @@ endmodule
 module controller (input logic       clk, reset,
 						 input logic[3:0]  funct,
 						 input logic[3:0]  branchRegVal,
-						 output logic PCS, RegWrite, MemWrite,
-						 output logic ALUOp, ALUSrc);
+						 output logic      PCS, RegWrite, MemWrite,
+						 output logic      ALUOp, ALUSrc,
+						 output logic[1:0] RegWriteSrc);
 	// branch
 	condcheck cc(funct[1:0], branchRegVal, condBranch);
-	// ^ need to connect regVal to the datapath to check********
 	assign PCS = funct[3] & (funct[2] | condBranch);
 	
 	// memory
@@ -60,6 +64,15 @@ module controller (input logic       clk, reset,
 	assign RegWrite = ~funct[3] & (funct[2] | funct[0]);
 	assign ALUSrc = funct[1]; // if 0, A = 0, else A = the reg value
 	assign ALUOp = funct[0];
+	
+	//write-back
+	always_comb
+		if(funct[2]):
+			RegWriteSrc = 2'b00; // Result
+		else if(funct[1]):
+			RegWriteSrc = 2'b01; //ReadData
+		else
+			RegWriteSrc = 2'b10; //extImm
 endmodule
 
 module condcheck (input logic[1:0] branchType,
