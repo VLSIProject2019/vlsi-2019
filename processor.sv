@@ -5,9 +5,13 @@ module top (input logic        clk, reset,
 				output logic [7:0] adr,
 				input logic [9:0]  instruct,
 				input logic [3:0]  ReadData);
+	logic[3:0] branchRegVal;
+	logic PCS, RegWrite, MemWrite, ALUOp, ALUSrc;
+	logic[1:0] RegWriteSrc;
+	
 	controller c(clk, reset, instruct[9:6],
 					 branchRegVal,
-					 PCS, RegWrite, MemWrite
+					 PCS, RegWrite, MemWrite,
 					 ALUOp, ALUSrc, RegWriteSrc);
 	datapath dp(clk, reset, instruct[5:0],
 				  PCS, RegWrite, MemWrite,
@@ -53,6 +57,7 @@ module controller (input logic       clk, reset,
 						 output logic      PCS, RegWrite, MemWrite,
 						 output logic      ALUOp, ALUSrc,
 						 output logic[1:0] RegWriteSrc);
+	logic condBranch;
 	// branch
 	condcheck cc(funct[1:0], branchRegVal, condBranch);
 	assign PCS = funct[3] & (funct[2] | condBranch);
@@ -67,9 +72,9 @@ module controller (input logic       clk, reset,
 	
 	//write-back
 	always_comb
-		if(funct[2]):
+		if(funct[2])
 			RegWriteSrc = 2'b00; // Result
-		else if(funct[1]):
+		else if(funct[1])
 			RegWriteSrc = 2'b01; //ReadData
 		else
 			RegWriteSrc = 2'b10; //extImm
@@ -84,9 +89,9 @@ module condcheck (input logic[1:0] branchType,
 	always_comb
 		case(branchType)
 			2'b00: // jeqzn
-				condBranch = zero; break;
+				condBranch = zero;
 			2'b01: // jneqzn
-				condBranch = ~zero; break;
+				condBranch = ~zero;
 			2'b10: // jgtzn
 				condBranch = ~negative & ~zero;
 			2'b11: // jltzn
@@ -96,7 +101,7 @@ module condcheck (input logic[1:0] branchType,
 		endcase
 endmodule
 
-module alu (input logic [3:0]  d0, d1,
+module alu (input logic [3:0]  a, b,
 				input logic        subtractionControl,
 				output logic [3:0] result);
 	logic [3:0] condinvb;
