@@ -13,10 +13,10 @@ endmodule
 module datapath (input logic clk, reset,
 					  input logic[5:0] instruct,
 					  input logic PCS, RegWrite, MemWrite);
-	logic [7:0] PC, PCNext, PCPlus4;
+	logic [7:0] PC, PCNext, PCPlus1;
 	
 	// next PC logic
-	adder #(8) pcAddFour(PC, 8'b100, PCPlus4);
+	adder #(8) pcAdd(PC, 8'b1, PCPlus1);
 	flopr #(8) pcReg(clk, reset, PCNext, PC);
 	
 endmodule
