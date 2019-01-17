@@ -6,28 +6,46 @@ module top (input logic       clk, reset,
 				input logic [9:0] instruct);
 	controller c(clk, reset, instruct[9:6],
 					 branchRegVal,
-					 PCS, RegWrite, MemWrite);
+					 PCS, RegWrite, MemWrite
+					 ALUOp, ALUSrc);
 	datapat dp(clk, reset, instruct[5:0],
-				  branchRegVal,
-				  PCS, RegWrite, MemWrite);
+				  PCS, RegWrite, MemWrite,
+				  ALUOp, ALUSrc,
+				  branchRegVal);
 endmodule
 
 module datapath (input logic       clk, reset,
 					  input logic[5:0]  instruct,
 					  input logic       PCS, RegWrite, MemWrite,
+					  input logic       ALUOp, ALUSrc,
 					  output logic[3:0] branchRegVal);
-	logic [7:0] PC, PCNext, PCPlus1;
+	logic[7:0] PC, PCNext, PCPlus1;
+	logic[3:0] Result, SrcA, SrcB;
+	logic[3:0] RA1, RA2, WA3, WD3, RD1, RD2;
 	
 	// next PC logic
 	adder #(8) pcAdd(PC, 8'b1, PCPlus1);
 	flopr #(8) pcReg(clk, reset, PCNext, PC);
+	
+	//register read/write logic
+	assign WA3 = instruct[5:4];
+	assign RA1 = instruct[3:2];
+	assign RA2 = instruct[1:0];
+	regfile rf(clk, RegWrite, RA1, RA2,
+				  WA3, WD3, RD1, RD2);
+	
+	// ALU logic
+	mux2 #(4) srcAMux(4'b0, RD1, ALUSrc, SrcA);
+	mux2 #(4) srcBMux(RD1, RD2, ALUSrc, SrcB);
+	alu alu(SrcA, SrcB, ALUOp, Result);
 	
 endmodule
 
 module controller (input logic       clk, reset,
 						 input logic[3:0]  funct,
 						 input logic[3:0]  branchRegVal,
-						 output logic PCS, RegWrite, MemWrite);
+						 output logic PCS, RegWrite, MemWrite,
+						 output logic ALUOp, ALUSrc);
 	// branch
 	condcheck cc(funct[1:0], branchRegVal, condBranch);
 	// ^ need to connect regVal to the datapath to check********
@@ -36,6 +54,8 @@ module controller (input logic       clk, reset,
 	// memory
 	
 	//data processing
+	assign ALUSrc = funct[1]; // if 0, A = 0, else A = the reg value
+	assign ALUOp = funct[0];
 endmodule
 
 module condcheck (input logic[1:0] branchType,
