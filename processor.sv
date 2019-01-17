@@ -5,14 +5,17 @@ module top (input logic       clk, reset,
 				input logic [7:0] adr,
 				input logic [9:0] instruct);
 	controller c(clk, reset, instruct[9:6],
+					 branchRegVal,
 					 PCS, RegWrite, MemWrite);
 	datapat dp(clk, reset, instruct[5:0],
+				  branchRegVal,
 				  PCS, RegWrite, MemWrite);
 endmodule
 
-module datapath (input logic clk, reset,
-					  input logic[5:0] instruct,
-					  input logic PCS, RegWrite, MemWrite);
+module datapath (input logic       clk, reset,
+					  input logic[5:0]  instruct,
+					  input logic       PCS, RegWrite, MemWrite,
+					  output logic[3:0] branchRegVal);
 	logic [7:0] PC, PCNext, PCPlus1;
 	
 	// next PC logic
@@ -21,10 +24,28 @@ module datapath (input logic clk, reset,
 	
 endmodule
 
-module controller (input logic clk, reset,
-						 input logic[3:0] funct,
+module controller (input logic       clk, reset,
+						 input logic[3:0]  funct,
+						 input logic[3:0]  branchRegVal,
 						 output logic PCS, RegWrite, MemWrite);
-	assign PCS = funct[3]; // branch
+	// branch
+	condcheck cc(funct[1:0], branchRegVal, condBranch);
+	// ^ need to connect regVal to the datapath to check********
+	assign PCS = funct[3] & condBranch; // branch
+	
+	// memory
+	
+	//data processing
+endmodule
+
+module condcheck (input logic[1:0] branchType,
+						input logic[3:0] branchRegVal,
+						output logic     condBranch);
+	logic zero, negative;
+	assign negative = branchRegVal[3];
+	// assign zero to bitwise and of branchRegVal
+	// I don't have my document with all the encoding with me so
+	// I'll finish this later **********************
 endmodule
 
 module alu (input logic [3:0]  d0, d1,
