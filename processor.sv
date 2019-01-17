@@ -31,6 +31,8 @@ module datapath (input logic       clk, reset,
 	assign WA3 = instruct[5:4];
 	assign RA1 = instruct[3:2];
 	assign RA2 = instruct[1:0];
+	// this next line will change when we add loadr and setn: ***
+	assign WD3 = Result;
 	regfile rf(clk, RegWrite, RA1, RA2,
 				  WA3, WD3, RD1, RD2);
 	
@@ -52,8 +54,10 @@ module controller (input logic       clk, reset,
 	assign PCS = funct[3] & (funct[2] | condBranch);
 	
 	// memory
+	assign MemWrite = ~funct[3] & ~funct[2] & funct[1] & funct[0];
 	
 	//data processing
+	assign RegWrite = ~funct[3] & (funct[2] | funct[0]);
 	assign ALUSrc = funct[1]; // if 0, A = 0, else A = the reg value
 	assign ALUOp = funct[0];
 endmodule
@@ -121,4 +125,11 @@ module mux2 #(parameter WIDTH = 4)
 				  input  logic             s, 
 				  output logic [WIDTH-1:0] y);
 	assign y = s ? d1 : d0; 
+endmodule
+
+module mux3 #(parameter WIDTH = 4)
+				 (input  logic [WIDTH-1:0] d0, d1, d2,
+              input  logic [1:0]       s, 
+              output logic [WIDTH-1:0] y);
+	assign y = s[1] ? (s[0] ? 32'bx : d2) : (s[0] ? d1 : d0);
 endmodule
