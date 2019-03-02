@@ -1,22 +1,15 @@
 // microprocessor
 
-module top (input logic        clk, reset,
-				output logic       memWrite,
-				output logic [7:0] adr,
-				input logic  [9:0] instruct,
-				input logic  [3:0] ReadData);
-	//logic[3:0] branchRegVal;
-	//logic PCS, RegWrite, MemWrite, ALUOp, ALUSrc;
-	//logic[1:0] RegWriteSrc;
-	
-	logic MemWrite;
-	
+module top (input  logic        clk, reset,
+				output logic        MemWrite,
+				output logic [7:0]  adr, WriteData,
+				input  logic [14:0] ReadData);
 	//memory(MemWrite, Adr, WriteData, ReadData);
+	logic PCEnable, AdrSrc, InstrSrc, RegWrite, TwoRegs, ALUSrc;
+	logic [1:0] PCSrc, RegWriteSrc;
 	
-	//controller c(clk, reset, instruct[9:6],
-	//				 branchRegVal,
-	//				 PCS, RegWrite, MemWrite,
-	//				 ALUOp, ALUSrc, RegWriteSrc);
+	controller c(clk, reset, PCEnable, AdrSrc, InstrSrc, RegWrite,
+						TwoRegs, ALUSub, PCSrc, RegWriteSrc, MemWrite);
 	datapath dp(clk, reset, PCEnable, AdrSrc, InstrSrc,
 					RegWrite, TwoRegs, ALUSub, PCSrc,
 					RegWriteSrc, ReadData, Adr, WriteData);
@@ -62,12 +55,11 @@ module datapath (input  logic        clk, reset,
 	adder #(8) alu(SrcA, SrcB, ALUSub, Result);
 endmodule
 
-module controller (input logic       clk, reset,
-						 input logic[3:0]  funct,
-						 input logic[3:0]  branchRegVal,
-						 output logic      PCS, RegWrite, MemWrite,
-						 output logic      ALUOp, ALUSrc,
-						 output logic[1:0] RegWriteSrc);
+module controller (input  logic      clk, reset,
+						 output logic      PCEnable, AdrSrc, InstrSrc,
+					    output logic      RegWrite, TwoRegs, ALUSub,
+					    output logic[1:0] PCSrc, RegWriteSrc,
+						 output logic      MemWrite);
 	logic condBranch;
 	// branch
 	condcheck cc(funct[1:0], branchRegVal, condBranch);
