@@ -90,7 +90,7 @@ module controller (input  logic      clk, reset,
 	assign ALUSub  = funct[3];
 	
 	// writeback
-	assign MemWrite = stateBar & (funct[0:3] == 4'b0010);
+	assign MemWrite = stateBar & (funct == 4'b0100);
 	assign RegWrite = stateBar & ~funct[0] & (funct[1] | funct[3]);
 	always_comb
 		if(funct[1])
