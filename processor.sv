@@ -41,12 +41,12 @@ module datapath (input  logic        clk, reset,
 	mux2  #(15) instrMux(instrTemp, ReadData, InstrSrc, instr);
 	
 	//register read/write logic
-	mux3 #(8)  wd3Mux(imm, ReadData[7:0], Result, RegWriteSrc, WD3);
+	mux3 #(8)  wd3Mux(Imm, ReadData[7:0], Result, RegWriteSrc, WD3);
 	regfile rf(clk, RegWrite, RA1, RA2, WA3, WD3, RD1, RD2);
 	assign RA1 = instr[9:7];
 	assign RA2 = instr[12:10];
 	assign WA3 = instr[6:4];
-	assign imm = instr[7:14];
+	assign Imm = instr[7:14];
 	
 	// ALU logic
 	mux2 #(8) srcAMux(8'b0, RD1, TwoRegs, SrcA);
@@ -60,7 +60,7 @@ module controller (input  logic      clk, reset,
 					    output logic      RegWrite, TwoRegs, ALUSub,
 					    output logic[1:0] PCSrc, RegWriteSrc,
 						 output logic      MemWrite);
-	logic condBranch;
+	/*logic condBranch;
 	// branch
 	condcheck cc(funct[1:0], branchRegVal, condBranch);
 	assign PCS = funct[3] & (funct[2] | condBranch);
@@ -80,7 +80,7 @@ module controller (input  logic      clk, reset,
 		else if(funct[1])
 			RegWriteSrc = 2'b01; //ReadData
 		else
-			RegWriteSrc = 2'b10; //extImm
+			RegWriteSrc = 2'b10; //extImm*/
 endmodule
 
 module condcheck (input logic[1:0] branchType,
