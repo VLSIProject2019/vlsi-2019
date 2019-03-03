@@ -104,14 +104,6 @@ module condcheck (input logic[1:0] branchType,
 		endcase
 endmodule
 
-/*module alu (input logic [3:0]  a, b,
-				input logic        subtractionControl,
-				output logic [3:0] result);
-	logic [3:0] condinvb;
-	assign condinvb = subtractionControl ? ~b : b;
-	assign result = a + condinvb + subtractionControl;
-endmodule*/
-
 module adder #(parameter WIDTH=8)
               (input  logic [WIDTH-1:0] a, b,
 				   input  logic cin,
