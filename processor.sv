@@ -1,5 +1,8 @@
-// microprocessor
+// Microprocessor for E190AT: VLSI Design Project
+// Authors: Erik Meike, Dominique Mena, Caleb Norfleet, & Kaveh Pezeshki
+// Created Spring 2019
 
+// note: switch to two-phase clock
 module top (input  logic        clk, reset,
 				output logic        MemWrite,
 				output logic [7:0]  Adr,
@@ -11,7 +14,8 @@ module top (input  logic        clk, reset,
 	logic [7:0] WriteData, branchRegVal;
 	
 	// tristate for handling write data
-	assign MemData[7:0] = (MemWrite ? WriteData : 8'bz);
+	assign MemData[14:8] = 7'bz;
+	assign MemData[7:0]  = (MemWrite ? WriteData : 8'bz);
 	
 	controller c(clk, reset, funct, branchRegVal, PCEnable,
 					 AdrSrc, InstrSrc, RegWrite, TwoRegs,
@@ -32,7 +36,7 @@ module datapath (input  logic        clk, reset,
 	logic[7:0]  Result, SrcA, SrcB, Imm;
 	logic[7:0]  WD3, RD1, RD2, notRD2;
 	logic[3:0]  RA1, RA2, WA3;
-	logic[15:0] instrTemp, instr;
+	logic[14:0] instrTemp, instr;
 	
 	// next PC logic
 	adder   #(8) pcAdd(PC, 8'b1, 1'b0, PCPlus1);
@@ -43,19 +47,20 @@ module datapath (input  logic        clk, reset,
 	mux2 #(8) adrMux(PC, RD2, AdrSrc, Adr);
 	assign WriteData = RD1;
 	
-	//instruction handling
+	// instruction handling
 	flopr #(15) instrReg(clk, reset, ReadData, instrTemp);
 	mux2  #(15) instrMux(instrTemp, ReadData, InstrSrc, instr);
 	// note: currently instrMux is kinda useless :)
 	assign funct = instr[3:0];
 	
-	//register read/write logic
+	// register read/write logic
 	mux3 #(8) wd3Mux(Imm, ReadData[7:0], Result, RegWriteSrc, WD3);
 	regfile   rf(clk, RegWrite, RA1, RA2, WA3, WD3, RD1, RD2);
 	assign RA1 = instr[9:7];
 	assign RA2 = instr[12:10];
 	assign WA3 = instr[6:4];
 	assign Imm = instr[14:7];
+	assign branchRegVal = RD1;
 	
 	// ALU logic
 	mux2  #(8) srcAMux(8'b0, RD1, TwoRegs, SrcA);
@@ -88,7 +93,7 @@ module controller (input  logic      clk, reset,
 						((funct[1] & funct[2]) ?
 						2'b10 : 2'b01) : 2'b00;
 	
-	//data processing
+	// data processing
 	assign TwoRegs = funct[2];
 	assign ALUSub  = funct[3];
 	
