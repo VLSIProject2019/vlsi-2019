@@ -29,7 +29,7 @@ module datapath (input  logic        clk, reset,
 	
 	// next PC logic
 	adder   #(8) pcAdd(PC, 8'b1, 1'b0, PCPlus1);
-	flopenr #(8) pcReg(clk, reset, PCNext, PC);
+	flopenr #(8) pcReg(clk, reset, PCEnable, PCNext, PC);
 	mux3    #(8) pcMux(PCPlus1, Imm, RD1, PCSrc, PCNext);
 	
 	// data memory
