@@ -8,13 +8,14 @@ module top (input  logic        clk, reset,
 	logic PCEnable, AdrSrc, InstrSrc, RegWrite, TwoRegs, ALUSrc;
 	logic [1:0] PCSrc, RegWriteSrc;
 	logic [3:0] funct;
+	logic [7:0] branchRegVal;
 	
-	controller c(clk, reset, funct, PCEnable, AdrSrc,
-					 InstrSrc, RegWrite, TwoRegs, ALUSub,
-					 PCSrc, RegWriteSrc, MemWrite);
+	controller c(clk, reset, funct, branchRegVal, PCEnable,
+					 AdrSrc, InstrSrc, RegWrite, TwoRegs,
+					 ALUSub, PCSrc, RegWriteSrc, MemWrite);
 	datapath dp(clk, reset, PCEnable, AdrSrc, InstrSrc,
 					RegWrite, TwoRegs, ALUSub, PCSrc, RegWriteSrc,
-					ReadData, Adr, WriteData, funct);
+					ReadData, Adr, WriteData, branchRegVal, funct);
 endmodule
 
 module datapath (input  logic        clk, reset,
@@ -22,7 +23,7 @@ module datapath (input  logic        clk, reset,
 					  input  logic        RegWrite, TwoRegs, ALUSub,
 					  input  logic [1:0]  PCSrc, RegWriteSrc,
 					  input  logic [14:0] ReadData,
-					  output logic [7:0]  Adr, WriteData,
+					  output logic [7:0]  Adr, WriteData, branchRegVal,
 					  output logic [3:0]  funct);
 	logic[7:0]  PC, PCNext, PCPlus1;
 	logic[7:0]  Result, SrcA, SrcB, Imm;
@@ -51,7 +52,7 @@ module datapath (input  logic        clk, reset,
 	assign RA1 = instr[9:7];
 	assign RA2 = instr[12:10];
 	assign WA3 = instr[6:4];
-	assign Imm = instr[7:14];
+	assign Imm = instr[14:7];
 	
 	// ALU logic
 	mux2 #(8) srcAMux(8'b0, RD1, TwoRegs, SrcA);
@@ -62,21 +63,45 @@ endmodule
 
 module controller (input  logic      clk, reset,
 						 input  logic[3:0] funct,
+						 input  logic[7:0] branchRegval,
 						 output logic      PCEnable, AdrSrc, InstrSrc,
 					    output logic      RegWrite, TwoRegs, ALUSub,
 					    output logic[1:0] PCSrc, RegWriteSrc,
 						 output logic      MemWrite);
-	logic state, stateBar;
+	logic state, stateBar, condBranch;
 	
-	//cycle clock "FSM" (0=instr read, 1=load/write back)
+	// cycle clock "FSM" (0=instr read, 1=load/write back)
 	flopr #(1) stateReg(clk, reset, stateBar, state);
 	assign stateBar = ~state;
 	
-	/*logic condBranch;
-	// branch
-	condcheck cc(funct[1:0], branchRegVal, condBranch);
-	assign PCS = funct[3] & (funct[2] | condBranch);
+	assign PCEnable = state;
+	assign AdrSrc   = state;
+	assign InstrSrc = stateBar;
 	
+	// branch
+	condcheck cc(funct[3:2], branchRegVal, condBranch);
+	// funct[0] is branch, funct[1] is unconditional
+	assign PCSrc = (funct[0] & (funct[1] | condBranch)) ?
+						((funct[1] & funct[2]) ?
+						2'b10 : 2'b01) : 2'b00;
+	
+	// writeback
+	assign MemWrite = stateBar & (funct[0:3] == 4'b0010);
+	assign RegWrite = stateBar & ~funct[0] & (funct[1] | funct[3]);
+	always_comb
+		if(funct[1])
+			RegWriteSrc = 2'b10; // Result
+		else if(funct[2])
+			RegWriteSrc = 2'b01; // ReadData
+		else
+			RegWriteSrc = 2'b00; // Imm
+	
+	
+	//data processing
+	TwoRegs
+	ALUSub
+	
+	/*
 	// memory
 	assign MemWrite = ~funct[3] & ~funct[2] & funct[1] & funct[0];
 	
