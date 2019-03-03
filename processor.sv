@@ -7,12 +7,14 @@ module top (input  logic        clk, reset,
 	//memory(MemWrite, Adr, WriteData, ReadData);
 	logic PCEnable, AdrSrc, InstrSrc, RegWrite, TwoRegs, ALUSrc;
 	logic [1:0] PCSrc, RegWriteSrc;
+	logic [3:0] funct;
 	
-	controller c(clk, reset, PCEnable, AdrSrc, InstrSrc, RegWrite,
-						TwoRegs, ALUSub, PCSrc, RegWriteSrc, MemWrite);
+	controller c(clk, reset, funct, PCEnable, AdrSrc,
+					 InstrSrc, RegWrite, TwoRegs, ALUSub,
+					 PCSrc, RegWriteSrc, MemWrite);
 	datapath dp(clk, reset, PCEnable, AdrSrc, InstrSrc,
-					RegWrite, TwoRegs, ALUSub, PCSrc,
-					RegWriteSrc, ReadData, Adr, WriteData);
+					RegWrite, TwoRegs, ALUSub, PCSrc, RegWriteSrc,
+					ReadData, Adr, WriteData, funct);
 endmodule
 
 module datapath (input  logic        clk, reset,
@@ -20,7 +22,8 @@ module datapath (input  logic        clk, reset,
 					  input  logic        RegWrite, TwoRegs, ALUSub,
 					  input  logic [1:0]  PCSrc, RegWriteSrc,
 					  input  logic [14:0] ReadData,
-					  output logic [7:0]  Adr, WriteData);
+					  output logic [7:0]  Adr, WriteData,
+					  output logic [3:0]  funct);
 	logic[7:0]  PC, PCNext, PCPlus1;
 	logic[7:0]  Result, SrcA, SrcB, Imm;
 	logic[7:0]  WD3, RD1, RD2, notRD2;
@@ -39,6 +42,8 @@ module datapath (input  logic        clk, reset,
 	//instruction handling
 	flopr #(15) instrReg(clk, reset, ReadData, instrTemp);
 	mux2  #(15) instrMux(instrTemp, ReadData, InstrSrc, instr);
+	// note: currently instrMux is kinda useless :)
+	assign funct = instr[3:0];
 	
 	//register read/write logic
 	mux3 #(8)  wd3Mux(Imm, ReadData[7:0], Result, RegWriteSrc, WD3);
@@ -56,10 +61,17 @@ module datapath (input  logic        clk, reset,
 endmodule
 
 module controller (input  logic      clk, reset,
+						 input  logic[3:0] funct,
 						 output logic      PCEnable, AdrSrc, InstrSrc,
 					    output logic      RegWrite, TwoRegs, ALUSub,
 					    output logic[1:0] PCSrc, RegWriteSrc,
 						 output logic      MemWrite);
+	logic state, stateBar;
+	
+	//cycle clock "FSM" (0=instr read, 1=load/write back)
+	flopr #(1) stateReg(clk, reset, stateBar, state);
+	assign stateBar = ~state;
+	
 	/*logic condBranch;
 	// branch
 	condcheck cc(funct[1:0], branchRegVal, condBranch);
