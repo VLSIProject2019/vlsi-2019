@@ -2,20 +2,23 @@
 
 module top (input  logic        clk, reset,
 				output logic        MemWrite,
-				output logic [7:0]  adr, WriteData,
-				input  logic [14:0] ReadData);
-	//memory(MemWrite, Adr, WriteData, ReadData);
-	logic PCEnable, AdrSrc, InstrSrc, RegWrite, TwoRegs, ALUSrc;
+				output logic [7:0]  Adr,
+				inout  logic [14:0] MemData);
+	// memory(MemWrite, Adr, MemData);
+	logic PCEnable, AdrSrc, InstrSrc, RegWrite, TwoRegs, ALUSub;
 	logic [1:0] PCSrc, RegWriteSrc;
 	logic [3:0] funct;
-	logic [7:0] branchRegVal;
+	logic [7:0] WriteData, branchRegVal;
+	
+	// tristate for handling write data
+	assign MemData[7:0] = (MemWrite ? WriteData : 8'bz);
 	
 	controller c(clk, reset, funct, branchRegVal, PCEnable,
 					 AdrSrc, InstrSrc, RegWrite, TwoRegs,
 					 ALUSub, PCSrc, RegWriteSrc, MemWrite);
 	datapath dp(clk, reset, PCEnable, AdrSrc, InstrSrc,
 					RegWrite, TwoRegs, ALUSub, PCSrc, RegWriteSrc,
-					ReadData, Adr, WriteData, branchRegVal, funct);
+					MemData, WriteData, Adr, branchRegVal, funct);
 endmodule
 
 module datapath (input  logic        clk, reset,
@@ -23,7 +26,7 @@ module datapath (input  logic        clk, reset,
 					  input  logic        RegWrite, TwoRegs, ALUSub,
 					  input  logic [1:0]  PCSrc, RegWriteSrc,
 					  input  logic [14:0] ReadData,
-					  output logic [7:0]  Adr, WriteData, branchRegVal,
+					  output logic [7:0]  WriteData, Adr, branchRegVal,
 					  output logic [3:0]  funct);
 	logic[7:0]  PC, PCNext, PCPlus1;
 	logic[7:0]  Result, SrcA, SrcB, Imm;
@@ -63,7 +66,7 @@ endmodule
 
 module controller (input  logic      clk, reset,
 						 input  logic[3:0] funct,
-						 input  logic[7:0] branchRegval,
+						 input  logic[7:0] branchRegVal,
 						 output logic      PCEnable, AdrSrc, InstrSrc,
 					    output logic      RegWrite, TwoRegs, ALUSub,
 					    output logic[1:0] PCSrc, RegWriteSrc,
@@ -102,10 +105,10 @@ module controller (input  logic      clk, reset,
 endmodule
 
 module condcheck (input logic[1:0] branchType,
-						input logic[3:0] branchRegVal,
+						input logic[7:0] branchRegVal,
 						output logic     condBranch);
 	logic zero, negative;
-	assign negative = branchRegVal[3];
+	assign negative = branchRegVal[7];
 	assign zero = ~(|branchRegVal);
 	always_comb
 		case(branchType)
