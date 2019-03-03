@@ -47,18 +47,18 @@ module datapath (input  logic        clk, reset,
 	assign funct = instr[3:0];
 	
 	//register read/write logic
-	mux3 #(8)  wd3Mux(Imm, ReadData[7:0], Result, RegWriteSrc, WD3);
-	regfile rf(clk, RegWrite, RA1, RA2, WA3, WD3, RD1, RD2);
+	mux3 #(8) wd3Mux(Imm, ReadData[7:0], Result, RegWriteSrc, WD3);
+	regfile   rf(clk, RegWrite, RA1, RA2, WA3, WD3, RD1, RD2);
 	assign RA1 = instr[9:7];
 	assign RA2 = instr[12:10];
 	assign WA3 = instr[6:4];
 	assign Imm = instr[14:7];
 	
 	// ALU logic
-	mux2 #(8) srcAMux(8'b0, RD1, TwoRegs, SrcA);
-	assign notRD2 = ~RD2;
-	mux2 #(8) srcBMux(RD2, notRD2, ALUSub, SrcB);
+	mux2  #(8) srcAMux(8'b0, RD1, TwoRegs, SrcA);
+	mux2  #(8) srcBMux(RD2, notRD2, ALUSub, SrcB);
 	adder #(8) alu(SrcA, SrcB, ALUSub, Result);
+	assign notRD2 = ~RD2;
 endmodule
 
 module controller (input  logic      clk, reset,
@@ -85,6 +85,10 @@ module controller (input  logic      clk, reset,
 						((funct[1] & funct[2]) ?
 						2'b10 : 2'b01) : 2'b00;
 	
+	//data processing
+	assign TwoRegs = funct[2];
+	assign ALUSub  = funct[3];
+	
 	// writeback
 	assign MemWrite = stateBar & (funct[0:3] == 4'b0010);
 	assign RegWrite = stateBar & ~funct[0] & (funct[1] | funct[3]);
@@ -95,29 +99,6 @@ module controller (input  logic      clk, reset,
 			RegWriteSrc = 2'b01; // ReadData
 		else
 			RegWriteSrc = 2'b00; // Imm
-	
-	
-	//data processing
-	TwoRegs
-	ALUSub
-	
-	/*
-	// memory
-	assign MemWrite = ~funct[3] & ~funct[2] & funct[1] & funct[0];
-	
-	//data processing
-	assign RegWrite = ~funct[3] & (funct[2] | funct[0]);
-	assign ALUSrc = funct[1]; // if 0, A = 0, else A = the reg value
-	assign ALUOp = funct[0];
-	
-	//write-back
-	always_comb
-		if(funct[2])
-			RegWriteSrc = 2'b00; // Result
-		else if(funct[1])
-			RegWriteSrc = 2'b01; //ReadData
-		else
-			RegWriteSrc = 2'b10; //extImm*/
 endmodule
 
 module condcheck (input logic[1:0] branchType,
@@ -162,25 +143,6 @@ module regfile(input  logic       clk,
 	assign rd2 = rf[ra2];
 endmodule
 
-module flopenr #(parameter WIDTH = 8)
-                (input  logic             clk, reset, en,
-                 input  logic [WIDTH-1:0] d, 
-                 output logic [WIDTH-1:0] q);
-
-  always_ff @(posedge clk, posedge reset)
-    if (reset)   q <= 0;
-    else if (en) q <= d;
-endmodule
-
-module flopr #(parameter WIDTH = 8)
-              (input  logic             clk, reset,
-               input  logic [WIDTH-1:0] d, 
-               output logic [WIDTH-1:0] q);
-	always_ff @(posedge clk, posedge reset)
-		if (reset) q <= 0;
-		else       q <= d;
-endmodule
-
 module mux2 #(parameter WIDTH = 4)
 				 (input  logic [WIDTH-1:0] d0, d1, 
 				  input  logic             s, 
@@ -193,4 +155,23 @@ module mux3 #(parameter WIDTH = 4)
               input  logic [1:0]       s, 
               output logic [WIDTH-1:0] y);
 	assign y = s[1] ? (s[0] ? 32'bx : d2) : (s[0] ? d1 : d0);
+endmodule
+
+module flopr #(parameter WIDTH = 8)
+              (input  logic             clk, reset,
+               input  logic [WIDTH-1:0] d, 
+               output logic [WIDTH-1:0] q);
+	always_ff @(posedge clk, posedge reset)
+		if (reset) q <= 0;
+		else       q <= d;
+endmodule
+
+module flopenr #(parameter WIDTH = 8)
+                (input  logic             clk, reset, en,
+                 input  logic [WIDTH-1:0] d, 
+                 output logic [WIDTH-1:0] q);
+
+  always_ff @(posedge clk, posedge reset)
+    if (reset)   q <= 0;
+    else if (en) q <= d;
 endmodule
