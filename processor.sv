@@ -6,7 +6,7 @@
 module top (input  logic        clk, reset,
 				output logic        MemWrite,
 				output logic [7:0]  Adr,
-				inout  logic [14:0] MemData);
+				inout  logic [14:0] MemData); // can change [14:8] to inputs
 	// memory(MemWrite, Adr, MemData);
 	logic PCEnable, AdrSrc, InstrSrc, RegWrite, TwoRegs, ALUSub;
 	logic [1:0] PCSrc, RegWriteSrc;
@@ -14,7 +14,7 @@ module top (input  logic        clk, reset,
 	logic [7:0] WriteData, branchRegVal;
 	
 	// tristate for handling write data
-	assign MemData[14:8] = 7'bz;
+	//assign MemData[14:8] = 7'bz;
 	assign MemData[7:0]  = (MemWrite ? WriteData : 8'bz);
 	
 	controller c(clk, reset, funct, branchRegVal, PCEnable,
