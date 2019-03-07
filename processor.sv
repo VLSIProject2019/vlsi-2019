@@ -3,10 +3,10 @@
 // Created Spring 2019
 
 // note: switch to two-phase clock
-module top (input  logic        clk, reset,
+module top (input  logic        ph1, ph2, reset,
 				output logic        MemWrite,
 				output logic [7:0]  Adr,
-				inout  logic [14:0] MemData);
+				inout  logic [14:0] MemData); // can change [14:8] to inputs
 	// memory(MemWrite, Adr, MemData);
 	logic PCEnable, AdrSrc, InstrSrc, RegWrite, TwoRegs, ALUSub;
 	logic [1:0] PCSrc, RegWriteSrc;
@@ -14,18 +14,18 @@ module top (input  logic        clk, reset,
 	logic [7:0] WriteData, branchRegVal;
 	
 	// tristate for handling write data
-	assign MemData[14:8] = 7'bz;
+	//assign MemData[14:8] = 7'bz;
 	assign MemData[7:0]  = (MemWrite ? WriteData : 8'bz);
 	
-	controller c(clk, reset, funct, branchRegVal, PCEnable,
+	controller c(ph1, ph2, reset, funct, branchRegVal, PCEnable,
 					 AdrSrc, InstrSrc, RegWrite, TwoRegs,
 					 ALUSub, PCSrc, RegWriteSrc, MemWrite);
-	datapath dp(clk, reset, PCEnable, AdrSrc, InstrSrc,
+	datapath dp(ph1, ph2, reset, PCEnable, AdrSrc, InstrSrc,
 					RegWrite, TwoRegs, ALUSub, PCSrc, RegWriteSrc,
 					MemData, WriteData, Adr, branchRegVal, funct);
 endmodule
 
-module datapath (input  logic        clk, reset,
+module datapath (input  logic        ph1, ph2, reset,
 					  input  logic        PCEnable, AdrSrc, InstrSrc,
 					  input  logic        RegWrite, TwoRegs, ALUSub,
 					  input  logic [1:0]  PCSrc, RegWriteSrc,
@@ -40,7 +40,7 @@ module datapath (input  logic        clk, reset,
 	
 	// next PC logic
 	adder   #(8) pcAdd(PC, 8'b1, 1'b0, PCPlus1);
-	flopenr #(8) pcReg(clk, reset, PCEnable, PCNext, PC);
+	flopenr #(8) pcReg(ph1, ph2, reset, PCEnable, PCNext, PC);
 	mux3    #(8) pcMux(PCPlus1, Imm, RD1, PCSrc, PCNext);
 	
 	// data memory
@@ -48,14 +48,14 @@ module datapath (input  logic        clk, reset,
 	assign WriteData = RD1;
 	
 	// instruction handling
-	flopr #(15) instrReg(clk, reset, ReadData, instrTemp);
+	flopr #(15) instrReg(ph1, ph2, reset, ReadData, instrTemp);
 	mux2  #(15) instrMux(instrTemp, ReadData, InstrSrc, instr);
 	// note: currently instrMux is kinda useless :)
 	assign funct = instr[3:0];
 	
 	// register read/write logic
 	mux3 #(8) wd3Mux(Imm, ReadData[7:0], Result, RegWriteSrc, WD3);
-	regfile   rf(clk, RegWrite, RA1, RA2, WA3, WD3, RD1, RD2);
+	regfile   rf(ph1, ph2, RegWrite, RA1, RA2, WA3, WD3, RD1, RD2);
 	assign RA1 = instr[9:7];
 	assign RA2 = instr[12:10];
 	assign WA3 = instr[6:4];
@@ -69,7 +69,7 @@ module datapath (input  logic        clk, reset,
 	assign notRD2 = ~RD2;
 endmodule
 
-module controller (input  logic      clk, reset,
+module controller (input  logic      ph1, ph2, reset,
 						 input  logic[3:0] funct,
 						 input  logic[7:0] branchRegVal,
 						 output logic      PCEnable, AdrSrc, InstrSrc,
@@ -79,7 +79,7 @@ module controller (input  logic      clk, reset,
 	logic state, stateBar, condBranch;
 	
 	// cycle clock "FSM" (0=instr read, 1=load/write back)
-	flopr #(1) stateReg(clk, reset, stateBar, state);
+	flopr #(1) stateReg(ph1, ph2, reset, stateBar, state);
 	assign stateBar = ~state;
 	
 	assign PCEnable = state;
@@ -137,16 +137,15 @@ module adder #(parameter WIDTH=8)
 	assign y = a + b + cin;
 endmodule
 
-module regfile(input  logic       clk, 
+module regfile(input  logic       ph1, ph2, 
                input  logic       we3, 
                input  logic [3:0] ra1, ra2, wa3, 
                input  logic [7:0] wd3,
                output logic [7:0] rd1, rd2);
 	// note: can't read PC in HMMM
 	logic [7:0] rf[7:0];
-	
-	always_ff @(posedge clk)
-		if (we3) rf[wa3] <= wd3;
+	always_latch ///////////////////////////////////////////////////////
+		if (ph1 & we3) rf[wa3] <= wd3;
 	assign rd1 = rf[ra1];
 	assign rd2 = rf[ra2];
 endmodule
@@ -165,21 +164,47 @@ module mux3 #(parameter WIDTH = 4)
 	assign y = s[1] ? (s[0] ? 32'bx : d2) : (s[0] ? d1 : d0);
 endmodule
 
+module flop #(parameter WIDTH = 8)
+				 (input  logic ph1, ph2, reset,
+              input  logic [WIDTH-1:0] d, 
+              output logic [WIDTH-1:0] q);
+	logic[WIDTH-1:0] nextQ;
+	always_latch
+		if (ph1) q <= nextQ;
+	always_latch
+		if (ph2) nextQ <= d;
+endmodule
+
 module flopr #(parameter WIDTH = 8)
-              (input  logic             clk, reset,
+				  (input  logic ph1, ph2, reset,
                input  logic [WIDTH-1:0] d, 
                output logic [WIDTH-1:0] q);
-	always_ff @(posedge clk, posedge reset)
-		if (reset) q <= 0;
-		else       q <= d;
+	logic[WIDTH-1:0] nextQ;
+	always_latch begin
+		if (ph1)
+			if (reset) q <= 0;
+			else       q <= nextQ;
+   end
+	always_latch begin
+		if (ph2)
+			if (reset) nextQ <= 0;
+			else       nextQ <= d;
+	end
 endmodule
 
 module flopenr #(parameter WIDTH = 8)
-                (input  logic             clk, reset, en,
+                (input  logic ph1, ph2, reset, en,
                  input  logic [WIDTH-1:0] d, 
                  output logic [WIDTH-1:0] q);
-
-  always_ff @(posedge clk, posedge reset)
-    if (reset)   q <= 0;
-    else if (en) q <= d;
+	logic[WIDTH-1:0] nextQ;
+	always_latch begin
+		if (ph1)
+			if (reset)   q <= 0;
+			else if (en) q <= nextQ;
+   end
+	always_latch begin
+		if (ph2)
+			if (reset) nextQ <= 0;
+			else       nextQ <= d;
+	end
 endmodule
