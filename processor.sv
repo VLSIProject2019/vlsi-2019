@@ -14,7 +14,7 @@ module top (input  logic        ph1, ph2, reset,
 	logic [7:0] WriteData, branchRegVal;
 	
 	// tristate for handling write data
-	//assign MemData[14:8] = 7'bz;
+	// assign MemData[14:8] = 7'bz;
 	assign MemData[7:0]  = (MemWrite ? WriteData : 8'bz);
 	
 	controller c(ph1, ph2, reset, funct, branchRegVal, PCEnable,
@@ -55,7 +55,7 @@ module datapath (input  logic        ph1, ph2, reset,
 	
 	// register read/write logic
 	mux3 #(8) wd3Mux(Imm, ReadData[7:0], Result, RegWriteSrc, WD3);
-	regfile   rf(ph1, ph2, RegWrite, RA1, RA2, WA3, WD3, RD1, RD2);
+	regfile   rf(ph1, ph2, reset, RegWrite, RA1, RA2, WA3, WD3, RD1, RD2);
 	assign RA1 = instr[9:7];
 	assign RA2 = instr[12:10];
 	assign WA3 = instr[6:4];
@@ -137,31 +137,37 @@ module adder #(parameter WIDTH=8)
 	assign y = a + b + cin;
 endmodule
 
-module regfile(input  logic       ph1, ph2, 
+module regfile(input  logic       ph1, ph2, reset,
                input  logic       we3, 
                input  logic [3:0] ra1, ra2, wa3, 
                input  logic [7:0] wd3,
                output logic [7:0] rd1, rd2);
 	// note: can't read PC in HMMM
 	logic [7:0] rf[7:0];
-	always_latch ///////////////////////////////////////////////////////
-		if (ph1 & we3) rf[wa3] <= wd3;
+	flopenr reg0(ph1, ph2, reset, we3&(wa3==4'd0), wd3, rf[0]);
+	flopenr reg1(ph1, ph2, reset, we3&(wa3==4'd1), wd3, rf[1]);
+	flopenr reg2(ph1, ph2, reset, we3&(wa3==4'd2), wd3, rf[2]);
+	flopenr reg3(ph1, ph2, reset, we3&(wa3==4'd3), wd3, rf[3]);
+	flopenr reg4(ph1, ph2, reset, we3&(wa3==4'd4), wd3, rf[4]);
+	flopenr reg5(ph1, ph2, reset, we3&(wa3==4'd5), wd3, rf[5]);
+	flopenr reg6(ph1, ph2, reset, we3&(wa3==4'd6), wd3, rf[6]);
+	flopenr reg7(ph1, ph2, reset, we3&(wa3==4'd7), wd3, rf[7]);
 	assign rd1 = rf[ra1];
 	assign rd2 = rf[ra2];
 endmodule
 
-module mux2 #(parameter WIDTH = 4)
+module mux2 #(parameter WIDTH = 8)
 				 (input  logic [WIDTH-1:0] d0, d1, 
 				  input  logic             s, 
 				  output logic [WIDTH-1:0] y);
 	assign y = s ? d1 : d0; 
 endmodule
 
-module mux3 #(parameter WIDTH = 4)
+module mux3 #(parameter WIDTH = 8)
 				 (input  logic [WIDTH-1:0] d0, d1, d2,
               input  logic [1:0]       s, 
               output logic [WIDTH-1:0] y);
-	assign y = s[1] ? (s[0] ? 32'bx : d2) : (s[0] ? d1 : d0);
+	assign y = s[1] ? (s[0] ? 8'bx : d2) : (s[0] ? d1 : d0);
 endmodule
 
 module flop #(parameter WIDTH = 8)
@@ -199,8 +205,8 @@ module flopenr #(parameter WIDTH = 8)
 	logic[WIDTH-1:0] nextQ;
 	always_latch begin
 		if (ph1)
-			if (reset)   q <= 0;
-			else if (en) q <= nextQ;
+			// if (reset)   q <= 0;
+			if (en) q <= nextQ;
    end
 	always_latch begin
 		if (ph2)
