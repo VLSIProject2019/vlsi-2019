@@ -6,8 +6,14 @@
 module top (input  logic        ph1, ph2, reset,
 				output logic        MemWrite,
 				output logic [7:0]  Adr,
-				inout  logic [14:0] MemData); // can change [14:8] to inputs
+				inout  logic [14:0] MemData);
+				// input  logic [14:8] MemData1,
+				// inout  logic [7:0]  MemData2);
+	// logic [14:0] MemData;
+	// assign MemData[14:8] = MemData1;
+	// assign MemData[7:0]  = MemData2;
 	// memory(MemWrite, Adr, MemData);
+	
 	logic PCEnable, AdrSrc, InstrSrc, RegWrite, TwoRegs, ALUSub;
 	logic [1:0] PCSrc, RegWriteSrc;
 	logic [3:0] funct;
