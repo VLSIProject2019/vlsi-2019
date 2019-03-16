@@ -102,22 +102,22 @@ module controller (input  logic      ph1, ph2, reset,
 	assign regJumpLoc    = funct[1];
 	condcheck cc(funct[3:2], negative, zero, condBranch);
 	// funct[0] is branch, funct[1] is unconditional
-	assign PCSrc = (funct[0] & (funct[1] | condBranch)) ?
-						((funct[1] & funct[2]) ?
+	assign PCSrc = (branch & (unconditional | condBranch)) ?
+						((unconditional & regJumpLoc) ?
 						2'b10 : 2'b01) : 2'b00;
-	assign RA1Src = funct[0];
+	assign RA1Src = branch;
 	
 	// data processing
-	assign TwoRegs = funct[2];
-	assign ALUSub  = funct[3];
+	assign TwoRegs = funct[1];
+	assign ALUSub  = funct[0];
 	
 	// writeback
-	assign MemWrite = stateBar & (funct == 4'b0100);
-	assign RegWrite = stateBar & ~funct[0] & (funct[1] | funct[3]);
+	assign MemWrite = stateBar & (funct == 4'b0010);
+	assign RegWrite = stateBar & ~branch & (funct[2] | funct[0]);
 	always_comb
-		if(funct[1])
+		if(funct[2])
 			RegWriteSrc = 2'b10; // Result
-		else if(funct[2])
+		else if(funct[1])
 			RegWriteSrc = 2'b01; // ReadData
 		else
 			RegWriteSrc = 2'b00; // Imm
