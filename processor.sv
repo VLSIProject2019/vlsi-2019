@@ -5,9 +5,11 @@
 module top (input  logic        ph1, ph2, reset,
 				output logic        MemWrite,
 				output logic [7:0]  Adr,
-				inout  logic [14:0] MemData);
+				input  logic [14:8] MemData1,
+				inout  logic [7:0]  MemData2);
 	
-	logic PCEnable, AdrSrc, InstrSrc, RegWrite, TwoRegs, ALUSub;
+	logic PCEnable, AdrSrc, InstrSrc, RegWrite;
+	logic TwoRegs, ALUSub, negative, zero;
 	logic [1:0] PCSrc, RegWriteSrc;
 	logic [3:0] funct;
 	
@@ -16,14 +18,18 @@ module top (input  logic        ph1, ph2, reset,
 					 ALUSub, PCSrc, RegWriteSrc, MemWrite);
 	datapath dp(ph1, ph2, reset, PCEnable, AdrSrc, InstrSrc,
 					RegWrite, MemWrite, TwoRegs, ALUSub, PCSrc,
-					RegWriteSrc, MemData, Adr, negative, zero, funct);
+					RegWriteSrc,
+					MemData1,
+					MemData2,
+					Adr, negative, zero, funct);
 endmodule
 
 module datapath (input  logic        ph1, ph2, reset,
 					  input  logic        PCEnable, AdrSrc, InstrSrc,
 					  input  logic        RegWrite, MemWrite, TwoRegs, ALUSub,
 					  input  logic [1:0]  PCSrc, RegWriteSrc,
-					  inout  logic [14:0] MemData,
+					  input  logic [14:8] MemData1,
+					  inout  logic [7:0]  MemData2,
 					  output logic [7:0]  Adr,
 					  output logic        negative, zero,
 					  output logic [3:0]  funct);
@@ -44,13 +50,13 @@ module datapath (input  logic        ph1, ph2, reset,
 	assign WriteData = RD1;
 	
 	// instruction handling
-	flopr #(15) instrReg(ph1, ph2, reset, MemData, instrTemp);
-	mux2  #(15) instrMux(instrTemp, MemData, InstrSrc, instr);
+	flopr #(15) instrReg(ph1, ph2, reset, MemData1, MemData2, instrTemp);
+	mux2  #(15) instrMux(instrTemp, MemData1, MemData2, InstrSrc, instr);
 	// note: currently instrMux is kinda useless :)
 	assign funct = instr[3:0];
 	
 	// register read/write logic
-	mux3 #(8) wd3Mux(Imm, MemData[7:0], Result, RegWriteSrc, WD3);
+	mux3 #(8) wd3Mux(Imm, MemData2[7:0], Result, RegWriteSrc, WD3);
 	regfile   rf(ph1, ph2, reset, RegWrite, RA1, RA2, WA3, WD3, RD1, RD2);
 	assign RA1 = instr[9:7];
 	assign RA2 = instr[12:10];
@@ -59,8 +65,7 @@ module datapath (input  logic        ph1, ph2, reset,
 	
 	
 	// tristate for handling write data
-	// assign MemData[14:8] = 7'bz;
-	assign MemData[7:0]  = (MemWrite ? WriteData : 8'bz);
+	assign MemData2[7:0]  = (MemWrite ? WriteData : 8'bz);
 	
 	// zero and negative for conditional branching
 	assign negative = RD1[7];
