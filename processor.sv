@@ -16,12 +16,12 @@ module top (input  logic        ph1, ph2, reset,
 	// assign MemData[14:8] = 7'bz;
 	assign MemData[7:0]  = (MemWrite ? WriteData : 8'bz);
 	
-	controller c(ph1, ph2, reset, funct, branchRegVal, PCEnable,
+	controller c(ph1, ph2, reset, funct, zero, PCEnable,
 					 AdrSrc, InstrSrc, RegWrite, TwoRegs,
 					 ALUSub, PCSrc, RegWriteSrc, MemWrite);
 	datapath dp(ph1, ph2, reset, PCEnable, AdrSrc, InstrSrc,
 					RegWrite, TwoRegs, ALUSub, PCSrc, RegWriteSrc,
-					MemData, WriteData, Adr, branchRegVal, funct);
+					MemData, WriteData, Adr, zero, funct);
 endmodule
 
 module datapath (input  logic        ph1, ph2, reset,
@@ -29,7 +29,8 @@ module datapath (input  logic        ph1, ph2, reset,
 					  input  logic        RegWrite, TwoRegs, ALUSub,
 					  input  logic [1:0]  PCSrc, RegWriteSrc,
 					  input  logic [14:0] ReadData,
-					  output logic [7:0]  WriteData, Adr, branchRegVal,
+					  output logic [7:0]  WriteData, Adr,
+					  output logic        zero,
 					  output logic [3:0]  funct);
 	logic[7:0]  PC, PCNext, PCPlus1;
 	logic[7:0]  Result, SrcA, SrcB, Imm;
@@ -61,6 +62,9 @@ module datapath (input  logic        ph1, ph2, reset,
 	assign Imm = instr[14:7];
 	assign branchRegVal = RD1;
 	
+	//zero detect
+	assign zero = ~(|branchRegVal);
+	
 	// ALU logic
 	mux2  #(8) srcAMux(8'b0, RD1, TwoRegs, SrcA);
 	mux2  #(8) srcBMux(RD2, notRD2, ALUSub, SrcB);
@@ -70,7 +74,7 @@ endmodule
 
 module controller (input  logic      ph1, ph2, reset,
 						 input  logic[3:0] funct,
-						 input  logic[7:0] branchRegVal,
+						 input  logic      zero,
 						 output logic      PCEnable, AdrSrc, InstrSrc,
 					    output logic      RegWrite, TwoRegs, ALUSub,
 					    output logic[1:0] PCSrc, RegWriteSrc,
@@ -86,7 +90,7 @@ module controller (input  logic      ph1, ph2, reset,
 	assign InstrSrc = stateBar;
 	
 	// branch
-	condcheck cc(funct[3:2], branchRegVal, condBranch);
+	condcheck cc(funct[3:2], zero, condBranch);
 	// funct[0] is branch, funct[1] is unconditional
 	assign PCSrc = (funct[0] & (funct[1] | condBranch)) ?
 						((funct[1] & funct[2]) ?
@@ -108,12 +112,11 @@ module controller (input  logic      ph1, ph2, reset,
 			RegWriteSrc = 2'b00; // Imm
 endmodule
 
-module condcheck (input logic[1:0] branchType,
-						input logic[7:0] branchRegVal,
-						output logic     condBranch);
-	logic zero, negative;
+module condcheck (input  logic[1:0] branchType,
+						input  logic      zero,
+						output logic      condBranch);
+	logic negative;
 	assign negative = branchRegVal[7];
-	assign zero = ~(|branchRegVal);
 	always_comb
 		case(branchType)
 			2'b00: // jeqzn
