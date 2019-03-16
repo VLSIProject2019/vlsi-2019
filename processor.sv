@@ -10,31 +10,27 @@ module top (input  logic        ph1, ph2, reset,
 	logic PCEnable, AdrSrc, InstrSrc, RegWrite, TwoRegs, ALUSub;
 	logic [1:0] PCSrc, RegWriteSrc;
 	logic [3:0] funct;
-	logic [7:0] WriteData, branchRegVal;
-	
-	// tristate for handling write data
-	// assign MemData[14:8] = 7'bz;
-	assign MemData[7:0]  = (MemWrite ? WriteData : 8'bz);
 	
 	controller c(ph1, ph2, reset, funct, negative, zero,
 					 PCEnable, AdrSrc, InstrSrc, RegWrite, TwoRegs,
 					 ALUSub, PCSrc, RegWriteSrc, MemWrite);
 	datapath dp(ph1, ph2, reset, PCEnable, AdrSrc, InstrSrc,
-					RegWrite, TwoRegs, ALUSub, PCSrc, RegWriteSrc,
-					MemData, WriteData, Adr, negative, zero, funct);
+					RegWrite, MemWrite, TwoRegs, ALUSub, PCSrc,
+					RegWriteSrc, MemData, Adr, negative, zero, funct);
 endmodule
 
 module datapath (input  logic        ph1, ph2, reset,
 					  input  logic        PCEnable, AdrSrc, InstrSrc,
-					  input  logic        RegWrite, TwoRegs, ALUSub,
+					  input  logic        RegWrite, MemWrite, TwoRegs, ALUSub,
 					  input  logic [1:0]  PCSrc, RegWriteSrc,
-					  input  logic [14:0] ReadData,
-					  output logic [7:0]  WriteData, Adr,
+					  inout  logic [14:0] MemData,
+					  output logic [7:0]  Adr,
 					  output logic        negative, zero,
 					  output logic [3:0]  funct);
 	logic[7:0]  PC, PCNext, PCPlus1;
 	logic[7:0]  Result, SrcA, SrcB, Imm;
-	logic[7:0]  WD3, RD1, RD2, notRD2;
+	logic[7:0]  WD3, RD1, RD2;
+	logic[7:0]  WriteData;
 	logic[3:0]  RA1, RA2, WA3;
 	logic[14:0] instrTemp, instr;
 	
@@ -48,18 +44,23 @@ module datapath (input  logic        ph1, ph2, reset,
 	assign WriteData = RD1;
 	
 	// instruction handling
-	flopr #(15) instrReg(ph1, ph2, reset, ReadData, instrTemp);
-	mux2  #(15) instrMux(instrTemp, ReadData, InstrSrc, instr);
+	flopr #(15) instrReg(ph1, ph2, reset, MemData, instrTemp);
+	mux2  #(15) instrMux(instrTemp, MemData, InstrSrc, instr);
 	// note: currently instrMux is kinda useless :)
 	assign funct = instr[3:0];
 	
 	// register read/write logic
-	mux3 #(8) wd3Mux(Imm, ReadData[7:0], Result, RegWriteSrc, WD3);
+	mux3 #(8) wd3Mux(Imm, MemData[7:0], Result, RegWriteSrc, WD3);
 	regfile   rf(ph1, ph2, reset, RegWrite, RA1, RA2, WA3, WD3, RD1, RD2);
 	assign RA1 = instr[9:7];
 	assign RA2 = instr[12:10];
 	assign WA3 = instr[6:4];
 	assign Imm = instr[14:7];
+	
+	
+	// tristate for handling write data
+	// assign MemData[14:8] = 7'bz;
+	assign MemData[7:0]  = (MemWrite ? WriteData : 8'bz);
 	
 	// zero and negative for conditional branching
 	assign negative = RD1[7];
