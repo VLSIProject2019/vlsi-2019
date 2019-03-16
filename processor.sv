@@ -66,10 +66,10 @@ module datapath (input  logic        ph1, ph2, reset,
 	assign zero = ~(|RD1);
 	
 	// ALU logic
+	assign SrcB = ALUSub ^ RD2;
+	// ^same as: mux2  #(8) srcBMux(RD2, notRD2, ALUSub, SrcB);
 	mux2  #(8) srcAMux(8'b0, RD1, TwoRegs, SrcA);
-	mux2  #(8) srcBMux(RD2, notRD2, ALUSub, SrcB);
 	adder #(8) alu(SrcA, SrcB, ALUSub, Result);
-	assign notRD2 = ~RD2;
 endmodule
 
 module controller (input  logic      ph1, ph2, reset,
