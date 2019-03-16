@@ -8,24 +8,22 @@ module top (input  logic        ph1, ph2, reset,
 				input  logic [14:8] MemData1,
 				inout  logic [7:0]  MemData2);
 	
-	logic PCEnable, AdrSrc, InstrSrc, RegWrite;
+	logic PCEnable, AdrSrc, RA1Src, InstrSrc, RegWrite;
 	logic TwoRegs, ALUSub, negative, zero;
 	logic [1:0] PCSrc, RegWriteSrc;
 	logic [3:0] funct;
 	
 	controller c(ph1, ph2, reset, funct, negative, zero,
-					 PCEnable, AdrSrc, InstrSrc, RegWrite, TwoRegs,
-					 ALUSub, PCSrc, RegWriteSrc, MemWrite);
+					 RA1Src, PCEnable, AdrSrc, InstrSrc, RegWrite,
+					 TwoRegs, ALUSub, PCSrc, RegWriteSrc, MemWrite);
 	datapath dp(ph1, ph2, reset, PCEnable, AdrSrc, InstrSrc,
-					RegWrite, MemWrite, TwoRegs, ALUSub, PCSrc,
-					RegWriteSrc,
-					MemData1,
-					MemData2,
+					RA1Src, RegWrite, MemWrite, TwoRegs, ALUSub,
+					PCSrc, RegWriteSrc, MemData1, MemData2,
 					Adr, negative, zero, funct);
 endmodule
 
 module datapath (input  logic        ph1, ph2, reset,
-					  input  logic        PCEnable, AdrSrc, InstrSrc,
+					  input  logic        PCEnable, AdrSrc, InstrSrc, RA1Src,
 					  input  logic        RegWrite, MemWrite, TwoRegs, ALUSub,
 					  input  logic [1:0]  PCSrc, RegWriteSrc,
 					  input  logic [14:8] MemData1,
@@ -61,11 +59,10 @@ module datapath (input  logic        ph1, ph2, reset,
 	// register read/write logic
 	mux3 #(8) wd3Mux(Imm, MemData2[7:0], Result, RegWriteSrc, WD3);
 	regfile   rf(ph1, ph2, reset, RegWrite, RA1, RA2, WA3, WD3, RD1, RD2);
-	assign RA1 = instr2[7:5];
+	mux2 #(8) ra1Mux(instr2[7:5], instr1[10:8], RA1Src, RA1);
 	assign RA2 = instr2[4:2];
 	assign WA3 = instr1[10:8];
 	assign Imm = instr2[7:0];
-	
 	
 	// tristate for handling write data
 	assign MemData2[7:0]  = (MemWrite ? WriteData : 8'bz);
@@ -84,7 +81,7 @@ endmodule
 module controller (input  logic      ph1, ph2, reset,
 						 input  logic[3:0] funct,
 						 input  logic      negative, zero,
-						 output logic      PCEnable, AdrSrc, InstrSrc,
+						 output logic      RA1Src, PCEnable, AdrSrc, InstrSrc,
 					    output logic      RegWrite, TwoRegs, ALUSub,
 					    output logic[1:0] PCSrc, RegWriteSrc,
 						 output logic      MemWrite);
@@ -99,11 +96,16 @@ module controller (input  logic      ph1, ph2, reset,
 	assign InstrSrc = stateBar;
 	
 	// branch
+	logic branch, unconditional, regJumpLoc;
+	assign branch        = funct[3];
+	assign unconditional = funct[2];
+	assign regJumpLoc    = funct[1];
 	condcheck cc(funct[3:2], negative, zero, condBranch);
 	// funct[0] is branch, funct[1] is unconditional
 	assign PCSrc = (funct[0] & (funct[1] | condBranch)) ?
 						((funct[1] & funct[2]) ?
 						2'b10 : 2'b01) : 2'b00;
+	assign RA1Src = funct[0];
 	
 	// data processing
 	assign TwoRegs = funct[2];
