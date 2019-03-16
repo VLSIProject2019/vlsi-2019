@@ -56,15 +56,15 @@ module datapath (input  logic        ph1, ph2, reset,
 	mux2  #(7) instrMux1(instrTemp1, MemData1, InstrSrc, instr1);
 	mux2  #(8) instrMux2(instrTemp2, MemData2, InstrSrc, instr2);
 	// note: currently instrMux is kinda useless :)
-	assign funct = instr[3:0];
+	assign funct = instr1[14:11];
 	
 	// register read/write logic
 	mux3 #(8) wd3Mux(Imm, MemData2[7:0], Result, RegWriteSrc, WD3);
 	regfile   rf(ph1, ph2, reset, RegWrite, RA1, RA2, WA3, WD3, RD1, RD2);
-	assign RA1 = instr[9:7];
-	assign RA2 = instr[12:10];
-	assign WA3 = instr[6:4];
-	assign Imm = instr[14:7];
+	assign RA1 = instr2[7:5];
+	assign RA2 = instr2[4:2];
+	assign WA3 = instr1[10:8];
+	assign Imm = instr2[7:0];
 	
 	
 	// tristate for handling write data
