@@ -1,0 +1,7 @@
+// data processing:
+// funct[3:0]__writeAdr[2:0]__readAdr1[2:0]___readAdr2[2:0]__xx
+//
+// branch
+// 1__unconditional?__branchType[1:0]__condEvalReg[2:0]__ImmediateJumpLocation[7:0]
+// branch to reg location:
+// 111x_jumpRegAdr[2:0]_xxxxxxxx
