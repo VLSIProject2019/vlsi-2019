@@ -38,7 +38,8 @@ module datapath (input  logic        ph1, ph2, reset,
 	logic[7:0]  WD3, RD1, RD2;
 	logic[7:0]  WriteData;
 	logic[3:0]  RA1, RA2, WA3;
-	logic[14:0] instrTemp, instr;
+	logic[14:8] instrTemp1, instr1;
+	logic[7:0] instrTemp2, instr2;
 	
 	// next PC logic
 	adder   #(8) pcAdd(PC, 8'b1, 1'b0, PCPlus1);
@@ -50,8 +51,10 @@ module datapath (input  logic        ph1, ph2, reset,
 	assign WriteData = RD1;
 	
 	// instruction handling
-	flopr #(15) instrReg(ph1, ph2, reset, MemData1, MemData2, instrTemp);
-	mux2  #(15) instrMux(instrTemp, MemData1, MemData2, InstrSrc, instr);
+	flopr #(7) instrReg1(ph1, ph2, reset, MemData1, instrTemp1);
+	flopr #(8) instrReg2(ph1, ph2, reset, MemData1, instrTemp2);
+	mux2  #(7) instrMux1(instrTemp1, MemData1, InstrSrc, instr1);
+	mux2  #(8) instrMux2(instrTemp2, MemData2, InstrSrc, instr2);
 	// note: currently instrMux is kinda useless :)
 	assign funct = instr[3:0];
 	
