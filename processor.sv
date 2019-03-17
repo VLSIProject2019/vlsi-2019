@@ -66,7 +66,7 @@ module datapath (input  logic        ph1, ph2, reset,
 	mux3 #(8) wd3Mux(Imm, MemData2[7:0], Result, RegWriteSrc, WD3Temp);
 	flop #(8) wd3Reg(ph1, ph2, reset, WD3Temp, WD3);
 	regfile   rf(ph1, ph2, reset, RegWrite, RA1, RA2, WA3, WD3, RD1, RD2);
-	mux2 #(8) ra1Mux(instr2[7:5], instr1[10:8], RA1Src, RA1);
+	mux2 #(3) ra1Mux(instr2[7:5], instr1[10:8], RA1Src, RA1);
 	assign RA2 = instr2[4:2];
 	assign WA3 = instr1[10:8];
 	assign Imm = instr2[7:0];
@@ -108,8 +108,7 @@ module controller (input  logic      ph1, ph2, reset,
 	assign branch        = funct[3];
 	assign unconditional = funct[2];
 	assign regJumpLoc    = funct[1];
-	condcheck cc(funct[3:2], negative, zero, condBranch);
-	// funct[0] is branch, funct[1] is unconditional
+	condcheck cc(funct[1:0], negative, zero, condBranch);
 	assign PCSrc = (branch & (unconditional | condBranch)) ?
 						((unconditional & regJumpLoc) ?
 						2'b10 : 2'b01) : 2'b00;
@@ -135,7 +134,7 @@ module condcheck (input  logic[1:0] branchType,
 						input  logic      negative, zero,
 						output logic      condBranch);
 	always_comb
-		case(branchType)
+		case(branchType) // branchType = {isZero, greaterThan}
 			2'b00: // jeqzn
 				condBranch = zero;
 			2'b01: // jneqzn
