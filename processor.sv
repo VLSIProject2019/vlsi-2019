@@ -55,8 +55,8 @@ module datapath (input  logic        ph1, ph2, reset,
 	assign WriteData = RD1;
 	
 	// instruction handling
-	flop  #(7) instrReg1(ph1, ph2, reset, MemData1, instrTemp1);
-	flop  #(8) instrReg2(ph1, ph2, reset, MemData1, instrTemp2);
+	flopr #(7) instrReg1(ph1, ph2, reset, MemData1, instrTemp1);
+	flopr #(8) instrReg2(ph1, ph2, reset, MemData1, instrTemp2);
 	mux2  #(7) instrMux1(instrTemp1, MemData1, InstrSrc, instr1);
 	mux2  #(8) instrMux2(instrTemp2, MemData2, InstrSrc, instr2);
 	// note: currently instrMux is kinda useless :)
@@ -94,7 +94,8 @@ module controller (input  logic      ph1, ph2, reset,
 	logic state, stateBar, condBranch;
 	
 	// cycle clock "FSM" (0=instr read, 1=load/write back)
-	flopr #(1) stateReg(ph1, ph2, reset, stateBar, state);
+	// note: branch instructions only require one cycle
+	flopr #(1) stateReg(ph1, ph2, reset, stateBar & ~branch, state);
 	assign stateBar = ~state;
 	
 	assign PCEnable = state;
@@ -199,6 +200,23 @@ module flop #(parameter WIDTH = 8)
 		if (ph1) q <= nextQ;
 	always_latch
 		if (ph2) nextQ <= d;
+endmodule
+
+// taken from MIPS8
+module flopr #(parameter WIDTH = 8)
+				  (input  logic ph1, ph2, reset,
+               input  logic [WIDTH-1:0] d, 
+               output logic [WIDTH-1:0] q);
+	logic[WIDTH-1:0] nextQ;
+	always_latch begin
+		if (ph1)
+			q <= nextQ;
+   end
+	always_latch begin
+		if (ph2)
+			if (reset) nextQ <= 0;
+			else       nextQ <= d;
+	end
 endmodule
 
 // taken from MIPS8
