@@ -7,9 +7,11 @@ module testbench();
 	// Processor signals
    logic  clk;
    logic  reset;
+
 	
 	// Memory interface
 	logic        MemWrite; // active high
+	wire  [15:0] MemData;
    logic [7:0]  Adr;
 	
 	// Internal Signals and Combinational Logic
@@ -25,7 +27,7 @@ module testbench();
 	assign we = !MemWrite;
 	
 	// Instantiating the processor
-   top dut(clk, reset, MemWrite, Adr, MemData);
+   top dut(clk, !clk, reset, MemWrite, Adr, MemData[14:8], MemData[7:0]);
 
 	// Instantiating the SRAM
 	sram mem(ce, oe, we, Adr, MemData);

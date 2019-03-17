@@ -3,7 +3,7 @@
 // Created Spring 2019
 
 module sram #(
-							parameter ADDR_WIDTH=16,
+							parameter ADDR_WIDTH=8,
 							parameter DATA_WIDTH=16
 						 )
 					 	(
@@ -12,12 +12,12 @@ module sram #(
 							input logic we,    // Active low write enable
 
 							input logic [ADDR_WIDTH-1:0] adr,  // Address bus
-							inout logic [DATA_WIDTH-1:0] data  // Data bus		
+							inout wire  [DATA_WIDTH-1:0] data  // Data bus		
 					 	);
 
 					 	// internal variables
-					 	reg [DATA_WIDTH-1:0] data_out;            // caching requested data
-					 	reg [DATA_WIDTH-1:0] mem [ADDR_WIDTH-1:0]; // memory
+					 	reg  [DATA_WIDTH-1:0] data_out;            // caching requested data
+					 	reg  [DATA_WIDTH-1:0] mem [63:0]; // memory
 
 					 	// Combinational logic: memory read tri-state
 						assign data = (!ce && we && !oe) ? data_out : {(DATA_WIDTH){1'bz}};
@@ -31,7 +31,7 @@ module sram #(
 
 						// Initial block to set up memory for testing
 						initial
-							$readmemh("memfile.dat", mem);
+							$readmemb("memfile.dat", mem);
 endmodule
 
 							
