@@ -28,6 +28,7 @@ module sram #(parameter ADDR_WIDTH=8,
 			data_out = mem[adr];
 
 	// Initial block to set up memory for testing
-	initial
+	initial begin
 		$readmemb("memfile.dat", mem);
+	end
 endmodule
