@@ -41,14 +41,14 @@ module testbench();
 	end
 
 	// Creating the clock
-  always
-    begin
-      clk1 <= 1; # 3; clk1 <= 0; # 2;
-      clk2 <= 1; # 3; clk2 <= 0; # 2;
-  end
-
+	always
+	begin
+		clk1 <= 1; # 3; clk1 <= 0; # 2;
+		clk2 <= 1; # 3; clk2 <= 0; # 2;
+	end
+	
 	// Executing Instructions
-	always @(negedge clk2)
+	always @(negedge clk2) 
 	begin
 		//Insert condition here (similar to Lab 10/11, need instructions first)
 	end

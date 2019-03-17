@@ -12,18 +12,17 @@ module top (input  logic        ph1, ph2, reset,
 	logic TwoRegs, ALUSub, negative, zero;
 	logic [1:0] PCSrc, RegWriteSrc;
 	logic [3:0] funct;
+	logic [7:0] WriteData;
 	
-	// workaround for inout port requirements (structural net expression)
-	wire  [7:0] MemData2_t;
-	assign MemData2 = MemData2_t;
-	//assign MemData2 = MemWrite ? MemData2_t : 8'bz;
+	// tristate for handling write data
+	assign MemData2[7:0]  = (MemWrite ? WriteData : 8'bz);
 	
 	controller c(ph1, ph2, reset, funct, negative, zero,
 					 RA1Src, PCEnable, AdrSrc, InstrSrc, RegWrite,
 					 TwoRegs, ALUSub, PCSrc, RegWriteSrc, MemWrite);
 	datapath dp(ph1, ph2, reset, PCEnable, AdrSrc, InstrSrc,
 					RA1Src, RegWrite, MemWrite, TwoRegs, ALUSub,
-					PCSrc, RegWriteSrc, MemData1, MemData2_t,
+					PCSrc, RegWriteSrc, MemData1, MemData2, WriteData,
 					Adr, negative, zero, funct);
 endmodule
 
@@ -32,7 +31,8 @@ module datapath (input  logic        ph1, ph2, reset,
 					  input  logic        RegWrite, MemWrite, TwoRegs, ALUSub,
 					  input  logic [1:0]  PCSrc, RegWriteSrc,
 					  input  logic [14:8] MemData1,
-					  inout  logic [7:0]  MemData2,
+					  input  logic [7:0]  MemData2,
+					  output logic [7:0]  WriteData,
 					  output logic [7:0]  Adr,
 					  output logic        negative, zero,
 					  output logic [3:0]  funct);
@@ -40,7 +40,6 @@ module datapath (input  logic        ph1, ph2, reset,
 	logic[7:0]  PC, PCNext, PCPlus1;
 	logic[7:0]  Result, SrcA, SrcB, Imm;
 	logic[7:0]  WD3, WD3Temp, RD1, RD2;
-	logic[7:0]  WriteData;
 	logic[2:0]  RA1, RA2, WA3;
 	logic[14:8] instrTemp1, instr1;
 	logic[7:0]  instrTemp2, instr2;
@@ -70,9 +69,6 @@ module datapath (input  logic        ph1, ph2, reset,
 	assign RA2 = instr2[4:2];
 	assign WA3 = instr1[10:8];
 	assign Imm = instr2[7:0];
-	
-	// tristate for handling write data
-	assign MemData2[7:0]  = (MemWrite ? WriteData : 8'bz);
 	
 	// zero and negative for conditional branching
 	assign negative = RD1[7];
