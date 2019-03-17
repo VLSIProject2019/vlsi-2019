@@ -15,8 +15,7 @@ module top (input  logic        ph1, ph2, reset,
 	
 	// workaround for inout port requirements (structural net expression)
 	wire  [7:0] MemData2_t;
-	assign MemData2 = MemData2_t;
-	//assign MemData2 = MemWrite ? MemData2_t : 8'bz;
+	assign MemData2_t = MemData2;
 	
 	controller c(ph1, ph2, reset, funct, negative, zero,
 					 RA1Src, PCEnable, AdrSrc, InstrSrc, RegWrite,
