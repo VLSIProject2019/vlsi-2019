@@ -55,8 +55,8 @@ module datapath (input  logic        ph1, ph2, reset,
 	assign WriteData = RD1;
 	
 	// instruction handling
-	flopr #(7) instrReg1(ph1, ph2, reset, MemData1, instrTemp1);
-	flopr #(8) instrReg2(ph1, ph2, reset, MemData1, instrTemp2);
+	flop  #(7) instrReg1(ph1, ph2, reset, MemData1, instrTemp1);
+	flop  #(8) instrReg2(ph1, ph2, reset, MemData1, instrTemp2);
 	mux2  #(7) instrMux1(instrTemp1, MemData1, InstrSrc, instr1);
 	mux2  #(8) instrMux2(instrTemp2, MemData2, InstrSrc, instr2);
 	// note: currently instrMux is kinda useless :)
@@ -201,36 +201,14 @@ module flop #(parameter WIDTH = 8)
 		if (ph2) nextQ <= d;
 endmodule
 
-module flopr #(parameter WIDTH = 8)
-				  (input  logic ph1, ph2, reset,
-               input  logic [WIDTH-1:0] d, 
-               output logic [WIDTH-1:0] q);
-	logic[WIDTH-1:0] nextQ;
-	always_latch begin
-		if (ph1)
-			if (reset) q <= 0;
-			else       q <= nextQ;
-   end
-	always_latch begin
-		if (ph2)
-			if (reset) nextQ <= 0;
-			else       nextQ <= d;
-	end
-endmodule
-
+// taken from MIPS8
 module flopenr #(parameter WIDTH = 8)
                 (input  logic ph1, ph2, reset, en,
                  input  logic [WIDTH-1:0] d, 
                  output logic [WIDTH-1:0] q);
-	logic[WIDTH-1:0] nextQ;
-	always_latch begin
-		if (ph1)
-			// if (reset)   q <= 0;
-			if (en) q <= nextQ;
-   end
-	always_latch begin
-		if (ph2)
-			if (reset) nextQ <= 0;
-			else       nextQ <= d;
-	end
+	logic [WIDTH-1:0] d2, resetval;
+	assign resetval = 0;
+	
+	mux3 #(WIDTH) enrmux(q, d, resetval, {reset, en}, d2);
+	flop #(WIDTH) f(ph1, ph2, reset, d2, q);
 endmodule
