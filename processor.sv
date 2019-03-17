@@ -120,8 +120,9 @@ module controller (input  logic      ph1, ph2, reset,
 	assign ALUSub  = funct[0];
 	
 	// writeback
-	assign MemWrite = stateBar & (funct == 4'b0010);
-	assign RegWrite = stateBar & ~branch & (funct[2] | funct[0]);
+	assign MemWrite = (state & (funct == 4'b0010)) & ~reset;
+	// ^Note: added &~reset so that first instruction can be loaded at init
+	assign RegWrite = state & ~branch & (funct[2] | funct[0]);
 	always_comb
 		if(funct[2])
 			RegWriteSrc = 2'b10; // Result
