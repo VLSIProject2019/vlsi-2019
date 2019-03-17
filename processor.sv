@@ -41,7 +41,7 @@ module datapath (input  logic        ph1, ph2, reset,
 	logic[7:0]  Result, SrcA, SrcB, Imm;
 	logic[7:0]  WD3, WD3Temp, RD1, RD2;
 	logic[7:0]  WriteData;
-	logic[3:0]  RA1, RA2, WA3;
+	logic[2:0]  RA1, RA2, WA3;
 	logic[14:8] instrTemp1, instr1;
 	logic[7:0]  instrTemp2, instr2;
 	
@@ -56,7 +56,7 @@ module datapath (input  logic        ph1, ph2, reset,
 	
 	// instruction handling
 	flopr #(7) instrReg1(ph1, ph2, reset, MemData1, instrTemp1);
-	flopr #(8) instrReg2(ph1, ph2, reset, MemData1, instrTemp2);
+	flopr #(8) instrReg2(ph1, ph2, reset, MemData2, instrTemp2);
 	mux2  #(7) instrMux1(instrTemp1, MemData1, InstrSrc, instr1);
 	mux2  #(8) instrMux2(instrTemp2, MemData2, InstrSrc, instr2);
 	// note: currently instrMux is kinda useless :)
@@ -66,7 +66,7 @@ module datapath (input  logic        ph1, ph2, reset,
 	mux3 #(8) wd3Mux(Imm, MemData2[7:0], Result, RegWriteSrc, WD3Temp);
 	flop #(8) wd3Reg(ph1, ph2, reset, WD3Temp, WD3);
 	regfile   rf(ph1, ph2, reset, RegWrite, RA1, RA2, WA3, WD3, RD1, RD2);
-	mux2 #(8) ra1Mux(instr2[7:5], instr1[10:8], RA1Src, RA1);
+	mux2 #(3) ra1Mux(instr2[7:5], instr1[10:8], RA1Src, RA1);
 	assign RA2 = instr2[4:2];
 	assign WA3 = instr1[10:8];
 	assign Imm = instr2[7:0];
@@ -101,7 +101,7 @@ module controller (input  logic      ph1, ph2, reset,
 	flopr #(1) stateReg(ph1, ph2, reset, stateBar & ~branch, state);
 	assign stateBar = ~state;
 	
-	assign PCEnable = state;
+	assign PCEnable = state | branch;
 	assign AdrSrc   = state;
 	assign InstrSrc = stateBar;
 	
@@ -109,8 +109,7 @@ module controller (input  logic      ph1, ph2, reset,
 	assign branch        = funct[3];
 	assign unconditional = funct[2];
 	assign regJumpLoc    = funct[1];
-	condcheck cc(funct[3:2], negative, zero, condBranch);
-	// funct[0] is branch, funct[1] is unconditional
+	condcheck cc(funct[1:0], negative, zero, condBranch);
 	assign PCSrc = (branch & (unconditional | condBranch)) ?
 						((unconditional & regJumpLoc) ?
 						2'b10 : 2'b01) : 2'b00;
@@ -136,7 +135,7 @@ module condcheck (input  logic[1:0] branchType,
 						input  logic      negative, zero,
 						output logic      condBranch);
 	always_comb
-		case(branchType)
+		case(branchType) // branchType = {isZero, greaterThan}
 			2'b00: // jeqzn
 				condBranch = zero;
 			2'b01: // jneqzn
@@ -151,9 +150,9 @@ module condcheck (input  logic[1:0] branchType,
 endmodule
 
 module adder #(parameter WIDTH=8)
-              (input  logic [WIDTH-1:0] a, b,
-				   input  logic cin,
-               output logic [WIDTH-1:0] y);
+					    (input  logic [WIDTH-1:0] a, b,
+						  input  logic cin,
+						  output logic [WIDTH-1:0] y);
 	assign y = a + b + cin;
 endmodule
 
