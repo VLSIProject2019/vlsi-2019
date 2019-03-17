@@ -99,7 +99,7 @@ module controller (input  logic      ph1, ph2, reset,
 	flopr #(1) stateReg(ph1, ph2, reset, stateBar & ~branch, state);
 	assign stateBar = ~state;
 	
-	assign PCEnable = state;
+	assign PCEnable = state | branch;
 	assign AdrSrc   = state;
 	assign InstrSrc = stateBar;
 	
