@@ -37,7 +37,7 @@ module testbench();
 	begin
 		// NOTE: sram module automatically initializes memory
 		// from memfile.dat
-		reset = 1; #22; reset = 0;
+		clk2 = 0; reset = 1; #22; reset = 0;
 	end
 
 	// Creating the clock
