@@ -15,7 +15,7 @@ module sram #(parameter ADDR_WIDTH=8,
 	
 	// internal variables
 	reg  [DATA_WIDTH-1:0] data_out;   // caching requested data
-	reg  [DATA_WIDTH-1:0] mem [63:0]; // memory
+	reg  [DATA_WIDTH-1:0] mem [(ADDR_WIDTH**2)-1:0]; // memory
 
 	// Combinational logic: memory read tri-state
 	assign data = (!ce && we && !oe) ? data_out : {(DATA_WIDTH){1'bz}};
