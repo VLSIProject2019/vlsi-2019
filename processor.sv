@@ -40,7 +40,6 @@ module datapath (input  logic        ph1, ph2, reset,
 	logic[7:0]  PC, PCNext, PCPlus1;
 	logic[7:0]  Result, SrcA, SrcB, Imm;
 	logic[7:0]  WD3, WD3Temp, RD1, RD2;
-	logic[7:0]  WriteData;
 	logic[2:0]  RA1, RA2, WA3;
 	logic[14:8] instrTemp1, instr1;
 	logic[7:0]  instrTemp2, instr2;
