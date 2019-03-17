@@ -5,9 +5,8 @@
 module testbench();
 	
 	// Processor signals
-   logic  clk;
+   logic  clk1, clk2;
    logic  reset;
-
 	
 	// Memory interface
 	logic        MemWrite; // active high
@@ -27,7 +26,7 @@ module testbench();
 	assign we = !MemWrite;
 	
 	// Instantiating the processor
-   top dut(clk, !clk, reset, MemWrite, Adr, MemData[14:8], MemData[7:0]);
+   top dut(clk1, clk2, reset, MemWrite, Adr, MemData[14:8], MemData[7:0]);
 
 	// Instantiating the SRAM
 	sram mem(ce, oe, we, Adr, MemData);
@@ -44,11 +43,12 @@ module testbench();
 	// Creating the clock
   always
     begin
-      clk <= 1; # 5; clk <= 0; # 5;
+      clk1 <= 1; # 3; clk1 <= 0; # 2;
+      clk2 <= 1; # 3; clk2 <= 0; # 2;
   end
 
 	// Executing Instructions
-	always @(negedge clk)
+	always @(negedge clk2)
 	begin
 		//Insert condition here (similar to Lab 10/11, need instructions first)
 	end
