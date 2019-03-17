@@ -13,12 +13,17 @@ module top (input  logic        ph1, ph2, reset,
 	logic [1:0] PCSrc, RegWriteSrc;
 	logic [3:0] funct;
 	
+	// workaround for inout port requirements (structural net expression)
+	wire  [7:0] MemData2_t;
+	assign MemData2 = MemData2_t;
+	//assign MemData2 = MemWrite ? MemData2_t : 8'bz;
+	
 	controller c(ph1, ph2, reset, funct, negative, zero,
 					 RA1Src, PCEnable, AdrSrc, InstrSrc, RegWrite,
 					 TwoRegs, ALUSub, PCSrc, RegWriteSrc, MemWrite);
 	datapath dp(ph1, ph2, reset, PCEnable, AdrSrc, InstrSrc,
 					RA1Src, RegWrite, MemWrite, TwoRegs, ALUSub,
-					PCSrc, RegWriteSrc, MemData1, MemData2,
+					PCSrc, RegWriteSrc, MemData1, MemData2_t,
 					Adr, negative, zero, funct);
 endmodule
 
@@ -31,13 +36,14 @@ module datapath (input  logic        ph1, ph2, reset,
 					  output logic [7:0]  Adr,
 					  output logic        negative, zero,
 					  output logic [3:0]  funct);
+	
 	logic[7:0]  PC, PCNext, PCPlus1;
 	logic[7:0]  Result, SrcA, SrcB, Imm;
 	logic[7:0]  WD3, RD1, RD2;
 	logic[7:0]  WriteData;
 	logic[3:0]  RA1, RA2, WA3;
 	logic[14:8] instrTemp1, instr1;
-	logic[7:0] instrTemp2, instr2;
+	logic[7:0]  instrTemp2, instr2;
 	
 	// next PC logic
 	adder   #(8) pcAdd(PC, 8'b1, 1'b0, PCPlus1);
