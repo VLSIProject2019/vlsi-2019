@@ -3,8 +3,8 @@
 // Created Spring 2019
 
 module sram #(
-							parameter ADDR_WIDTH=16;
-							parameter DATA_WIDTH=16;
+							parameter ADDR_WIDTH=16,
+							parameter DATA_WIDTH=16
 						 )
 					 	(
 							input logic ce,    // Active low chip enable
@@ -17,21 +17,17 @@ module sram #(
 
 					 	// internal variables
 					 	reg [DATA_WIDTH-1:0] data_out;            // caching requested data
-					 	reg [DATA_WIDTH-1:0] mem [ADDR_WITH-1:0]; // memory
+					 	reg [DATA_WIDTH-1:0] mem [ADDR_WIDTH-1:0]; // memory
 
-					 	// Combinational logic
-					 	always_comb
-							if (!ce && we && !oe) data = data_out;
-							else                  data = DATA_WIDTH'bz;
+					 	// Combinational logic: memory read tri-state
+						assign data = (!ce && we && !oe) ? data_out : {(DATA_WIDTH){1'bz}};
 
 					 	// Memory Read / Write Latches
 						always_latch
-						begin:
-							if (!cs && !we && oe) // if writing data
+							if (!ce && !we && oe) // if writing data
 								mem[adr] = data;
-							if (!cs && we && !oe) //if reading data
+							else if (!ce && we && !oe) //if reading data
 								data_out = mem[adr];
-						end
 
 						// Initial block to set up memory for testing
 						initial

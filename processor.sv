@@ -93,6 +93,8 @@ module controller (input  logic      ph1, ph2, reset,
 					    output logic[1:0] PCSrc, RegWriteSrc,
 						 output logic      MemWrite);
 	logic state, stateBar, condBranch;
+	logic branch, unconditional, regJumpLoc;
+
 	
 	// cycle clock "FSM" (0=instr read, 1=load/write back)
 	// note: branch instructions only require one cycle
@@ -104,7 +106,6 @@ module controller (input  logic      ph1, ph2, reset,
 	assign InstrSrc = stateBar;
 	
 	// branch
-	logic branch, unconditional, regJumpLoc;
 	assign branch        = funct[3];
 	assign unconditional = funct[2];
 	assign regJumpLoc    = funct[1];
