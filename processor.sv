@@ -41,7 +41,7 @@ module datapath (input  logic        ph1, ph2, reset,
 	logic[7:0]  Result, SrcA, SrcB, Imm;
 	logic[7:0]  WD3, WD3Temp, RD1, RD2;
 	logic[7:0]  WriteData;
-	logic[3:0]  RA1, RA2, WA3;
+	logic[2:0]  RA1, RA2, WA3;
 	logic[14:8] instrTemp1, instr1;
 	logic[7:0]  instrTemp2, instr2;
 	
@@ -56,7 +56,7 @@ module datapath (input  logic        ph1, ph2, reset,
 	
 	// instruction handling
 	flopr #(7) instrReg1(ph1, ph2, reset, MemData1, instrTemp1);
-	flopr #(8) instrReg2(ph1, ph2, reset, MemData1, instrTemp2);
+	flopr #(8) instrReg2(ph1, ph2, reset, MemData2, instrTemp2);
 	mux2  #(7) instrMux1(instrTemp1, MemData1, InstrSrc, instr1);
 	mux2  #(8) instrMux2(instrTemp2, MemData2, InstrSrc, instr2);
 	// note: currently instrMux is kinda useless :)
@@ -150,9 +150,9 @@ module condcheck (input  logic[1:0] branchType,
 endmodule
 
 module adder #(parameter WIDTH=8)
-              (input  logic [WIDTH-1:0] a, b,
-				   input  logic cin,
-               output logic [WIDTH-1:0] y);
+					    (input  logic [WIDTH-1:0] a, b,
+						  input  logic cin,
+						  output logic [WIDTH-1:0] y);
 	assign y = a + b + cin;
 endmodule
 
