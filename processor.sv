@@ -39,7 +39,7 @@ module datapath (input  logic        ph1, ph2, reset,
 	
 	logic[7:0]  PC, PCNext, PCPlus1;
 	logic[7:0]  Result, SrcA, SrcB, Imm;
-	logic[7:0]  WD3, RD1, RD2;
+	logic[7:0]  WD3, WD3Temp, RD1, RD2;
 	logic[7:0]  WriteData;
 	logic[3:0]  RA1, RA2, WA3;
 	logic[14:8] instrTemp1, instr1;
@@ -63,7 +63,8 @@ module datapath (input  logic        ph1, ph2, reset,
 	assign funct = instr1[14:11];
 	
 	// register read/write logic
-	mux3 #(8) wd3Mux(Imm, MemData2[7:0], Result, RegWriteSrc, WD3);
+	mux3 #(8) wd3Mux(Imm, MemData2[7:0], Result, RegWriteSrc, WD3Temp);
+	flop #(8) wd3Reg(ph1, ph2, reset, WD3Temp, WD3);
 	regfile   rf(ph1, ph2, reset, RegWrite, RA1, RA2, WA3, WD3, RD1, RD2);
 	mux2 #(8) ra1Mux(instr2[7:5], instr1[10:8], RA1Src, RA1);
 	assign RA2 = instr2[4:2];
