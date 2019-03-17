@@ -154,23 +154,26 @@ module adder #(parameter WIDTH=8)
 	assign y = a + b + cin;
 endmodule
 
-module regfile(input  logic       ph1, ph2, reset,
-               input  logic       we3, 
-               input  logic [3:0] ra1, ra2, wa3, 
-               input  logic [7:0] wd3,
-               output logic [7:0] rd1, rd2);
+// note: regfile copied from MIPS8 design
+module regfile #(parameter WIDTH = 8)
+                (input  logic     ph1, ph2, reset,
+                 input  logic     we3,
+                 input  logic [2:0] ra1, ra2, wa3,
+                 input  logic [WIDTH-1:0] wd3,
+                 output logic [WIDTH-1:0] rd1, rd2);
+					  
 	// note: can't read PC in HMMM
-	logic [7:0] rf[7:0];
-	flopenr reg0(ph1, ph2, reset, we3&(wa3==4'd0), wd3, rf[0]);
-	flopenr reg1(ph1, ph2, reset, we3&(wa3==4'd1), wd3, rf[1]);
-	flopenr reg2(ph1, ph2, reset, we3&(wa3==4'd2), wd3, rf[2]);
-	flopenr reg3(ph1, ph2, reset, we3&(wa3==4'd3), wd3, rf[3]);
-	flopenr reg4(ph1, ph2, reset, we3&(wa3==4'd4), wd3, rf[4]);
-	flopenr reg5(ph1, ph2, reset, we3&(wa3==4'd5), wd3, rf[5]);
-	flopenr reg6(ph1, ph2, reset, we3&(wa3==4'd6), wd3, rf[6]);
-	flopenr reg7(ph1, ph2, reset, we3&(wa3==4'd7), wd3, rf[7]);
-	assign rd1 = rf[ra1];
-	assign rd2 = rf[ra2];
+   // three ported register file
+   // read two ports combinationally
+   // write third port during phase2 (second half-cycle)
+	
+   logic [WIDTH-1:0] RAM [7:0];
+	
+   always_latch
+		if (ph2 & we3) RAM[wa3] <= wd3;
+
+	assign rd1 = RAM[ra1];
+	assign rd2 = RAM[ra2];
 endmodule
 
 module mux2 #(parameter WIDTH = 8)
