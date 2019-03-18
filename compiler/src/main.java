@@ -16,6 +16,10 @@ public class main {
 
         String assemblyCode;
         while ((assemblyCode = br.readLine()) != null) {
+            // System.out.println("|" + assemblyCode + "|");
+            if (assemblyCode.trim().equals("") || (assemblyCode.charAt(0) == '/' && assemblyCode.charAt(1) == '/')) {
+                continue;
+            }
             System.out.println(assemblyCode);
             String machineCode = "0" + compile(assemblyCode);
             System.out.println(machineCode);
@@ -95,8 +99,8 @@ public class main {
 
     private static String parseImm(String assembly) {
         String mc = Integer.toBinaryString(Integer.valueOf(assembly));
-        if (Integer.valueOf(assembly) > 8) {
-            System.out.printf("Immediate value is outside of range 0 to 2^8-1 or -2^7 to -2^7-1:" + assembly);
+        if (mc.length() > 8) {
+            System.out.println("Immediate value is outside of range 0 to 2^8-1 or -2^7 to -2^7-1:" + assembly);
             return "xxxxxxxx";
         }
         while (mc.length() < 8) {
