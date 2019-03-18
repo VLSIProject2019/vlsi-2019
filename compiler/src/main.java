@@ -16,6 +16,7 @@ public class main {
 
         String assemblyCode;
         while ((assemblyCode = br.readLine()) != null) {
+            System.out.println(assemblyCode);
             String machineCode = "0" + compile(assemblyCode);
             System.out.println(machineCode);
             writer.println(machineCode);
@@ -24,7 +25,7 @@ public class main {
         writer.close();
     }
 
-    private void setupDict() {
+    private static void setupDict() {
         functions.put("copy",   "d0100"); // data
         functions.put("add",    "d0110");
         functions.put("neg",    "d0101");
@@ -51,7 +52,7 @@ public class main {
             System.out.println("Function " + funct + " not found.");
             return "xxxx" + nop();
         }
-        String functMC = assembly[0].substring(1);
+        String functMC = funct.substring(1);
         switch (funct.charAt(0)) {
             case 'd':
                 return functMC + dataProcessing(assembly);
@@ -92,11 +93,23 @@ public class main {
         return mc;
     }
 
+    private static String parseImm(String assembly) {
+        String mc = Integer.toBinaryString(Integer.valueOf(assembly));
+        if (Integer.valueOf(assembly) > 8) {
+            System.out.printf("Immediate value is outside of range 0 to 2^8-1 or -2^7 to -2^7-1:" + assembly);
+            return "xxxxxxxx";
+        }
+        while (mc.length() < 8) {
+            mc = "0" + mc;
+        }
+        return mc;
+    }
+
     private static String dataProcessing(String[] assembly) {
         String rX = parseReg(assembly[1]);
         String rY = parseReg(assembly[2]);
         String rZ = "000";
-        if(assembly[0].charAt(3) == '1') {
+        if(functions.get(assembly[0]).charAt(3) == '1') {
             // two registers
             rZ = parseReg(assembly[3]);
         }
@@ -104,20 +117,34 @@ public class main {
     }
 
     private static String setn(String[] assembly) {
-        
+        String rX = parseReg(assembly[1]);
+        String N  = parseImm(assembly[2]);
+        return rX + N;
     }
 
     private static String memory(String[] assembly) {
-
+        String rX = parseReg(assembly[1]);
+        String rY = parseReg(assembly[2]);
+        if (functions.get(assembly[0]).charAt(4) == '1') {
+            // loadr
+            return rX + "000" + rY + "00";
+        } else {
+            // storer
+            return "000" + rX + rY + "00";
+        }
     }
 
     private static String branchUncond(String[] assembly) {
-
+        String N = parseImm(assembly[1]);
+        return "000" + N;
     }
     private static String branchToReg(String[] assembly) {
-
+        String rX = parseReg(assembly[1]);
+        return rX + "00000000";
     }
     private static String branch(String[] assembly) {
-
+        String rX = parseReg(assembly[1]);
+        String N  = parseImm(assembly[2]);
+        return rX + N;
     }
 }
