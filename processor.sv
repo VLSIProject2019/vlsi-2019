@@ -21,14 +21,14 @@ module top (input  logic        ph1, ph2, reset,
 					 RA1Src, PCEnable, AdrSrc, InstrSrc, RegWrite,
 					 TwoRegs, ALUSub, PCSrc, RegWriteSrc, MemWrite);
 	datapath dp(ph1, ph2, reset, PCEnable, AdrSrc, InstrSrc,
-					RA1Src, RegWrite, MemWrite, TwoRegs, ALUSub, RegWLoadSrc,
+					RA1Src, RegWrite, TwoRegs, ALUSub, RegWLoadSrc,
 					PCSrc, RegWriteSrc, MemData1, MemData2, WriteData,
 					Adr, negative, zero, funct);
 endmodule
 
 module datapath (input  logic        ph1, ph2, reset,
-					  input  logic        PCEnable, AdrSrc, InstrSrc, RA1Src, RegWrite,
-					  input  logic        MemWrite, TwoRegs, ALUSub, RegWLoadSrc,
+					  input  logic        PCEnable, AdrSrc, InstrSrc, RA1Src,
+					  input  logic        RegWrite, TwoRegs, ALUSub, RegWLoadSrc,
 					  input  logic [1:0]  PCSrc, RegWriteSrc,
 					  input  logic [14:8] MemData1,
 					  input  logic [7:0]  MemData2,
