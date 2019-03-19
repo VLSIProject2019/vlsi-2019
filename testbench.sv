@@ -50,6 +50,12 @@ module testbench();
 	// Executing Instructions
 	always @(negedge clk2) 
 	begin
-		//Insert condition here (similar to Lab 10/11, need instructions first)
+		if(MemWrite) begin
+			if(MemData === 16'bzzzzzzzz00101101 && dut.dp.PC === 8'd32)
+				$display("Test Successful!");
+			else
+				$display("Test Failed on Line %d with MemData = %b", dut.dp.PC, MemData);
+			$stop;
+		end
 	end
 endmodule

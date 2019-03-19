@@ -19,7 +19,7 @@ Jnezn R1 18
 Setn R4 0
 Jnezn R2 20
 Setn R4 0
-Jnezn R2 30
+Jnezn R6 30
 Jgtzn R1 23
 Setn R4 0
 Jgtzn R2 30
