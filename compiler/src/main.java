@@ -112,10 +112,13 @@ public class main {
     private static String dataProcessing(String[] assembly) {
         String rX = parseReg(assembly[1]);
         String rY = parseReg(assembly[2]);
-        String rZ = "000";
+        String rZ;
         if(functions.get(assembly[0]).charAt(3) == '1') {
             // two registers
             rZ = parseReg(assembly[3]);
+        } else {
+            rZ = rY;
+            rY = "000";
         }
         return rX + rY + rZ + "00";
     }
