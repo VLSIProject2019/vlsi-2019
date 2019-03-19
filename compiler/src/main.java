@@ -38,9 +38,9 @@ public class main {
         functions.put("setn",   "s0001"); // setn
         functions.put("loadr",  "m0011"); // memory
         functions.put("storer", "m0010");
-        functions.put("jumpn",  "u1000"); // branch uncond
+        functions.put("jumpn",  "u1100"); // branch uncond
         functions.put("jumpr",  "r1110"); // branch to reg
-        functions.put("jeqzn",  "b1ooo"); // branch
+        functions.put("jeqzn",  "b1000"); // branch
         functions.put("jnezn",  "b1001");
         functions.put("jgtzn",  "b1010");
         functions.put("jltzn",  "b1011");
