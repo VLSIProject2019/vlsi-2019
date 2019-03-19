@@ -1,16 +1,33 @@
-// program to test
-Add R1 R1 R0
-Sub R0 R1 R2
-Copy R7 R6
-Neg R6 R5
-Nop
-
-Setn R4 19
-Loadr R3 R4
-Storer R3 R4
-Jumpn 178
-Jumpr R3
-Jeqzn R1 22
-Jnezn R1 40
-Jgtzn R0 17
-Jltzn R0 244
+//from TestProgram.xlsx file
+Setn R0 40
+Loadr R1 R0
+Copy R2 R1
+Neg R2 R2
+Add R3 R0 R2
+Sub R4 R0 R2
+Jumpn 8
+Setn R4 0
+Jeqzn R6 13
+Setn R4 0
+Jeqzn R6 13
+Setn R4 0
+Jeqzn R1 29
+Jeqzn R2 29
+Jnezn R1 17
+Setn R4 0
+Jnezn R2 19
+Setn R4 0
+Jnezn R2 29
+Jgtzn R1 22
+Setn R4 0
+Jgtzn R2 29
+Jgtzn R6 29
+Jltzn R2 26
+Setn R4 0
+Jltzn R1 29
+Jltzn R1 29
+Jltzn R6 29
+Jumpn 30
+Setn R4 0
+Setn R7 41
+Storer R4 R7

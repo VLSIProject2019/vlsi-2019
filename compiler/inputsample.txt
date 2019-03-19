@@ -1,0 +1,16 @@
+// program to test
+Add R1 R1 R0
+Sub R0 R1 R2
+Copy R7 R6
+Neg R6 R5
+Nop
+
+Setn R4 19
+Loadr R3 R4
+Storer R3 R4
+Jumpn 178
+Jumpr R3
+Jeqzn R1 22
+Jnezn R1 40
+Jgtzn R0 17
+Jltzn R0 244
