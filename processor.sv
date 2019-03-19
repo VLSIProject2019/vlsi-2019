@@ -9,7 +9,7 @@ module top (input  logic        ph1, ph2, reset,
 				inout  logic [7:0]  MemData2);
 	
 	logic PCEnable, AdrSrc, RA1Src, InstrSrc, RegWrite;
-	logic TwoRegs, ALUSub, negative, zero;
+	logic TwoRegs, ALUSub, negative, zero, RegWLoadSrc;
 	logic [1:0] PCSrc, RegWriteSrc;
 	logic [3:0] funct;
 	logic [7:0] WriteData;
@@ -17,18 +17,18 @@ module top (input  logic        ph1, ph2, reset,
 	// tristate for handling write data
 	assign MemData2[7:0]  = (MemWrite ? WriteData : 8'bz);
 	
-	controller c(ph1, ph2, reset, funct, negative, zero,
+	controller c(ph1, ph2, reset, funct, negative, zero, RegWLoadSrc,
 					 RA1Src, PCEnable, AdrSrc, InstrSrc, RegWrite,
 					 TwoRegs, ALUSub, PCSrc, RegWriteSrc, MemWrite);
 	datapath dp(ph1, ph2, reset, PCEnable, AdrSrc, InstrSrc,
-					RA1Src, RegWrite, MemWrite, TwoRegs, ALUSub,
+					RA1Src, RegWrite, MemWrite, TwoRegs, ALUSub, RegWLoadSrc,
 					PCSrc, RegWriteSrc, MemData1, MemData2, WriteData,
 					Adr, negative, zero, funct);
 endmodule
 
 module datapath (input  logic        ph1, ph2, reset,
-					  input  logic        PCEnable, AdrSrc, InstrSrc, RA1Src,
-					  input  logic        RegWrite, MemWrite, TwoRegs, ALUSub,
+					  input  logic        PCEnable, AdrSrc, InstrSrc, RA1Src, RegWrite,
+					  input  logic        MemWrite, TwoRegs, ALUSub, RegWLoadSrc,
 					  input  logic [1:0]  PCSrc, RegWriteSrc,
 					  input  logic [14:8] MemData1,
 					  input  logic [7:0]  MemData2,
@@ -38,8 +38,8 @@ module datapath (input  logic        ph1, ph2, reset,
 					  output logic [3:0]  funct);
 	
 	logic[7:0]  PC, PCNext, PCPlus1;
-	logic[7:0]  Result, SrcA, SrcB, Imm;
-	logic[7:0]  WD3, WD3Temp, RD1, RD2;
+	logic[7:0]  Result, SrcA, SrcB, Imm, WD3;
+	logic[7:0]  WD3Temp, WD3Temp2, RD1, RD2;
 	logic[2:0]  RA1, RA2, WA3;
 	logic[14:8] instrTemp1, instr1;
 	logic[7:0]  instrTemp2, instr2;
@@ -63,7 +63,8 @@ module datapath (input  logic        ph1, ph2, reset,
 	
 	// register read/write logic
 	mux3 #(8) wd3Mux(Imm, MemData2[7:0], Result, RegWriteSrc, WD3Temp);
-	flop #(8) wd3Reg(ph1, ph2, reset, WD3Temp, WD3);
+	flop #(8) wd3Reg(ph1, ph2, reset, WD3Temp, WD3Temp2);
+	mux2 #(8) loadMux(WD3Temp2, WD3Temp, RegWLoadSrc, WD3);
 	regfile   rf(ph1, ph2, reset, RegWrite, RA1, RA2, WA3, WD3, RD1, RD2);
 	mux2 #(3) ra1Mux(instr2[7:5], instr1[10:8], RA1Src, RA1);
 	assign RA2 = instr2[4:2];
@@ -84,13 +85,12 @@ endmodule
 module controller (input  logic      ph1, ph2, reset,
 						 input  logic[3:0] funct,
 						 input  logic      negative, zero,
-						 output logic      RA1Src, PCEnable, AdrSrc, InstrSrc,
-					    output logic      RegWrite, TwoRegs, ALUSub,
+						 output logic      RegWLoadSrc, RA1Src, PCEnable, AdrSrc,
+					    output logic      InstrSrc, RegWrite, TwoRegs, ALUSub,
 					    output logic[1:0] PCSrc, RegWriteSrc,
 						 output logic      MemWrite);
 	logic state, stateBar, condBranch;
 	logic branch, unconditional, regJumpLoc;
-
 	
 	// cycle clock "FSM" (0=instr read, 1=load/write back)
 	// note: branch instructions only require one cycle
@@ -126,6 +126,7 @@ module controller (input  logic      ph1, ph2, reset,
 			RegWriteSrc = 2'b01; // ReadData
 		else
 			RegWriteSrc = 2'b00; // Imm
+	assign RegWLoadSrc = (funct == 4'b0011);
 endmodule
 
 module condcheck (input  logic[1:0] branchType,
