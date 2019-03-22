@@ -103,7 +103,7 @@ module controller (input  logic       ph1, ph2, reset,
 	
 	assign PCEnable = state | branch;
 	assign AdrSrc   = state;
-	assign InstrSrc = stateBar;
+	assign InstrSrc = ~reset & stateBar;
 	
 	// branch
 	assign branch        = funct[3];
