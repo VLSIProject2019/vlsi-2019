@@ -5,7 +5,7 @@
 module top (input  logic        ph1, ph2, reset,
 				output logic        MemWrite,
 				output logic [7:0]  Adr,
-				input  logic [14:8] MemData1,
+				inout  logic [14:8] Instr,
 				inout  logic [7:0]  MemData2);
 	
 	logic PCEnable, AdrSrc, RA1Src, InstrSrc, RegWrite;
@@ -15,12 +15,13 @@ module top (input  logic        ph1, ph2, reset,
 	logic [14:8] instr1;
 	
 	// tristate for handling write data
+	assign MemData1[14:8]  = (MemWrite ? Instr : 7'bz);
 	assign MemData2[7:0]  = (MemWrite ? WriteData : 8'bz);
 	
 	controller c(ph1, ph2, reset, negative, zero, RegWLoadSrc,
 					 RA1Src, PCEnable, AdrSrc, InstrSrc, RegWrite,
 					 TwoRegs, ALUSub, PCSrc, RegWriteSrc, MemWrite,
-					 MemData1, instr1);
+					 Instr, instr1);
 	datapath dp(ph1, ph2, reset, PCEnable, AdrSrc, InstrSrc,
 					RA1Src, RegWrite, MemWrite, TwoRegs, ALUSub, RegWLoadSrc,
 					PCSrc, RegWriteSrc, instr1[10:8], MemData2, WriteData,
