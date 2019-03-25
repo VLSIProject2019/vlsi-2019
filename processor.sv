@@ -15,7 +15,7 @@ module top (input  logic        ph1, ph2, reset,
 	logic [14:8] instr1;
 	
 	// tristate for handling write data
-	assign MemData1[14:8]  = (MemWrite ? Instr : 7'bz);
+	assign MemData1[14:8]  = (MemWrite ? Instr : 7'b0);
 	assign MemData2[7:0]  = (MemWrite ? WriteData : 8'bz);
 	
 	controller c(ph1, ph2, reset, negative, zero, RegWLoadSrc,
