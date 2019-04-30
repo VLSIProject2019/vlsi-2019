@@ -1,0 +1,105 @@
+// Library - muddlib11, Cell - fulladder, View - cmos_sch
+// LAST TIME SAVED: Feb 16 22:56:15 2012
+// NETLIST TIME: Mar 25 04:22:45 2019
+`timescale 1ns / 100ps 
+
+module fulladder ( cout, s, a, b, c );
+
+output  cout, s;
+
+input  a, b, c;
+
+
+
+specify 
+    specparam CDS_LIBNAME  = "muddlib11";
+    specparam CDS_CELLNAME = "fulladder";
+    specparam CDS_VIEWNAME = "cmos_sch";
+endspecify
+
+`switch default
+nmos #(0.1)   (* const real width = 2.400, length = 0.600; *) M13(
+     cout, cds_globals.gnd_, coutb);
+`switch default
+nmos #(0.1)   (* const real width = 2.400, length = 0.600; *) M14(
+     net44, cds_globals.gnd_, a);
+`switch default
+nmos #(0.1)   (* const real width = 2.400, length = 0.600; *) M15(
+     net44, cds_globals.gnd_, b);
+`switch default
+nmos #(0.1)   (* const real width = 2.400, length = 0.600; *) M16(
+     net38, cds_globals.gnd_, a);
+`switch default
+nmos #(0.1)   (* const real width = 2.400, length = 0.600; *) M17(
+     net35, cds_globals.gnd_, a);
+`switch default
+nmos #(0.1)   (* const real width = 2.400, length = 0.600; *) M18(
+     net35, cds_globals.gnd_, b);
+`switch default
+nmos #(0.1)   (* const real width = 2.400, length = 0.600; *) M19(
+     net35, cds_globals.gnd_, c);
+`switch default
+nmos #(0.1)   (* const real width = 2.400, length = 0.600; *) M20(
+     net22, cds_globals.gnd_, a);
+`switch default
+nmos #(0.1)   (* const real width = 2.400, length = 0.600; *) M21(
+     net23, net22, b);
+`switch default
+nmos #(0.1)   (* const real width = 2.400, length = 0.600; *) M22(
+     net11, net23, c);
+`switch default
+nmos #(0.1)   (* const real width = 2.400, length = 0.600; *) M23(
+     coutb, net38, b);
+`switch default
+nmos #(0.1)   (* const real width = 2.400, length = 0.600; *) M24(
+     coutb, net44, c);
+`switch default
+nmos #(0.1)   (* const real width = 2.400, length = 0.600; *) M25(
+     net11, net35, coutb);
+`switch default
+nmos #(0.1)   (* const real width = 2.400, length = 0.600; *) M27( s,
+     cds_globals.gnd_, net11);
+`switch default
+pmos #(0.1)   (* const real width = 4.800, length = 0.600; *) M0(
+     net89, cds_globals.vdd_, a);
+`switch default
+pmos #(0.1)   (* const real width = 4.800, length = 0.600; *) M1(
+     net89, cds_globals.vdd_, b);
+`switch default
+pmos #(0.1)   (* const real width = 4.800, length = 0.600; *) M2(
+     net58, cds_globals.vdd_, a);
+`switch default
+pmos #(0.1)   (* const real width = 4.800, length = 0.600; *) M3(
+     net80, cds_globals.vdd_, a);
+`switch default
+pmos #(0.1)   (* const real width = 4.800, length = 0.600; *) M4(
+     net80, cds_globals.vdd_, b);
+`switch default
+pmos #(0.1)   (* const real width = 4.800, length = 0.600; *) M5(
+     net80, cds_globals.vdd_, c);
+`switch default
+pmos #(0.1)   (* const real width = 4.800, length = 0.600; *) M6(
+     net67, cds_globals.vdd_, a);
+`switch default
+pmos #(0.1)   (* const real width = 4.800, length = 0.600; *) M7(
+     net64, net67, b);
+`switch default
+pmos #(0.1)   (* const real width = 4.800, length = 0.600; *) M8(
+     net11, net64, c);
+`switch default
+pmos #(0.1)   (* const real width = 4.800, length = 0.600; *) M9(
+     net11, net80, coutb);
+`switch default
+pmos #(0.1)   (* const real width = 4.800, length = 0.600; *) M10(
+     coutb, net58, b);
+`switch default
+pmos #(0.1)   (* const real width = 4.800, length = 0.600; *) M11(
+     coutb, net89, c);
+`switch default
+pmos #(0.1)   (* const real width = 4.800, length = 0.600; *) M12(
+     cout, cds_globals.vdd_, coutb);
+`switch default
+pmos #(0.1)   (* const real width = 4.800, length = 0.600; *) M26( s,
+     cds_globals.vdd_, net11);
+
+endmodule

@@ -1,0 +1,27 @@
+// Library - muddlib11, Cell - inv_1x, View - cmos_sch
+// LAST TIME SAVED: Feb 16 22:56:15 2012
+// NETLIST TIME: Mar 25 03:16:48 2019
+`timescale 1ns / 100ps 
+
+module inv_1x ( y, a );
+
+output  y;
+
+input  a;
+
+
+
+specify 
+    specparam CDS_LIBNAME  = "muddlib11";
+    specparam CDS_CELLNAME = "inv_1x";
+    specparam CDS_VIEWNAME = "cmos_sch";
+endspecify
+
+`switch default
+pmos #(0.1)   (* const real width = 3.000, length = 0.600; *) M1( y,
+     cds_globals.vdd_, a);
+`switch default
+nmos #(0.1)   (* const real width = 2.100, length = 0.600; *) M0( y,
+     cds_globals.gnd_, a);
+
+endmodule

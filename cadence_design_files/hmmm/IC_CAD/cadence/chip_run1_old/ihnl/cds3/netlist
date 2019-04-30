@@ -1,0 +1,33 @@
+// Library - controller_cn, Cell - aludec, View - schematic
+// LAST TIME SAVED: Feb 23 19:28:46 2019
+// NETLIST TIME: Feb 27 18:23:47 2019
+`timescale 1ns / 100ps 
+
+module aludec ( alucontrol, aluop, funct );
+
+
+
+output [2:0]  alucontrol;
+
+input [1:0]  aluop;
+input [5:0]  funct;
+
+
+
+specify 
+    specparam CDS_LIBNAME  = "controller_cn";
+    specparam CDS_CELLNAME = "aludec";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+
+nand2_1x I4 ( alucontrol[1], aluop[1], net020);
+nand2_1x I2 ( net13, funct[1], aluop[1]);
+nand2_1x I1 ( net11, a1bar, aluop[0]);
+nand2_1x I0 ( alucontrol[2], net11, net13);
+inv_1x I5 ( net020, net019);
+inv_1x I3 ( a1bar, aluop[1]);
+nor2_1x I8 ( net018, funct[0], funct[3]);
+nor2_1x I7 ( alucontrol[0], net018, a1bar);
+nor2_1x I6 ( net019, funct[0], funct[2]);
+
+endmodule

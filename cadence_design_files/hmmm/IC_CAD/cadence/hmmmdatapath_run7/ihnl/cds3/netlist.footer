@@ -1,0 +1,5 @@
+flop_dp_1x flop_dp_1x[7:0] ( q[7:0], d[7:0], net20, net24, net21,
+     net22);
+clkinvbufdual_4x I1 ( net24, net20, net22, net21, ph1, ph2);
+
+endmodule

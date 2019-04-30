@@ -1,0 +1,52 @@
+// Verilog HDL and netlist files of
+// "HMMM controller schematic"
+
+
+// alias module. For internal use only.
+hdlFilesDir/cds_alias.v
+
+// Netlisted models
+
+// netlist file - muddlib11, flopenr_dp_1x, cmos_sch.
+ihnl/cds0/netlist
+// netlist file - muddlib11, clkinvbuf_4x, cmos_sch.
+ihnl/cds1/netlist
+// netlist file - muddlib11, clkinvbufdual_4x, schematic.
+ihnl/cds2/netlist
+// netlist file - muddlib11, inv_4x, cmos_sch.
+ihnl/cds3/netlist
+// netlist file - muddlib11, invbuf_4x, schematic.
+ihnl/cds4/netlist
+// netlist file - wordlib8, flopenr_1x_8, schematic.
+ihnl/cds5/netlist
+// netlist file - muddlib11, mux2_dp_1x, cmos_sch.
+ihnl/cds6/netlist
+// netlist file - wordlib8, mux2_1x_8, schematic.
+ihnl/cds7/netlist
+// netlist file - muddlib11, inv_1x, cmos_sch.
+ihnl/cds8/netlist
+// netlist file - muddlib11, and2_1x, cmos_sch.
+ihnl/cds9/netlist
+// netlist file - muddlib11, or2_1x, cmos_sch.
+ihnl/cds10/netlist
+// netlist file - muddlib11, nor2_1x, cmos_sch.
+ihnl/cds11/netlist
+// netlist file - muddlib11, nor3_1x, cmos_sch.
+ihnl/cds12/netlist
+// netlist file - muddlib11, mux2_c_1x, cmos_sch.
+ihnl/cds13/netlist
+// netlist file - muddlib11, mux4_dp_1x, cmos_sch.
+ihnl/cds14/netlist
+// netlist file - HMMM, condcheck, schematic.
+ihnl/cds15/netlist
+// netlist file - muddlib11, buf_1x, cmos_sch.
+ihnl/cds16/netlist
+// netlist file - HMMM, controller, schematic.
+ihnl/cds17/netlist
+
+
+// End HDL models
+
+// globals file 
+hdlFilesDir/cds_globals.v
+

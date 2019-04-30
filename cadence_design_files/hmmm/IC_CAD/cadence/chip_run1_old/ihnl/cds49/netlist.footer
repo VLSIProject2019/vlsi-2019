@@ -1,0 +1,20 @@
+nmos4 N0 ( cds_globals.gnd_, net36, cds_globals.gnd_,
+     cds_globals.gnd_);
+nmos4 N1 ( cds_globals.gnd_, net36, OEB, cds_globals.gnd_);
+nmos4 N2 ( cds_globals.gnd_, pad, net36, cds_globals.gnd_);
+nmos4 N3 ( cds_globals.gnd_, DataInB, pad, cds_globals.gnd_);
+nmos4 N4 ( cds_globals.gnd_, DataIn, DataInB, cds_globals.gnd_);
+nmos4 N5 ( cds_globals.gnd_, net51, OE, net36);
+nmos4 N6 ( cds_globals.gnd_, OEB, cds_globals.gnd_, cds_globals.gnd_);
+nmos4 N7 ( cds_globals.gnd_, OE, OEB, cds_globals.gnd_);
+pmos4 P0 ( cds_globals.vdd_, net51, cds_globals.gnd_,
+     cds_globals.vdd_);
+pmos4 P1 ( cds_globals.vdd_, net51, OE, cds_globals.vdd_);
+pmos4 P2 ( cds_globals.vdd_, pad, net51, cds_globals.vdd_);
+pmos4 P3 ( cds_globals.vdd_, DataInB, pad, cds_globals.vdd_);
+pmos4 P4 ( cds_globals.vdd_, DataIn, DataInB, cds_globals.vdd_);
+pmos4 P7 ( cds_globals.vdd_, net36, OEB, net51);
+pmos4 P8 ( cds_globals.vdd_, OEB, cds_globals.gnd_, cds_globals.vdd_);
+pmos4 P9 ( cds_globals.vdd_, OE, OEB, cds_globals.vdd_);
+
+endmodule

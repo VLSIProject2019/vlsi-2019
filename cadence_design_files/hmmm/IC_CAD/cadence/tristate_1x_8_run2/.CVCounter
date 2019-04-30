@@ -1,0 +1,15 @@
+cellViewCounterTable = makeTable('cellViewCounterTableType nil)
+cellViewCounterTable['("HMMM" "tristate_1x" "symbol" )] =  138
+cellViewCounterTable['("muddlib11" "inv_1x" "cmos_sch" )] =  123
+cellViewCounterTable['("UofU_Analog_Parts" "pmos" "symbol" )] =  43
+cellViewCounterTable['("UofU_Analog_Parts" "nmos" "symbol" )] =  42
+cellViewCounterTable['("HMMM" "tristateInvCore" "symbol" )] =  125
+cellViewCounterTable['("HMMM" "tristateInvCore" "cmos_sch" )] =  1351
+cellViewCounterTable['("HMMM" "tristate_1x_8" "schematic" )] =  2415
+cellViewCounterTable['("basic" "ipin" "symbol" )] =  19
+cellViewCounterTable['("HMMM" "tristate_1x" "schematic" )] =  703
+cellViewCounterTable['("muddlib11" "inv_1x" "symbol" )] =  40
+cellViewCounterTable['("HMC_Sheets_8ths" "Asize" "symbol" )] =  57
+cellViewCounterTable['("basic" "opin" "symbol" )] =  19
+cellViewCounterTable['("UofU_Analog_Parts" "vdd" "symbol" )] =  20
+cellViewCounterTable['("UofU_Analog_Parts" "gnd" "symbol" )] =  19

@@ -1,0 +1,4 @@
+nor2 I0 ( ybar, b, a);
+inv I1 ( y, ybar);
+
+endmodule

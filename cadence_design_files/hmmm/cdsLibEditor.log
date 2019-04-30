@@ -1,0 +1,12 @@
+\o Program:		@(#)$CDS: cdsLibEditor version 6.1.8 - CAT37 09/24/2018 21:03 (ip-172-18-22-224) $
+\o Sub version:		sub-version  p015 
+\o Arguments:		-display localhost:10.0 -mpssession virtuoso986 -mpshost DHCP-60-126.ST.HMC.Edu -namespace CDBA -cdslib /proj/hmmm/cds.lib 
+\o Working Directory:	DHCP-60-126.ST.HMC.Edu:/proj/hmmm
+\o 64-bit offsets
+\a nrSetWindowVisibility(cdsLibEditor "show")
+\o Qt version: 		5.9.1
+\a nrResizeWindow(cdsLibEditor list(0 0 500 400))
+\a nrSetCurrentWindow(cdsLibEditor)
+\a nrResizeWindow(cdsLibEditor list(2292 395 500 400))
+\a nrResizeWindow(cdsLibEditor list(2948 720 500 400))
+\a exit(0)

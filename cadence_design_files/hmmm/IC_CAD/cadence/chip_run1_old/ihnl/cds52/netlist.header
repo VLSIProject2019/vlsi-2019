@@ -1,0 +1,47 @@
+// Library - mips8, Cell - chip, View - schematic
+// LAST TIME SAVED: Feb 28 00:36:11 2019
+// NETLIST TIME: Mar 25 03:32:29 2019
+`timescale 1ns / 100ps 
+
+module chip ( adr, memread, memwrite, writedata, memdata, ph1, ph2,
+     reset );
+
+output  memread, memwrite;
+
+input  ph1, ph2, reset;
+
+output [7:0]  writedata;
+output [7:0]  adr;
+
+input [7:0]  memdata;
+
+
+// Buses in the design
+
+wire  [0:5]  net043;
+
+wire  [0:2]  net044;
+
+wire  [0:7]  net041;
+
+wire  [0:1]  net045;
+
+wire  [0:7]  net040;
+
+wire  [0:7]  net042;
+
+wire  [0:1]  net7;
+
+wire  [0:5]  net17;
+
+wire  [0:1]  net046;
+
+wire  [0:3]  net039;
+
+
+specify 
+    specparam CDS_LIBNAME  = "mips8";
+    specparam CDS_CELLNAME = "chip";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+

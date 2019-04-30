@@ -1,0 +1,20 @@
+`switch default
+pmos #(0.1)   (* const real width = 3.600, length = 0.600; *) M2(
+     net27, mid, b);
+`switch default
+pmos #(0.1)   (* const real width = 3.600, length = 0.600; *) M3( mid,
+     cds_globals.vdd_, a);
+`switch default
+pmos #(0.1)   (* const real width = 3.000, length = 0.600; *) M4( y,
+     cds_globals.vdd_, net27);
+`switch default
+nmos #(0.1)   (* const real width = 1.800, length = 0.600; *) M0(
+     net27, cds_globals.gnd_, b);
+`switch default
+nmos #(0.1)   (* const real width = 1.800, length = 0.600; *) M1(
+     net27, cds_globals.gnd_, a);
+`switch default
+nmos #(0.1)   (* const real width = 2.100, length = 0.600; *) M5( y,
+     cds_globals.gnd_, net27);
+
+endmodule

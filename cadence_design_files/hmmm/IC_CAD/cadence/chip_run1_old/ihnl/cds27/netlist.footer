@@ -1,0 +1,12 @@
+yzdetect_8 I5 ( zero, result[7:0]);
+mux4_1x_8 I4 ( result[7:0], andresult[7:0], orresult[7:0],
+     sumresult[7:0], {cds_globals.gnd_, cds_globals.gnd_,
+     cds_globals.gnd_, cds_globals.gnd_, cds_globals.gnd_,
+     cds_globals.gnd_, cds_globals.gnd_, sumresult[7]}, ALUControl[1],
+     ALUControl[0]);
+adder_8 I3 ( COUT, sumresult[7:0], a[7:0], b2[7:0], ALUControl[2]);
+condinv_8 I0 ( b2[7:0], b[7:0], ALUControl[2]);
+or2_1x_8 I13 ( orresult[7:0], a[7:0], b[7:0]);
+and2_1x_8 I14 ( andresult[7:0], a[7:0], b[7:0]);
+
+endmodule

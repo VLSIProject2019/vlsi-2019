@@ -1,0 +1,34 @@
+// Library - mips8, Cell - regramadrbuf, View - schematic
+// LAST TIME SAVED: Feb 16 20:07:23 2012
+// NETLIST TIME: Feb 17 13:51:53 2019
+`timescale 1ns / 100ps 
+
+module regramadrbuf ( ra1b, ra1bb, ra2b, ra2bb, wab, wabb, ra1, ra2, wa
+     );
+
+
+
+output [2:0]  wab;
+output [2:0]  wabb;
+output [2:0]  ra2bb;
+output [2:0]  ra1bb;
+output [2:0]  ra1b;
+output [2:0]  ra2b;
+
+input [2:0]  wa;
+input [2:0]  ra2;
+input [2:0]  ra1;
+
+
+
+specify 
+    specparam CDS_LIBNAME  = "mips8";
+    specparam CDS_CELLNAME = "regramadrbuf";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+
+invbuf_4x wbuf[2:0] ( wabb[2:0], wab[2:0], wa[2:0]);
+invbuf_4x r1buf[2:0] ( ra1bb[2:0], ra1b[2:0], ra1[2:0]);
+invbuf_4x r2buf[2:0] ( ra2bb[2:0], ra2b[2:0], ra2[2:0]);
+
+endmodule

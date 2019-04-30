@@ -1,0 +1,929 @@
+Checking out Encounter license ...
+Virtuoso_Digital_Implem 10.1 license checkout succeeded.
+	Maximum number of instance allowed (1 x 50000).
+**ERROR: (ENCOAX-148):	Could not open shared library libfeoax22.so : liboaDesign.so: cannot open shared object file: No such file or directory
+
+**ERROR: (ENCOAX-148):	OA features will be disabled in this session.
+
+
+*******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2011.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+@(#)CDS: Encounter v10.12-s181_1 (32bit) 07/28/2011 22:56 (Linux 2.6)
+@(#)CDS: NanoRoute v10.12-s010 NR110720-1815/10_10_USR2-UB (database version 2.30, 124.2.1) {superthreading v1.15}
+@(#)CDS: CeltIC v10.12-s013_1 (32bit) 07/27/2011 04:13:10 (Linux 2.6.9-89.0.19.ELsmp)
+@(#)CDS: AAE 10.12-s001 (32bit) 07/28/2011 (Linux 2.6.9-89.0.19.ELsmp)
+@(#)CDS: CTE 10.12-s010_1 (32bit) Jul 18 2011 23:05:29 (Linux 2.6.9-89.0.19.ELsmp)
+@(#)CDS: CPE v10.12-s007
+--- Starting "Encounter v10.12-s181_1" on Mon Mar 25 01:57:03 2019 (mem=46.0M) ---
+--- Running on DHCP-60-126.ST.HMC.Edu (x86_64 w/Linux 3.10.0-957.5.1.el7.x86_64) ---
+This version was compiled on Thu Jul 28 22:56:00 PDT 2011.
+Set DBUPerIGU to 1000.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+<CMD> win
+<CMD_INTERNAL> setUIVar rda_Input ui_gndnet VSS
+<CMD_INTERNAL> setUIVar rda_Input ui_leffile muddlib.lef
+<CMD_INTERNAL> setUIVar rda_Input ui_netlist controller_syn.v
+<CMD_INTERNAL> setUIVar rda_Input ui_topcell controller
+<CMD_INTERNAL> setUIVar rda_Input ui_pwrnet VDD
+<CMD> commitConfig
+
+Loading Lef file muddlib.lef...
+**WARN: (ENCLF-105):	The layer 'poly' specified in SAMENET spacing
+rule is neither a routing layer nor a cut layer. The rule is ignored.
+**WARN: (ENCLF-108):	There is no overlap layer defined in any lef file
+so you are unable to create rectilinear partition in a hierarchical flow.
+Set DBUPerIGU to M2 pitch 240.
+
+Power Planner/ViaGen version 8.1.46 promoted on 02/17/2009.
+viaInitial starts at Mon Mar 25 01:58:48 2019
+viaInitial ends at Mon Mar 25 01:58:48 2019
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist 'controller_syn.v'
+
+*** Memory Usage v#8 (Current mem = 205.770M, initial mem = 46.016M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=205.8M) ***
+Set top cell to controller.
+**WARN: (ENCSYC-2):	Timing is not defined for cell a2o1_1x.
+**WARN: (ENCSYC-2):	Timing is not defined for cell and2_1x.
+**WARN: (ENCSYC-2):	Timing is not defined for cell inv_1x.
+**WARN: (ENCSYC-2):	Timing is not defined for cell latch_c_1x.
+**WARN: (ENCSYC-2):	Timing is not defined for cell mux2_c_1x.
+**WARN: (ENCSYC-2):	Timing is not defined for cell nand2_1x.
+**WARN: (ENCSYC-2):	Timing is not defined for cell nand3_1x.
+**WARN: (ENCSYC-2):	Timing is not defined for cell nor2_1x.
+**WARN: (ENCSYC-2):	Timing is not defined for cell nor3_1x.
+*** End library_loading (cpu=0.00min, mem=0.1M, fe_cpu=0.23min, fe_mem=205.9M) ***
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell controller ...
+*** Netlist is unique.
+** info: there are 20 modules.
+** info: there are 61 stdCell insts.
+
+*** Memory Usage v#8 (Current mem = 208.039M, initial mem = 46.016M) ***
+*info: set bottom ioPad orient R0
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Input Pin Transition Delay as 0.1 ps.
+PreRoute Cap Scale Factor :        1.00
+PreRoute Res Scale Factor :        1.00
+PostRoute Cap Scale Factor :       1.00
+PostRoute Res Scale Factor :       1.00
+PostRoute XCap Scale Factor :      1.00
+
+PreRoute Clock Cap Scale Factor :  1.00	[Derived from postRoute_cap (effortLevel low)]
+PreRoute Clock Res Scale Factor :  1.00	[Derived from postRoute_res (effortLevel low)]
+PostRoute Clock Cap Scale Factor : 1.00	[Derived from postRoute_cap (effortLevel low)]
+PostRoute Clock Res Scale Factor : 1.00	[Derived from postRoute_res (effortLevel low)]
+<CMD> fit
+<CMD> setDrawView fplan
+<CMD> getIoFlowFlag
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site core -r 0.823798627002 0.69972 30 30 30 30
+Adjusting Core to Left to: 31.2000.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site core -r 0.823798627002 0.69972 31.2 30.0 30.0 30.0
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> saveDesign controller_floorplan.enc
+Writing Netlist "controller_floorplan.enc.dat/controller.v.gz" ...
+Saving configuration ...
+Saving preference file controller_floorplan.enc.dat/enc.pref.tcl ...
+Saving floorplan ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving placement ...
+*** Completed savePlace (cpu=0:00:00.0 real=0:00:00.0 mem=209.3M) ***
+Saving route ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=209.3M) ***
+Writing DEF file 'controller_floorplan.enc.dat/controller.def.gz', current time is Mon Mar 25 02:00:30 2019 ...
+unitPerMicron=100, dbgMicronPerDBU=0.010000, unitPerDBU=1.000000
+DEF file 'controller_floorplan.enc.dat/controller.def.gz' is written, current time is Mon Mar 25 02:00:30 2019 ...
+*** Completed saveYieldMap (cpu=: 0:00:00.0 real=0:00:00.0 mem=: 0.000M) ***
+<CMD> addRing -spacing_bottom 1.8 -width_left 9.9 -width_bottom 9.9 -width_top 9.9 -spacing_top 1.8 -layer_bottom metal1 -center 1 -stacked_via_top_layer metal3 -width_right 9.9 -around core -jog_distance 1.5 -offset_bottom 1.5 -layer_top metal1 -threshold 1.5 -offset_left 1.5 -spacing_right 1.8 -spacing_left 1.8 -offset_right 1.5 -offset_top 1.5 -layer_right metal2 -stacked_via_bottom_layer metal1 -layer_left metal2
+
+The power planner created 8 wires.
+*** Ending Ring Generation (totcpu=0:00:00.0, real=0:00:00.0, mem=209.9M) ***
+<CMD> addRing -spacing_bottom 1.8 -width_left 9.9 -width_bottom 9.9 -width_top 9.9 -spacing_top 1.8 -layer_bottom metal1 -center 1 -stacked_via_top_layer metal3 -width_right 9.9 -around core -jog_distance 1.5 -offset_bottom 1.5 -layer_top metal1 -threshold 1.5 -offset_left 1.5 -spacing_right 1.8 -spacing_left 1.8 -offset_right 1.5 -offset_top 1.5 -layer_right metal2 -stacked_via_bottom_layer metal1 -layer_left metal2
+
+*** Ending Ring Generation (totcpu=0:00:00.0, real=0:00:00.0, mem=209.9M) ***
+<CMD> sroute -connect { blockPin padPin padRing corePin } -layerChangeRange { metal1 metal3 } -blockPinTarget { nearestRingStripe nearestTarget } -padPinPortConnect { allPort oneGeom } -checkAlignedSecondaryPin 1 -blockPin useLef -allowJogging 1 -crossoverViaBottomLayer metal1 -allowLayerChange 1 -targetViaTopLayer metal3 -crossoverViaTopLayer metal3 -targetViaBottomLayer metal1
+*** Begin SPECIAL ROUTE on Mon Mar 25 02:03:19 2019 ***
+Sroute/fcroute version 8.1.46 promoted on 02/17/2009.
+SPECIAL ROUTE ran on directory: /proj/VLSI19S/G1/hmmm/IC_CAD/controllerEncounter
+SPECIAL ROUTE ran on machine: DHCP-60-126.ST.HMC.Edu (Linux 3.10.0-957.5.1.el7.x86_64 x86_64 2.29Ghz)
+
+Begin option processing ...
+(from .sroute_12117.conf) srouteConnectPowerBump set to false
+(from .sroute_12117.conf) routeSpecial set to true
+(from .sroute_12117.conf) srouteConnectStripe set to false
+(from .sroute_12117.conf) srouteCrossoverViaTopLayer set to 3
+(from .sroute_12117.conf) srouteFollowCorePinEnd set to 3
+(from .sroute_12117.conf) srouteFollowPadPin set to true
+(from .sroute_12117.conf) srouteJogControl set to "preferWithChanges differentLayer"
+(from .sroute_12117.conf) sroutePadPinAllPorts set to true
+(from .sroute_12117.conf) sroutePreserveExistingRoutes set to true
+(from .sroute_12117.conf) srouteTopLayerLimit set to 3
+(from .sroute_12117.conf) srouteTopTargetLayerLimit set to 3
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 435.00 megs.
+
+Reading DB technology information...
+Finished reading DB technology information.
+Reading floorplan and netlist information...
+Finished reading floorplan and netlist information.
+Read in 7 layers, 3 routing layers, 0 overlap layer
+Read in 19 macros, 9 used
+Read in 9 components
+  9 core components: 9 unplaced, 0 placed, 0 fixed
+Read in 32 logical pins
+Read in 32 nets
+Read in 2 special nets, 2 routed
+Begin power routing ...
+**WARN: (ENCSR-1253):	Net VDD does not have standard cells to be routed. Please check net list.
+**WARN: (ENCSR-1254):	Net VDD does not have block pins to be routed. Please check net list.
+**WARN: (ENCSR-1255):	Net VDD does not have pad pins to create pad ring. Please check net list or port class. (must NOT be CORE class and must not be AREAIO subclass). 
+**WARN: (ENCSR-1256):	Net VDD does not have CORE class pad pins to be routed.
+	Please check net list or port class.
+Net VDD does not have AREAIO class pad pins to be routed.
+	Please check net list or port class.
+**WARN: (ENCSR-1253):	Net VSS does not have standard cells to be routed. Please check net list.
+**WARN: (ENCSR-1254):	Net VSS does not have block pins to be routed. Please check net list.
+**WARN: (ENCSR-1255):	Net VSS does not have pad pins to create pad ring. Please check net list or port class. (must NOT be CORE class and must not be AREAIO subclass). 
+**WARN: (ENCSR-1256):	Net VSS does not have CORE class pad pins to be routed.
+	Please check net list or port class.
+Net VSS does not have AREAIO class pad pins to be routed.
+	Please check net list or port class.
+**WARN: (ENCSR-468):	No core cells defined in COMPONENTS section
+ and/or   No core cells defined in SPECIALNETS VDD
+**WARN: (ENCSR-468):	No core cells defined in COMPONENTS section
+ and/or   No core cells defined in SPECIALNETS VDD
+CPU time for FollowPin 0 seconds
+**WARN: (ENCSR-468):	No core cells defined in COMPONENTS section
+ and/or   No core cells defined in SPECIALNETS VSS
+**WARN: (ENCSR-468):	No core cells defined in COMPONENTS section
+ and/or   No core cells defined in SPECIALNETS VSS
+CPU time for FollowPin 0 seconds
+  Number of IO ports routed: 0
+  Number of Block ports routed: 0
+  Number of Core ports routed: 14
+  Number of Pad ports routed: 0
+  Number of Power Bump ports routed: 0
+  Number of Followpin connections: 7
+End power routing: cpu: 0:00:00, real: 0:00:00, peak: 448.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 5 via definition ...Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+
+
+sroute post-processing starts at Mon Mar 25 02:03:20 2019
+The viaGen is rebuilding shadow vias for net VSS.
+sroute post-processing ends at Mon Mar 25 02:03:20 2019
+
+sroute post-processing starts at Mon Mar 25 02:03:20 2019
+The viaGen is rebuilding shadow vias for net VDD.
+sroute post-processing ends at Mon Mar 25 02:03:20 2019
+sroute: Total CPU time used = 0:0:0
+sroute: Total Real time used = 0:0:1
+sroute: Total Memory used = 1.02 megs
+sroute: Total Peak Memory used = 211.64 megs
+<CMD> saveDesign controller_power.enc
+Writing Netlist "controller_power.enc.dat/controller.v.gz" ...
+Saving configuration ...
+Saving preference file controller_power.enc.dat/enc.pref.tcl ...
+Saving floorplan ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving placement ...
+*** Completed savePlace (cpu=0:00:00.0 real=0:00:00.0 mem=211.7M) ***
+Saving route ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=211.7M) ***
+Writing DEF file 'controller_power.enc.dat/controller.def.gz', current time is Mon Mar 25 02:04:21 2019 ...
+unitPerMicron=100, dbgMicronPerDBU=0.010000, unitPerDBU=1.000000
+DEF file 'controller_power.enc.dat/controller.def.gz' is written, current time is Mon Mar 25 02:04:21 2019 ...
+*** Completed saveYieldMap (cpu=: 0:00:00.0 real=0:00:00.0 mem=: 0.000M) ***
+<CMD> setPlaceMode -fp false
+<CMD> placeDesign -noPrePlaceOpt
+**WARN: (ENCSP-9513):	Timing constraint file does not exist
+**WARN: (ENCSP-9514):	NonTimingDriven placement will be performed
+*** Starting placeDesign default flow ***
+*** Starting "NanoPlace(TM) placement v#18 (mem=211.7M)" ...
+Options: clkGateAware ignoreScan ignoreSpare pinGuide gpeffort=medium 
+**WARN: (ENCSP-9042):	Scan chains were not defined, -ignoreScan option will be ignored. 
+Please first define the scan chains before using this option.
+#std cell=61 #block=0 (0 floating + 0 preplaced) #ioInst=0 #net=73 #term=218 #term/net=2.99, #fixedIo=0, #floatIo=0, #fixedPin=0, #floatPin=32
+stdCell: 61 single + 0 double + 0 multi
+Total standard cell length = 0.8256 (mm), area = 0.0223 (mm^2)
+Average module density = 0.708.
+Density for the design = 0.708.
+       = stdcell_area 344 (22291 um^2) / alloc_area 486 (31493 um^2).
+Pin Density = 0.634.
+            = total # of pins 218 / total Instance area 344.
+Checking spec file integrity...
+Clock gating cells determined by native netlist tracing.
+Iteration  1: Total net bbox = 0.000e+00 (0.00e+00 0.00e+00)
+              Est.  stn bbox = 0.000e+00 (0.00e+00 0.00e+00)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 211.7M
+Iteration  2: Total net bbox = 0.000e+00 (0.00e+00 0.00e+00)
+              Est.  stn bbox = 0.000e+00 (0.00e+00 0.00e+00)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 211.7M
+Iteration  3: Total net bbox = 5.114e+01 (3.67e+01 1.44e+01)
+              Est.  stn bbox = 5.114e+01 (3.67e+01 1.44e+01)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 211.7M
+Iteration  4: Total net bbox = 1.806e+03 (9.76e+02 8.29e+02)
+              Est.  stn bbox = 1.806e+03 (9.76e+02 8.29e+02)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 211.7M
+Iteration  5: Total net bbox = 2.985e+03 (1.62e+03 1.37e+03)
+              Est.  stn bbox = 2.985e+03 (1.62e+03 1.37e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 211.7M
+Iteration  6: Total net bbox = 5.385e+03 (2.85e+03 2.54e+03)
+              Est.  stn bbox = 5.803e+03 (3.07e+03 2.74e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 211.7M
+*** cost = 5.385e+03 (2.85e+03 2.54e+03) (cpu for global=0:00:00.0) real=0:00:00.0***
+Info: 0 clock gating cells identified, 0 (on average) moved
+Core Placement runtime cpu: 0:00:00.0 real: 0:00:00.0
+Starting refinePlace ...
+move report: placeLevelShifters moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+  Spread Effort: high, pre-route mode.
+Finished Phase I. CPU Time = 0:00:00.0, Real Time = 0:00:00.0
+move report: preRPlace moves 53 insts, mean move: 17.26 um, max move: 65.40 um
+	max move on inst (U78): (120.00, 57.00) --> (158.40, 84.00)
+Placement tweakage begins.
+wire length = 5.913e+03 = 2.857e+03 H + 3.056e+03 V
+wire length = 5.191e+03 = 2.222e+03 H + 2.969e+03 V
+Placement tweakage ends.
+move report: tweak moves 32 insts, mean move: 25.46 um, max move: 53.40 um
+	max move on inst (instrReg1_nextQ_reg_1_): (60.00, 111.00) --> (33.60, 138.00)
+move report: rPlace moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+move report: overall moves 55 insts, mean move: 20.76 um, max move: 72.60 um
+	max move on inst (instrReg1_q_reg_4_): (96.00, 57.00) --> (141.60, 84.00)
+Statistics of distance of Instance movement in detailed placement:
+  maximum (X+Y) =        72.60 um
+  inst (instrReg1_q_reg_4_) with max move: (96, 57) -> (141.6, 84)
+  mean    (X+Y) =        20.76 um
+Total instances flipped for WireLenOpt: 1
+Total instances flipped, including legalization: 5
+Total instances moved : 55
+*** cpu=0:00:00.0   mem=211.8M  mem(used)=0.1M***
+Total net length = 5.272e+03 (2.223e+03 3.049e+03) (ext = 3.420e+03)
+*** End of Placement (cpu=0:00:00.1, real=0:00:00.0, mem=211.8M) ***
+default core: bins with density >  0.75 =    0 % ( 0 / 1 )
+Starting IO pin assignment...
+Completed IO pin assignment.
+**WARN: (ENCSP-9025):	No scan chain specified/traced.
+Starting congestion repair ...
+*** Starting trialRoute (mem=211.8M) ***
+
+There are 0 pin guide points passed to trialRoute.
+Options:  -noPinGuide
+
+routingBox: (0 0) (25785 22200)
+coreBox:    (3120 3000) (22785 19200)
+Number of multi-gpin terms=7, multi-gpins=14, moved blk term=0/34
+
+Phase 1a route (0:00:00.0 213.1M):
+Est net length = 4.732e+03um = 2.377e+03H + 2.355e+03V
+Usage: (18.1%H 41.7%V) = (2.964e+03um 5.319e+03um) = (241 197)
+Obstruct: 12 = 0 (0.0%H) + 12 (8.3%V)
+Overflow: 21 = 0 (0.00% H) + 21 (15.91% V)
+
+Phase 1b route (0:00:00.0 214.3M):
+Usage: (18.0%H 41.7%V) = (2.952e+03um 5.319e+03um) = (240 197)
+Overflow: 21 = 0 (0.00% H) + 21 (15.91% V)
+
+Phase 1c route (0:00:00.0 214.3M):
+Usage: (18.0%H 41.7%V) = (2.952e+03um 5.319e+03um) = (240 197)
+Overflow: 20 = 0 (0.00% H) + 20 (15.15% V)
+
+Phase 1d route (0:00:00.0 214.3M):
+Usage: (18.1%H 41.9%V) = (2.966e+03um 5.346e+03um) = (241 198)
+Overflow: 20 = 0 (0.00% H) + 20 (15.15% V)
+
+Phase 1e route (0:00:00.0 214.8M):
+Usage: (19.0%H 42.4%V) = (3.115e+03um 5.406e+03um) = (253 200)
+Overflow: 18 = 0 (0.00% H) + 18 (13.95% V)
+
+Phase 1f route (0:00:00.0 214.8M):
+Usage: (21.9%H 43.6%V) = (3.662e+03um 5.574e+03um) = (292 206)
+Overflow: 9 = 0 (0.00% H) + 9 (6.82% V)
+
+Congestion distribution:
+
+Remain	cntH		cntV
+--------------------------------------
+ -1:	0	 0.00%	9	 6.82%
+--------------------------------------
+  0:	0	 0.00%	44	33.33%
+  1:	0	 0.00%	11	 8.33%
+  2:	1	 0.69%	18	13.64%
+  3:	2	 1.39%	8	 6.06%
+  4:	13	 9.03%	8	 6.06%
+  5:	21	14.58%	29	21.97%
+  6:	24	16.67%	5	 3.79%
+  7:	15	10.42%	0	 0.00%
+  8:	11	 7.64%	0	 0.00%
+  9:	32	22.22%	0	 0.00%
+ 10:	25	17.36%	0	 0.00%
+
+
+Global route (cpu=0.0s real=0.0s 213.6M)
+
+
+*** After '-updateRemainTrks' operation: 
+
+Usage: (21.9%H 43.6%V) = (3.662e+03um 5.574e+03um) = (292 206)
+Overflow: 9 = 0 (0.00% H) + 9 (6.82% V)
+
+Congestion distribution:
+
+Remain	cntH		cntV
+--------------------------------------
+ -1:	0	 0.00%	9	 6.82%
+--------------------------------------
+  0:	0	 0.00%	44	33.33%
+  1:	0	 0.00%	11	 8.33%
+  2:	1	 0.69%	18	13.64%
+  3:	2	 1.39%	8	 6.06%
+  4:	13	 9.03%	8	 6.06%
+  5:	21	14.58%	29	21.97%
+  6:	24	16.67%	5	 3.79%
+  7:	15	10.42%	0	 0.00%
+  8:	11	 7.64%	0	 0.00%
+  9:	32	22.22%	0	 0.00%
+ 10:	25	17.36%	0	 0.00%
+
+
+
+*** Completed Phase 1 route (0:00:00.0 211.8M) ***
+
+
+Total length: 6.372e+03um, number of vias: 360
+M1(H) length: 5.700e+01um, number of vias: 186
+M2(V) length: 3.312e+03um, number of vias: 174
+M3(H) length: 3.003e+03um
+*** Completed Phase 2 route (0:00:00.0 211.8M) ***
+
+*** Finished all Phases (cpu=0:00:00.0 mem=211.8M) ***
+Peak Memory Usage was 211.8M 
+*** Finished trialRoute (cpu=0:00:00.0 mem=211.8M) ***
+
+CongRepair Bin Grid Size (width, height) = ( default_value , default_value )
+Trial Route Overflow 0.000000(H) 6.818182(V).
+Start repairing congestion with level 5.
+congAuto 1st round: bin height 4 and width 4
+**WARN: (ENCSP-9042):	Scan chains were not defined, -ignoreScan option will be ignored. 
+Please first define the scan chains before using this option.
+Iteration  3: Total net bbox = 4.283e+03 (2.07e+03 2.21e+03)
+              Est.  stn bbox = 4.283e+03 (2.07e+03 2.21e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 211.8M
+Iteration  4: Total net bbox = 4.550e+03 (2.23e+03 2.32e+03)
+              Est.  stn bbox = 4.550e+03 (2.23e+03 2.32e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 211.8M
+Iteration  5: Total net bbox = 4.910e+03 (2.40e+03 2.51e+03)
+              Est.  stn bbox = 4.910e+03 (2.40e+03 2.51e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 211.8M
+Iteration  6: Total net bbox = 5.053e+03 (2.58e+03 2.47e+03)
+              Est.  stn bbox = 5.053e+03 (2.58e+03 2.47e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 211.8M
+Starting refinePlace ...
+move report: placeLevelShifters moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+  Spread Effort: high, pre-route mode.
+Finished Phase I. CPU Time = 0:00:00.0, Real Time = 0:00:00.0
+move report: preRPlace moves 28 insts, mean move: 3.69 um, max move: 9.60 um
+	max move on inst (U79): (52.80, 30.00) --> (62.40, 30.00)
+Placement tweakage begins.
+wire length = 5.385e+03 = 2.821e+03 H + 2.564e+03 V
+wire length = 4.915e+03 = 2.369e+03 H + 2.546e+03 V
+Placement tweakage ends.
+move report: tweak moves 11 insts, mean move: 21.05 um, max move: 31.80 um
+	max move on inst (instrReg1_nextQ_reg_5_): (31.20, 57.00) --> (36.00, 30.00)
+move report: rPlace moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+move report: overall moves 31 insts, mean move: 8.94 um, max move: 31.80 um
+	max move on inst (instrReg1_nextQ_reg_5_): (31.20, 57.00) --> (36.00, 30.00)
+Statistics of distance of Instance movement in detailed placement:
+  maximum (X+Y) =        31.80 um
+  inst (instrReg1_nextQ_reg_5_) with max move: (31.2, 57) -> (36, 30)
+  mean    (X+Y) =         8.94 um
+Total instances flipped for WireLenOpt: 1
+Total instances flipped, including legalization: 22
+Total instances moved : 31
+*** cpu=0:00:00.0   mem=211.8M  mem(used)=0.0M***
+Total net length = 4.999e+03 (2.370e+03 2.629e+03) (ext = 2.993e+03)
+*** Starting trialRoute (mem=211.8M) ***
+
+There are 0 pin guide points passed to trialRoute.
+Options:  -noPinGuide
+
+routingBox: (0 0) (25785 22200)
+coreBox:    (3120 3000) (22785 19200)
+Number of multi-gpin terms=9, multi-gpins=18, moved blk term=0/18
+
+Phase 1a route (0:00:00.0 213.1M):
+Est net length = 4.713e+03um = 2.412e+03H + 2.301e+03V
+Usage: (18.5%H 47.3%V) = (3.041e+03um 5.868e+03um) = (247 217)
+Obstruct: 5 = 0 (0.0%H) + 5 (3.5%V)
+Overflow: 19 = 0 (0.00% H) + 19 (13.35% V)
+
+Phase 1b route (0:00:00.0 214.3M):
+Usage: (18.6%H 47.3%V) = (3.053e+03um 5.868e+03um) = (248 217)
+Overflow: 19 = 0 (0.00% H) + 19 (13.84% V)
+
+Phase 1c route (0:00:00.0 214.3M):
+Usage: (18.5%H 47.3%V) = (3.038e+03um 5.868e+03um) = (247 217)
+Overflow: 19 = 0 (0.00% H) + 19 (13.84% V)
+
+Phase 1d route (0:00:00.0 214.3M):
+Usage: (18.5%H 47.5%V) = (3.038e+03um 5.895e+03um) = (247 218)
+Overflow: 18 = 0 (0.00% H) + 18 (13.12% V)
+
+Phase 1e route (0:00:00.0 214.8M):
+Usage: (18.7%H 48.4%V) = (3.102e+03um 6.018e+03um) = (249 222)
+Overflow: 13 = 0 (0.00% H) + 13 (9.35% V)
+
+Phase 1f route (0:00:00.0 214.8M):
+Usage: (19.6%H 48.6%V) = (3.251e+03um 6.045e+03um) = (261 223)
+Overflow: 8 = 0 (0.00% H) + 8 (5.76% V)
+
+Congestion distribution:
+
+Remain	cntH		cntV
+--------------------------------------
+ -1:	0	 0.00%	8	 5.76%
+--------------------------------------
+  0:	0	 0.00%	53	38.13%
+  1:	0	 0.00%	22	15.83%
+  2:	0	 0.00%	15	10.79%
+  3:	1	 0.69%	2	 1.44%
+  4:	9	 6.25%	10	 7.19%
+  5:	15	10.42%	28	20.14%
+  6:	21	14.58%	1	 0.72%
+  7:	24	16.67%	0	 0.00%
+  8:	25	17.36%	0	 0.00%
+  9:	27	18.75%	0	 0.00%
+ 10:	22	15.28%	0	 0.00%
+
+
+Global route (cpu=0.0s real=0.0s 213.6M)
+
+
+*** After '-updateRemainTrks' operation: 
+
+Usage: (19.6%H 48.6%V) = (3.251e+03um 6.045e+03um) = (261 223)
+Overflow: 8 = 0 (0.00% H) + 8 (5.76% V)
+
+Congestion distribution:
+
+Remain	cntH		cntV
+--------------------------------------
+ -1:	0	 0.00%	8	 5.76%
+--------------------------------------
+  0:	0	 0.00%	53	38.13%
+  1:	0	 0.00%	22	15.83%
+  2:	0	 0.00%	15	10.79%
+  3:	1	 0.69%	2	 1.44%
+  4:	9	 6.25%	10	 7.19%
+  5:	15	10.42%	28	20.14%
+  6:	21	14.58%	1	 0.72%
+  7:	24	16.67%	0	 0.00%
+  8:	25	17.36%	0	 0.00%
+  9:	27	18.75%	0	 0.00%
+ 10:	22	15.28%	0	 0.00%
+
+
+
+*** Completed Phase 1 route (0:00:00.0 211.8M) ***
+
+
+Total length: 5.816e+03um, number of vias: 361
+M1(H) length: 5.670e+01um, number of vias: 186
+M2(V) length: 3.151e+03um, number of vias: 175
+M3(H) length: 2.608e+03um
+*** Completed Phase 2 route (0:00:00.0 211.8M) ***
+
+*** Finished all Phases (cpu=0:00:00.0 mem=211.8M) ***
+Peak Memory Usage was 211.8M 
+*** Finished trialRoute (cpu=0:00:00.0 mem=211.8M) ***
+
+congAuto2 2nd round: bin height 2 and width 2
+**WARN: (ENCSP-9042):	Scan chains were not defined, -ignoreScan option will be ignored. 
+Please first define the scan chains before using this option.
+Iteration  4: Total net bbox = 4.592e+03 (2.29e+03 2.30e+03)
+              Est.  stn bbox = 4.592e+03 (2.29e+03 2.30e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 211.8M
+Iteration  5: Total net bbox = 4.596e+03 (2.28e+03 2.31e+03)
+              Est.  stn bbox = 4.596e+03 (2.28e+03 2.31e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 211.8M
+Iteration  6: Total net bbox = 5.300e+03 (2.57e+03 2.73e+03)
+              Est.  stn bbox = 5.300e+03 (2.57e+03 2.73e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 211.8M
+Starting refinePlace ...
+move report: placeLevelShifters moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+  Spread Effort: high, pre-route mode.
+Finished Phase I. CPU Time = 0:00:00.0, Real Time = 0:00:00.0
+move report: preRPlace moves 9 insts, mean move: 2.67 um, max move: 4.80 um
+	max move on inst (U81): (141.60, 30.00) --> (136.80, 30.00)
+Placement tweakage begins.
+wire length = 5.550e+03 = 2.723e+03 H + 2.827e+03 V
+wire length = 5.142e+03 = 2.318e+03 H + 2.824e+03 V
+Placement tweakage ends.
+move report: tweak moves 6 insts, mean move: 33.80 um, max move: 56.40 um
+	max move on inst (instrReg1_nextQ_reg_4_): (79.20, 111.00) --> (76.80, 57.00)
+move report: rPlace moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+move report: overall moves 14 insts, mean move: 16.20 um, max move: 58.80 um
+	max move on inst (instrReg1_nextQ_reg_4_): (81.60, 111.00) --> (76.80, 57.00)
+Statistics of distance of Instance movement in detailed placement:
+  maximum (X+Y) =        58.80 um
+  inst (instrReg1_nextQ_reg_4_) with max move: (81.6, 111) -> (76.8, 57)
+  mean    (X+Y) =        16.20 um
+Total instances flipped for WireLenOpt: 2
+Total instances flipped, including legalization: 32
+Total instances moved : 14
+*** cpu=0:00:00.0   mem=211.8M  mem(used)=0.0M***
+Total net length = 5.319e+03 (2.319e+03 3.000e+03) (ext = 3.239e+03)
+*** Starting trialRoute (mem=211.8M) ***
+
+There are 0 pin guide points passed to trialRoute.
+Options:  -noPinGuide
+
+routingBox: (0 0) (25785 22200)
+coreBox:    (3120 3000) (22785 19200)
+Number of multi-gpin terms=7, multi-gpins=14, moved blk term=0/15
+
+Phase 1a route (0:00:00.0 213.1M):
+Est net length = 5.047e+03um = 2.314e+03H + 2.733e+03V
+Usage: (18.1%H 52.7%V) = (2.980e+03um 6.489e+03um) = (241 240)
+Obstruct: 4 = 0 (0.0%H) + 4 (2.8%V)
+Overflow: 22 = 0 (0.00% H) + 22 (15.70% V)
+
+Phase 1b route (0:00:00.0 214.3M):
+Usage: (18.0%H 52.7%V) = (2.968e+03um 6.486e+03um) = (240 240)
+Overflow: 23 = 0 (0.00% H) + 23 (16.18% V)
+
+Phase 1c route (0:00:00.0 214.3M):
+Usage: (18.0%H 52.7%V) = (2.968e+03um 6.486e+03um) = (240 240)
+Overflow: 23 = 0 (0.00% H) + 23 (16.18% V)
+
+Phase 1d route (0:00:00.0 214.3M):
+Usage: (18.1%H 53.0%V) = (2.980e+03um 6.513e+03um) = (241 241)
+Overflow: 22 = 0 (0.00% H) + 22 (15.47% V)
+
+Phase 1e route (0:00:00.0 214.8M):
+Usage: (18.8%H 53.6%V) = (3.129e+03um 6.603e+03um) = (250 244)
+Overflow: 14 = 0 (0.00% H) + 14 (10.00% V)
+
+Phase 1f route (0:00:00.0 214.8M):
+Usage: (20.6%H 53.8%V) = (3.539e+03um 6.630e+03um) = (275 245)
+Overflow: 7 = 0 (0.00% H) + 7 (5.00% V)
+
+Congestion distribution:
+
+Remain	cntH		cntV
+--------------------------------------
+ -1:	0	 0.00%	7	 5.00%
+--------------------------------------
+  0:	0	 0.00%	63	45.00%
+  1:	0	 0.00%	23	16.43%
+  2:	1	 0.69%	11	 7.86%
+  3:	3	 2.08%	1	 0.71%
+  4:	2	 1.39%	6	 4.29%
+  5:	15	10.42%	27	19.29%
+  6:	28	19.44%	2	 1.43%
+  7:	31	21.53%	0	 0.00%
+  8:	25	17.36%	0	 0.00%
+  9:	12	 8.33%	0	 0.00%
+ 10:	27	18.75%	0	 0.00%
+
+
+Global route (cpu=0.0s real=0.0s 213.6M)
+
+
+*** After '-updateRemainTrks' operation: 
+
+Usage: (20.6%H 53.8%V) = (3.539e+03um 6.630e+03um) = (275 245)
+Overflow: 7 = 0 (0.00% H) + 7 (5.00% V)
+
+Congestion distribution:
+
+Remain	cntH		cntV
+--------------------------------------
+ -1:	0	 0.00%	7	 5.00%
+--------------------------------------
+  0:	0	 0.00%	63	45.00%
+  1:	0	 0.00%	23	16.43%
+  2:	1	 0.69%	11	 7.86%
+  3:	3	 2.08%	1	 0.71%
+  4:	2	 1.39%	6	 4.29%
+  5:	15	10.42%	27	19.29%
+  6:	28	19.44%	2	 1.43%
+  7:	31	21.53%	0	 0.00%
+  8:	25	17.36%	0	 0.00%
+  9:	12	 8.33%	0	 0.00%
+ 10:	27	18.75%	0	 0.00%
+
+
+
+*** Completed Phase 1 route (0:00:00.0 211.8M) ***
+
+
+Total length: 6.334e+03um, number of vias: 373
+M1(H) length: 5.610e+01um, number of vias: 186
+M2(V) length: 3.593e+03um, number of vias: 187
+M3(H) length: 2.685e+03um
+*** Completed Phase 2 route (0:00:00.0 211.8M) ***
+
+*** Finished all Phases (cpu=0:00:00.0 mem=211.8M) ***
+Peak Memory Usage was 211.8M 
+*** Finished trialRoute (cpu=0:00:00.0 mem=211.8M) ***
+
+End of congRepair (cpu=0:00:00.2, real=0:00:00.0)
+*** Finishing placeDesign default flow ***
+**placeDesign ... cpu = 0: 0: 0, real = 0: 0: 0, mem = 211.8M **
+<CMD> setDrawView place
+<CMD> saveDesign controller_place.enc
+Writing Netlist "controller_place.enc.dat/controller.v.gz" ...
+Saving configuration ...
+Saving preference file controller_place.enc.dat/enc.pref.tcl ...
+Saving floorplan ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving placement ...
+*** Completed savePlace (cpu=0:00:00.0 real=0:00:00.0 mem=211.8M) ***
+Saving route ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=211.8M) ***
+Writing DEF file 'controller_place.enc.dat/controller.def.gz', current time is Mon Mar 25 02:06:16 2019 ...
+unitPerMicron=100, dbgMicronPerDBU=0.010000, unitPerDBU=1.000000
+DEF file 'controller_place.enc.dat/controller.def.gz' is written, current time is Mon Mar 25 02:06:16 2019 ...
+*** Completed saveYieldMap (cpu=: 0:00:00.0 real=0:00:00.0 mem=: 0.000M) ***
+<CMD> setNanoRouteMode -quiet -drouteStartIteration default
+<CMD> setNanoRouteMode -quiet -routeTopRoutingLayer default
+<CMD> setNanoRouteMode -quiet -routeBottomRoutingLayer default
+<CMD> setNanoRouteMode -quiet -drouteEndIteration default
+<CMD> setNanoRouteMode -quiet -routeWithTimingDriven false
+<CMD> setNanoRouteMode -quiet -routeWithSiDriven false
+Running Native NanoRoute ...
+<CMD> routeDesign -globalDetail
+Begin checking placement ... (start mem=211.8M, init mem=211.8M)
+*info: Placed = 61
+*info: Unplaced = 0
+Placement Density:70.78%(22291/31493)
+Finished checkPlace (cpu: total=0:00:00.0, vio checks=0:00:00.0; mem=211.8M)
+
+changeUseClockNetStatus Option :  -noFixedNetWires 
+*** Changed status on (0) nets in Clock.
+*** End changeUseClockNetStatus (cpu=0:00:00.0, real=0:00:00.0, mem=211.8M) ***
+
+globalDetailRoute
+
+#Start globalDetailRoute on Mon Mar 25 02:06:31 2019
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 211.00 (Mb)
+#WARNING (NRDB-2005) SPECIAL_NET VDD has special wires but no definition for instance-pin connection. This will cause routability problems later.
+#WARNING (NRDB-2005) SPECIAL_NET VSS has special wires but no definition for instance-pin connection. This will cause routability problems later.
+#NanoRoute Version v10.12-s010 NR110720-1815/10_10_USR2-UB
+#WARNING (NREX-28) The height of the first routing layer metal1 is 0.000000. It should be larger than 0.000000
+#WARNING (NREX-29) The metal thickness of routing layer metal1 is 0.000000. It should be larger than 0.0. Add this to the technology information for better accuracy.
+#WARNING (NREX-30) Please also check the height and metal thickness values for the routing layers heigher than routing layer metal1
+#WARNING (NREX-4) No Extended Cap Table was imported. Not enough process information was provided either and default Extended Cap Table database will be used.
+# metal1       H   Track-Pitch = 3.000    Line-2-Via Pitch = 1.950
+# metal2       V   Track-Pitch = 2.400    Line-2-Via Pitch = 1.950
+# metal3       H   Track-Pitch = 3.000    Line-2-Via Pitch = 2.550
+#Merging special wires...
+#Number of eco nets is 0
+#
+#Start data preparation...
+#Force regenerating Ggrids.
+#Auto generating G-grids with size=20 tracks, using layer metal3's pitch = 2.550.
+#Using automatically generated G-grids.
+#
+#Data preparation is done on Mon Mar 25 02:06:31 2019
+#
+#Analyzing routing resource...
+#Routing resource analysis is done on Mon Mar 25 02:06:31 2019
+#
+#  Resource Analysis:
+#
+#               Routing  #Avail      #Track     #Total     %Gcell
+#  Layer      Direction   Track     Blocked      Gcell    Blocked
+#  --------------------------------------------------------------
+#  Metal 1        H          74           0          20    45.00%
+#  Metal 2        V          96          11          20     0.00%
+#  Metal 3        H          74           0          20     0.00%
+#  --------------------------------------------------------------
+#  Total                    244       3.43%  60    15.00%
+#
+#
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 224.00 (Mb)
+#
+#start global routing iteration 1...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 224.00 (Mb)
+#
+#start global routing iteration 2...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 224.00 (Mb)
+#
+#start global routing iteration 3...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 224.00 (Mb)
+#
+#
+#  Congestion Analysis: (blocked Gcells are excluded)
+#
+#                 OverCon          
+#                  #Gcell    %Gcell
+#     Layer           (1)   OverCon
+#  --------------------------------
+#   Metal 1      0(0.00%)   (0.00%)
+#   Metal 2      0(0.00%)   (0.00%)
+#   Metal 3      0(0.00%)   (0.00%)
+#  --------------------------------
+#     Total      0(0.00%)   (0.00%)
+#
+#  The worst congested Gcell overcon (routing demand over resource in number of tracks) = 1
+#
+#Complete Global Routing.
+#Total wire length = 4272 um.
+#Total half perimeter of net bounding box = 6103 um.
+#Total wire length on LAYER metal1 = 0 um.
+#Total wire length on LAYER metal2 = 2013 um.
+#Total wire length on LAYER metal3 = 2259 um.
+#Total number of vias = 79
+#Up-Via Summary (total 79):
+#           
+#-----------------------
+#  Metal 2           79
+#-----------------------
+#                    79 
+#
+#Max overcon = 0 track.
+#Total overcon = 0.00%.
+#Worst layer Gcell overcon rate = 0.00%.
+#Cpu time = 00:00:00
+#Elapsed time = 00:00:00
+#Increased memory = 1.00 (Mb)
+#Total memory = 224.00 (Mb)
+#Peak memory = 257.00 (Mb)
+#
+#Start Detail Routing.
+#start initial detail routing ...
+#    number of violations = 0
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 227.00 (Mb)
+#start 1st optimization iteration ...
+#    number of violations = 0
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 227.00 (Mb)
+#Complete Detail Routing.
+#Total wire length = 5947 um.
+#Total half perimeter of net bounding box = 6103 um.
+#Total wire length on LAYER metal1 = 0 um.
+#Total wire length on LAYER metal2 = 3369 um.
+#Total wire length on LAYER metal3 = 2577 um.
+#Total number of vias = 193
+#Up-Via Summary (total 193):
+#           
+#-----------------------
+#  Metal 2          193
+#-----------------------
+#                   193 
+#
+#Total number of DRC violations = 0
+#Total number of violations on LAYER metal1 = 0
+#Total number of violations on LAYER metal2 = 0
+#Total number of violations on LAYER metal3 = 0
+#detailRoute Statistics:
+#Cpu time = 00:00:00
+#Elapsed time = 00:00:00
+#Increased memory = 0.00 (Mb)
+#Total memory = 224.00 (Mb)
+#Peak memory = 257.00 (Mb)
+#
+#globalDetailRoute statistics:
+#Cpu time = 00:00:00
+#Elapsed time = 00:00:00
+#Increased memory = 12.00 (Mb)
+#Total memory = 223.00 (Mb)
+#Peak memory = 257.00 (Mb)
+#Number of warnings = 6
+#Total number of warnings = 6
+#Number of fails = 0
+#Total number of fails = 0
+#Complete globalDetailRoute on Mon Mar 25 02:06:31 2019
+#
+<CMD> getFillerMode -quiet
+<CMD> addFiller -cell fill_1_wide -prefix FILLER
+*INFO: Adding fillers to top-module.
+*INFO:   Added 142 filler insts (cell fill_1_wide / prefix FILLER).
+*INFO: Total 142 filler insts added - prefix FILLER (CPU: 0:00:00.0).
+For 142 new insts, *** Applied 0 GNC rules (cpu = 0:00:00.0)
+*INFO: Checking for DRC violations on added fillers.
+**WARN: (ENCVFG-47):	Pin of Cell instrReg1_nextQ_reg_5_ at (31.200, 55.800), (57.600, 58.200) on Layer metal1 is not connected to any net. Use globalNetConnect or GUI Power->Connect Global Nets to specify global net connection rules properly.
+
+*INFO: Iteration 0-#1, Found 0 DRC violation  (real: 0:00:00.0).
+*INFO: Adding fillers to top-module.
+*INFO:   Added 0 filler inst of any cell-type.
+For 0 new insts, *** Applied 0 GNC rules.
+*INFO: End DRC Checks. (real: 0:00:00.0 ).
+<CMD> setVerifyGeometryMode -area { 0 0 0 0 } -minWidth true -minSpacing true -minArea true -sameNet true -short true -overlap true -offRGrid false -offMGrid true -minHole true -implantCheck true -minimumCut true -minStep true -viaEnclosure true -antenna false -insuffMetalOverlap true -pinInBlkg false -diffCellViol true -sameCellViol false -padFillerCellsOverlap true -routingBlkgPinOverlap true -routingCellBlkgOverlap true -regRoutingOnly false -stackedViasOnRegNet false -wireExt true -viaOverlap false -useNonDefaultSpacing false -maxWidth true -maxNonPrefLength -1 -error 1000 -warning 50
+<CMD> verifyGeometry
+ *** Starting Verify Geometry (MEM: 223.9) ***
+
+  VERIFY GEOMETRY ...... Starting Verification
+  VERIFY GEOMETRY ...... Initializing
+  VERIFY GEOMETRY ...... Deleting Existing Violations
+  VERIFY GEOMETRY ...... Creating Sub-Areas
+                  ...... bin size: 960
+  VERIFY GEOMETRY ...... SubArea : 1 of 1
+**WARN: (ENCVFG-47):	Pin of Cell FILLER_16 at (31.200, 55.800), (62.400, 58.200) on Layer metal1 is not connected to any net. Use globalNetConnect or GUI Power->Connect Global Nets to specify global net connection rules properly.
+
+  VERIFY GEOMETRY ...... Cells          :  0 Viols.
+  VERIFY GEOMETRY ...... SameNet        :  0 Viols.
+  VERIFY GEOMETRY ...... Wiring         :  0 Viols.
+  VERIFY GEOMETRY ...... Antenna        :  0 Viols.
+  VERIFY GEOMETRY ...... Sub-Area : 1 complete 0 Viols. 0 Wrngs.
+VG: elapsed time: 0.00
+Begin Summary ...
+  Cells       : 0
+  SameNet     : 0
+  Wiring      : 0
+  Antenna     : 0
+  Short       : 0
+  Overlap     : 0
+End Summary
+
+  Verification Complete : 0 Viols.  0 Wrngs.
+
+**********End: VERIFY GEOMETRY**********
+ *** verify geometry (CPU: 0:00:00.0  MEM: 0.0M)
+
+<CMD> verifyConnectivity -type all -error 1000 -warning 50
+
+******** Start: VERIFY CONNECTIVITY ********
+Start Time: Mon Mar 25 02:07:44 2019
+
+Design Name: controller
+Database Units: 100
+Design Boundary: (0.0000, 0.0000) (257.8500, 222.0000)
+Error Limit = 1000; Warning Limit = 50
+Check all nets
+Time Elapsed: 0:00:00.0
+
+Begin Summary 
+  Found no problems or warnings.
+End Summary
+
+End Time: Mon Mar 25 02:07:44 2019
+******** End: VERIFY CONNECTIVITY ********
+  Verification Complete : 0 Viols.  0 Wrngs.
+  (CPU Time: 0:00:00.0  MEM: 0.004M)
+
+<CMD> saveDesign controller_route.enc
+Writing Netlist "controller_route.enc.dat/controller.v.gz" ...
+Saving configuration ...
+Saving preference file controller_route.enc.dat/enc.pref.tcl ...
+Saving floorplan ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving placement ...
+*** Completed savePlace (cpu=0:00:00.0 real=0:00:00.0 mem=223.9M) ***
+Saving route ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=223.9M) ***
+Writing DEF file 'controller_route.enc.dat/controller.def.gz', current time is Mon Mar 25 02:08:04 2019 ...
+unitPerMicron=100, dbgMicronPerDBU=0.010000, unitPerDBU=1.000000
+DEF file 'controller_route.enc.dat/controller.def.gz' is written, current time is Mon Mar 25 02:08:04 2019 ...
+*** Completed saveYieldMap (cpu=: 0:00:00.0 real=0:00:00.0 mem=: 0.000M) ***
+<CMD> global dbgLefDefOutVersion
+<CMD> set dbgLefDefOutVersion 5.5
+<CMD> defOut -floorplan -netlist -routing controller.def
+Writing DEF file 'controller.def', current time is Mon Mar 25 02:08:46 2019 ...
+unitPerMicron=100, dbgMicronPerDBU=0.010000, unitPerDBU=1.000000
+DEF file 'controller.def' is written, current time is Mon Mar 25 02:08:46 2019 ...
+<CMD> set dbgLefDefOutVersion NULL
+<CMD> selectWire 16.5000 196.2000 240.9000 206.1000 1 VDD
+
+*** Memory Usage v#8 (Current mem = 223.898M, initial mem = 46.016M) ***
+--- Ending "Encounter" (totcpu=0:01:07, real=0:12:05, mem=223.9M) ---

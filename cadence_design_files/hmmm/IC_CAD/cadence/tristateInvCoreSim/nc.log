@@ -1,0 +1,76 @@
+ncverilog: 15.20-s069: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s069: Started on Mar 18, 2019 at 02:45:20 EDT
+ncverilog
+	-l
+	nc.log
+	+access+r
+	tristate.sv
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncverilog: *W,DLCVAR (/proj/ncsu/ncsu-cdk-1.6.0.beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncverilog: *W,DLCVAR (/proj/ncsu/ncsu-cdk-1.6.0.beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncverilog: *W,DLCVAR (/proj/ncsu/ncsu-cdk-1.6.0.beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncverilog: *W,DLCVAR (/proj/ncsu/ncsu-cdk-1.6.0.beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+Recompiling... reason: file './tristate.sv' is newer than expected.
+	expected: Mon Mar 18 02:25:34 2019
+	actual:   Mon Mar 18 02:45:13 2019
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncverilog: *W,DLCVAR (/proj/ncsu/ncsu-cdk-1.6.0.beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncvlog: *W,DLCVAR (/proj/ncsu/ncsu-cdk-1.6.0.beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+file: tristate.sv
+	module worklib.tristate:sv
+		errors: 0, warnings: 0
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncverilog: *W,DLCVAR (/proj/ncsu/ncsu-cdk-1.6.0.beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncverilog: *W,DLCVAR (/proj/ncsu/ncsu-cdk-1.6.0.beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncelab: *W,DLCVAR (/proj/ncsu/ncsu-cdk-1.6.0.beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncvlog_cg: *W,DLCVAR (/proj/ncsu/ncsu-cdk-1.6.0.beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+		worklib.tristate:sv <0x2b3003b4>
+			streams:   1, words:   274
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		              Instances  Unique
+		Modules:              2       2
+		Registers:           10      10
+		Scalar wires:         6       -
+		Always blocks:        3       3
+		Initial blocks:       1       1
+		Cont. assignments:    1       1
+		Pseudo assignments:   4       4
+	Writing initial simulation snapshot: worklib.testbench:sv
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncsim: *W,DLCVAR (/proj/ncsu/ncsu-cdk-1.6.0.beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+Loading snapshot worklib.testbench:sv .................... Done
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+ncsim> source /cad/cds/INCISIV1520/tools/inca/files/ncsimrc
+ncsim> run
+Completed  4 tests with  0 errors.
+Simulation stopped via $stop(1) at time 81 NS + 0
+./testfixture.verilog:23          $stop;
+ncsim> exit
+TOOL:	ncverilog	15.20-s069: Exiting on Mar 18, 2019 at 02:45:32 EDT  (total: 00:00:12)

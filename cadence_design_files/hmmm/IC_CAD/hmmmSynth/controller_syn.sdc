@@ -1,0 +1,51 @@
+###################################################################
+
+# Created by write_sdc on Mon Mar 18 03:08:33 2019
+
+###################################################################
+set sdc_version 2.0
+
+set_units -time ns -resistance kOhm -capacitance pF -voltage V -current mA
+set_driving_cell -lib_cell inv_4x -library muddlib [get_ports ph1]
+set_driving_cell -lib_cell inv_4x -library muddlib [get_ports ph2]
+set_driving_cell -lib_cell inv_4x -library muddlib [get_ports reset]
+set_driving_cell -lib_cell inv_4x -library muddlib [get_ports {funct[3]}]
+set_driving_cell -lib_cell inv_4x -library muddlib [get_ports {funct[2]}]
+set_driving_cell -lib_cell inv_4x -library muddlib [get_ports {funct[1]}]
+set_driving_cell -lib_cell inv_4x -library muddlib [get_ports {funct[0]}]
+set_driving_cell -lib_cell inv_4x -library muddlib [get_ports negative]
+set_driving_cell -lib_cell inv_4x -library muddlib [get_ports zero]
+set_load -pin_load 0.0349584 [get_ports RA1Src]
+set_load -pin_load 0.0349584 [get_ports PCEnable]
+set_load -pin_load 0.0349584 [get_ports AdrSrc]
+set_load -pin_load 0.0349584 [get_ports InstrSrc]
+set_load -pin_load 0.0349584 [get_ports RegWrite]
+set_load -pin_load 0.0349584 [get_ports TwoRegs]
+set_load -pin_load 0.0349584 [get_ports ALUSub]
+set_load -pin_load 0.0349584 [get_ports {PCSrc[1]}]
+set_load -pin_load 0.0349584 [get_ports {PCSrc[0]}]
+set_load -pin_load 0.0349584 [get_ports {RegWriteSrc[1]}]
+set_load -pin_load 0.0349584 [get_ports {RegWriteSrc[0]}]
+set_load -pin_load 0.0349584 [get_ports MemWrite]
+create_clock [get_ports ph1]  -period 10  -waveform {0 5}
+set_input_delay -clock ph1  0.5  [get_ports ph1]
+set_input_delay -clock ph1  0.5  [get_ports ph2]
+set_input_delay -clock ph1  0.5  [get_ports reset]
+set_input_delay -clock ph1  0.5  [get_ports {funct[3]}]
+set_input_delay -clock ph1  0.5  [get_ports {funct[2]}]
+set_input_delay -clock ph1  0.5  [get_ports {funct[1]}]
+set_input_delay -clock ph1  0.5  [get_ports {funct[0]}]
+set_input_delay -clock ph1  0.5  [get_ports negative]
+set_input_delay -clock ph1  0.5  [get_ports zero]
+set_output_delay -clock ph1  0.5  [get_ports RA1Src]
+set_output_delay -clock ph1  0.5  [get_ports PCEnable]
+set_output_delay -clock ph1  0.5  [get_ports AdrSrc]
+set_output_delay -clock ph1  0.5  [get_ports InstrSrc]
+set_output_delay -clock ph1  0.5  [get_ports RegWrite]
+set_output_delay -clock ph1  0.5  [get_ports TwoRegs]
+set_output_delay -clock ph1  0.5  [get_ports ALUSub]
+set_output_delay -clock ph1  0.5  [get_ports {PCSrc[1]}]
+set_output_delay -clock ph1  0.5  [get_ports {PCSrc[0]}]
+set_output_delay -clock ph1  0.5  [get_ports {RegWriteSrc[1]}]
+set_output_delay -clock ph1  0.5  [get_ports {RegWriteSrc[0]}]
+set_output_delay -clock ph1  0.5  [get_ports MemWrite]

@@ -1,0 +1,22 @@
+# File Created by  at Sun Feb 17 12:04:13 2019
+# assisted by CdsLibEditor
+INCLUDE /proj/ncsu/ncsu-cdk-1.6.0.beta/cdssetup/cds.lib
+#DEFINE muddlib10 /courses/e158/15/lib/muddlib10
+#DEFINE wordlib8 /courses/e158/15/lib/wordlib8
+#DEFINE mips8 /courses/e158/15/lib/mips8
+DEFINE HMC_Sheets_8ths /courses/e158/15/lib/oa/HMC_Sheets_8ths
+DEFINE lab1_cn /hdd/home/cnorfleet/IC_CAD/cadence/lab1_cn
+DEFINE muddlib11 muddlib11
+DEFINE wordlib8 wordlib8
+DEFINE mips8 mips8
+DEFINE controller_cn /hdd/home/cnorfleet/IC_CAD/cadence/controller_cn
+DEFINE lab3_cn /hdd/home/cnorfleet/IC_CAD/cadence/lab3_cn
+DEFINE mips8_gdsin /hdd/home/cnorfleet/IC_CAD/cadence/mips8_gdsin
+DEFINE HMMM /home/cnorfleet/IC_CAD/cadence/HMMM
+#Removed by ddDeleteObj: DEFINE HMMMImportTest /home/cnorfleet/IC_CAD/cadence/HMMMImportTest
+DEFINE HMMM_Unused /home/cnorfleet/IC_CAD/cadence/HMMM_Unused
+DEFINE HMMM_Synth /proj/VLSI19S/G1/hmmm/IC_CAD/cadence/HMMM_Synth
+DEFINE chip_tapein /proj/VLSI19S/G1/hmmm/IC_CAD/cadence/chip_tapein
+#Removed by ddDeleteObj: DEFINE chip_gdsin /proj/VLSI19S/G1/hmmm/IC_CAD/cadence/chip_gdsin
+DEFINE chip_gdsin /proj/VLSI19S/G1/hmmm/IC_CAD/cadence/chip_gdsin
+DEFINE chip_gdsin1 /proj/VLSI19S/G1/hmmm/IC_CAD/cadence/chip_gdsin1

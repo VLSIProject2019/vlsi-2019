@@ -1,0 +1,56 @@
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : controller
+Version: L-2016.03-SP4
+Date   : Mon Mar 25 04:07:49 2019
+****************************************
+
+
+Library(s) Used:
+
+    muddlib (File: /courses/e158/15/lab3/muddlib.db)
+
+
+Operating Conditions: typical   Library: muddlib
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+controller             5k                muddlib
+
+
+Global Operating Voltage = 5    
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  =   1.2668 mW   (74%)
+  Net Switching Power  = 444.2870 uW   (26%)
+                         ---------
+Total Dynamic Power    =   1.7111 mW  (100%)
+
+Cell Leakage Power     =   8.6152 nW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           0.8288        3.4697e-02            2.4013            0.8635  (  50.47%)
+sequential     9.2021e-02        2.0060e-02            2.4013            0.1121  (   6.55%)
+combinational      0.3459            0.3895            3.8126            0.7354  (  42.98%)
+--------------------------------------------------------------------------------------------------
+Total              1.2668 mW         0.4443 mW         8.6152 nW         1.7111 mW
+1

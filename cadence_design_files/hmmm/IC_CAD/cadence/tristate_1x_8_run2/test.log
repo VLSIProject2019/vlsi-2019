@@ -1,0 +1,684 @@
+03/22/2019 01:12:45 (789627 ncsim): Initialization started (12.04-s017)...
+03/22/2019 01:12:45 (789627): FLEXnet version 11.11.1.1 build 119913
+03/22/2019 01:12:45 (789627): Process ID 16297
+03/22/2019 01:12:45 (789627): Large file size support.
+03/22/2019 01:12:45 (789627): Creating a new job ...
+03/22/2019 01:12:45 (789627): Validating server path: 5280@134.173.38.214:2222@theforce.eng.hmc.edu
+03/22/2019 01:12:45 (789627): Server path validation status: 0
+03/22/2019 01:12:45 (789627):   Configuration of license path is '5280@134.173.38.214:2222@theforce.eng.hmc.edu'.
+03/22/2019 01:12:45 (789627):   Configuration of recheck interval minimum is 290.
+03/22/2019 01:12:45 (789627):   Configuration of 2000000000 maximum retry calls.
+03/22/2019 01:12:45 (789627):   Configuration of sleep time value of 0.
+03/22/2019 01:12:45 (789627):   Configuration of display specification is 'localhost:11.0'.
+03/22/2019 01:12:45 (789627): Storage of server list started...
+03/22/2019 01:12:45 (789627): Server list saved with status 0 (time 0).
+03/22/2019 01:12:45 (789627):   Licenses will be checked out using cnorfleet@DHCP-60-126.ST.HMC.Edu(localhost:11.0).
+03/22/2019 01:12:45 (789627):   (System spec would have been cnorfleet@DHCP-60-126.ST.HMC.Edu(/dev/pts/1) )
+03/22/2019 01:12:45 (789627):   Using license server 134.173.38.214.
+03/22/2019 01:12:45 (789627): Job creation completed with status 0 (time 0).
+03/22/2019 01:12:45 (789627): Creating a new job ...
+03/22/2019 01:12:45 (789627):   Configuration of license path is '5280@134.173.38.214:2222@theforce.eng.hmc.edu'.
+03/22/2019 01:12:45 (789627):   Configuration of recheck interval minimum is 290.
+03/22/2019 01:12:45 (789627):   Configuration of 2000000000 maximum retry calls.
+03/22/2019 01:12:45 (789627):   Configuration of sleep time value of 0.
+03/22/2019 01:12:45 (789627):   Configuration of display specification is 'localhost:11.0'.
+03/22/2019 01:12:45 (789627): Storage of server list started...
+03/22/2019 01:12:45 (789627): Server list saved with status 0 (time 0).
+03/22/2019 01:12:45 (789627):   Licenses will be checked out using cnorfleet@DHCP-60-126.ST.HMC.Edu(localhost:11.0).
+03/22/2019 01:12:45 (789627):   (System spec would have been cnorfleet@DHCP-60-126.ST.HMC.Edu(/dev/pts/1) )
+03/22/2019 01:12:45 (789627):   Using license server 134.173.38.214.
+03/22/2019 01:12:45 (789627): Job creation completed with status 0 (time 0).
+03/22/2019 01:12:45 (789627): Creating a new job ...
+03/22/2019 01:12:45 (789627):   Configuration of license path is '5280@134.173.38.214:2222@theforce.eng.hmc.edu'.
+03/22/2019 01:12:45 (789627):   Configuration of recheck interval minimum is 290.
+03/22/2019 01:12:45 (789627):   Configuration of 2000000000 maximum retry calls.
+03/22/2019 01:12:45 (789627):   Configuration of sleep time value of 0.
+03/22/2019 01:12:45 (789627):   Configuration of display specification is 'localhost:11.0'.
+03/22/2019 01:12:45 (789627): Storage of server list started...
+03/22/2019 01:12:45 (789627): Server list saved with status 0 (time 0).
+03/22/2019 01:12:45 (789627):   Licenses will be checked out using cnorfleet@DHCP-60-126.ST.HMC.Edu(localhost:11.0).
+03/22/2019 01:12:45 (789627):   (System spec would have been cnorfleet@DHCP-60-126.ST.HMC.Edu(/dev/pts/1) )
+03/22/2019 01:12:45 (789627):   Using license server 134.173.38.214.
+03/22/2019 01:12:45 (789627): Job creation completed with status 0 (time 0).
+03/22/2019 01:12:45 (789627): Creating a new job ...
+03/22/2019 01:12:45 (789627):   Configuration of license path is '5280@134.173.38.214:2222@theforce.eng.hmc.edu'.
+03/22/2019 01:12:45 (789627):   Configuration of recheck interval minimum is 290.
+03/22/2019 01:12:45 (789627):   Configuration of 2000000000 maximum retry calls.
+03/22/2019 01:12:45 (789627):   Configuration of sleep time value of 0.
+03/22/2019 01:12:45 (789627):   Configuration of display specification is 'localhost:11.0'.
+03/22/2019 01:12:45 (789627): Storage of server list started...
+03/22/2019 01:12:45 (789627): Server list saved with status 0 (time 0).
+03/22/2019 01:12:45 (789627):   Licenses will be checked out using cnorfleet@DHCP-60-126.ST.HMC.Edu(localhost:11.0).
+03/22/2019 01:12:45 (789627):   (System spec would have been cnorfleet@DHCP-60-126.ST.HMC.Edu(/dev/pts/1) )
+03/22/2019 01:12:45 (789627):   Using license server 134.173.38.214.
+03/22/2019 01:12:45 (789627): Job creation completed with status 0 (time 0).
+03/22/2019 01:12:45 (789627): Creating a new job ...
+03/22/2019 01:12:45 (789627):   Configuration of license path is '5280@134.173.38.214:2222@theforce.eng.hmc.edu'.
+03/22/2019 01:12:45 (789627):   Configuration of recheck interval minimum is 290.
+03/22/2019 01:12:45 (789627):   Configuration of 2000000000 maximum retry calls.
+03/22/2019 01:12:45 (789627):   Configuration of sleep time value of 0.
+03/22/2019 01:12:45 (789627):   Configuration of display specification is 'localhost:11.0'.
+03/22/2019 01:12:45 (789627): Storage of server list started...
+03/22/2019 01:12:45 (789627): Server list saved with status 0 (time 0).
+03/22/2019 01:12:45 (789627):   Licenses will be checked out using cnorfleet@DHCP-60-126.ST.HMC.Edu(localhost:11.0).
+03/22/2019 01:12:45 (789627):   (System spec would have been cnorfleet@DHCP-60-126.ST.HMC.Edu(/dev/pts/1) )
+03/22/2019 01:12:45 (789627):   Using license server 134.173.38.214.
+03/22/2019 01:12:45 (789627): Job creation completed with status 0 (time 0).
+03/22/2019 01:12:45 (789627): Initialization completed with status 0 (time 0).
+03/22/2019 01:12:45 (789627): Check-out started ....
+03/22/2019 01:12:45 (789627): Checking out 1 license(s) for Incisive_HDL_Simulator 15.200...
+03/22/2019 01:12:46 (789627): Storage of server list started...
+03/22/2019 01:12:46 (789627): Server list saved with status 0 (time 0).
+03/22/2019 01:12:46 (789627): Creating a new job ...
+03/22/2019 01:12:46 (789627): Validating server path: 5280@134.173.38.214:2222@theforce.eng.hmc.edu
+03/22/2019 01:12:46 (789627): Server path validation status: 0
+03/22/2019 01:12:46 (789627):   Configuration of license path is '5280@134.173.38.214:2222@theforce.eng.hmc.edu'.
+03/22/2019 01:12:46 (789627):   Configuration of recheck interval minimum is 290.
+03/22/2019 01:12:46 (789627):   Configuration of 2000000000 maximum retry calls.
+03/22/2019 01:12:46 (789627):   Configuration of sleep time value of 0.
+03/22/2019 01:12:46 (789627):   Configuration of display specification is 'localhost:11.0'.
+03/22/2019 01:12:46 (789627): Storage of server list started...
+03/22/2019 01:12:46 (789627): Server list saved with status 0 (time 0).
+03/22/2019 01:12:46 (789627):   Licenses will be checked out using cnorfleet@DHCP-60-126.ST.HMC.Edu(localhost:11.0).
+03/22/2019 01:12:46 (789627):   (System spec would have been cnorfleet@DHCP-60-126.ST.HMC.Edu(/dev/pts/1) )
+03/22/2019 01:12:46 (789627):   Using license server 134.173.38.214.
+03/22/2019 01:12:46 (789627): Job creation completed with status 0 (time 0).
+03/22/2019 01:12:46 (789627): Check-out completed with status -5 (time 1).
+03/22/2019 01:12:46 (789627): Check-out started ....
+03/22/2019 01:12:46 (789627): Checking out 1 license(s) for Xcelium_Limited_Single_Core 16.000...
+03/22/2019 01:12:46 (789627): Storage of server list started...
+03/22/2019 01:12:46 (789627): Server list saved with status 0 (time 0).
+03/22/2019 01:12:46 (789627): Creating a new job ...
+03/22/2019 01:12:46 (789627): Validating server path: 5280@134.173.38.214:2222@theforce.eng.hmc.edu
+03/22/2019 01:12:46 (789627): Server path validation status: 0
+03/22/2019 01:12:46 (789627):   Configuration of license path is '5280@134.173.38.214:2222@theforce.eng.hmc.edu'.
+03/22/2019 01:12:46 (789627):   Configuration of recheck interval minimum is 290.
+03/22/2019 01:12:46 (789627):   Configuration of 2000000000 maximum retry calls.
+03/22/2019 01:12:46 (789627):   Configuration of sleep time value of 0.
+03/22/2019 01:12:46 (789627):   Configuration of display specification is 'localhost:11.0'.
+03/22/2019 01:12:46 (789627): Storage of server list started...
+03/22/2019 01:12:46 (789627): Server list saved with status 0 (time 0).
+03/22/2019 01:12:46 (789627):   Licenses will be checked out using cnorfleet@DHCP-60-126.ST.HMC.Edu(localhost:11.0).
+03/22/2019 01:12:46 (789627):   (System spec would have been cnorfleet@DHCP-60-126.ST.HMC.Edu(/dev/pts/1) )
+03/22/2019 01:12:46 (789627):   Using license server 134.173.38.214.
+03/22/2019 01:12:46 (789627): Job creation completed with status 0 (time 0).
+03/22/2019 01:12:46 (789627): Check-out completed with status -5 (time 0).
+03/22/2019 01:12:46 (789627): Check-out (Increment) started ....
+03/22/2019 01:12:46 (789627): Checking out 1 license(s) for Incisive_Enterprise_Simulator 15.200...
+03/22/2019 01:12:46 (789627): Storage of server list started...
+03/22/2019 01:12:46 (789627): Server list saved with status 0 (time 0).
+03/22/2019 01:12:46 (789627):   (Checked out from file '5280@134.173.38.214',
+             line '15.2 15-dec-2019 20 5E6DA6C5A305175E70A7 ')
+03/22/2019 01:12:46 (789627): Check-out (Increment) completed with status 0 (time 0).
+03/22/2019 01:12:46 (789627): Recheck started ....
+03/22/2019 01:12:46 (789627):   Checking feature Incisive_Enterprise_Simulator
+03/22/2019 01:12:46 (789627):   Time spent in server Recheck was 0.
+03/22/2019 01:12:46 (789627): Re-check completed with status 0 (time 0).
+03/22/2019 01:12:46 (789627): Recheck started ....
+03/22/2019 01:12:46 (789627):   Actual recheck skipped due to recheck interval...
+03/22/2019 01:12:46 (789627): Re-check completed with status 0 (time 0).
+03/22/2019 01:12:46 (789627): Recheck started ....
+03/22/2019 01:12:46 (789627):   Actual recheck skipped due to recheck interval...
+03/22/2019 01:12:46 (789627): Re-check completed with status 0 (time 0).
+03/22/2019 01:12:55 (789627): Recheck started ....
+03/22/2019 01:12:55 (789627):   Actual recheck skipped due to recheck interval...
+03/22/2019 01:12:55 (789627): Re-check completed with status 0 (time 0).
+03/22/2019 01:12:55 (789627): Check-in started ....
+03/22/2019 01:12:55 (789627): Creating a new job ...
+03/22/2019 01:12:55 (789627): Validating server path: 5280@134.173.38.214:2222@theforce.eng.hmc.edu
+03/22/2019 01:12:55 (789627): Server path validation status: 0
+03/22/2019 01:12:55 (789627):   Configuration of license path is '5280@134.173.38.214:2222@theforce.eng.hmc.edu'.
+03/22/2019 01:12:55 (789627):   Configuration of recheck interval minimum is 290.
+03/22/2019 01:12:55 (789627):   Configuration of 2000000000 maximum retry calls.
+03/22/2019 01:12:55 (789627):   Configuration of sleep time value of 0.
+03/22/2019 01:12:55 (789627):   Configuration of display specification is 'localhost:11.0'.
+03/22/2019 01:12:55 (789627): Storage of server list started...
+03/22/2019 01:12:55 (789627): Server list saved with status 0 (time 0).
+03/22/2019 01:12:55 (789627):   Licenses will be checked out using cnorfleet@DHCP-60-126.ST.HMC.Edu(localhost:11.0).
+03/22/2019 01:12:55 (789627):   (System spec would have been cnorfleet@DHCP-60-126.ST.HMC.Edu(/dev/pts/1) )
+03/22/2019 01:12:55 (789627):   Using license server 134.173.38.214.
+03/22/2019 01:12:55 (789627): Job creation completed with status 0 (time 0).
+03/22/2019 01:12:55 (789627): Check-in of Incisive_Enterprise_Simulator completed with status 0 (time 0).
+03/22/2019 01:12:55 (789627): Exit started ....
+03/22/2019 01:12:55 (789627): Creating a new job ...
+03/22/2019 01:12:55 (789627): Validating server path: 5280@134.173.38.214:2222@theforce.eng.hmc.edu
+03/22/2019 01:12:55 (789627): Server path validation status: 0
+03/22/2019 01:12:55 (789627):   Configuration of license path is '5280@134.173.38.214:2222@theforce.eng.hmc.edu'.
+03/22/2019 01:12:55 (789627):   Configuration of recheck interval minimum is 290.
+03/22/2019 01:12:55 (789627):   Configuration of 2000000000 maximum retry calls.
+03/22/2019 01:12:55 (789627):   Configuration of sleep time value of 0.
+03/22/2019 01:12:55 (789627):   Configuration of display specification is 'localhost:11.0'.
+03/22/2019 01:12:55 (789627): Storage of server list started...
+03/22/2019 01:12:55 (789627): Server list saved with status 0 (time 0).
+03/22/2019 01:12:55 (789627):   Licenses will be checked out using cnorfleet@DHCP-60-126.ST.HMC.Edu(localhost:11.0).
+03/22/2019 01:12:55 (789627):   (System spec would have been cnorfleet@DHCP-60-126.ST.HMC.Edu(/dev/pts/1) )
+03/22/2019 01:12:55 (789627):   Using license server 134.173.38.214.
+03/22/2019 01:12:55 (789627): Job creation completed with status 0 (time 0).
+03/22/2019 01:12:55 (789627): Exit completed with status 0 (time 0).
+03/22/2019 01:16:41 (115988 ncsim): Initialization started (12.04-s017)...
+03/22/2019 01:16:41 (115988): FLEXnet version 11.11.1.1 build 119913
+03/22/2019 01:16:41 (115988): Process ID 16580
+03/22/2019 01:16:41 (115988): Large file size support.
+03/22/2019 01:16:41 (115988): Creating a new job ...
+03/22/2019 01:16:41 (115988): Validating server path: 5280@134.173.38.214:2222@theforce.eng.hmc.edu
+03/22/2019 01:16:41 (115988): Server path validation status: 0
+03/22/2019 01:16:41 (115988):   Configuration of license path is '5280@134.173.38.214:2222@theforce.eng.hmc.edu'.
+03/22/2019 01:16:41 (115988):   Configuration of recheck interval minimum is 290.
+03/22/2019 01:16:41 (115988):   Configuration of 2000000000 maximum retry calls.
+03/22/2019 01:16:41 (115988):   Configuration of sleep time value of 0.
+03/22/2019 01:16:41 (115988):   Configuration of display specification is 'localhost:11.0'.
+03/22/2019 01:16:41 (115988): Storage of server list started...
+03/22/2019 01:16:41 (115988): Server list saved with status 0 (time 0).
+03/22/2019 01:16:41 (115988):   Licenses will be checked out using cnorfleet@DHCP-60-126.ST.HMC.Edu(localhost:11.0).
+03/22/2019 01:16:41 (115988):   (System spec would have been cnorfleet@DHCP-60-126.ST.HMC.Edu(/dev/pts/1) )
+03/22/2019 01:16:41 (115988):   Using license server 134.173.38.214.
+03/22/2019 01:16:41 (115988): Job creation completed with status 0 (time 0).
+03/22/2019 01:16:41 (115988): Creating a new job ...
+03/22/2019 01:16:41 (115988):   Configuration of license path is '5280@134.173.38.214:2222@theforce.eng.hmc.edu'.
+03/22/2019 01:16:41 (115988):   Configuration of recheck interval minimum is 290.
+03/22/2019 01:16:41 (115988):   Configuration of 2000000000 maximum retry calls.
+03/22/2019 01:16:41 (115988):   Configuration of sleep time value of 0.
+03/22/2019 01:16:41 (115988):   Configuration of display specification is 'localhost:11.0'.
+03/22/2019 01:16:41 (115988): Storage of server list started...
+03/22/2019 01:16:41 (115988): Server list saved with status 0 (time 0).
+03/22/2019 01:16:41 (115988):   Licenses will be checked out using cnorfleet@DHCP-60-126.ST.HMC.Edu(localhost:11.0).
+03/22/2019 01:16:41 (115988):   (System spec would have been cnorfleet@DHCP-60-126.ST.HMC.Edu(/dev/pts/1) )
+03/22/2019 01:16:41 (115988):   Using license server 134.173.38.214.
+03/22/2019 01:16:41 (115988): Job creation completed with status 0 (time 0).
+03/22/2019 01:16:41 (115988): Creating a new job ...
+03/22/2019 01:16:41 (115988):   Configuration of license path is '5280@134.173.38.214:2222@theforce.eng.hmc.edu'.
+03/22/2019 01:16:41 (115988):   Configuration of recheck interval minimum is 290.
+03/22/2019 01:16:41 (115988):   Configuration of 2000000000 maximum retry calls.
+03/22/2019 01:16:41 (115988):   Configuration of sleep time value of 0.
+03/22/2019 01:16:41 (115988):   Configuration of display specification is 'localhost:11.0'.
+03/22/2019 01:16:41 (115988): Storage of server list started...
+03/22/2019 01:16:41 (115988): Server list saved with status 0 (time 0).
+03/22/2019 01:16:41 (115988):   Licenses will be checked out using cnorfleet@DHCP-60-126.ST.HMC.Edu(localhost:11.0).
+03/22/2019 01:16:41 (115988):   (System spec would have been cnorfleet@DHCP-60-126.ST.HMC.Edu(/dev/pts/1) )
+03/22/2019 01:16:41 (115988):   Using license server 134.173.38.214.
+03/22/2019 01:16:41 (115988): Job creation completed with status 0 (time 0).
+03/22/2019 01:16:41 (115988): Creating a new job ...
+03/22/2019 01:16:41 (115988):   Configuration of license path is '5280@134.173.38.214:2222@theforce.eng.hmc.edu'.
+03/22/2019 01:16:41 (115988):   Configuration of recheck interval minimum is 290.
+03/22/2019 01:16:41 (115988):   Configuration of 2000000000 maximum retry calls.
+03/22/2019 01:16:41 (115988):   Configuration of sleep time value of 0.
+03/22/2019 01:16:41 (115988):   Configuration of display specification is 'localhost:11.0'.
+03/22/2019 01:16:41 (115988): Storage of server list started...
+03/22/2019 01:16:41 (115988): Server list saved with status 0 (time 0).
+03/22/2019 01:16:41 (115988):   Licenses will be checked out using cnorfleet@DHCP-60-126.ST.HMC.Edu(localhost:11.0).
+03/22/2019 01:16:41 (115988):   (System spec would have been cnorfleet@DHCP-60-126.ST.HMC.Edu(/dev/pts/1) )
+03/22/2019 01:16:41 (115988):   Using license server 134.173.38.214.
+03/22/2019 01:16:41 (115988): Job creation completed with status 0 (time 0).
+03/22/2019 01:16:41 (115988): Creating a new job ...
+03/22/2019 01:16:41 (115988):   Configuration of license path is '5280@134.173.38.214:2222@theforce.eng.hmc.edu'.
+03/22/2019 01:16:41 (115988):   Configuration of recheck interval minimum is 290.
+03/22/2019 01:16:41 (115988):   Configuration of 2000000000 maximum retry calls.
+03/22/2019 01:16:41 (115988):   Configuration of sleep time value of 0.
+03/22/2019 01:16:41 (115988):   Configuration of display specification is 'localhost:11.0'.
+03/22/2019 01:16:41 (115988): Storage of server list started...
+03/22/2019 01:16:41 (115988): Server list saved with status 0 (time 0).
+03/22/2019 01:16:41 (115988):   Licenses will be checked out using cnorfleet@DHCP-60-126.ST.HMC.Edu(localhost:11.0).
+03/22/2019 01:16:41 (115988):   (System spec would have been cnorfleet@DHCP-60-126.ST.HMC.Edu(/dev/pts/1) )
+03/22/2019 01:16:41 (115988):   Using license server 134.173.38.214.
+03/22/2019 01:16:41 (115988): Job creation completed with status 0 (time 0).
+03/22/2019 01:16:41 (115988): Initialization completed with status 0 (time 0).
+03/22/2019 01:16:41 (115988): Check-out started ....
+03/22/2019 01:16:41 (115988): Checking out 1 license(s) for Incisive_HDL_Simulator 15.200...
+03/22/2019 01:16:41 (115988): Storage of server list started...
+03/22/2019 01:16:41 (115988): Server list saved with status 0 (time 0).
+03/22/2019 01:16:41 (115988): Creating a new job ...
+03/22/2019 01:16:41 (115988): Validating server path: 5280@134.173.38.214:2222@theforce.eng.hmc.edu
+03/22/2019 01:16:41 (115988): Server path validation status: 0
+03/22/2019 01:16:41 (115988):   Configuration of license path is '5280@134.173.38.214:2222@theforce.eng.hmc.edu'.
+03/22/2019 01:16:41 (115988):   Configuration of recheck interval minimum is 290.
+03/22/2019 01:16:41 (115988):   Configuration of 2000000000 maximum retry calls.
+03/22/2019 01:16:41 (115988):   Configuration of sleep time value of 0.
+03/22/2019 01:16:41 (115988):   Configuration of display specification is 'localhost:11.0'.
+03/22/2019 01:16:41 (115988): Storage of server list started...
+03/22/2019 01:16:41 (115988): Server list saved with status 0 (time 0).
+03/22/2019 01:16:41 (115988):   Licenses will be checked out using cnorfleet@DHCP-60-126.ST.HMC.Edu(localhost:11.0).
+03/22/2019 01:16:41 (115988):   (System spec would have been cnorfleet@DHCP-60-126.ST.HMC.Edu(/dev/pts/1) )
+03/22/2019 01:16:41 (115988):   Using license server 134.173.38.214.
+03/22/2019 01:16:41 (115988): Job creation completed with status 0 (time 0).
+03/22/2019 01:16:41 (115988): Check-out completed with status -5 (time 0).
+03/22/2019 01:16:41 (115988): Check-out started ....
+03/22/2019 01:16:41 (115988): Checking out 1 license(s) for Xcelium_Limited_Single_Core 16.000...
+03/22/2019 01:16:41 (115988): Storage of server list started...
+03/22/2019 01:16:41 (115988): Server list saved with status 0 (time 0).
+03/22/2019 01:16:41 (115988): Creating a new job ...
+03/22/2019 01:16:41 (115988): Validating server path: 5280@134.173.38.214:2222@theforce.eng.hmc.edu
+03/22/2019 01:16:41 (115988): Server path validation status: 0
+03/22/2019 01:16:41 (115988):   Configuration of license path is '5280@134.173.38.214:2222@theforce.eng.hmc.edu'.
+03/22/2019 01:16:41 (115988):   Configuration of recheck interval minimum is 290.
+03/22/2019 01:16:41 (115988):   Configuration of 2000000000 maximum retry calls.
+03/22/2019 01:16:41 (115988):   Configuration of sleep time value of 0.
+03/22/2019 01:16:41 (115988):   Configuration of display specification is 'localhost:11.0'.
+03/22/2019 01:16:41 (115988): Storage of server list started...
+03/22/2019 01:16:41 (115988): Server list saved with status 0 (time 0).
+03/22/2019 01:16:41 (115988):   Licenses will be checked out using cnorfleet@DHCP-60-126.ST.HMC.Edu(localhost:11.0).
+03/22/2019 01:16:41 (115988):   (System spec would have been cnorfleet@DHCP-60-126.ST.HMC.Edu(/dev/pts/1) )
+03/22/2019 01:16:41 (115988):   Using license server 134.173.38.214.
+03/22/2019 01:16:41 (115988): Job creation completed with status 0 (time 0).
+03/22/2019 01:16:41 (115988): Check-out completed with status -5 (time 0).
+03/22/2019 01:16:41 (115988): Check-out (Increment) started ....
+03/22/2019 01:16:41 (115988): Checking out 1 license(s) for Incisive_Enterprise_Simulator 15.200...
+03/22/2019 01:16:41 (115988): Storage of server list started...
+03/22/2019 01:16:41 (115988): Server list saved with status 0 (time 0).
+03/22/2019 01:16:41 (115988):   (Checked out from file '5280@134.173.38.214',
+             line '15.2 15-dec-2019 20 5E6DA6C5A305175E70A7 ')
+03/22/2019 01:16:41 (115988): Check-out (Increment) completed with status 0 (time 0).
+03/22/2019 01:16:41 (115988): Recheck started ....
+03/22/2019 01:16:41 (115988):   Checking feature Incisive_Enterprise_Simulator
+03/22/2019 01:16:41 (115988):   Time spent in server Recheck was 0.
+03/22/2019 01:16:41 (115988): Re-check completed with status 0 (time 0).
+03/22/2019 01:16:41 (115988): Recheck started ....
+03/22/2019 01:16:41 (115988):   Actual recheck skipped due to recheck interval...
+03/22/2019 01:16:41 (115988): Re-check completed with status 0 (time 0).
+03/22/2019 01:16:41 (115988): Recheck started ....
+03/22/2019 01:16:41 (115988):   Actual recheck skipped due to recheck interval...
+03/22/2019 01:16:41 (115988): Re-check completed with status 0 (time 0).
+03/22/2019 01:16:55 (115988): Recheck started ....
+03/22/2019 01:16:55 (115988):   Actual recheck skipped due to recheck interval...
+03/22/2019 01:16:55 (115988): Re-check completed with status 0 (time 0).
+03/22/2019 01:16:55 (115988): Check-in started ....
+03/22/2019 01:16:55 (115988): Creating a new job ...
+03/22/2019 01:16:55 (115988): Validating server path: 5280@134.173.38.214:2222@theforce.eng.hmc.edu
+03/22/2019 01:16:55 (115988): Server path validation status: 0
+03/22/2019 01:16:55 (115988):   Configuration of license path is '5280@134.173.38.214:2222@theforce.eng.hmc.edu'.
+03/22/2019 01:16:55 (115988):   Configuration of recheck interval minimum is 290.
+03/22/2019 01:16:55 (115988):   Configuration of 2000000000 maximum retry calls.
+03/22/2019 01:16:55 (115988):   Configuration of sleep time value of 0.
+03/22/2019 01:16:55 (115988):   Configuration of display specification is 'localhost:11.0'.
+03/22/2019 01:16:55 (115988): Storage of server list started...
+03/22/2019 01:16:55 (115988): Server list saved with status 0 (time 0).
+03/22/2019 01:16:55 (115988):   Licenses will be checked out using cnorfleet@DHCP-60-126.ST.HMC.Edu(localhost:11.0).
+03/22/2019 01:16:55 (115988):   (System spec would have been cnorfleet@DHCP-60-126.ST.HMC.Edu(/dev/pts/1) )
+03/22/2019 01:16:55 (115988):   Using license server 134.173.38.214.
+03/22/2019 01:16:55 (115988): Job creation completed with status 0 (time 0).
+03/22/2019 01:16:55 (115988): Check-in of Incisive_Enterprise_Simulator completed with status 0 (time 0).
+03/22/2019 01:16:55 (115988): Exit started ....
+03/22/2019 01:16:55 (115988): Creating a new job ...
+03/22/2019 01:16:55 (115988): Validating server path: 5280@134.173.38.214:2222@theforce.eng.hmc.edu
+03/22/2019 01:16:55 (115988): Server path validation status: 0
+03/22/2019 01:16:55 (115988):   Configuration of license path is '5280@134.173.38.214:2222@theforce.eng.hmc.edu'.
+03/22/2019 01:16:55 (115988):   Configuration of recheck interval minimum is 290.
+03/22/2019 01:16:55 (115988):   Configuration of 2000000000 maximum retry calls.
+03/22/2019 01:16:55 (115988):   Configuration of sleep time value of 0.
+03/22/2019 01:16:55 (115988):   Configuration of display specification is 'localhost:11.0'.
+03/22/2019 01:16:55 (115988): Storage of server list started...
+03/22/2019 01:16:55 (115988): Server list saved with status 0 (time 0).
+03/22/2019 01:16:55 (115988):   Licenses will be checked out using cnorfleet@DHCP-60-126.ST.HMC.Edu(localhost:11.0).
+03/22/2019 01:16:55 (115988):   (System spec would have been cnorfleet@DHCP-60-126.ST.HMC.Edu(/dev/pts/1) )
+03/22/2019 01:16:55 (115988):   Using license server 134.173.38.214.
+03/22/2019 01:16:55 (115988): Job creation completed with status 0 (time 0).
+03/22/2019 01:16:55 (115988): Exit completed with status 0 (time 0).
+03/22/2019 01:16:59 (984580 ncsim): Initialization started (12.04-s017)...
+03/22/2019 01:16:59 (984580): FLEXnet version 11.11.1.1 build 119913
+03/22/2019 01:16:59 (984580): Process ID 16607
+03/22/2019 01:16:59 (984580): Large file size support.
+03/22/2019 01:16:59 (984580): Creating a new job ...
+03/22/2019 01:16:59 (984580): Validating server path: 5280@134.173.38.214:2222@theforce.eng.hmc.edu
+03/22/2019 01:16:59 (984580): Server path validation status: 0
+03/22/2019 01:16:59 (984580):   Configuration of license path is '5280@134.173.38.214:2222@theforce.eng.hmc.edu'.
+03/22/2019 01:16:59 (984580):   Configuration of recheck interval minimum is 290.
+03/22/2019 01:16:59 (984580):   Configuration of 2000000000 maximum retry calls.
+03/22/2019 01:16:59 (984580):   Configuration of sleep time value of 0.
+03/22/2019 01:16:59 (984580):   Configuration of display specification is 'localhost:11.0'.
+03/22/2019 01:16:59 (984580): Storage of server list started...
+03/22/2019 01:16:59 (984580): Server list saved with status 0 (time 0).
+03/22/2019 01:16:59 (984580):   Licenses will be checked out using cnorfleet@DHCP-60-126.ST.HMC.Edu(localhost:11.0).
+03/22/2019 01:16:59 (984580):   (System spec would have been cnorfleet@DHCP-60-126.ST.HMC.Edu(/dev/pts/1) )
+03/22/2019 01:16:59 (984580):   Using license server 134.173.38.214.
+03/22/2019 01:16:59 (984580): Job creation completed with status 0 (time 0).
+03/22/2019 01:16:59 (984580): Creating a new job ...
+03/22/2019 01:16:59 (984580):   Configuration of license path is '5280@134.173.38.214:2222@theforce.eng.hmc.edu'.
+03/22/2019 01:16:59 (984580):   Configuration of recheck interval minimum is 290.
+03/22/2019 01:16:59 (984580):   Configuration of 2000000000 maximum retry calls.
+03/22/2019 01:16:59 (984580):   Configuration of sleep time value of 0.
+03/22/2019 01:16:59 (984580):   Configuration of display specification is 'localhost:11.0'.
+03/22/2019 01:16:59 (984580): Storage of server list started...
+03/22/2019 01:16:59 (984580): Server list saved with status 0 (time 0).
+03/22/2019 01:16:59 (984580):   Licenses will be checked out using cnorfleet@DHCP-60-126.ST.HMC.Edu(localhost:11.0).
+03/22/2019 01:16:59 (984580):   (System spec would have been cnorfleet@DHCP-60-126.ST.HMC.Edu(/dev/pts/1) )
+03/22/2019 01:16:59 (984580):   Using license server 134.173.38.214.
+03/22/2019 01:16:59 (984580): Job creation completed with status 0 (time 0).
+03/22/2019 01:16:59 (984580): Creating a new job ...
+03/22/2019 01:16:59 (984580):   Configuration of license path is '5280@134.173.38.214:2222@theforce.eng.hmc.edu'.
+03/22/2019 01:16:59 (984580):   Configuration of recheck interval minimum is 290.
+03/22/2019 01:16:59 (984580):   Configuration of 2000000000 maximum retry calls.
+03/22/2019 01:16:59 (984580):   Configuration of sleep time value of 0.
+03/22/2019 01:16:59 (984580):   Configuration of display specification is 'localhost:11.0'.
+03/22/2019 01:16:59 (984580): Storage of server list started...
+03/22/2019 01:16:59 (984580): Server list saved with status 0 (time 0).
+03/22/2019 01:16:59 (984580):   Licenses will be checked out using cnorfleet@DHCP-60-126.ST.HMC.Edu(localhost:11.0).
+03/22/2019 01:16:59 (984580):   (System spec would have been cnorfleet@DHCP-60-126.ST.HMC.Edu(/dev/pts/1) )
+03/22/2019 01:16:59 (984580):   Using license server 134.173.38.214.
+03/22/2019 01:16:59 (984580): Job creation completed with status 0 (time 0).
+03/22/2019 01:16:59 (984580): Creating a new job ...
+03/22/2019 01:16:59 (984580):   Configuration of license path is '5280@134.173.38.214:2222@theforce.eng.hmc.edu'.
+03/22/2019 01:16:59 (984580):   Configuration of recheck interval minimum is 290.
+03/22/2019 01:16:59 (984580):   Configuration of 2000000000 maximum retry calls.
+03/22/2019 01:16:59 (984580):   Configuration of sleep time value of 0.
+03/22/2019 01:16:59 (984580):   Configuration of display specification is 'localhost:11.0'.
+03/22/2019 01:16:59 (984580): Storage of server list started...
+03/22/2019 01:16:59 (984580): Server list saved with status 0 (time 0).
+03/22/2019 01:16:59 (984580):   Licenses will be checked out using cnorfleet@DHCP-60-126.ST.HMC.Edu(localhost:11.0).
+03/22/2019 01:16:59 (984580):   (System spec would have been cnorfleet@DHCP-60-126.ST.HMC.Edu(/dev/pts/1) )
+03/22/2019 01:16:59 (984580):   Using license server 134.173.38.214.
+03/22/2019 01:16:59 (984580): Job creation completed with status 0 (time 0).
+03/22/2019 01:16:59 (984580): Creating a new job ...
+03/22/2019 01:16:59 (984580):   Configuration of license path is '5280@134.173.38.214:2222@theforce.eng.hmc.edu'.
+03/22/2019 01:16:59 (984580):   Configuration of recheck interval minimum is 290.
+03/22/2019 01:16:59 (984580):   Configuration of 2000000000 maximum retry calls.
+03/22/2019 01:16:59 (984580):   Configuration of sleep time value of 0.
+03/22/2019 01:16:59 (984580):   Configuration of display specification is 'localhost:11.0'.
+03/22/2019 01:16:59 (984580): Storage of server list started...
+03/22/2019 01:16:59 (984580): Server list saved with status 0 (time 0).
+03/22/2019 01:16:59 (984580):   Licenses will be checked out using cnorfleet@DHCP-60-126.ST.HMC.Edu(localhost:11.0).
+03/22/2019 01:16:59 (984580):   (System spec would have been cnorfleet@DHCP-60-126.ST.HMC.Edu(/dev/pts/1) )
+03/22/2019 01:16:59 (984580):   Using license server 134.173.38.214.
+03/22/2019 01:16:59 (984580): Job creation completed with status 0 (time 0).
+03/22/2019 01:16:59 (984580): Initialization completed with status 0 (time 0).
+03/22/2019 01:16:59 (984580): Check-out started ....
+03/22/2019 01:16:59 (984580): Checking out 1 license(s) for Incisive_HDL_Simulator 15.200...
+03/22/2019 01:16:59 (984580): Storage of server list started...
+03/22/2019 01:16:59 (984580): Server list saved with status 0 (time 0).
+03/22/2019 01:16:59 (984580): Creating a new job ...
+03/22/2019 01:16:59 (984580): Validating server path: 5280@134.173.38.214:2222@theforce.eng.hmc.edu
+03/22/2019 01:16:59 (984580): Server path validation status: 0
+03/22/2019 01:16:59 (984580):   Configuration of license path is '5280@134.173.38.214:2222@theforce.eng.hmc.edu'.
+03/22/2019 01:16:59 (984580):   Configuration of recheck interval minimum is 290.
+03/22/2019 01:16:59 (984580):   Configuration of 2000000000 maximum retry calls.
+03/22/2019 01:16:59 (984580):   Configuration of sleep time value of 0.
+03/22/2019 01:16:59 (984580):   Configuration of display specification is 'localhost:11.0'.
+03/22/2019 01:16:59 (984580): Storage of server list started...
+03/22/2019 01:16:59 (984580): Server list saved with status 0 (time 0).
+03/22/2019 01:16:59 (984580):   Licenses will be checked out using cnorfleet@DHCP-60-126.ST.HMC.Edu(localhost:11.0).
+03/22/2019 01:16:59 (984580):   (System spec would have been cnorfleet@DHCP-60-126.ST.HMC.Edu(/dev/pts/1) )
+03/22/2019 01:16:59 (984580):   Using license server 134.173.38.214.
+03/22/2019 01:16:59 (984580): Job creation completed with status 0 (time 0).
+03/22/2019 01:16:59 (984580): Check-out completed with status -5 (time 0).
+03/22/2019 01:16:59 (984580): Check-out started ....
+03/22/2019 01:16:59 (984580): Checking out 1 license(s) for Xcelium_Limited_Single_Core 16.000...
+03/22/2019 01:16:59 (984580): Storage of server list started...
+03/22/2019 01:16:59 (984580): Server list saved with status 0 (time 0).
+03/22/2019 01:16:59 (984580): Creating a new job ...
+03/22/2019 01:16:59 (984580): Validating server path: 5280@134.173.38.214:2222@theforce.eng.hmc.edu
+03/22/2019 01:16:59 (984580): Server path validation status: 0
+03/22/2019 01:16:59 (984580):   Configuration of license path is '5280@134.173.38.214:2222@theforce.eng.hmc.edu'.
+03/22/2019 01:16:59 (984580):   Configuration of recheck interval minimum is 290.
+03/22/2019 01:16:59 (984580):   Configuration of 2000000000 maximum retry calls.
+03/22/2019 01:16:59 (984580):   Configuration of sleep time value of 0.
+03/22/2019 01:16:59 (984580):   Configuration of display specification is 'localhost:11.0'.
+03/22/2019 01:16:59 (984580): Storage of server list started...
+03/22/2019 01:16:59 (984580): Server list saved with status 0 (time 0).
+03/22/2019 01:16:59 (984580):   Licenses will be checked out using cnorfleet@DHCP-60-126.ST.HMC.Edu(localhost:11.0).
+03/22/2019 01:16:59 (984580):   (System spec would have been cnorfleet@DHCP-60-126.ST.HMC.Edu(/dev/pts/1) )
+03/22/2019 01:16:59 (984580):   Using license server 134.173.38.214.
+03/22/2019 01:16:59 (984580): Job creation completed with status 0 (time 0).
+03/22/2019 01:16:59 (984580): Check-out completed with status -5 (time 0).
+03/22/2019 01:16:59 (984580): Check-out (Increment) started ....
+03/22/2019 01:16:59 (984580): Checking out 1 license(s) for Incisive_Enterprise_Simulator 15.200...
+03/22/2019 01:16:59 (984580): Storage of server list started...
+03/22/2019 01:16:59 (984580): Server list saved with status 0 (time 0).
+03/22/2019 01:16:59 (984580):   (Checked out from file '5280@134.173.38.214',
+             line '15.2 15-dec-2019 20 5E6DA6C5A305175E70A7 ')
+03/22/2019 01:16:59 (984580): Check-out (Increment) completed with status 0 (time 0).
+03/22/2019 01:16:59 (984582 simvision.exe): Initialization started (12.04-s017)...
+03/22/2019 01:16:59 (984582): FLEXnet version 11.11.1.1 build 119913
+03/22/2019 01:16:59 (984582): Process ID 16609
+03/22/2019 01:16:59 (984582): Large file size support.
+03/22/2019 01:16:59 (984582): Creating a new job ...
+03/22/2019 01:16:59 (984582): Validating server path: 5280@134.173.38.214:2222@theforce.eng.hmc.edu
+03/22/2019 01:16:59 (984582): Server path validation status: 0
+03/22/2019 01:16:59 (984582):   Configuration of license path is '5280@134.173.38.214:2222@theforce.eng.hmc.edu'.
+03/22/2019 01:16:59 (984582):   Configuration of recheck interval minimum is 290.
+03/22/2019 01:16:59 (984582):   Configuration of 2000000000 maximum retry calls.
+03/22/2019 01:16:59 (984582):   Configuration of sleep time value of 0.
+03/22/2019 01:16:59 (984582):   Configuration of display specification is 'localhost:11.0'.
+03/22/2019 01:16:59 (984582): Storage of server list started...
+03/22/2019 01:16:59 (984582): Server list saved with status 0 (time 0).
+03/22/2019 01:16:59 (984582):   Licenses will be checked out using cnorfleet@DHCP-60-126.ST.HMC.Edu(localhost:11.0).
+03/22/2019 01:16:59 (984582):   (System spec would have been cnorfleet@DHCP-60-126.ST.HMC.Edu(/dev/pts/1) )
+03/22/2019 01:16:59 (984582):   Using license server 134.173.38.214.
+03/22/2019 01:16:59 (984582): Job creation completed with status 0 (time 0).
+03/22/2019 01:16:59 (984582): Creating a new job ...
+03/22/2019 01:16:59 (984582):   Configuration of license path is '5280@134.173.38.214:2222@theforce.eng.hmc.edu'.
+03/22/2019 01:16:59 (984582):   Configuration of recheck interval minimum is 290.
+03/22/2019 01:16:59 (984582):   Configuration of 2000000000 maximum retry calls.
+03/22/2019 01:16:59 (984582):   Configuration of sleep time value of 0.
+03/22/2019 01:16:59 (984582):   Configuration of display specification is 'localhost:11.0'.
+03/22/2019 01:16:59 (984582): Storage of server list started...
+03/22/2019 01:16:59 (984582): Server list saved with status 0 (time 0).
+03/22/2019 01:16:59 (984582):   Licenses will be checked out using cnorfleet@DHCP-60-126.ST.HMC.Edu(localhost:11.0).
+03/22/2019 01:16:59 (984582):   (System spec would have been cnorfleet@DHCP-60-126.ST.HMC.Edu(/dev/pts/1) )
+03/22/2019 01:16:59 (984582):   Using license server 134.173.38.214.
+03/22/2019 01:16:59 (984582): Job creation completed with status 0 (time 0).
+03/22/2019 01:16:59 (984582): Creating a new job ...
+03/22/2019 01:16:59 (984582):   Configuration of license path is '5280@134.173.38.214:2222@theforce.eng.hmc.edu'.
+03/22/2019 01:16:59 (984582):   Configuration of recheck interval minimum is 290.
+03/22/2019 01:16:59 (984582):   Configuration of 2000000000 maximum retry calls.
+03/22/2019 01:16:59 (984582):   Configuration of sleep time value of 0.
+03/22/2019 01:16:59 (984582):   Configuration of display specification is 'localhost:11.0'.
+03/22/2019 01:16:59 (984582): Storage of server list started...
+03/22/2019 01:16:59 (984582): Server list saved with status 0 (time 0).
+03/22/2019 01:16:59 (984582):   Licenses will be checked out using cnorfleet@DHCP-60-126.ST.HMC.Edu(localhost:11.0).
+03/22/2019 01:16:59 (984582):   (System spec would have been cnorfleet@DHCP-60-126.ST.HMC.Edu(/dev/pts/1) )
+03/22/2019 01:16:59 (984582):   Using license server 134.173.38.214.
+03/22/2019 01:16:59 (984582): Job creation completed with status 0 (time 0).
+03/22/2019 01:16:59 (984582): Creating a new job ...
+03/22/2019 01:16:59 (984582):   Configuration of license path is '5280@134.173.38.214:2222@theforce.eng.hmc.edu'.
+03/22/2019 01:16:59 (984582):   Configuration of recheck interval minimum is 290.
+03/22/2019 01:16:59 (984582):   Configuration of 2000000000 maximum retry calls.
+03/22/2019 01:16:59 (984582):   Configuration of sleep time value of 0.
+03/22/2019 01:16:59 (984582):   Configuration of display specification is 'localhost:11.0'.
+03/22/2019 01:16:59 (984582): Storage of server list started...
+03/22/2019 01:16:59 (984582): Server list saved with status 0 (time 0).
+03/22/2019 01:16:59 (984582):   Licenses will be checked out using cnorfleet@DHCP-60-126.ST.HMC.Edu(localhost:11.0).
+03/22/2019 01:16:59 (984582):   (System spec would have been cnorfleet@DHCP-60-126.ST.HMC.Edu(/dev/pts/1) )
+03/22/2019 01:16:59 (984582):   Using license server 134.173.38.214.
+03/22/2019 01:16:59 (984582): Job creation completed with status 0 (time 0).
+03/22/2019 01:16:59 (984582): Creating a new job ...
+03/22/2019 01:16:59 (984582):   Configuration of license path is '5280@134.173.38.214:2222@theforce.eng.hmc.edu'.
+03/22/2019 01:16:59 (984582):   Configuration of recheck interval minimum is 290.
+03/22/2019 01:16:59 (984582):   Configuration of 2000000000 maximum retry calls.
+03/22/2019 01:16:59 (984582):   Configuration of sleep time value of 0.
+03/22/2019 01:16:59 (984582):   Configuration of display specification is 'localhost:11.0'.
+03/22/2019 01:16:59 (984582): Storage of server list started...
+03/22/2019 01:16:59 (984582): Server list saved with status 0 (time 0).
+03/22/2019 01:16:59 (984582):   Licenses will be checked out using cnorfleet@DHCP-60-126.ST.HMC.Edu(localhost:11.0).
+03/22/2019 01:16:59 (984582):   (System spec would have been cnorfleet@DHCP-60-126.ST.HMC.Edu(/dev/pts/1) )
+03/22/2019 01:16:59 (984582):   Using license server 134.173.38.214.
+03/22/2019 01:16:59 (984582): Job creation completed with status 0 (time 0).
+03/22/2019 01:16:59 (984582): Initialization completed with status 0 (time 0).
+03/22/2019 01:16:59 (984582): Check-out started ....
+03/22/2019 01:16:59 (984582): Checking out 1 license(s) for Affirma_sim_analysis_env 15.200...
+03/22/2019 01:16:59 (984582): Storage of server list started...
+03/22/2019 01:16:59 (984582): Server list saved with status 0 (time 0).
+03/22/2019 01:16:59 (984582):   (Checked out from file '5280@134.173.38.214',
+             line '15.2 15-dec-2019 60 1E0D46F53A5E2F75D1D2 ')
+03/22/2019 01:16:59 (984582): Check-out completed with status 0 (time 0).
+03/22/2019 01:17:50 (984582): FeatureStatus started ....
+03/22/2019 01:17:50 (984582): FeatureStatus of Cadence_System_Creator_Inter completed with status 1 (time 0).
+03/22/2019 01:17:52 (984582): FeatureStatus started ....
+03/22/2019 01:17:52 (984582): FeatureStatus of Cadence_System_Creator_Inter completed with status 1 (time 0).
+03/22/2019 01:17:52 (984582): FeatureStatus started ....
+03/22/2019 01:17:52 (984582): FeatureStatus of Cadence_System_Creator_Inter completed with status 1 (time 0).
+03/22/2019 01:17:52 (984582): FeatureStatus started ....
+03/22/2019 01:17:52 (984582): FeatureStatus of Cadence_System_Creator_Inter completed with status 1 (time 0).
+03/22/2019 01:17:52 (984582): FeatureStatus started ....
+03/22/2019 01:17:52 (984582): FeatureStatus of Cadence_System_Creator_Inter completed with status 1 (time 0).
+03/22/2019 01:17:52 (984582): FeatureStatus started ....
+03/22/2019 01:17:52 (984582): FeatureStatus of Cadence_System_Creator_Inter completed with status 1 (time 0).
+03/22/2019 01:18:13 (984582): FeatureStatus started ....
+03/22/2019 01:18:13 (984582): FeatureStatus of Cadence_System_Creator_Inter completed with status 1 (time 0).
+03/22/2019 01:18:30 (984582): FeatureStatus started ....
+03/22/2019 01:18:30 (984582): FeatureStatus of Cadence_System_Creator_Inter completed with status 1 (time 0).
+03/22/2019 01:18:40 (984582): FeatureStatus started ....
+03/22/2019 01:18:40 (984582): FeatureStatus of Cadence_System_Creator_Inter completed with status 1 (time 0).
+03/22/2019 01:19:48 (984582): FeatureStatus started ....
+03/22/2019 01:19:48 (984582): FeatureStatus of Cadence_System_Creator_Inter completed with status 1 (time 0).
+03/22/2019 01:19:48 (984582): FeatureStatus started ....
+03/22/2019 01:19:48 (984582): FeatureStatus of Cadence_System_Creator_Inter completed with status 1 (time 0).
+03/22/2019 01:19:48 (984582): FeatureStatus started ....
+03/22/2019 01:19:48 (984582): FeatureStatus of Cadence_System_Creator_Inter completed with status 1 (time 0).
+03/22/2019 01:19:48 (984582): FeatureStatus started ....
+03/22/2019 01:19:48 (984582): FeatureStatus of Cadence_System_Creator_Inter completed with status 1 (time 0).
+03/22/2019 01:19:48 (984582): FeatureStatus started ....
+03/22/2019 01:19:48 (984582): FeatureStatus of Cadence_System_Creator_Inter completed with status 1 (time 0).
+03/22/2019 01:19:48 (984582): FeatureStatus started ....
+03/22/2019 01:19:48 (984582): FeatureStatus of Cadence_System_Creator_Inter completed with status 1 (time 0).
+03/22/2019 01:20:07 (984580): Recheck started ....
+03/22/2019 01:20:07 (984580):   Checking feature Incisive_Enterprise_Simulator
+03/22/2019 01:20:07 (984580):   Time spent in server Recheck was 0.
+03/22/2019 01:20:07 (984580): Re-check completed with status 0 (time 0).
+03/22/2019 01:20:11 (984582): FeatureStatus started ....
+03/22/2019 01:20:11 (984582): FeatureStatus of Cadence_System_Creator_Inter completed with status 1 (time 0).
+03/22/2019 01:20:11 (984582): FeatureStatus started ....
+03/22/2019 01:20:11 (984582): FeatureStatus of Cadence_System_Creator_Inter completed with status 1 (time 0).
+03/22/2019 01:20:12 (984582): FeatureStatus started ....
+03/22/2019 01:20:12 (984582): FeatureStatus of Cadence_System_Creator_Inter completed with status 1 (time 0).
+03/22/2019 01:20:12 (984582): FeatureStatus started ....
+03/22/2019 01:20:12 (984582): FeatureStatus of Cadence_System_Creator_Inter completed with status 1 (time 0).
+03/22/2019 01:20:34 (984582): FeatureStatus started ....
+03/22/2019 01:20:34 (984582): FeatureStatus of Cadence_System_Creator_Inter completed with status 1 (time 0).
+03/22/2019 01:20:34 (984582): FeatureStatus started ....
+03/22/2019 01:20:34 (984582): FeatureStatus of Cadence_System_Creator_Inter completed with status 1 (time 0).
+03/22/2019 01:20:34 (984582): FeatureStatus started ....
+03/22/2019 01:20:34 (984582): FeatureStatus of Cadence_System_Creator_Inter completed with status 1 (time 0).
+03/22/2019 01:20:34 (984582): FeatureStatus started ....
+03/22/2019 01:20:34 (984582): FeatureStatus of Cadence_System_Creator_Inter completed with status 1 (time 0).
+03/22/2019 01:20:34 (984582): FeatureStatus started ....
+03/22/2019 01:20:34 (984582): FeatureStatus of Cadence_System_Creator_Inter completed with status 1 (time 0).
+03/22/2019 01:20:34 (984582): FeatureStatus started ....
+03/22/2019 01:20:34 (984582): FeatureStatus of Cadence_System_Creator_Inter completed with status 1 (time 0).
+03/22/2019 01:20:53 (984582): FeatureStatus started ....
+03/22/2019 01:20:53 (984582): FeatureStatus of Cadence_System_Creator_Inter completed with status 1 (time 0).
+03/22/2019 01:21:15 (984582): FeatureStatus started ....
+03/22/2019 01:21:15 (984582): FeatureStatus of Cadence_System_Creator_Inter completed with status 1 (time 0).
+03/22/2019 01:21:15 (984582): FeatureStatus started ....
+03/22/2019 01:21:15 (984582): FeatureStatus of Cadence_System_Creator_Inter completed with status 1 (time 0).
+03/22/2019 01:21:15 (984582): FeatureStatus started ....
+03/22/2019 01:21:15 (984582): FeatureStatus of Cadence_System_Creator_Inter completed with status 1 (time 0).
+03/22/2019 01:21:15 (984582): FeatureStatus started ....
+03/22/2019 01:21:15 (984582): FeatureStatus of Cadence_System_Creator_Inter completed with status 1 (time 0).
+03/22/2019 01:21:15 (984582): FeatureStatus started ....
+03/22/2019 01:21:15 (984582): FeatureStatus of Cadence_System_Creator_Inter completed with status 1 (time 0).
+03/22/2019 01:21:15 (984582): FeatureStatus started ....
+03/22/2019 01:21:15 (984582): FeatureStatus of Cadence_System_Creator_Inter completed with status 1 (time 0).
+03/22/2019 01:21:27 (984582): FeatureStatus started ....
+03/22/2019 01:21:27 (984582): FeatureStatus of Cadence_System_Creator_Inter completed with status 1 (time 0).
+03/22/2019 01:21:27 (984582): FeatureStatus started ....
+03/22/2019 01:21:27 (984582): FeatureStatus of Cadence_System_Creator_Inter completed with status 1 (time 0).
+03/22/2019 01:23:02 (984580): Recheck started ....
+03/22/2019 01:23:02 (984580):   Actual recheck skipped due to recheck interval...
+03/22/2019 01:23:02 (984580): Re-check completed with status 0 (time 0).
+03/22/2019 01:23:03 (984580): Recheck started ....
+03/22/2019 01:23:03 (984580):   Actual recheck skipped due to recheck interval...
+03/22/2019 01:23:03 (984580): Re-check completed with status 0 (time 0).
+03/22/2019 01:23:03 (984580): Recheck started ....
+03/22/2019 01:23:03 (984580):   Actual recheck skipped due to recheck interval...
+03/22/2019 01:23:03 (984580): Re-check completed with status 0 (time 0).
+03/22/2019 01:23:03 (984580): Recheck started ....
+03/22/2019 01:23:03 (984580):   Actual recheck skipped due to recheck interval...
+03/22/2019 01:23:03 (984580): Re-check completed with status 0 (time 0).
+03/22/2019 01:24:04 (984582): Recheck started ....
+03/22/2019 01:24:04 (984582):   Checking feature Affirma_sim_analysis_env
+03/22/2019 01:24:04 (984582):   Time spent in server Recheck was 0.
+03/22/2019 01:24:04 (984582): Re-check completed with status 0 (time 0).
+03/22/2019 01:27:04 (984582): Recheck started ....
+03/22/2019 01:27:04 (984582):   Actual recheck skipped due to recheck interval...
+03/22/2019 01:27:04 (984582): Re-check completed with status 0 (time 0).
+03/22/2019 01:30:04 (984582): Recheck started ....
+03/22/2019 01:30:04 (984582):   Checking feature Affirma_sim_analysis_env
+03/22/2019 01:30:04 (984582):   Time spent in server Recheck was 0.
+03/22/2019 01:30:04 (984582): Re-check completed with status 0 (time 0).
+03/22/2019 01:33:04 (984582): Recheck started ....
+03/22/2019 01:33:04 (984582):   Actual recheck skipped due to recheck interval...
+03/22/2019 01:33:04 (984582): Re-check completed with status 0 (time 0).
+03/22/2019 01:36:04 (984582): Recheck started ....
+03/22/2019 01:36:04 (984582):   Checking feature Affirma_sim_analysis_env
+03/22/2019 01:36:04 (984582):   Time spent in server Recheck was 0.
+03/22/2019 01:36:04 (984582): Re-check completed with status 0 (time 0).
+03/22/2019 01:39:04 (984582): Recheck started ....
+03/22/2019 01:39:04 (984582):   Actual recheck skipped due to recheck interval...
+03/22/2019 01:39:04 (984582): Re-check completed with status 0 (time 0).
+03/22/2019 01:42:04 (984582): Recheck started ....
+03/22/2019 01:42:04 (984582):   Checking feature Affirma_sim_analysis_env
+03/22/2019 01:42:04 (984582):   Time spent in server Recheck was 0.
+03/22/2019 01:42:04 (984582): Re-check completed with status 0 (time 0).
+03/22/2019 01:45:04 (984582): Recheck started ....
+03/22/2019 01:45:04 (984582):   Actual recheck skipped due to recheck interval...
+03/22/2019 01:45:04 (984582): Re-check completed with status 0 (time 0).
+03/22/2019 01:47:23 (984580): Recheck started ....
+03/22/2019 01:47:23 (984580):   Checking feature Incisive_Enterprise_Simulator
+03/22/2019 01:47:23 (984580):   Time spent in server Recheck was 0.
+03/22/2019 01:47:23 (984580): Re-check completed with status 0 (time 0).
+03/22/2019 01:47:23 (984580): Check-in started ....
+03/22/2019 01:47:23 (984580): Creating a new job ...
+03/22/2019 01:47:23 (984580): Validating server path: 5280@134.173.38.214:2222@theforce.eng.hmc.edu
+03/22/2019 01:47:23 (984580): Server path validation status: 0
+03/22/2019 01:47:23 (984580):   Configuration of license path is '5280@134.173.38.214:2222@theforce.eng.hmc.edu'.
+03/22/2019 01:47:23 (984580):   Configuration of recheck interval minimum is 290.
+03/22/2019 01:47:23 (984580):   Configuration of 2000000000 maximum retry calls.
+03/22/2019 01:47:23 (984580):   Configuration of sleep time value of 0.
+03/22/2019 01:47:23 (984580):   Configuration of display specification is 'localhost:11.0'.
+03/22/2019 01:47:23 (984580): Storage of server list started...
+03/22/2019 01:47:23 (984580): Server list saved with status 0 (time 0).
+03/22/2019 01:47:23 (984580):   Licenses will be checked out using cnorfleet@DHCP-60-126.ST.HMC.Edu(localhost:11.0).
+03/22/2019 01:47:23 (984580):   (System spec would have been cnorfleet@DHCP-60-126.ST.HMC.Edu(/dev/pts/1) )
+03/22/2019 01:47:23 (984580):   Using license server 134.173.38.214.
+03/22/2019 01:47:23 (984580): Job creation completed with status 0 (time 0).
+03/22/2019 01:47:23 (984580): Check-in of Incisive_Enterprise_Simulator completed with status 0 (time 0).
+03/22/2019 01:47:26 (984582): Check-in started ....
+03/22/2019 01:47:26 (984582): Creating a new job ...
+03/22/2019 01:47:26 (984582): Validating server path: 5280@134.173.38.214:2222@theforce.eng.hmc.edu
+03/22/2019 01:47:26 (984582): Server path validation status: 0
+03/22/2019 01:47:26 (984582):   Configuration of license path is '5280@134.173.38.214:2222@theforce.eng.hmc.edu'.
+03/22/2019 01:47:26 (984582):   Configuration of recheck interval minimum is 290.
+03/22/2019 01:47:26 (984582):   Configuration of 2000000000 maximum retry calls.
+03/22/2019 01:47:26 (984582):   Configuration of sleep time value of 0.
+03/22/2019 01:47:26 (984582):   Configuration of display specification is 'localhost:11.0'.
+03/22/2019 01:47:26 (984582): Storage of server list started...
+03/22/2019 01:47:26 (984582): Server list saved with status 0 (time 0).
+03/22/2019 01:47:26 (984582):   Licenses will be checked out using cnorfleet@DHCP-60-126.ST.HMC.Edu(localhost:11.0).
+03/22/2019 01:47:26 (984582):   (System spec would have been cnorfleet@DHCP-60-126.ST.HMC.Edu(/dev/pts/1) )
+03/22/2019 01:47:26 (984582):   Using license server 134.173.38.214.
+03/22/2019 01:47:26 (984582): Job creation completed with status 0 (time 0).
+03/22/2019 01:47:26 (984582): Check-in of Affirma_sim_analysis_env completed with status 0 (time 0).
+03/22/2019 01:47:26 (984582): FeatureStatus started ....
+03/22/2019 01:47:26 (984582): FeatureStatus of Cadence_System_Creator_Inter completed with status 1 (time 0).
+03/22/2019 01:47:26 (984582): Exit started ....
+03/22/2019 01:47:26 (984582): Creating a new job ...
+03/22/2019 01:47:26 (984582): Validating server path: 5280@134.173.38.214:2222@theforce.eng.hmc.edu
+03/22/2019 01:47:26 (984582): Server path validation status: 0
+03/22/2019 01:47:26 (984582):   Configuration of license path is '5280@134.173.38.214:2222@theforce.eng.hmc.edu'.
+03/22/2019 01:47:26 (984582):   Configuration of recheck interval minimum is 290.
+03/22/2019 01:47:26 (984582):   Configuration of 2000000000 maximum retry calls.
+03/22/2019 01:47:26 (984582):   Configuration of sleep time value of 0.
+03/22/2019 01:47:26 (984582):   Configuration of display specification is 'localhost:11.0'.
+03/22/2019 01:47:26 (984582): Storage of server list started...
+03/22/2019 01:47:26 (984582): Server list saved with status 0 (time 0).
+03/22/2019 01:47:26 (984582):   Licenses will be checked out using cnorfleet@DHCP-60-126.ST.HMC.Edu(localhost:11.0).
+03/22/2019 01:47:26 (984582):   (System spec would have been cnorfleet@DHCP-60-126.ST.HMC.Edu(/dev/pts/1) )
+03/22/2019 01:47:26 (984582):   Using license server 134.173.38.214.
+03/22/2019 01:47:26 (984582): Job creation completed with status 0 (time 0).
+03/22/2019 01:47:26 (984582): Exit completed with status 0 (time 0).
+03/22/2019 01:47:26 (984580): Check-in started ....
+03/22/2019 01:47:26 (984580): Check-in of Incisive_Enterprise_Simulator completed with status 0 (time 0).
+03/22/2019 01:47:26 (984580): Exit started ....
+03/22/2019 01:47:26 (984580): Creating a new job ...
+03/22/2019 01:47:26 (984580): Validating server path: 5280@134.173.38.214:2222@theforce.eng.hmc.edu
+03/22/2019 01:47:26 (984580): Server path validation status: 0
+03/22/2019 01:47:26 (984580):   Configuration of license path is '5280@134.173.38.214:2222@theforce.eng.hmc.edu'.
+03/22/2019 01:47:26 (984580):   Configuration of recheck interval minimum is 290.
+03/22/2019 01:47:26 (984580):   Configuration of 2000000000 maximum retry calls.
+03/22/2019 01:47:26 (984580):   Configuration of sleep time value of 0.
+03/22/2019 01:47:26 (984580):   Configuration of display specification is 'localhost:11.0'.
+03/22/2019 01:47:26 (984580): Storage of server list started...
+03/22/2019 01:47:26 (984580): Server list saved with status 0 (time 0).
+03/22/2019 01:47:26 (984580):   Licenses will be checked out using cnorfleet@DHCP-60-126.ST.HMC.Edu(localhost:11.0).
+03/22/2019 01:47:26 (984580):   (System spec would have been cnorfleet@DHCP-60-126.ST.HMC.Edu(/dev/pts/1) )
+03/22/2019 01:47:26 (984580):   Using license server 134.173.38.214.
+03/22/2019 01:47:26 (984580): Job creation completed with status 0 (time 0).
+03/22/2019 01:47:26 (984580): Exit completed with status 0 (time 0).

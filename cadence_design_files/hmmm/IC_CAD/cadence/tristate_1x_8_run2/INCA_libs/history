@@ -1,0 +1,9 @@
+//
+// File created by:  irun
+// Do not modify this file
+
+s1::(22Mar2019:01:12:45):( ncverilog -l nc.log +access+r tristates.sv )
+s2::(22Mar2019:01:15:25):( ncverilog -l nc.log +access+r tristates.sv )
+s3::(22Mar2019:01:15:42):( ncverilog -l nc.log +access+r tristates.sv -f verilog.inpfiles )
+s4::(22Mar2019:01:16:41):( ncverilog -l nc.log +access+r tristates.sv -f verilog.inpfiles )
+s5::(22Mar2019:01:16:59):( ncverilog -l nc.log +access+r +gui tristates.sv -f verilog.inpfiles )

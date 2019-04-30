@@ -1,0 +1,40 @@
+// Library - mips8, Cell - regramarray_dp, View - schematic
+// LAST TIME SAVED: Feb 16 23:07:23 2012
+// NETLIST TIME: Mar 22 01:30:36 2019
+`timescale 1ns / 100ps 
+
+module regramarray_dp ( r1, r2, RegWrite, ph2, ra1, ra2, w, wa );
+
+
+input  RegWrite, ph2;
+
+output [7:0]  r2;
+output [7:0]  r1;
+
+input [2:0]  wa;
+input [2:0]  ra2;
+input [2:0]  ra1;
+input [7:0]  w;
+
+
+// Buses in the design
+
+wire  [2:0]  ra2bb;
+
+wire  [2:0]  ra1bb;
+
+wire  [2:0]  wabb;
+
+wire  [2:0]  wab;
+
+wire  [2:0]  ra1b;
+
+wire  [2:0]  ra2b;
+
+
+specify 
+    specparam CDS_LIBNAME  = "mips8";
+    specparam CDS_CELLNAME = "regramarray_dp";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+

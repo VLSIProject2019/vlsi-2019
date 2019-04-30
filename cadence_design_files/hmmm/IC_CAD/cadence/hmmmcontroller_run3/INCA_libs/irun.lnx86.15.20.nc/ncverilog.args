@@ -1,0 +1,10 @@
+//
+// File created by:  ncverilog
+// Do not modify this file
+//
+-l
+nc.log
++access+r
+testprocessor.sv
+-f
+verilog.inpfiles

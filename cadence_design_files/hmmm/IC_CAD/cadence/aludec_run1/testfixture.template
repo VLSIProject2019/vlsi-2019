@@ -1,0 +1,26 @@
+
+`timescale 1ns / 100ps
+
+module test;
+
+
+
+
+wire [2:0]  alucontrol;
+
+reg [1:0]  aluop;
+reg [5:0]  funct;
+
+
+
+aludec top(alucontrol, aluop, funct); 
+ 
+
+`ifdef verilog
+
+ //please enter any additional verilog stimulus in the /hdd/home/cnorfleet/IC_CAD/cadence/aludec_run1/testfixture.verilog file
+`include "/hdd/home/cnorfleet/IC_CAD/cadence/aludec_run1/testfixture.verilog"
+
+`endif
+
+endmodule 

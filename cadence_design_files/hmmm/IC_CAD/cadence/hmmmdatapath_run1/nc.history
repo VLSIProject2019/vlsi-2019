@@ -1,0 +1,16 @@
+s1(21Mar2019:19:14:53):  ncverilog -l nc.log +access+r testprocessor.sv -f verilog.inpfiles 
+s2(21Mar2019:19:16:21):  ncverilog -l nc.log +access+r testprocessor.sv -f verilog.inpfiles 
+s3(21Mar2019:19:16:47):  ncverilog -l nc.log +access+r +gui testprocessor.sv -f verilog.inpfiles 
+s4(21Mar2019:19:20:29):  ncverilog -l nc.log +access+r +gui testprocessor.sv -f verilog.inpfiles -disable_sem2009 
+s5(21Mar2019:19:20:41):  ncverilog -l nc.log +access+r +gui testprocessor.sv -f verilog.inpfiles 
+s6(21Mar2019:19:23:45):  ncverilog -l nc.log +access+r +gui testprocessor.sv -f verilog.inpfiles 
+s7(21Mar2019:19:49:04):  ncverilog -l nc.log +access+r +gui testprocessor.sv -f verilog.inpfiles 
+s8(21Mar2019:20:45:45):  ncverilog -l nc.log +access+r +gui testprocessor.sv -f verilog.inpfiles 
+s9(21Mar2019:21:35:02):  ncverilog -l nc.log +access+r testprocessor.sv -f verilog.inpfiles 
+s10(21Mar2019:21:35:24):  ncverilog -l nc.log +access+r +gui testprocessor.sv -f verilog.inpfiles 
+s11(21Mar2019:22:11:15):  ncverilog -l nc.log +access+r +gui testprocessor.sv -f verilog.inpfiles -s  
+s12(21Mar2019:22:15:19):  ncverilog -l nc.log +access+r testprocessor.sv -f verilog.inpfiles 
+s13(21Mar2019:22:33:38):  ncverilog -l nc.log +access+r testprocessor.sv -f verilog.inpfiles 
+s14(21Mar2019:22:33:59):  ncverilog -l nc.log +access+r +gui testprocessor.sv -f verilog.inpfiles 
+s15(22Mar2019:00:31:29):  ncverilog -l nc.log +access+r fullprocessor.sv 
+s16(22Mar2019:00:47:22):  ncverilog -l nc.log +access+r +gui fullprocessor.sv 

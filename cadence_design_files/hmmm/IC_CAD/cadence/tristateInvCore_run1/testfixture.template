@@ -1,0 +1,23 @@
+
+`timescale 1ns / 100ps
+
+module test;
+
+
+wire  y;
+
+reg  a, en, enBar;
+
+
+
+tristateInvCore top(y, a, en, enBar); 
+ 
+
+`ifdef verilog
+
+ //please enter any additional verilog stimulus in the /home/cnorfleet/IC_CAD/cadence/tristateInvCore_run1/testfixture.verilog file
+`include "/home/cnorfleet/IC_CAD/cadence/tristateInvCore_run1/testfixture.verilog"
+
+`endif
+
+endmodule 

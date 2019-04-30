@@ -1,0 +1,15 @@
+// Library - UofU_Pads, Cell - pad_gnd, View - schematic
+// LAST TIME SAVED: Feb 16 19:03:51 2012
+// NETLIST TIME: Mar 25 04:22:47 2019
+`timescale 1ns / 100ps 
+
+module pad_gnd (  );
+
+
+
+specify 
+    specparam CDS_LIBNAME  = "UofU_Pads";
+    specparam CDS_CELLNAME = "pad_gnd";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+

@@ -1,0 +1,10 @@
+CADENCE IHNL11140
+$model
+lab1_cn/nand2/cmos_sch nand2
+$endmodel
+$net
+gnd! cds_globals.gnd_
+vdd! cds_globals.vdd_
+$endnet
+$param
+$endparam

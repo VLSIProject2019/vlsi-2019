@@ -1,0 +1,6 @@
+regram_8 I1 ( r1[7:0], r2[7:0], w[7:0], read1, read1b, read2, read2b,
+     write, writeb);
+regram_zipper I0 ( read1, read1b, read2, read2b, write, writeb,
+     RegWrite, ph2, ra1[2:0], ra2[2:0], wa[2:0]);
+
+endmodule

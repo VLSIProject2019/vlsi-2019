@@ -1,0 +1,16 @@
+datapath I13 ( net035[0:7], WriteData[7:0], net037, net051, net034,
+     net047, instr1[10:8], net046, net048, net030[0:1], net049,
+     ReadData[7:0], net028, net027, net026[0:1], net044, net058,
+     net057, net022);
+controller I14 ( net058, net057, net022, net037, net051, net028,
+     net049, net048, net047, net046, net027, net044, net034,
+     net030[0:1], net026[0:1], net059, ReadData[14:8], instr1[14:8]);
+padframe I16 ( Adr[7:0], MemWrite, ReadData[14:0], net058, net057,
+     net022, net039, test_out, MemData[14:0], net035[0:7], net059,
+     {cds_globals.gnd_, cds_globals.gnd_, cds_globals.gnd_,
+     cds_globals.gnd_, cds_globals.gnd_, cds_globals.gnd_,
+     cds_globals.gnd_, WriteData[7:0]}, ph1, ph2, reset, test_in,
+     net040);
+inv_1x I19 ( net040, net039);
+
+endmodule

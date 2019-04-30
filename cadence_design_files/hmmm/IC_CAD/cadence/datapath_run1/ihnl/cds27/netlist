@@ -1,0 +1,32 @@
+// Library - mips8, Cell - regram_zipper, View - schematic
+// LAST TIME SAVED: Feb 16 20:07:23 2012
+// NETLIST TIME: Feb 17 13:51:53 2019
+`timescale 1ns / 100ps 
+
+module regram_zipper ( read1, read1b, read2, read2b, write, writeb,
+     RegWrite, ph2, ra1, ra2, wa );
+
+output  read1, read1b, read2, read2b, write, writeb;
+
+input  RegWrite, ph2;
+
+input [2:0]  wa;
+input [2:0]  ra2;
+input [2:0]  ra1;
+
+
+
+specify 
+    specparam CDS_LIBNAME  = "mips8";
+    specparam CDS_CELLNAME = "regram_zipper";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+
+nand3_1x I0 ( rd1, ra1[0], ra1[1], ra1[2]);
+nand3_1x I1 ( rd2, ra2[0], ra2[1], ra2[2]);
+invbuf_4x I3 ( read1b, read1, rd1);
+invbuf_4x I4 ( read2b, read2, rd2);
+invbuf_4x I5 ( writeb, write, wr);
+nand5_1x I6 ( wr, wa[0], wa[1], wa[2], ph2, RegWrite);
+
+endmodule

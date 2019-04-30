@@ -1,0 +1,19 @@
+// Library - muddlib11, Cell - fulladder, View - cmos_sch
+// LAST TIME SAVED: Feb 16 22:56:15 2012
+// NETLIST TIME: Mar 25 04:22:45 2019
+`timescale 1ns / 100ps 
+
+module fulladder ( cout, s, a, b, c );
+
+output  cout, s;
+
+input  a, b, c;
+
+
+
+specify 
+    specparam CDS_LIBNAME  = "muddlib11";
+    specparam CDS_CELLNAME = "fulladder";
+    specparam CDS_VIEWNAME = "cmos_sch";
+endspecify
+

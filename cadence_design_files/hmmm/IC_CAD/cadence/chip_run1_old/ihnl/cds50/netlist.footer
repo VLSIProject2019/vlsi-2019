@@ -1,0 +1,6 @@
+nmos4 N0 ( cds_globals.gnd_, cds_globals.vdd_, cds_globals.gnd_,
+     cds_globals.gnd_);
+nmos4 N1 ( cds_globals.gnd_, cds_globals.vdd_, cds_globals.gnd_,
+     cds_globals.gnd_);
+
+endmodule

@@ -1,0 +1,54 @@
+04/06/2019 22:36:15 (924620-1556467200 virtuoso): Initialization started (12.04-s027)...
+04/06/2019 22:36:15 (924620-1556467200): FLEXnet version 11.11.1.1 build 119913
+04/06/2019 22:36:15 (924620-1556467200): Process ID 19013
+04/06/2019 22:36:15 (924620-1556467200): Using command line option -display for DISPLAY ((null))
+04/06/2019 22:36:15 (924620-1556467200): Creating a new job ...
+04/06/2019 22:36:15 (924620-1556467200): Validating server path: 5280@134.173.38.214:2222@theforce.eng.hmc.edu
+04/06/2019 22:36:15 (924620-1556467200): Server path validation status: 0
+04/06/2019 22:36:15 (924620-1556467200):   Configuration of license path is '5280@134.173.38.214:2222@theforce.eng.hmc.edu'.
+04/06/2019 22:36:15 (924620-1556467200):   Configuration of recheck interval minimum is 290.
+04/06/2019 22:36:15 (924620-1556467200):   Configuration of 2000000000 maximum retry calls.
+04/06/2019 22:36:15 (924620-1556467200):   Configuration of sleep time value of 0.
+04/06/2019 22:36:15 (924620-1556467200):   Configuration of display specification is 'localhost:12.0'.
+04/06/2019 22:36:15 (924620-1556467200):   Licenses will be checked out using emeike@DHCP-60-126.ST.HMC.Edu(localhost:12.0).
+04/06/2019 22:36:15 (924620-1556467200):   (System spec would have been emeike@DHCP-60-126.ST.HMC.Edu(/dev/pts/7) )
+04/06/2019 22:36:15 (924620-1556467200): Job creation completed with status 0 (time 0).
+04/06/2019 22:36:15 (924620-1556467200): Creating a new job ...
+04/06/2019 22:36:15 (924620-1556467200):   Configuration of license path is '5280@134.173.38.214:2222@theforce.eng.hmc.edu'.
+04/06/2019 22:36:15 (924620-1556467200):   Configuration of recheck interval minimum is 290.
+04/06/2019 22:36:15 (924620-1556467200):   Configuration of 2000000000 maximum retry calls.
+04/06/2019 22:36:15 (924620-1556467200):   Configuration of sleep time value of 0.
+04/06/2019 22:36:15 (924620-1556467200):   Configuration of display specification is 'localhost:12.0'.
+04/06/2019 22:36:15 (924620-1556467200):   Licenses will be checked out using emeike@DHCP-60-126.ST.HMC.Edu(localhost:12.0).
+04/06/2019 22:36:15 (924620-1556467200):   (System spec would have been emeike@DHCP-60-126.ST.HMC.Edu(/dev/pts/7) )
+04/06/2019 22:36:15 (924620-1556467200): Job creation completed with status 0 (time 0).
+04/06/2019 22:36:15 (924620-1556467200): Creating a new job ...
+04/06/2019 22:36:15 (924620-1556467200):   Configuration of license path is '5280@134.173.38.214:2222@theforce.eng.hmc.edu'.
+04/06/2019 22:36:15 (924620-1556467200):   Configuration of recheck interval minimum is 290.
+04/06/2019 22:36:15 (924620-1556467200):   Configuration of 2000000000 maximum retry calls.
+04/06/2019 22:36:15 (924620-1556467200):   Configuration of sleep time value of 0.
+04/06/2019 22:36:15 (924620-1556467200):   Configuration of display specification is 'localhost:12.0'.
+04/06/2019 22:36:15 (924620-1556467200):   Licenses will be checked out using emeike@DHCP-60-126.ST.HMC.Edu(localhost:12.0).
+04/06/2019 22:36:15 (924620-1556467200):   (System spec would have been emeike@DHCP-60-126.ST.HMC.Edu(/dev/pts/7) )
+04/06/2019 22:36:15 (924620-1556467200): Job creation completed with status 0 (time 0).
+04/06/2019 22:36:15 (924620-1556467200): Creating a new job ...
+04/06/2019 22:36:15 (924620-1556467200):   Configuration of license path is '5280@134.173.38.214:2222@theforce.eng.hmc.edu'.
+04/06/2019 22:36:15 (924620-1556467200):   Configuration of recheck interval minimum is 290.
+04/06/2019 22:36:15 (924620-1556467200):   Configuration of 2000000000 maximum retry calls.
+04/06/2019 22:36:15 (924620-1556467200):   Configuration of sleep time value of 0.
+04/06/2019 22:36:15 (924620-1556467200):   Configuration of display specification is 'localhost:12.0'.
+04/06/2019 22:36:15 (924620-1556467200):   Licenses will be checked out using emeike@DHCP-60-126.ST.HMC.Edu(localhost:12.0).
+04/06/2019 22:36:15 (924620-1556467200):   (System spec would have been emeike@DHCP-60-126.ST.HMC.Edu(/dev/pts/7) )
+04/06/2019 22:36:15 (924620-1556467200): Job creation completed with status 0 (time 0).
+04/06/2019 22:36:15 (924620-1556467200): Creating a new job ...
+04/06/2019 22:36:15 (924620-1556467200):   Configuration of license path is '5280@134.173.38.214:2222@theforce.eng.hmc.edu'.
+04/06/2019 22:36:15 (924620-1556467200):   Configuration of recheck interval minimum is 290.
+04/06/2019 22:36:15 (924620-1556467200):   Configuration of 2000000000 maximum retry calls.
+04/06/2019 22:36:15 (924620-1556467200):   Configuration of sleep time value of 0.
+04/06/2019 22:36:15 (924620-1556467200):   Configuration of display specification is 'localhost:12.0'.
+04/06/2019 22:36:15 (924620-1556467200):   Licenses will be checked out using emeike@DHCP-60-126.ST.HMC.Edu(localhost:12.0).
+04/06/2019 22:36:15 (924620-1556467200):   (System spec would have been emeike@DHCP-60-126.ST.HMC.Edu(/dev/pts/7) )
+04/06/2019 22:36:15 (924620-1556467200): Job creation completed with status 0 (time 0).
+04/06/2019 22:36:15 (924620-1556467200): Initialization completed with status 0 (time 0).
+04/06/2019 22:36:35 (924620-1556467200): Exit started ....
+04/06/2019 22:36:35 (924620-1556467200): Exit completed with status 0 (time 0).

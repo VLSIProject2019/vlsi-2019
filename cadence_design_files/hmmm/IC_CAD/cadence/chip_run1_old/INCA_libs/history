@@ -1,0 +1,22 @@
+//
+// File created by:  irun
+// Do not modify this file
+
+s1::(27Feb2019:18:33:26):( ncverilog -l nc.log +access+r mips.sv -f verilog.inpfiles )
+s2::(27Feb2019:18:37:45):( ncverilog -l nc.log +access+r mips.sv -f verilog.inpfiles )
+s3::(24Mar2019:23:24:00):( ncverilog -l nc.log +access+r testbench.sv )
+s4::(25Mar2019:03:32:31):( ncxlmode +delay_mode_path +typdelays -l simout.tmp /proj/VLSI19S/G1/hmmm/IC_CAD/cadence/chip_run1/testfixture.template -f /proj/VLSI19S/G1/hmmm/IC_CAD/cadence/chip_run1/verilog.inpfiles +nostdout +nocopyright +compile +ncvlogargs+ -neverwarn -nostdout -nocopyright  )
+s5::(25Mar2019:03:32:31):( ncxlmode +delay_mode_path +typdelays -l simout.tmp /proj/VLSI19S/G1/hmmm/IC_CAD/cadence/chip_run1/testfixture.template -f /proj/VLSI19S/G1/hmmm/IC_CAD/cadence/chip_run1/verilog.inpfiles +nostdout +nocopyright +elaborate +ncvlogargs+ -neverwarn -nostdout -nocopyright  +ncelabargs+ -neg_tchk  -nonotifier  -sdf_NOCheck_celltype  -access +r  -pulse_e 100  -pulse_r 100  -neverwarn  -timescale 1ns/100ps -nostdout -nocopyright )
+s6::(25Mar2019:03:32:31):( ncxlmode +delay_mode_path +typdelays -l simout.tmp /proj/VLSI19S/G1/hmmm/IC_CAD/cadence/chip_run1/testfixture.template -f /proj/VLSI19S/G1/hmmm/IC_CAD/cadence/chip_run1/verilog.inpfiles +nostdout +nocopyright +ncvlogargs+ -neverwarn -nostdout -nocopyright  +ncelabargs+ -neg_tchk  -nonotifier  -sdf_NOCheck_celltype  -access +r  -pulse_e 100  -pulse_r 100  -neverwarn  -timescale 1ns/100ps -nostdout -nocopyright +ncsimargs+ -neverwarn  -nocopyright -gui -input /proj/VLSI19S/G1/hmmm/IC_CAD/cadence/chip_run1/.simTmpNCCmd  +mpssession+virtuoso19032 +mpshost+DHCP-60-126.ST.HMC.Edu )
+s7::(25Mar2019:03:33:11):( ncxlmode +delay_mode_path +typdelays -l simout.tmp /proj/VLSI19S/G1/hmmm/IC_CAD/cadence/chip_run1/testfixture.template -f /proj/VLSI19S/G1/hmmm/IC_CAD/cadence/chip_run1/verilog.inpfiles +nostdout +nocopyright +compile +ncvlogargs+ -neverwarn -nostdout -nocopyright  )
+s8::(25Mar2019:03:33:11):( ncxlmode +delay_mode_path +typdelays -l simout.tmp /proj/VLSI19S/G1/hmmm/IC_CAD/cadence/chip_run1/testfixture.template -f /proj/VLSI19S/G1/hmmm/IC_CAD/cadence/chip_run1/verilog.inpfiles +nostdout +nocopyright +elaborate +ncvlogargs+ -neverwarn -nostdout -nocopyright  +ncelabargs+ -neg_tchk  -nonotifier  -sdf_NOCheck_celltype  -access +r  -pulse_e 100  -pulse_r 100  -neverwarn  -timescale 1ns/100ps -nostdout -nocopyright )
+s9::(25Mar2019:03:33:11):( ncxlmode +delay_mode_path +typdelays -l simout.tmp /proj/VLSI19S/G1/hmmm/IC_CAD/cadence/chip_run1/testfixture.template -f /proj/VLSI19S/G1/hmmm/IC_CAD/cadence/chip_run1/verilog.inpfiles +nostdout +nocopyright +ncvlogargs+ -neverwarn -nostdout -nocopyright  +ncelabargs+ -neg_tchk  -nonotifier  -sdf_NOCheck_celltype  -access +r  -pulse_e 100  -pulse_r 100  -neverwarn  -timescale 1ns/100ps -nostdout -nocopyright +ncsimargs+ -neverwarn  -nocopyright -gui -input /proj/VLSI19S/G1/hmmm/IC_CAD/cadence/chip_run1/.simTmpNCCmd  +mpssession+virtuoso19032 +mpshost+DHCP-60-126.ST.HMC.Edu )
+s10::(25Mar2019:03:38:26):( ncverilog -l nc.log +access+r +gui testbench.sv -f verilog.inpfiles )
+s11::(25Mar2019:03:38:52):( ncverilog -l nc.log +access+r +gui testbench.sv -f verilog.inpfiles )
+s12::(25Mar2019:03:40:38):( ncverilog -l nc.log +access+r +gui testbench.sv -f verilog.inpfiles )
+s13::(25Mar2019:03:42:06):( ncverilog -l nc.log +access+r +gui testbench.sv -f verilog.inpfiles )
+s14::(25Mar2019:03:43:29):( ncverilog -l nc.log +access+r testbench.sv -f verilog.inpfiles )
+s15::(25Mar2019:03:44:48):( ncverilog -l nc.log +access+r testbench.sv -f verilog.inpfiles )
+s16::(25Mar2019:03:45:09):( ncverilog -l nc.log +access+r testbench.sv -f verilog.inpfiles )
+s17::(25Mar2019:03:46:08):( ncverilog -l nc.log +access+r +gui testbench.sv -f verilog.inpfiles )
+s18::(25Mar2019:03:48:12):( ncverilog -l nc.log +access+r +gui testbench.sv -f verilog.inpfiles )

@@ -1,0 +1,16 @@
+//Revision 6
+//NOTE
+//VXL Configuration
+//END_NOTE
+
+config regram_dp;
+design mips8.regram_dp:cmos_sch;
+liblist mips8;
+
+viewlist physConfig, schematic, symbol;
+
+constraintviewlist constraint;
+stoplist layout, abstract;
+
+
+endconfig

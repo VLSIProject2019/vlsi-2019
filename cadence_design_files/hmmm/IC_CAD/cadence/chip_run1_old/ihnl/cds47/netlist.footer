@@ -1,0 +1,6 @@
+pmos4 P0 ( cds_globals.vdd_, cds_globals.gnd_, cds_globals.vdd_,
+     cds_globals.vdd_);
+pmos4 P1 ( cds_globals.vdd_, cds_globals.gnd_, cds_globals.vdd_,
+     cds_globals.vdd_);
+
+endmodule

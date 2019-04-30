@@ -1,0 +1,80 @@
+*** Loading .simrc from -> /courses/e158/15/cadence/.simrc.
+
+Running netlist
+Begin Incremental Netlisting Feb 10 13:29:25 2019
+si: simSetDef().... hnlMaxNameLength is already set to 64. Redefinition to 50 is
+ignored.
+si: simSetDef().... hnlCapability is initialized to "nil".
+si: simSetDef().... hnlBusCapability is initialized to "nil".
+INFO (VLOGNET-188): While generating implicit netlist, it is recommended to set
+the Terminal SyncUp option on the Netlist Setup form as 'Honor Switch
+Master'.
+Alternatively, you can set the hnlVerilogTermSyncUp variable as
+'honorSM'.
+This option automatically resolves any mismatch between the terminals
+of an instance and its switch master while generating an implicit netlist.
+
+INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the
+
+"/hdd/home/cnorfleet/IC_CAD/cadence/and2_run1/testfixture.verilog" file. To
+print the stimulus name mapped table, set
+
+simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file
+
+before invoking Verilog netlister.
+ 
+INFO (VLOGNET-62): Database internal net names will be printed for floating
+instance ports. To prevent 
+them from being printed, set
+simVerilogProcessNullPorts = t either in CIW or 
+the .simrc file.
+ 
+INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist
+Configuration list. 
+If you want to print only those cellviews that need to be
+re-netlisted in the 
+list, set simVerilogIncrementalNetlistConfigList = t either
+in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-66): Module ports will be printed without the port ranges. If you
+have split busses 
+across module ports you may get an incorrect netlist. To
+print module ports 
+with the port ranges, set simVerilogDropPortRange = nil
+either in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to
+"z". To get inout 
+pins with initial state of "0", set
+hnlVerilogIOInitStimulusStr = "0" 
+either in CIW or the .simrc file.
+ 
+INFO (VLOGNET-116): Netlisting the resistive-switch properties.
+
+INFO (VLOGNET-120): Using connection by order (implicit connections) for all the
+stopping cells.
+
+INFO (VLOGNET-126): ---------- Beginning netlist configuration information
+----------
+
+
+                (incremental data only)
+
+CELL NAME                   VIEW NAME            NOTE             
+---------                   ---------            ----             
+
+nmos                        functional           *Stopping View*  
+pmos                        functional           *Stopping View*  
+and2                        schematic                             
+nand2                       cmos_sch                              
+inv                         cmos_sch                              
+
+---------- End of netlist configuration information   ----------
+INFO (VLOGNET-80): The library 'lab1_cn', cell 'and2', and view 'schematic' has
+been netlisted successfully.
+
+End netlisting Feb 10 13:29:26 2019
+Verilog batch simulation succeeded in run directory
+/hdd/home/cnorfleet/IC_CAD/cadence/and2_run1

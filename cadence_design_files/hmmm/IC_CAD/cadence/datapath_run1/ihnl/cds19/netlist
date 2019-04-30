@@ -1,0 +1,39 @@
+// Library - muddlib11, Cell - and2_1x, View - cmos_sch
+// LAST TIME SAVED: Feb 16 19:56:16 2012
+// NETLIST TIME: Feb 17 13:51:53 2019
+`timescale 1ns / 100ps 
+
+module and2_1x ( y, a, b );
+
+output  y;
+
+input  a, b;
+
+
+
+specify 
+    specparam CDS_LIBNAME  = "muddlib11";
+    specparam CDS_CELLNAME = "and2_1x";
+    specparam CDS_VIEWNAME = "cmos_sch";
+endspecify
+
+`switch default
+pmos #(0.1)   (* const real width = 1.800, length = 0.600; *) M2(
+     net019, cds_globals.vdd_, b);
+`switch default
+pmos #(0.1)   (* const real width = 1.800, length = 0.600; *) M3(
+     net019, cds_globals.vdd_, a);
+`switch default
+pmos #(0.1)   (* const real width = 3.000, length = 0.600; *) M4( y,
+     cds_globals.vdd_, net019);
+`switch default
+nmos #(0.1)   (* const real width = 1.800, length = 0.600; *) M0(
+     net019, mid, b);
+`switch default
+nmos #(0.1)   (* const real width = 1.800, length = 0.600; *) M1( mid,
+     cds_globals.gnd_, a);
+`switch default
+nmos #(0.1)   (* const real width = 2.100, length = 0.600; *) M5( y,
+     cds_globals.gnd_, net019);
+
+endmodule

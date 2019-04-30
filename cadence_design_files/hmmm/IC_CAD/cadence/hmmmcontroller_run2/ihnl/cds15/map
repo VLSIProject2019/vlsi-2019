@@ -1,0 +1,13 @@
+( ( defbus
+( "~branchType" 0 1  "cdsbus0" 0 1  )
+( "branchType" 1 0  "branchType" 1 0  )
+ )
+( net
+( "branchType<0>" "branchType[0]" )
+( "~branchType<0>" "cdsbus0[0]" )
+( "~branchType<1>" "cdsbus0[1]" )
+( "~negative" "cdsNet1" )
+( "branchType<1>" "branchType[1]" )
+( "~zero" "cdsNet0" )
+ )
+ )

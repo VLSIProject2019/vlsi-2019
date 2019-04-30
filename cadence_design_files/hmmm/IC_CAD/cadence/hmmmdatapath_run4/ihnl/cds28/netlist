@@ -1,0 +1,27 @@
+// Library - mips8, Cell - regramvector0_dp, View - schematic
+// LAST TIME SAVED: Feb 16 23:07:23 2012
+// NETLIST TIME: Mar 22 01:30:36 2019
+`timescale 1ns / 100ps 
+
+module regramvector0_dp ( r1, r2, ra1, ra2 );
+
+
+
+inout [7:0]  r2;
+inout [7:0]  r1;
+
+input [2:0]  ra2;
+input [2:0]  ra1;
+
+
+
+specify 
+    specparam CDS_LIBNAME  = "mips8";
+    specparam CDS_CELLNAME = "regramvector0_dp";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+
+regram0_zipper I3 ( read1, read2, ra1[2:0], ra2[2:0]);
+regram0 regram0[7:0] ( r1[7:0], r2[7:0], read1, read2);
+
+endmodule

@@ -1,0 +1,24 @@
+simVerilogNetlistFileList = '(
+    (("controller_cn" "aludec") 
+	("cds3/netlist" "cds3/map" "schematic")
+    ) 
+    (("muddlib11" "nor2_1x") 
+	("cds2/netlist" "cds2/map" "cmos_sch")
+    ) 
+    (("muddlib11" "inv_1x") 
+	("cds1/netlist" "cds1/map" "cmos_sch")
+    ) 
+    (("muddlib11" "nand2_1x") 
+	("cds0/netlist" "cds0/map" "cmos_sch")
+    )
+)
+simVerilogNetlistFileLibList = '("controller_cn" "muddlib11")
+simVerilogNetlistFileCellList = '(
+    ("muddlib11" 
+	("nand2_1x" "inv_1x" "nor2_1x")
+    ) 
+    ("controller_cn" 
+	("aludec")
+    )
+)
+hnlIncrementalDirectory = '"ihnl"

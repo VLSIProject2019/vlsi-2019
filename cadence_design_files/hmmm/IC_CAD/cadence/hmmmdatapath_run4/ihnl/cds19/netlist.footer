@@ -1,0 +1,5 @@
+invbuf_4x wbuf[2:0] ( wabb[2:0], wab[2:0], wa[2:0]);
+invbuf_4x r1buf[2:0] ( ra1bb[2:0], ra1b[2:0], ra1[2:0]);
+invbuf_4x r2buf[2:0] ( ra2bb[2:0], ra2b[2:0], ra2[2:0]);
+
+endmodule

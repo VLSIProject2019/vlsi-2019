@@ -1,0 +1,11 @@
+//
+// File created by:  ncxlmode
+// Do not modify this file
+//
+-sv
+
+-neverwarn
+
+-nostdout
+
+-nocopyright

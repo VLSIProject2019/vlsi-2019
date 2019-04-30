@@ -1,0 +1,23 @@
+// Library - muddlib11, Cell - clkinvbufdual_4x, View - schematic
+// LAST TIME SAVED: Feb 16 22:56:15 2012
+// NETLIST TIME: Mar 22 01:30:35 2019
+`timescale 1ns / 100ps 
+
+module clkinvbufdual_4x ( ph1b, ph1buf, ph2b, ph2buf, ph1, ph2 );
+
+output  ph1b, ph1buf, ph2b, ph2buf;
+
+input  ph1, ph2;
+
+
+
+specify 
+    specparam CDS_LIBNAME  = "muddlib11";
+    specparam CDS_CELLNAME = "clkinvbufdual_4x";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+
+clkinvbuf_4x I0 ( ph2b, ph2buf, ph2);
+clkinvbuf_4x I1 ( ph1b, ph1buf, ph1);
+
+endmodule

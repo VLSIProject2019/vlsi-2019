@@ -1,0 +1,3 @@
+tristate_1x tristate_1x[7:0] ( y[7:0], a[7:0], en, enBar);
+
+endmodule

@@ -1,0 +1,86 @@
+// Library - mips8, Cell - datapath, View - schematic
+// LAST TIME SAVED: Feb 17 13:51:22 2019
+// NETLIST TIME: Feb 17 13:51:53 2019
+`timescale 1ns / 100ps 
+
+module datapath ( adr[7:0], instr[5:0], instr[31:26], writedata[7:0],
+     zero, ALUControl[2:0], ALUSrcA, ALUSrcB[1:0], IRWrite[3:0], IorD,
+     MemtoReg, PCEn, PCSrc[1:0], RegDst, RegWrite, memdata[7:0], ph1,
+     ph2, reset );
+
+output  zero;
+
+input  ALUSrcA, IorD, MemtoReg, PCEn, RegDst, RegWrite, ph1, ph2,
+     reset;
+
+output [7:0]  adr;
+output [7:0]  writedata;
+output [31:0]  instr;
+
+input [1:0]  ALUSrcB;
+input [7:0]  memdata;
+input [2:0]  ALUControl;
+input [1:0]  PCSrc;
+input [3:0]  IRWrite;
+
+
+// Buses in the design
+
+wire  [0:2]  net208;
+
+wire  [7:0]  a;
+
+wire  [7:0]  aluout;
+
+wire  [7:0]  wrdata;
+
+wire  [7:0]  rd1;
+
+wire  [7:0]  rd2;
+
+wire  [7:0]  pc;
+
+wire  [7:0]  data;
+
+wire  [7:0]  scra;
+
+wire  [7:0]  scrb;
+
+wire  [7:0]  aluresult;
+
+wire  [7:0]  pcmux_out;
+
+
+specify 
+    specparam CDS_LIBNAME  = "mips8";
+    specparam CDS_CELLNAME = "datapath";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+
+mux2_c_1x regmux[2:0] ( net208[0:2], instr[18:16], instr[13:11],
+     RegDst);
+mux3_1x_8 pcmux ( pcmux_out[7:0], aluresult[7:0], aluout[7:0],
+     {instr[5:0], cds_globals.gnd_, cds_globals.gnd_}, PCSrc[1],
+     PCSrc[0]);
+alu alu ( aluresult[7:0], zero, ALUControl[2:0], scra[7:0], scrb[7:0]);
+mux4_1x_8 src2mux ( scrb[7:0], writedata[7:0], {cds_globals.gnd_,
+     cds_globals.gnd_, cds_globals.gnd_, cds_globals.gnd_,
+     cds_globals.gnd_, cds_globals.gnd_, cds_globals.gnd_,
+     cds_globals.vdd_}, instr[7:0], {instr[5:0], cds_globals.gnd_,
+     cds_globals.gnd_}, ALUSrcB[1], ALUSrcB[0]);
+regramarray_dp rf ( rd1[7:0], rd2[7:0], RegWrite, ph2, instr[23:21],
+     instr[18:16], wrdata[7:0], net208[0:2]);
+flopen_1x_8 ir0 ( instr[7:0], memdata[7:0], IRWrite[0], ph1, ph2);
+flopen_1x_8 ir1 ( instr[15:8], memdata[7:0], IRWrite[1], ph1, ph2);
+flopen_1x_8 ir2 ( instr[23:16], memdata[7:0], IRWrite[2], ph1, ph2);
+flopen_1x_8 ir3 ( instr[31:24], memdata[7:0], IRWrite[3], ph1, ph2);
+flop_1x_8 datareg ( data[7:0], memdata[7:0], ph1, ph2);
+flop_1x_8 wrdreg ( writedata[7:0], rd2[7:0], ph1, ph2);
+flop_1x_8 areg ( a[7:0], rd1[7:0], ph1, ph2);
+flop_1x_8 resreg ( aluout[7:0], aluresult[7:0], ph1, ph2);
+mux2_1x_8 adrmux ( adr[7:0], pc[7:0], aluout[7:0], IorD);
+mux2_1x_8 src1mux ( scra[7:0], pc[7:0], a[7:0], ALUSrcA);
+mux2_1x_8 wdmux ( wrdata[7:0], aluout[7:0], data[7:0], MemtoReg);
+flopenr_1x_8 pcreg ( pc[7:0], pcmux_out[7:0], PCEn, ph1, ph2, reset);
+
+endmodule

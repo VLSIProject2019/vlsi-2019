@@ -1,0 +1,4 @@
+mux2_dp_1x mux2[2:0] ( y[2:0], d0[2:0], d1[2:0], s, net12);
+inv_1x I0 ( net12, s);
+
+endmodule

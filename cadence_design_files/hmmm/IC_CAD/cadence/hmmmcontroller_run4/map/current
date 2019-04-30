@@ -1,0 +1,52 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "controller"
+  repList "behavioral functional schematic cmos_sch"
+  stopList "behavioral functional"
+  globalList "vdd! gnd!"
+  hierDelim "."
+  hierPrefix "test.top"
+  globalHierPrefix "cds_globals."
+  netlistDir "/proj/VLSI19S/G1/hmmm/IC_CAD/cadence/hmmmcontroller_run4"
+  busRef   "ORDERED"
+  netType   "BUS"
+  leftStr  "["
+  rangeStr  ":"
+  rightStr  "]"
+ )
+( defbus
+( "PCSrc" 1 0  "PCSrc" 1 0  )
+( "RegWriteSrc" 1 0  "RegWriteSrc" 1 0  )
+( "MemData1" 14 8  "MemData1" 14 8  )
+( "instrReg1_nextQ" 6 0  "instrReg1_nextQ" 6 0  )
+( "instrTemp1" 14 8  "instrTemp1" 14 8  )
+( "instr1" 14 8  "instr1" 14 8  )
+ )
+( net
+( "vdd!" "cds_globals.vdd_" )
+( "gnd!" "cds_globals.gnd_" )
+ )
+( model
+( "muddlib11/inv_1x/cmos_sch" "inv_1x" )
+( "muddlib11/nor2_1x/cmos_sch" "nor2_1x" )
+( "muddlib11/mux2_c_1x/cmos_sch" "mux2_c_1x" )
+( "muddlib11/latch_c_1x/cmos_sch" "latch_c_1x" )
+( "muddlib11/nor3_1x/cmos_sch" "nor3_1x" )
+( "muddlib11/nand2_1x/cmos_sch" "nand2_1x" )
+( "muddlib11/and2_1x/cmos_sch" "and2_1x" )
+( "muddlib11/nand3_1x/cmos_sch" "nand3_1x" )
+( "HMMM_Synth/controller/schematic" "controller" )
+( "muddlib11/a2o1_1x/cmos_sch" "a2o1_1x" )
+ )
+( "nor2_1x" "ihnl/cds4/map" )
+( "controller" "ihnl/cds9/map" )
+( "nand3_1x" "ihnl/cds7/map" )
+( "inv_1x" "ihnl/cds1/map" )
+( "a2o1_1x" "ihnl/cds8/map" )
+( "and2_1x" "ihnl/cds5/map" )
+( "nor3_1x" "ihnl/cds6/map" )
+( "latch_c_1x" "ihnl/cds0/map" )
+( "mux2_c_1x" "ihnl/cds3/map" )
+( "nand2_1x" "ihnl/cds2/map" )
+ )

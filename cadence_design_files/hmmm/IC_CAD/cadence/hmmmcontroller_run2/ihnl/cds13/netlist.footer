@@ -1,0 +1,38 @@
+`switch default
+nmos #(0.1)   (* const real width = 1.800, length = 0.600; *) M6( sb,
+     cds_globals.gnd_, s);
+`switch default
+nmos #(0.1)   (* const real width = 1.800, length = 0.600; *) M7(
+     net10, net7, s);
+`switch default
+nmos #(0.1)   (* const real width = 1.800, length = 0.600; *) M8( net7,
+     cds_globals.gnd_, d1);
+`switch default
+nmos #(0.1)   (* const real width = 1.800, length = 0.600; *) M9(
+     net10, net19, sb);
+`switch default
+nmos #(0.1)   (* const real width = 1.800, length = 0.600; *) M10(
+     net19, cds_globals.gnd_, d0);
+`switch default
+nmos #(0.1)   (* const real width = 2.100, length = 0.600; *) M11( y,
+     cds_globals.gnd_, net10);
+`switch default
+pmos #(0.1)   (* const real width = 2.700, length = 0.600; *) M0( sb,
+     cds_globals.vdd_, s);
+`switch default
+pmos #(0.1)   (* const real width = 2.700, length = 0.600; *) M1(
+     net24, cds_globals.vdd_, d1);
+`switch default
+pmos #(0.1)   (* const real width = 2.700, length = 0.600; *) M2(
+     net10, net24, sb);
+`switch default
+pmos #(0.1)   (* const real width = 2.700, length = 0.600; *) M3(
+     net36, cds_globals.vdd_, d0);
+`switch default
+pmos #(0.1)   (* const real width = 2.700, length = 0.600; *) M4(
+     net10, net36, s);
+`switch default
+pmos #(0.1)   (* const real width = 3.000, length = 0.600; *) M5( y,
+     cds_globals.vdd_, net10);
+
+endmodule

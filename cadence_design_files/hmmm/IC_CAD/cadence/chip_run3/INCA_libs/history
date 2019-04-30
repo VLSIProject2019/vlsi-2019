@@ -1,0 +1,10 @@
+//
+// File created by:  irun
+// Do not modify this file
+
+s1::(25Mar2019:04:27:49):( ncverilog -l nc.log +access+r fullprocessor.sv )
+s2::(25Mar2019:04:27:59):( ncverilog -l nc.log +access+r testprocessor.sv -f verilog.inpfiles )
+s3::(25Mar2019:04:32:07):( ncverilog -l nc.log +access+r testprocessor.sv -f verilog.inpfiles )
+s4::(25Mar2019:04:32:32):( ncverilog -l nc.log +access+r +gui testprocessor.sv -f verilog.inpfiles )
+s5::(25Mar2019:04:34:53):( ncverilog -l nc.log +access+r testprocessor.sv -f verilog.inpfiles )
+s6::(25Mar2019:10:56:31):( ncverilog -l nc.log +access+r +gui testprocessor.sv -f verilog.inpfiles )

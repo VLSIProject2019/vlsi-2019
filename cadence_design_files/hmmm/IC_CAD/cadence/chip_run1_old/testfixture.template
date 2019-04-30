@@ -1,0 +1,29 @@
+
+`timescale 1ns / 100ps
+
+module test;
+
+
+wire  memread, memwrite;
+
+reg  ph1, ph2, reset;
+
+wire [7:0]  writedata;
+wire [7:0]  adr;
+
+reg [7:0]  memdata;
+
+
+
+chip top(adr, memread, memwrite, writedata, memdata, ph1, ph2, reset
+     ); 
+ 
+
+`ifdef verilog
+
+ //please enter any additional verilog stimulus in the /proj/VLSI19S/G1/hmmm/IC_CAD/cadence/chip_run1/testfixture.verilog file
+`include "/proj/VLSI19S/G1/hmmm/IC_CAD/cadence/chip_run1/testfixture.verilog"
+
+`endif
+
+endmodule 

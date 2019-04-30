@@ -1,0 +1,27 @@
+//
+// File created by:  ncxlmode
+// Do not modify this file
+//
+-XLMODE
+./INCA_libs/irun.lnx8664.15.20.nc
+-RUNMODE
+-sv
+/hdd/home/cnorfleet/IC_CAD/cadence/or2_run1/testfixture.template
+ihnl/cds0/netlist
+ihnl/cds1/netlist
+ihnl/cds2/netlist
+hdlFilesDir/cds_globals.v
+-NOSTDOUT
+-NOCOPYRIGHT
+-neverwarn
+-nostdout
+-nocopyright
+-CDSLIB
+./INCA_libs/irun.lnx8664.15.20.nc/cdsrun.lib
+-HDLVAR
+./INCA_libs/irun.lnx8664.15.20.nc/hdlrun.var
+-MESSAGES
+-UPDATE
+-XLLIBSTORE
+./INCA_libs/irun.lnx8664.15.20.nc/xllibs
+-ALLOWUNBOUND

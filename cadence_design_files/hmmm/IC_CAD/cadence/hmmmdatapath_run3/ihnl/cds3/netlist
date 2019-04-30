@@ -1,0 +1,27 @@
+// Library - wordlib8, Cell - flop_1x_8, View - schematic
+// LAST TIME SAVED: Feb 16 23:00:06 2012
+// NETLIST TIME: Mar 21 23:52:36 2019
+`timescale 1ns / 100ps 
+
+module flop_1x_8 ( q, d, ph1, ph2 );
+
+
+input  ph1, ph2;
+
+output [7:0]  q;
+
+input [7:0]  d;
+
+
+
+specify 
+    specparam CDS_LIBNAME  = "wordlib8";
+    specparam CDS_CELLNAME = "flop_1x_8";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+
+flop_dp_1x flop_dp_1x[7:0] ( q[7:0], d[7:0], net20, net24, net21,
+     net22);
+clkinvbufdual_4x I1 ( net24, net20, net22, net21, ph1, ph2);
+
+endmodule

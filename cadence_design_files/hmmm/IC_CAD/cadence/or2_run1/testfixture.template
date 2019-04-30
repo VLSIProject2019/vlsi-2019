@@ -1,0 +1,23 @@
+
+`timescale 1ns / 100ps
+
+module test;
+
+
+wire  y;
+
+reg  a, b;
+
+
+
+or2 top(y, a, b); 
+ 
+
+`ifdef verilog
+
+ //please enter any additional verilog stimulus in the /hdd/home/cnorfleet/IC_CAD/cadence/or2_run1/testfixture.verilog file
+`include "/hdd/home/cnorfleet/IC_CAD/cadence/or2_run1/testfixture.verilog"
+
+`endif
+
+endmodule 

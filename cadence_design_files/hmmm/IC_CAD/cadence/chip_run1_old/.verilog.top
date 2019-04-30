@@ -1,0 +1,42 @@
+
+`timescale 1ns / 100ps
+
+module test;
+
+
+wire  memread, memwrite;
+
+reg  ph1, ph2, reset;
+
+wire [7:0]  writedata;
+wire [7:0]  adr;
+
+reg [7:0]  memdata;
+
+// Buses in the design
+
+wire  [0:5]  net043;
+
+wire  [0:2]  net044;
+
+wire  [0:7]  net041;
+
+wire  [0:1]  net045;
+
+wire  [0:7]  net040;
+
+wire  [0:7]  net042;
+
+wire  [0:1]  net7;
+
+wire  [0:5]  net17;
+
+wire  [0:1]  net046;
+
+wire  [0:3]  net039;
+
+
+
+chip top(adr, memread, memwrite, writedata, memdata, ph1, ph2, reset
+     ); 
+ 

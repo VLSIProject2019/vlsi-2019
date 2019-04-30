@@ -1,0 +1,4 @@
+s1(22Mar2019:03:58:45):  ncverilog -l nc.log +access+r fullprocessor.sv 
+s2(22Mar2019:03:58:58):  ncverilog -l nc.log +access+r testprocessor.sv -f verilog.inpfiles 
+s3(22Mar2019:03:59:48):  ncverilog -l nc.log +access+r +gui testprocessor.sv -f verilog.inpfiles 
+s4(25Mar2019:04:14:01):  ncverilog -l nc.log +access+r testprocessor.sv -f verilog.inpfiles 

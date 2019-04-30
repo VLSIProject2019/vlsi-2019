@@ -1,0 +1,78 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : controller
+Version: L-2016.03-SP4
+Date   : Mon Mar 18 03:08:33 2019
+****************************************
+
+Operating Conditions: typical   Library: muddlib
+Wire Load Model Mode: enclosed
+
+  Startpoint: funct[1] (input port clocked by ph1)
+  Endpoint: MemWrite (output port clocked by ph1)
+  Path Group: ph1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  controller         5k                    muddlib
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ph1 (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.50       0.50 r
+  funct[1] (in)                            0.08       0.58 r
+  U25/y (inv_1x)                           0.59       1.18 f
+  U32/y (nor2_1x)                          0.91       2.09 r
+  U33/y (nand3_1x)                         0.46       2.55 f
+  U34/y (nor3_1x)                          0.76       3.31 r
+  MemWrite (out)                           0.00       3.31 r
+  data arrival time                                   3.31
+
+  clock ph1 (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  output external delay                   -0.50       9.50
+  data required time                                  9.50
+  -----------------------------------------------------------
+  data required time                                  9.50
+  data arrival time                                  -3.31
+  -----------------------------------------------------------
+  slack (MET)                                         6.19
+
+
+1
+ 
+****************************************
+Report : area
+Design : controller
+Version: L-2016.03-SP4
+Date   : Mon Mar 18 03:08:33 2019
+****************************************
+
+Library(s) Used:
+
+    muddlib (File: /courses/e158/15/lab3/muddlib.db)
+
+Number of ports:                           21
+Number of nets:                            35
+Number of cells:                           26
+Number of combinational cells:             24
+Number of sequential cells:                 2
+Number of macros/black boxes:               0
+Number of buf/inv:                          9
+Number of references:                       8
+
+Combinational area:               4989.600098
+Buf/Inv area:                     1166.400055
+Noncombinational area:            1425.599976
+Macro/Black Box area:                0.000000
+Net Interconnect area:           30679.000000
+
+Total cell area:                  6415.200073
+Total area:                      37094.200073
+1

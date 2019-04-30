@@ -1,0 +1,11 @@
+simVerilogNetlistFileList = '(
+    (("lab1_cn" "nand2") 
+	("cds0/netlist" "cds0/map" "cmos_sch")
+    )
+)
+simVerilogNetlistFileLibList = '("lab1_cn")
+simVerilogNetlistFileCellList = '(("lab1_cn" 
+	("nand2")
+    )
+)
+hnlIncrementalDirectory = '"ihnl"

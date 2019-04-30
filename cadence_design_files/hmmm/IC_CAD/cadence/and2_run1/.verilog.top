@@ -1,0 +1,14 @@
+
+`timescale 1ns / 100ps
+
+module test;
+
+
+wire  y;
+
+reg  a, b;
+
+
+
+and2 top(y, a, b); 
+ 

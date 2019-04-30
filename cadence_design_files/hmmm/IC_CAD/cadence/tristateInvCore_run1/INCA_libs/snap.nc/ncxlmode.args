@@ -1,0 +1,17 @@
+//
+// File created by:  ncxlmode
+// Do not modify this file
+//
++delay_mode_path
++typdelays
+-l
+simout.tmp
+-sv
+/home/cnorfleet/IC_CAD/cadence/tristateInvCore_run1/testfixture.template
+-f
+/home/cnorfleet/IC_CAD/cadence/tristateInvCore_run1/verilog.inpfiles
++nostdout
++nocopyright
+"+ncvlogargs+ -neverwarn -nostdout -nocopyright "
+"+ncelabargs+ -neg_tchk  -nonotifier  -sdf_NOCheck_celltype  -access +r  -pulse_e 100  -pulse_r 100  -neverwarn  -timescale 1ns/1ns -nostdout -nocopyright"
+"+ncsimargs+ -neverwarn  -nocopyright -nostdout -batch -exit "

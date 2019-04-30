@@ -1,0 +1,65 @@
+
+`timescale 1ns / 100ps
+
+module test;
+
+
+wire  negative, zero;
+
+
+reg  ALUSub, AdrSrc, InstrSrc, MemWrite, PCEnable, RA1Src, RegWLoadSrc
+     , RegWrite, TwoRegs, ph1, ph2, reset;
+
+wire [7:0]  Adr;
+
+wire [7:0]  MemData;
+
+reg [1:0]  RegWriteSrc;
+reg [1:0]  PCSrc;
+reg [10:0]  Instr;
+
+// Buses in the design
+
+wire  [0:7]  net47;
+
+wire  [0:7]  net4;
+
+wire  [0:7]  net28;
+
+wire  [0:7]  net31;
+
+wire  [7:0]  r1;
+
+wire  [0:7]  net7;
+
+wire  [0:7]  net14;
+
+wire  [0:7]  net3;
+
+wire  [0:7]  net45;
+
+wire  [0:2]  net057;
+
+wire  [0:7]  net11;
+
+wire  [0:7]  net50;
+
+wire  [0:7]  net46;
+
+// List of all aliases
+
+
+cds_alias #(1) cds_alias_inst3(r1[7], negative);
+
+reg  [7:0] io_MemData;
+
+
+// Inout assignments 
+cds_alias #(8) cds_alias_inst4(MemData, io_MemData);
+
+
+datapath top(Adr[7:0], negative, zero, MemData[7:0], ALUSub, AdrSrc, 
+     Instr[10:8], InstrSrc, MemWrite, PCEnable, PCSrc[1:0], RA1Src, 
+     RegWLoadSrc, RegWrite, RegWriteSrc[1:0], TwoRegs, ph1, ph2, reset
+     ); 
+ 

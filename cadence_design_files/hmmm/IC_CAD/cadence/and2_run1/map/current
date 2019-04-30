@@ -1,0 +1,30 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "and2"
+  repList "behavioral functional schematic cmos_sch"
+  stopList "behavioral functional"
+  globalList "gnd! vdd!"
+  hierDelim "."
+  hierPrefix "test.top"
+  globalHierPrefix "cds_globals."
+  netlistDir "/hdd/home/cnorfleet/IC_CAD/cadence/and2_run1"
+  busRef   "ORDERED"
+  netType   "BUS"
+  leftStr  "["
+  rangeStr  ":"
+  rightStr  "]"
+ )
+( net
+( "vdd!" "cds_globals.vdd_" )
+( "gnd!" "cds_globals.gnd_" )
+ )
+( model
+( "lab1_cn/inv/cmos_sch" "inv" )
+( "lab1_cn/nand2/cmos_sch" "nand2" )
+( "lab1_cn/and2/schematic" "and2" )
+ )
+( "and2" "ihnl/cds2/map" )
+( "inv" "ihnl/cds0/map" )
+( "nand2" "ihnl/cds1/map" )
+ )

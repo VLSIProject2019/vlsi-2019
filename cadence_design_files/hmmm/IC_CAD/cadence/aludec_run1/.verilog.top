@@ -1,0 +1,17 @@
+
+`timescale 1ns / 100ps
+
+module test;
+
+
+
+
+wire [2:0]  alucontrol;
+
+reg [1:0]  aluop;
+reg [5:0]  funct;
+
+
+
+aludec top(alucontrol, aluop, funct); 
+ 

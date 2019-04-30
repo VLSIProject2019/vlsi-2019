@@ -1,0 +1,69 @@
+// Library - muddlib11, Cell - mux3_dp_1x, View - cmos_sch
+// LAST TIME SAVED: Feb 16 22:56:16 2012
+// NETLIST TIME: Mar 25 04:22:45 2019
+`timescale 1ns / 100ps 
+
+module mux3_dp_1x ( y, d0, d1, d2, s0, s0b, s1, s1b );
+
+output  y;
+
+input  d0, d1, d2, s0, s0b, s1, s1b;
+
+
+
+specify 
+    specparam CDS_LIBNAME  = "muddlib11";
+    specparam CDS_CELLNAME = "mux3_dp_1x";
+    specparam CDS_VIEWNAME = "cmos_sch";
+endspecify
+
+`switch default
+nmos #(0.1)   (* const real width = 1.800, length = 0.600; *) M9(
+     net060, net58, s1b);
+`switch default
+nmos #(0.1)   (* const real width = 1.800, length = 0.600; *) M11(
+     net060, net46, s1);
+`switch default
+nmos #(0.1)   (* const real width = 1.800, length = 0.600; *) M12(
+     net58, net52, s0b);
+`switch default
+nmos #(0.1)   (* const real width = 1.800, length = 0.600; *) M13(
+     net58, net49, s0);
+`switch default
+nmos #(0.1)   (* const real width = 1.800, length = 0.600; *) M16(
+     net52, cds_globals.gnd_, d0);
+`switch default
+nmos #(0.1)   (* const real width = 1.800, length = 0.600; *) M17(
+     net49, cds_globals.gnd_, d1);
+`switch default
+nmos #(0.1)   (* const real width = 1.800, length = 0.600; *) M18(
+     net46, cds_globals.gnd_, d2);
+`switch default
+nmos #(0.1)   (* const real width = 2.100, length = 0.600; *) M20( y,
+     cds_globals.gnd_, net060);
+`switch default
+pmos #(0.1)   (* const real width = 2.700, length = 0.600; *) M0(
+     net78, cds_globals.vdd_, d0);
+`switch default
+pmos #(0.1)   (* const real width = 2.700, length = 0.600; *) M1(
+     net75, cds_globals.vdd_, d1);
+`switch default
+pmos #(0.1)   (* const real width = 2.700, length = 0.600; *) M2(
+     net69, cds_globals.vdd_, d2);
+`switch default
+pmos #(0.1)   (* const real width = 2.700, length = 0.600; *) M4(
+     net79, net78, s0);
+`switch default
+pmos #(0.1)   (* const real width = 2.700, length = 0.600; *) M5(
+     net79, net75, s0b);
+`switch default
+pmos #(0.1)   (* const real width = 2.700, length = 0.600; *) M8(
+     net060, net79, s1);
+`switch default
+pmos #(0.1)   (* const real width = 2.700, length = 0.600; *) M10(
+     net060, net69, s1b);
+`switch default
+pmos #(0.1)   (* const real width = 3.000, length = 0.600; *) M21( y,
+     cds_globals.vdd_, net060);
+
+endmodule

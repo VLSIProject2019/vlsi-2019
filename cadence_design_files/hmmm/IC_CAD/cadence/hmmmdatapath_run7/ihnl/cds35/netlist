@@ -1,0 +1,24 @@
+// Library - wordlib8, Cell - inv_1x_8, View - schematic
+// LAST TIME SAVED: Feb 16 23:00:06 2012
+// NETLIST TIME: Mar 22 03:24:41 2019
+`timescale 1ns / 100ps 
+
+module inv_1x_8 ( y, a );
+
+
+
+output [7:0]  y;
+
+input [7:0]  a;
+
+
+
+specify 
+    specparam CDS_LIBNAME  = "wordlib8";
+    specparam CDS_CELLNAME = "inv_1x_8";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+
+inv_1x inv_1x[7:0] ( y[7:0], a[7:0]);
+
+endmodule

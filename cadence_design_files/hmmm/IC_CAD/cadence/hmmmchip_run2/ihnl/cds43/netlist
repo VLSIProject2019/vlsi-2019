@@ -1,0 +1,89 @@
+// Library - HMMM, Cell - padframe, View - schematic
+// LAST TIME SAVED: Apr  6 23:43:21 2019
+// NETLIST TIME: Apr  7 17:47:13 2019
+`timescale 1ns / 100ps 
+
+module padframe ( Adr, MemWrite, ReadData_core, ph1_core, ph2_core,
+     reset_core, test_in_core, test_out, MemData, Adr_core,
+     MemWrite_core, WriteData_core, ph1, ph2, reset, test_in,
+     test_out_core );
+
+output  MemWrite, ph1_core, ph2_core, reset_core, test_in_core,
+     test_out;
+
+
+input  MemWrite_core, ph1, ph2, reset, test_in, test_out_core;
+
+output [7:0]  Adr;
+output [14:0]  ReadData_core;
+
+inout [14:0]  MemData;
+
+input [14:0]  WriteData_core;
+input [7:0]  Adr_core;
+
+
+
+specify 
+    specparam CDS_LIBNAME  = "HMMM";
+    specparam CDS_CELLNAME = "padframe";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+
+pad_gnd I79 ( );
+pad_gnd I30 ( );
+pad_gnd I32 ( );
+pad_gnd I34 ( );
+pad_gnd I37 ( );
+pad_gnd I39 ( );
+pad_out I0 ( Adr[5], Adr_core[5]);
+pad_out I1 ( Adr[4], Adr_core[4]);
+pad_out I2 ( Adr[3], Adr_core[3]);
+pad_out I4 ( Adr[2], Adr_core[2]);
+pad_out I5 ( Adr[1], Adr_core[1]);
+pad_out I6 ( Adr[0], Adr_core[0]);
+pad_out I10 ( Adr[6], Adr_core[6]);
+pad_out I13 ( Adr[7], Adr_core[7]);
+pad_out I12 ( test_out, test_out_core);
+pad_out I14 ( MemWrite, MemWrite_core);
+pad_in I3 ( ph2_core, net60, ph2);
+pad_in I7 ( ph1_core, net48, ph1);
+pad_in I8 ( reset_core, net066, reset);
+pad_in I11 ( test_in_core, net067, test_in);
+pad_vdd I31 ( );
+pad_vdd I33 ( );
+pad_vdd I35 ( );
+pad_vdd I40 ( );
+pad_vdd I38 ( );
+pad_bidirhe I58 ( ReadData_core[4], net048, MemData[4],
+     WriteData_core[4], MemWrite_core);
+pad_bidirhe I57 ( ReadData_core[5], net032, MemData[5],
+     WriteData_core[5], MemWrite_core);
+pad_bidirhe I56 ( ReadData_core[6], net031, MemData[6],
+     WriteData_core[6], MemWrite_core);
+pad_bidirhe I55 ( ReadData_core[7], net030, MemData[7],
+     WriteData_core[7], MemWrite_core);
+pad_bidirhe I54 ( ReadData_core[8], net035, MemData[8],
+     WriteData_core[8], MemWrite_core);
+pad_bidirhe I53 ( ReadData_core[9], net034, MemData[9],
+     WriteData_core[9], MemWrite_core);
+pad_bidirhe I52 ( ReadData_core[10], net033, MemData[10],
+     WriteData_core[10], MemWrite_core);
+pad_bidirhe I48 ( ReadData_core[14], net045, MemData[14],
+     WriteData_core[14], MemWrite_core);
+pad_bidirhe I60 ( ReadData_core[1], net043, MemData[1],
+     WriteData_core[1], MemWrite_core);
+pad_bidirhe I61 ( ReadData_core[2], net044, MemData[2],
+     WriteData_core[2], MemWrite_core);
+pad_bidirhe I62 ( ReadData_core[3], net047, MemData[3],
+     WriteData_core[3], MemWrite_core);
+pad_bidirhe I59 ( ReadData_core[0], net042, MemData[0],
+     WriteData_core[0], MemWrite_core);
+pad_bidirhe I51 ( ReadData_core[11], net037, MemData[11],
+     WriteData_core[11], MemWrite_core);
+pad_bidirhe I50 ( ReadData_core[12], net046, MemData[12],
+     WriteData_core[12], MemWrite_core);
+pad_bidirhe I49 ( ReadData_core[13], net040, MemData[13],
+     WriteData_core[13], MemWrite_core);
+
+endmodule

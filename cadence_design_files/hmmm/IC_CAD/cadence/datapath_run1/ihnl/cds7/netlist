@@ -1,0 +1,29 @@
+// Library - mips8, Cell - yzdetect_8, View - schematic
+// LAST TIME SAVED: Feb 16 20:07:23 2012
+// NETLIST TIME: Feb 17 13:51:53 2019
+`timescale 1ns / 100ps 
+
+module yzdetect_8 ( yzero, a );
+
+output  yzero;
+
+
+input [7:0]  a;
+
+
+
+specify 
+    specparam CDS_LIBNAME  = "mips8";
+    specparam CDS_CELLNAME = "yzdetect_8";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+
+nor2_1x I0 ( nor_a7a6, a[7], a[6]);
+nor2_1x I1 ( nor_a5a4, a[5], a[4]);
+nor2_1x I2 ( nor_a3a2, a[3], a[2]);
+nor2_1x I3 ( nor_a1a0, a[1], a[0]);
+nor2_1x I6 ( yzero, nand_7_4, nand_3_0);
+nand2_1x I4 ( nand_7_4, nor_a7a6, nor_a5a4);
+nand2_1x I5 ( nand_3_0, nor_a3a2, nor_a1a0);
+
+endmodule

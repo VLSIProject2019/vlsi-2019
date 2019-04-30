@@ -1,0 +1,99 @@
+// Library - lab3_cn, Cell - controller_synth, View - schematic
+// LAST TIME SAVED: Feb 27 15:35:41 2019
+// NETLIST TIME: Mar 25 03:32:29 2019
+`timescale 1ns / 100ps 
+
+module controller_synth ( ph1, ph2, reset, op, zero, memread, memwrite,
+     alusrca, memtoreg, iord, pcen, regwrite, regdst, pcsrc, alusrcb,
+     aluop, irwrite );
+
+output  alusrca, iord, memread, memtoreg, memwrite, pcen, regdst,
+     regwrite;
+
+input  ph1, ph2, reset, zero;
+
+output [1:0]  pcsrc;
+output [1:0]  alusrcb;
+output [3:0]  irwrite;
+output [1:0]  aluop;
+
+input [5:0]  op;
+wire  [3:0]   statelog_ns;
+wire  [5:0]   op;
+wire    n95;
+wire    n94;
+wire    n93;
+wire    n92;
+wire    n91;
+wire    n90;
+wire    n89;
+wire    n87;
+wire    n86;
+wire    n85;
+wire    n84;
+wire    n83;
+wire    n82;
+wire    n81;
+wire    n80;
+wire    n79;
+wire    n78;
+wire  [3:0]   state;
+wire    n76;
+wire    n75;
+wire    n74;
+wire    n73;
+wire    n72;
+wire    n71;
+wire    n70;
+wire    n68;
+wire    n88;
+wire    n69;
+wire    n66;
+wire    n65;
+wire    n64;
+wire    n63;
+wire    n62;
+wire    n61;
+wire    n60;
+wire    n59;
+wire    n77;
+wire    n57;
+wire    n56;
+wire    n55;
+wire    n54;
+wire    n53;
+wire    n52;
+wire    n51;
+wire    n50;
+wire    n49;
+wire    n48;
+wire    n47;
+wire    n67;
+wire    ph2;
+wire    reset;
+wire    zero;
+wire    n58;
+wire  [1:0]   aluop;
+wire  [1:0]   alusrcb;
+wire  [1:0]   pcsrc;
+wire  [3:0]   irwrite;
+wire    ph1;
+wire  [3:0]   statelog_statereg_mid;
+wire    memread;
+wire    memwrite;
+wire    alusrca;
+wire    memtoreg;
+wire    iord;
+wire    pcen;
+wire    regwrite;
+wire    regdst;
+wire    n46;
+
+
+
+specify 
+    specparam CDS_LIBNAME  = "lab3_cn";
+    specparam CDS_CELLNAME = "controller_synth";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+

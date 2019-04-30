@@ -1,0 +1,4 @@
+tristateInvCore I0 ( net9, a, en, enBar);
+inv_1x I1 ( y, net9);
+
+endmodule

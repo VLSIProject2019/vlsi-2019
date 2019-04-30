@@ -1,0 +1,9 @@
+mux4_dp_1x I0 ( condBranch, zero, cdsNet0, net12, negative,
+     branchType[0], cdsbus0[0], branchType[1], cdsbus0[1]);
+inv_1x I6 ( cdsbus0[1], branchType[1]);
+inv_1x I3 ( cdsNet0, zero);
+inv_1x I2 ( cdsNet1, negative);
+inv_1x I5 ( cdsbus0[0], branchType[0]);
+and2_1x I4 ( net12, cdsNet1, cdsNet0);
+
+endmodule

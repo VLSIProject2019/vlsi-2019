@@ -1,0 +1,21 @@
+// Library - mips8, Cell - regram_dp, View - cmos_sch
+// LAST TIME SAVED: Feb 16 23:07:23 2012
+// NETLIST TIME: Mar 22 01:30:36 2019
+`timescale 1ns / 100ps 
+
+module regram_dp ( r1, r2, w, read1, read1b, read2, read2b, write,
+     writeb );
+
+inout  r1, r2, w;
+
+input  read1, read1b, read2, read2b, write, writeb;
+trireg    net40;
+
+
+
+specify 
+    specparam CDS_LIBNAME  = "mips8";
+    specparam CDS_CELLNAME = "regram_dp";
+    specparam CDS_VIEWNAME = "cmos_sch";
+endspecify
+

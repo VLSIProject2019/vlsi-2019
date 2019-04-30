@@ -1,0 +1,14 @@
+
+`timescale 1ns / 100ps
+
+module test;
+
+
+wire  y;
+
+reg  a, en, enBar;
+
+
+
+tristateInvCore top(y, a, en, enBar); 
+ 

@@ -1,0 +1,42 @@
+flopenr_1x_8 I0 ( instrTemp1[7:0], {cds_globals.gnd_, MemData1[6:0]},
+     cds_globals.vdd_, ph1, ph2, reset);
+mux2_1x_8 I4 ( instr1[7:0], instrTemp1[7:0], {cds_globals.gnd_,
+     MemData1[6:0]}, InstrSrc);
+flopenr_dp_1x I5 ( AdrSrc, nextState, cds_globals.vdd_,
+     cds_globals.gnd_, ph1, net48, ph2, net46, reset);
+inv_1x I42 ( net81, net82);
+inv_1x I31 ( net85, net40);
+inv_1x I24 ( net68, AdrSrc);
+inv_1x I23 ( net69, net87);
+inv_1x I21 ( net46, ph2);
+inv_1x I20 ( net48, ph1);
+inv_1x I18 ( net89, TwoRegs);
+inv_1x I12 ( resetBar, reset);
+inv_1x I10 ( branchBar, RA1Src);
+inv_1x I7 ( stateBar, AdrSrc);
+and2_1x I49 ( net70, ALUSub, TwoRegs);
+and2_1x I47 ( RegWLoadSrc, net71, net70);
+and2_1x I45 ( MemWrite, net79, AdrSrc);
+and2_1x I44 ( net79, net80, TwoRegs);
+and2_1x I28 ( net40, condBranch, TwoRegs);
+and2_1x I27 ( net39, RA1Src, net86);
+and2_1x I13 ( InstrSrc, resetBar, stateBar);
+and2_1x I8 ( nextState, branchBar, stateBar);
+or2_1x I26 ( net86, net30, condBranch);
+or2_1x I25 ( net87, ALUSub, net30);
+or2_1x I11 ( PCEnable, RA1Src, AdrSrc);
+nor2_1x I48 ( net71, RA1Src, net30);
+nor2_1x I43 ( net80, net81, reset);
+nor2_1x I17 ( RegWriteSrc[0], RegWriteSrc[1], net89);
+nor3_1x I40 ( net82, ALUSub, net30, RA1Src);
+nor3_1x I22 ( RegWrite, net69, RA1Src, net68);
+mux2_c_1x I30 ( PCSrc[1], cds_globals.gnd_, net40, net39);
+mux2_c_1x I29 ( PCSrc[0], cds_globals.gnd_, net85, net39);
+condcheck I46 ( condBranch, branchType[1:0], negative, zero);
+buf_1x I54 ( ALUSub, instr1[3]);
+buf_1x I53 ( RA1Src, instr1[6]);
+buf_1x I52 ( net30, instr1[5]);
+buf_1x I51 ( TwoRegs, instr1[4]);
+buf_1x I50 ( RegWriteSrc[1], net30);
+
+endmodule

@@ -1,0 +1,19 @@
+// Library - muddlib11, Cell - clkinvbuf_4x, View - cmos_sch
+// LAST TIME SAVED: Feb 16 19:56:15 2012
+// NETLIST TIME: Feb 17 13:51:53 2019
+`timescale 1ns / 100ps 
+
+module clkinvbuf_4x ( phb, phbuf, ph );
+
+output  phb, phbuf;
+
+input  ph;
+
+
+
+specify 
+    specparam CDS_LIBNAME  = "muddlib11";
+    specparam CDS_CELLNAME = "clkinvbuf_4x";
+    specparam CDS_VIEWNAME = "cmos_sch";
+endspecify
+

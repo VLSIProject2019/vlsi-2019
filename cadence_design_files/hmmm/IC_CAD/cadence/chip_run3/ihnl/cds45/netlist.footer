@@ -1,0 +1,11 @@
+datapath I0 ( net45[0:7], net23, net24, MemData[7:0], net36, net37,
+     instr1[10:8], net29, net19, net27, net44[0:1], net30, net33,
+     net31, net43[0:1], net35, net20, net21, net22);
+controller I3 ( net20, net21, net22, net23, net24, net33, net30, net27,
+     net37, net29, net31, net35, net36, net44[0:1], net43[0:1], net19,
+     MemData[14:8], instr1[14:8]);
+padframe I8 ( Adr[7:0], MemWrite, net20, net21, net22, test_extra,
+     net054, test_out, MemData[14:0], net45[0:7], net19, ph2, ph1,
+     reset, net056, test_in, net055);
+
+endmodule

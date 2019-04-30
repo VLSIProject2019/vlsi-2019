@@ -1,0 +1,37 @@
+//
+// File created by:  ncxlmode
+// Do not modify this file
+//
++delay_mode_path
++typdelays
++nostdout
++nocopyright
+"+ncvlogargs+ -neverwarn -nostdout -nocopyright "
+"+ncelabargs+ -neg_tchk  -nonotifier  -sdf_NOCheck_celltype  -access +r  -pulse_e 100  -pulse_r 100  -neverwarn  -timescale 1ns/1ns -nostdout -nocopyright"
+"+ncsimargs+ -neverwarn  -nocopyright -nostdout -batch -exit "
+-NOSTDOUT
+-NOCOPYRIGHT
+-neverwarn
+-nocopyright
+-nostdout
+-batch
+-exit
+-MESSAGES
++EMGRLOG
+simout.tmp
+-XLSTIME
+1549866616
+-XLKEEP
+-XLMODE
+./INCA_libs/irun.lnx8664.15.20.nc
+-RUNMODE
+-CDSLIB
+./INCA_libs/irun.lnx8664.15.20.nc/cds.lib
+-HDLVAR
+./INCA_libs/irun.lnx8664.15.20.nc/hdl.var
+-XLNAME
+ncxlmode
+-XLVERSION
+"TOOL:	ncxlmode	15.20-s069"
+-XLNAME
+./INCA_libs/irun.lnx8664.15.20.nc/tera.eng.hmc.edu_39360

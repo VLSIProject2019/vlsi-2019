@@ -1,0 +1,132 @@
+*** Loading .simrc from -> /courses/e158/15/cadence/.simrc.
+
+Running netlist
+Begin Incremental Netlisting Mar 22 01:30:35 2019
+si: simSetDef().... hnlMaxNameLength is already set to 64. Redefinition to 50 is
+ignored.
+si: simSetDef().... hnlCapability is initialized to "nil".
+si: simSetDef().... hnlBusCapability is initialized to "nil".
+INFO (VLOGNET-188): While generating implicit netlist, it is recommended to set
+the Terminal SyncUp option on the Netlist Setup form as 'Honor Switch
+Master'.
+Alternatively, you can set the hnlVerilogTermSyncUp variable as
+'honorSM'.
+This option automatically resolves any mismatch between the terminals
+of an instance and its switch master while generating an implicit netlist.
+
+INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the
+
+"/home/cnorfleet/IC_CAD/cadence/hmmmdatapath_run4/testfixture.verilog" file. To
+print the stimulus name mapped table, set
+
+simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file
+
+before invoking Verilog netlister.
+ 
+INFO (VLOGNET-62): Database internal net names will be printed for floating
+instance ports. To prevent 
+them from being printed, set
+simVerilogProcessNullPorts = t either in CIW or 
+the .simrc file.
+ 
+INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist
+Configuration list. 
+If you want to print only those cellviews that need to be
+re-netlisted in the 
+list, set simVerilogIncrementalNetlistConfigList = t either
+in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-66): Module ports will be printed without the port ranges. If you
+have split busses 
+across module ports you may get an incorrect netlist. To
+print module ports 
+with the port ranges, set simVerilogDropPortRange = nil
+either in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to
+"z". To get inout 
+pins with initial state of "0", set
+hnlVerilogIOInitStimulusStr = "0" 
+either in CIW or the .simrc file.
+ 
+INFO (VLOGNET-116): Netlisting the resistive-switch properties.
+
+INFO (VLOGNET-120): Using connection by order (implicit connections) for all the
+stopping cells.
+
+WARNING (VLOGNET-105): Cannot drop port ranges because the cell
+'wordlib8/mux3_1x_8/schematic' has split busses 
+across module ports. Therefore,
+ignoring the flag simVerilogDropPortRange.
+ 
+WARNING (VLOGNET-105): Cannot drop port ranges because the cell
+'HMMM/nor_8wide/schematic' has split busses 
+across module ports. Therefore,
+ignoring the flag simVerilogDropPortRange.
+ 
+WARNING (VLOGNET-105): Cannot drop port ranges because the cell
+'HMMM/datapath/schematic' has split busses 
+across module ports. Therefore,
+ignoring the flag simVerilogDropPortRange.
+ 
+INFO (VLOGNET-126): ---------- Beginning netlist configuration information
+----------
+
+
+                (incremental data only)
+
+CELL NAME                   VIEW NAME            NOTE             
+---------                   ---------            ----             
+
+r_nmos                      functional           *Stopping View*  
+r_pmos                      functional           *Stopping View*  
+nmos                        functional           *Stopping View*  
+pmos                        functional           *Stopping View*  
+datapath                    schematic                             
+inv_1x_8                    schematic                             
+mux2_3                      schematic                             
+tristate_1x_8               schematic                             
+tristate_1x                 schematic                             
+tristateInvCore             cmos_sch                              
+xor_1x_8                    schematic                             
+xor_1x                      schematic                             
+nand2_1x                    cmos_sch                              
+inv_1x                      cmos_sch                              
+regramarray_dp              schematic                             
+regramvector0_dp            schematic                             
+regram0                     cmos_sch                              
+regram0_zipper              schematic                             
+regramvector_dp             schematic                             
+regram_zipper               schematic                             
+nand5_1x                    cmos_sch                              
+nand3_1x                    cmos_sch                              
+regram_8                    schematic                             
+regram_dp                   cmos_sch                              
+regramadrbuf                schematic                             
+adder_8                     schematic                             
+fulladder                   cmos_sch                              
+and2_1x_8                   schematic                             
+and2_1x                     cmos_sch                              
+nor_8wide                   schematic                             
+nor2_1x                     cmos_sch                              
+or2_1x                      cmos_sch                              
+mux3_1x_8                   schematic                             
+mux3_dp_1x                  cmos_sch                              
+flopenr_1x_8                schematic                             
+flopenr_dp_1x               cmos_sch                              
+mux2_1x_8                   schematic                             
+invbuf_4x                   schematic                             
+inv_4x                      cmos_sch                              
+mux2_dp_1x                  cmos_sch                              
+flop_1x_8                   schematic                             
+clkinvbufdual_4x            schematic                             
+clkinvbuf_4x                cmos_sch                              
+flop_dp_1x                  cmos_sch                              
+
+---------- End of netlist configuration information   ----------
+INFO (VLOGNET-80): The library 'HMMM', cell 'datapath', and view 'schematic' has
+been netlisted successfully.
+
+End netlisting Mar 22 01:30:37 2019

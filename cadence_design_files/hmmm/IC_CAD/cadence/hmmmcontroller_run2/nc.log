@@ -1,0 +1,72 @@
+ncverilog: 15.20-s069: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s069: Started on Mar 25, 2019 at 03:53:00 EDT
+ncverilog
+	-l
+	nc.log
+	+access+r
+	+gui
+	testprocessor.sv
+	-f verilog.inpfiles
+		hdlFilesDir/cds_alias.v
+		ihnl/cds0/netlist
+		ihnl/cds1/netlist
+		ihnl/cds2/netlist
+		ihnl/cds3/netlist
+		ihnl/cds4/netlist
+		ihnl/cds5/netlist
+		ihnl/cds6/netlist
+		ihnl/cds7/netlist
+		ihnl/cds8/netlist
+		ihnl/cds9/netlist
+		ihnl/cds10/netlist
+		ihnl/cds11/netlist
+		ihnl/cds12/netlist
+		ihnl/cds13/netlist
+		ihnl/cds14/netlist
+		ihnl/cds15/netlist
+		ihnl/cds16/netlist
+		ihnl/cds17/netlist
+		hdlFilesDir/cds_globals.v
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncverilog: *W,DLCVAR (/proj/ncsu/ncsu-cdk-1.6.0.beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncverilog: *W,DLCVAR (/proj/ncsu/ncsu-cdk-1.6.0.beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncverilog: *W,DLCVAR (/proj/ncsu/ncsu-cdk-1.6.0.beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncverilog: *W,DLCVAR (/proj/ncsu/ncsu-cdk-1.6.0.beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncverilog: *W,DLCVAR (/proj/ncsu/ncsu-cdk-1.6.0.beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncverilog: *W,DLCVAR (/proj/ncsu/ncsu-cdk-1.6.0.beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncsim: *W,DLCVAR (/proj/ncsu/ncsu-cdk-1.6.0.beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> source /cad/cds/INCISIV1520/tools/inca/files/ncsimrc
+ncsim> database -open waves -into waves.shm -default
+Created default SHM database waves
+ncsim> probe -create -shm testbench.we testbench.reset testbench.oe testbench.clk2 testbench.clk1 testbench.ce testbench.MemWrite testbench.MemData testbench.Adr testbench.dut.dp.PC
+Created probe 1
+ncsim> run
+Simulation interrupted at 2886303400 PS + 0
+ncsim> probe -create -shm testbench.dut.c.instr1
+Created probe 2
+ncsim> reset
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+Loaded snapshot worklib.testbench:sv
+ncsim> run
+Simulation interrupted at 2830323300 PS + 0
+ncsim> ^C
+ncsim> exit
+TOOL:	ncverilog	15.20-s069: Exiting on Mar 25, 2019 at 03:59:19 EDT  (total: 00:06:19)

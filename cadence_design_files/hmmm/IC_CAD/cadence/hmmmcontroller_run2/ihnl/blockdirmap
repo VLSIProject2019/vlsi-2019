@@ -1,0 +1,20 @@
+CADENCE IHNL111418
+
+muddlib11 flopenr_dp_1x cmos_sch cds0
+muddlib11 clkinvbuf_4x cmos_sch cds1
+muddlib11 clkinvbufdual_4x schematic cds2
+muddlib11 inv_4x cmos_sch cds3
+muddlib11 invbuf_4x schematic cds4
+wordlib8 flopenr_1x_8 schematic cds5
+muddlib11 mux2_dp_1x cmos_sch cds6
+wordlib8 mux2_1x_8 schematic cds7
+muddlib11 inv_1x cmos_sch cds8
+muddlib11 and2_1x cmos_sch cds9
+muddlib11 or2_1x cmos_sch cds10
+muddlib11 nor2_1x cmos_sch cds11
+muddlib11 nor3_1x cmos_sch cds12
+muddlib11 mux2_c_1x cmos_sch cds13
+muddlib11 mux4_dp_1x cmos_sch cds14
+HMMM condcheck schematic cds15
+muddlib11 buf_1x cmos_sch cds16
+HMMM controller schematic cds17

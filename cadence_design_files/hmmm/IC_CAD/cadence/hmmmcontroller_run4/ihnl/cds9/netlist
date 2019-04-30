@@ -1,0 +1,154 @@
+// Library - HMMM_Synth, Cell - controller, View - schematic
+// LAST TIME SAVED: Mar 25 04:13:40 2019
+// NETLIST TIME: Mar 25 04:15:21 2019
+`timescale 1ns / 100ps 
+
+module controller ( ph1, ph2, reset, negative, zero, RegWLoadSrc,
+     RA1Src, PCEnable, AdrSrc, InstrSrc, RegWrite, TwoRegs, ALUSub,
+     PCSrc, RegWriteSrc, MemWrite, MemData1, instr1 );
+
+output  ALUSub, AdrSrc, InstrSrc, MemWrite, PCEnable, RA1Src,
+     RegWLoadSrc, RegWrite, TwoRegs;
+
+input  negative, ph1, ph2, reset, zero;
+
+output [14:8]  instr1;
+output [1:0]  RegWriteSrc;
+output [1:0]  PCSrc;
+
+input [14:8]  MemData1;
+wire  [6:0]   instrReg1_nextQ;
+wire  [1:0]   PCSrc;
+wire  [14:8]   instrTemp1;
+wire    n35;
+wire    n32;
+wire    n34;
+wire    n33;
+wire    n36;
+wire    n29;
+wire    n28;
+wire    n30;
+wire    n26;
+wire    n23;
+wire    n27;
+wire    n22;
+wire    n25;
+wire    n24;
+wire    n19;
+wire    instrReg1_N6;
+wire    n20;
+wire    instrReg1_N8;
+wire    stateReg_nextQ_0_;
+wire    stateReg_N3;
+wire    instrReg1_N3;
+wire    instrReg1_N4;
+wire    instrReg1_N5;
+wire    n31;
+wire    instrReg1_N7;
+wire  [1:0]   RegWriteSrc;
+wire    ph2;
+wire    reset;
+wire    negative;
+wire    zero;
+wire    RegWLoadSrc;
+wire    RA1Src;
+wire  [14:8]   instr1;
+wire    n21;
+wire  [14:8]   MemData1;
+wire    ph1;
+wire    PCEnable;
+wire    AdrSrc;
+wire    InstrSrc;
+wire    RegWrite;
+wire    TwoRegs;
+wire    ALUSub;
+wire    MemWrite;
+wire    instrReg1_N9;
+
+
+
+specify 
+    specparam CDS_LIBNAME  = "HMMM_Synth";
+    specparam CDS_CELLNAME = "controller";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+
+latch_c_1x stateReg_nextQ_reg_0_ ( stateReg_nextQ_0_, stateReg_N3,
+     ph2);
+latch_c_1x stateReg_q_reg_0_ ( AdrSrc, stateReg_nextQ_0_, ph1);
+latch_c_1x instrReg1_nextQ_reg_6_ ( instrReg1_nextQ[6], instrReg1_N9,
+     ph2);
+latch_c_1x instrReg1_nextQ_reg_5_ ( instrReg1_nextQ[5], instrReg1_N8,
+     ph2);
+latch_c_1x instrReg1_nextQ_reg_4_ ( instrReg1_nextQ[4], instrReg1_N7,
+     ph2);
+latch_c_1x instrReg1_nextQ_reg_3_ ( instrReg1_nextQ[3], instrReg1_N6,
+     ph2);
+latch_c_1x instrReg1_nextQ_reg_2_ ( instrReg1_nextQ[2], instrReg1_N5,
+     ph2);
+latch_c_1x instrReg1_nextQ_reg_1_ ( instrReg1_nextQ[1], instrReg1_N4,
+     ph2);
+latch_c_1x instrReg1_nextQ_reg_0_ ( instrReg1_nextQ[0], instrReg1_N3,
+     ph2);
+latch_c_1x instrReg1_q_reg_6_ ( instrTemp1[14], instrReg1_nextQ[6],
+     ph1);
+latch_c_1x instrReg1_q_reg_5_ ( instrTemp1[13], instrReg1_nextQ[5],
+     ph1);
+latch_c_1x instrReg1_q_reg_4_ ( instrTemp1[12], instrReg1_nextQ[4],
+     ph1);
+latch_c_1x instrReg1_q_reg_3_ ( instrTemp1[11], instrReg1_nextQ[3],
+     ph1);
+latch_c_1x instrReg1_q_reg_2_ ( instrTemp1[10], instrReg1_nextQ[2],
+     ph1);
+latch_c_1x instrReg1_q_reg_1_ ( instrTemp1[9], instrReg1_nextQ[1],
+     ph1);
+latch_c_1x instrReg1_q_reg_0_ ( instrTemp1[8], instrReg1_nextQ[0],
+     ph1);
+inv_1x U66 ( n30, reset);
+inv_1x U63 ( RegWLoadSrc, n25);
+inv_1x U46 ( n24, RA1Src);
+inv_1x U48 ( n19, ALUSub);
+inv_1x U47 ( n20, TwoRegs);
+inv_1x U55 ( instr1[12], n20);
+inv_1x U60 ( instr1[14], n24);
+inv_1x U44 ( InstrSrc, n22);
+inv_1x U49 ( n22, n29);
+inv_1x U51 ( instr1[13], n21);
+inv_1x U50 ( instr1[11], n19);
+inv_1x U45 ( n21, RegWriteSrc[1]);
+inv_1x U64 ( n27, AdrSrc);
+nand2_1x U86 ( n35, RA1Src, n34);
+nand2_1x U65 ( PCEnable, n27, n24);
+mux2_c_1x U81 ( n31, ALUSub, n19, zero);
+mux2_c_1x U54 ( TwoRegs, instrTemp1[12], MemData1[12], InstrSrc);
+mux2_c_1x U73 ( instr1[10], instrTemp1[10], MemData1[10], InstrSrc);
+mux2_c_1x U56 ( RegWriteSrc[1], instrTemp1[13], MemData1[13],
+     InstrSrc);
+mux2_c_1x U53 ( ALUSub, instrTemp1[11], MemData1[11], InstrSrc);
+mux2_c_1x U72 ( instr1[9], instrTemp1[9], MemData1[9], n29);
+mux2_c_1x U71 ( instr1[8], instrTemp1[8], MemData1[8], n29);
+nor2_1x U87 ( PCSrc[0], n36, n35);
+nor2_1x U59 ( RA1Src, stateReg_N3, n23);
+nor2_1x U58 ( n23, InstrSrc, instrTemp1[14]);
+nor2_1x U52 ( n29, reset, AdrSrc);
+nor2_1x U69 ( n28, RegWriteSrc[1], ALUSub);
+nor2_1x U61 ( RegWriteSrc[0], n20, RegWriteSrc[1]);
+nor2_1x U57 ( stateReg_N3, MemData1[14], n22);
+and2_1x U80 ( instrReg1_N9, MemData1[14], n30);
+and2_1x U79 ( instrReg1_N8, MemData1[13], n30);
+and2_1x U78 ( instrReg1_N7, MemData1[12], n30);
+and2_1x U77 ( instrReg1_N6, MemData1[11], n30);
+and2_1x U76 ( instrReg1_N5, MemData1[10], n30);
+and2_1x U75 ( instrReg1_N4, MemData1[9], n30);
+and2_1x U74 ( instrReg1_N3, MemData1[8], n30);
+nor3_1x U88 ( PCSrc[1], n20, n21, n24);
+nor3_1x U83 ( n32, negative, zero, ALUSub);
+nor3_1x U82 ( n36, TwoRegs, RegWriteSrc[1], n31);
+nor3_1x U68 ( MemWrite, instrTemp1[14], n27, n26);
+nor3_1x U70 ( RegWrite, n28, instrTemp1[14], n27);
+nand3_1x U67 ( n26, n19, RegWriteSrc[0], n30);
+nand3_1x U62 ( n25, n24, ALUSub, RegWriteSrc[0]);
+a2o1_1x U85 ( n34, n21, n33, n20);
+a2o1_1x U84 ( n33, negative, ALUSub, n32);
+
+endmodule

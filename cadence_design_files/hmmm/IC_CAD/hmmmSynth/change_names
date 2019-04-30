@@ -1,0 +1,8 @@
+
+Design          Type    Object                  New Name
+--------------------------------------------------------------------------------
+controller      cell    stateReg/q_reg[0]       stateReg_q_reg_0_
+controller      cell    stateReg/nextQ_reg[0]   stateReg_nextQ_reg_0_
+controller      net     stateReg/N3             stateReg_N3
+controller      net     stateReg/nextQ[0]       stateReg_nextQ_0_
+1

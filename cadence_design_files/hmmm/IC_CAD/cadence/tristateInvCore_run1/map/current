@@ -1,0 +1,26 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "tristateInvCore"
+  repList "behavioral functional schematic cmos_sch"
+  stopList "behavioral functional"
+  globalList "vdd! gnd!"
+  hierDelim "."
+  hierPrefix "test.top"
+  globalHierPrefix "cds_globals."
+  netlistDir "/home/cnorfleet/IC_CAD/cadence/tristateInvCore_run1"
+  busRef   "ORDERED"
+  netType   "BUS"
+  leftStr  "["
+  rangeStr  ":"
+  rightStr  "]"
+ )
+( net
+( "vdd!" "cds_globals.vdd_" )
+( "gnd!" "cds_globals.gnd_" )
+ )
+( model
+( "HMMM/tristateInvCore/cmos_sch" "tristateInvCore" )
+ )
+( "tristateInvCore" "ihnl/cds0/map" )
+ )

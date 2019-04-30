@@ -1,0 +1,84 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : controller
+Version: L-2016.03-SP4
+Date   : Mon Mar 25 04:07:49 2019
+****************************************
+
+Operating Conditions: typical   Library: muddlib
+Wire Load Model Mode: enclosed
+
+  Startpoint: stateReg_q_reg_0_
+              (positive level-sensitive latch clocked by ph1)
+  Endpoint: PCSrc[0] (output port clocked by ph1)
+  Path Group: ph1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  controller         5k                    muddlib
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ph1 (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  stateReg_q_reg_0_/ph (latch_c_1x)        0.00       0.00 r
+  stateReg_q_reg_0_/q (latch_c_1x)         0.95       0.95 f
+  U52/y (nor2_1x)                          0.91       1.87 r
+  U49/y (inv_1x)                           0.68       2.54 f
+  U44/y (inv_1x)                           1.30       3.85 r
+  U53/y (mux2_c_1x)                        1.64       5.48 f
+  U83/y (nor3_1x)                          0.89       6.37 r
+  U84/y (a2o1_1x)                          0.59       6.96 r
+  U85/y (a2o1_1x)                          0.67       7.63 r
+  U86/y (nand2_1x)                         0.34       7.97 f
+  U87/y (nor2_1x)                          0.64       8.62 r
+  PCSrc[0] (out)                           0.00       8.62 r
+  data arrival time                                   8.62
+
+  clock ph1 (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  output external delay                   -0.50       9.50
+  data required time                                  9.50
+  -----------------------------------------------------------
+  data required time                                  9.50
+  data arrival time                                  -8.62
+  -----------------------------------------------------------
+  slack (MET)                                         0.88
+
+
+1
+ 
+****************************************
+Report : area
+Design : controller
+Version: L-2016.03-SP4
+Date   : Mon Mar 25 04:07:49 2019
+****************************************
+
+Library(s) Used:
+
+    muddlib (File: /courses/e158/15/lab3/muddlib.db)
+
+Number of ports:                           32
+Number of nets:                            73
+Number of cells:                           61
+Number of combinational cells:             45
+Number of sequential cells:                16
+Number of macros/black boxes:               0
+Number of buf/inv:                         13
+Number of references:                       9
+
+Combinational area:              10886.400238
+Buf/Inv area:                     1684.800079
+Noncombinational area:           11404.799805
+Macro/Black Box area:                0.000000
+Net Interconnect area:           65985.500000
+
+Total cell area:                 22291.200043
+Total area:                      88276.700043
+1

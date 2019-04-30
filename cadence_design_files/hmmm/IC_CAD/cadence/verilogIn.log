@@ -1,0 +1,24 @@
+@(#)$CDS: ihdl version 6.1.8-64b 10/01/2018 19:50 (ip-172-18-22-52) $  Mon Mar 25 04:13:40 2019
+
+INFO (VERILOGIN-589): Using ncvlog binary for compilation.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module latch_c_1x. Therefore using library
+muddlib11, cell latch_c_1x, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module inv_1x. Therefore using library
+muddlib11, cell inv_1x, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module nor2_1x. Therefore using library
+muddlib11, cell nor2_1x, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module mux2_c_1x. Therefore using library
+muddlib11, cell mux2_c_1x, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module nand3_1x. Therefore using library
+muddlib11, cell nand3_1x, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module nand2_1x. Therefore using library
+muddlib11, cell nand2_1x, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module nor3_1x. Therefore using library
+muddlib11, cell nor3_1x, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module and2_1x. Therefore using library
+muddlib11, cell and2_1x, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module a2o1_1x. Therefore using library
+muddlib11, cell a2o1_1x, and view symbol as the symbol.
+INFO (VERILOGIN-357): Checked in symbol controller.
+INFO (VERILOGIN-372): Checked-in schematic controller.
+INFO (VERILOGIN-206): End of Logfile.

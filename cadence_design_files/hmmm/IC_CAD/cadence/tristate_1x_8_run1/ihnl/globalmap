@@ -1,0 +1,13 @@
+CADENCE IHNL11140
+$model
+muddlib11/inv_1x/cmos_sch inv_1x
+HMMM/tristateInvCore/cmos_sch tristateInvCore
+HMMM/tristate_1x/schematic tristate_1x
+HMMM/tristate_1x_8/schematic tristate_1x_8
+$endmodel
+$net
+gnd! cds_globals.gnd_
+vdd! cds_globals.vdd_
+$endnet
+$param
+$endparam

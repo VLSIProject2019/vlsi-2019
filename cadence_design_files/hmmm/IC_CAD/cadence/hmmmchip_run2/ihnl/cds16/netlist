@@ -1,0 +1,25 @@
+// Library - wordlib8, Cell - and2_1x_8, View - schematic
+// LAST TIME SAVED: Feb 17 15:19:10 2019
+// NETLIST TIME: Apr  7 17:47:12 2019
+`timescale 1ns / 100ps 
+
+module and2_1x_8 ( y, a, b );
+
+
+
+output [7:0]  y;
+
+input [7:0]  b;
+input [7:0]  a;
+
+
+
+specify 
+    specparam CDS_LIBNAME  = "wordlib8";
+    specparam CDS_CELLNAME = "and2_1x_8";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+
+and2_1x and2_1x[7:0] ( y[7:0], a[7:0], b[7:0]);
+
+endmodule

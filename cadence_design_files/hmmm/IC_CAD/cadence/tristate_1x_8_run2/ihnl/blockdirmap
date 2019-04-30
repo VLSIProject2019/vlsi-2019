@@ -1,0 +1,6 @@
+CADENCE IHNL11144
+
+HMMM tristateInvCore cmos_sch cds0
+muddlib11 inv_1x cmos_sch cds1
+HMMM tristate_1x schematic cds2
+HMMM tristate_1x_8 schematic cds3

@@ -1,0 +1,107 @@
+********************************************************************************
+Product   : Virtuoso(R) XStream Out
+Program   : @(#)$CDS: virtuoso version 6.1.8-64b 10/01/2018 20:02 (ip-172-18-22-57) $
+          : sub-version  IC6.1.8-64b.83 
+Started at: 08-Apr-2019  03:20:36
+User Name : emeike
+Host Name : DHCP-60-126.ST.HMC.Edu
+Directory : /proj/VLSI19S/G1/hmmm/IC_CAD/cadence
+CADENCE Design Systems, Inc.
+********************************************************************************
+Info: Cellview Rev Num:99,  Tech Rev Num:59
+
+INFO (XSTRM-217): Reading the layer map file, /proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap
+INFO (XSTRM-162): You have not used the viaMap option. If the OpenAccess design has native oaVia instances, use the -viaMap option for preserving oaVia instances in a Stream Out - Stream In round trip. Using the -viaMap option improves performance and VM usage of applications using the Streamed-In design.  For details on the viaMap option, refer to the "Design Data Translator's Reference" guide for XStream.
+
+Summary of Options :
+library                                 chip_gdsin
+strmFile                                chip_6.gds
+topCell                                 chip
+view                                    layout
+logFile                                 strmOut.log
+layerMap                                /proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap
+case                                    Preserve
+convertDot                              node
+
+INFO (XSTRM-223): 1. Translating cellView UofU_TechLib_ami06/M3_M2/layout as STRUCTURE M3_M2_CDNS_554708036190.
+INFO (XSTRM-223): 2. Translating cellView UofU_TechLib_ami06/M2_M1/layout as STRUCTURE M2_M1_CDNS_554708036191.
+INFO (XSTRM-223): 3. Translating cellView chip_gdsin/clkinvbuf_4x/layout as STRUCTURE clkinvbuf_4x.
+INFO (XSTRM-223): 4. Translating cellView chip_gdsin/clkinvbufdual_4x/layout as STRUCTURE clkinvbufdual_4x.
+INFO (XSTRM-223): 5. Translating cellView chip_gdsin/flop_dp_1x/layout as STRUCTURE flop_dp_1x.
+INFO (XSTRM-223): 6. Translating cellView chip_gdsin/flop_1x_8/layout as STRUCTURE flop_1x_8.
+INFO (XSTRM-223): 7. Translating cellView chip_gdsin/invbuf_4x/layout as STRUCTURE invbuf_4x.
+INFO (XSTRM-223): 8. Translating cellView chip_gdsin/mux2_dp_1x/layout as STRUCTURE mux2_dp_1x.
+INFO (XSTRM-223): 9. Translating cellView chip_gdsin/mux2_1x_8/layout as STRUCTURE mux2_1x_8.
+INFO (XSTRM-223): 10. Translating cellView chip_gdsin/mux3_dp_1x/layout as STRUCTURE mux3_dp_1x.
+INFO (XSTRM-223): 11. Translating cellView chip_gdsin/mux3_1x_8/layout as STRUCTURE mux3_1x_8.
+INFO (XSTRM-223): 12. Translating cellView chip_gdsin/nand3_1x/layout as STRUCTURE nand3_1x.
+INFO (XSTRM-223): 13. Translating cellView chip_gdsin/nand5_1x/layout as STRUCTURE nand5_1x.
+INFO (XSTRM-223): 14. Translating cellView chip_gdsin/regram_zipper/layout as STRUCTURE regram_zipper.
+INFO (XSTRM-223): 15. Translating cellView chip_gdsin/regram_dp/layout as STRUCTURE regram_dp.
+INFO (XSTRM-223): 16. Translating cellView chip_gdsin/regram_8/layout as STRUCTURE regram_8.
+INFO (XSTRM-223): 17. Translating cellView chip_gdsin/regramvector_dp/layout as STRUCTURE regramvector_dp.
+INFO (XSTRM-223): 18. Translating cellView chip_gdsin/regramadrbuf/layout as STRUCTURE regramadrbuf.
+INFO (XSTRM-223): 19. Translating cellView chip_gdsin/regramarray_dp_hmmm/layout as STRUCTURE regramarray_dp_hmmm.
+INFO (XSTRM-223): 20. Translating cellView chip_gdsin/and2_1x/layout as STRUCTURE and2_1x.
+INFO (XSTRM-223): 21. Translating cellView chip_gdsin/and2_1x_8/layout as STRUCTURE and2_1x_8.
+INFO (XSTRM-223): 22. Translating cellView chip_gdsin/inv_1x/layout as STRUCTURE inv_1x.
+INFO (XSTRM-223): 23. Translating cellView chip_gdsin/nand2_1x/layout as STRUCTURE nand2_1x.
+INFO (XSTRM-223): 24. Translating cellView chip_gdsin/xor_1x/layout as STRUCTURE xor_1x.
+INFO (XSTRM-223): 25. Translating cellView chip_gdsin/xor_1x_8/layout as STRUCTURE xor_1x_8.
+INFO (XSTRM-223): 26. Translating cellView chip_gdsin/fulladder/layout as STRUCTURE fulladder.
+INFO (XSTRM-223): 27. Translating cellView chip_gdsin/adder_8/layout as STRUCTURE adder_8.
+INFO (XSTRM-223): 28. Translating cellView chip_gdsin/or2_1x/layout as STRUCTURE or2_1x.
+INFO (XSTRM-223): 29. Translating cellView chip_gdsin/nor2_1x/layout as STRUCTURE nor2_1x.
+INFO (XSTRM-223): 30. Translating cellView chip_gdsin/nor_8wide/layout as STRUCTURE nor_8wide.
+INFO (XSTRM-223): 31. Translating cellView chip_gdsin/inv_4x/layout as STRUCTURE inv_4x.
+INFO (XSTRM-223): 32. Translating cellView chip_gdsin/flopenr_dp_1x/layout as STRUCTURE flopenr_dp_1x.
+INFO (XSTRM-223): 33. Translating cellView chip_gdsin/flopenr_1x_8/layout as STRUCTURE flopenr_1x_8.
+INFO (XSTRM-223): 34. Translating cellView chip_gdsin/mux2_c_1x/layout as STRUCTURE mux2_c_1x.
+INFO (XSTRM-223): 35. Translating cellView chip_gdsin/buf_1x/layout as STRUCTURE buf_1x.
+INFO (XSTRM-223): 36. Translating cellView chip_gdsin/datapath/layout as STRUCTURE datapath.
+INFO (XSTRM-223): 37. Translating cellView UofU_TechLib_ami06/M2_M1/layout as STRUCTURE M2_M1_CDNS_554708036192.
+INFO (XSTRM-223): 38. Translating cellView UofU_TechLib_ami06/M2_M1/layout as STRUCTURE M2_M1_CDNS_554708036193.
+INFO (XSTRM-223): 39. Translating cellView chip_gdsin/latch_c_1x/layout as STRUCTURE latch_c_1x.
+INFO (XSTRM-223): 40. Translating cellView chip_gdsin/nor3_1x/layout as STRUCTURE nor3_1x.
+INFO (XSTRM-223): 41. Translating cellView chip_gdsin/a2o1_1x/layout as STRUCTURE a2o1_1x.
+INFO (XSTRM-223): 42. Translating cellView chip_gdsin/fill_1_wide/layout as STRUCTURE fill_1_wide.
+INFO (XSTRM-223): 43. Translating cellView chip_gdsin/controller/layout as STRUCTURE controller.
+INFO (XSTRM-223): 44. Translating cellView chip_gdsin/padboxx/layout as STRUCTURE padboxx.
+INFO (XSTRM-223): 45. Translating cellView chip_gdsin/padbox/layout as STRUCTURE padbox.
+INFO (XSTRM-223): 46. Translating cellView chip_gdsin/pad_gnd/layout as STRUCTURE pad_gnd.
+INFO (XSTRM-223): 47. Translating cellView chip_gdsin/pad_in/layout as STRUCTURE pad_in.
+INFO (XSTRM-223): 48. Translating cellView chip_gdsin/pad_out/layout as STRUCTURE pad_out.
+INFO (XSTRM-223): 49. Translating cellView chip_gdsin/pad_vdd/layout as STRUCTURE pad_vdd.
+INFO (XSTRM-223): 50. Translating cellView chip_gdsin/pad_corner/layout as STRUCTURE pad_corner.
+INFO (XSTRM-223): 51. Translating cellView chip_gdsin/pad_bidirhe/layout as STRUCTURE pad_bidirhe.
+INFO (XSTRM-223): 52. Translating cellView chip_gdsin/padframe/layout as STRUCTURE padframe.
+INFO (XSTRM-223): 53. Translating cellView chip_gdsin/chip/layout as STRUCTURE chip.
+WARNING (XSTRM-35): The objects in the layer-purpose pair 'marker:error' are ignored. This is because the layer-purpose pair used in the design is not specified in the layer map file. Specify the layer-purpose pair in the layer map file and try again.
+
+Summary of Objects Translated:
+	Scalar Instances:                       642
+	Array Instances:                        14
+	Polygons:                               448
+	Paths:                                  1107
+	Rectangles:                             59446
+	Lines:                                  0
+	Arcs:                                   0
+	Donuts:                                 0
+	Dots:                                   0
+	Ellipses:                               0
+	Boundaries:                             0
+	Area Blockages:                         0
+	Layer Blockages:                        0
+	Area Halos:                             0
+	Markers:                                0
+	Rows:                                   0
+	Standard Vias                           626
+	Custom Vias:                            0
+	CdsGen Vias:                            0
+	Pathsegs:                               0
+	Text:                                   0
+	TextDisplay:                            0
+	Cells:                                  53
+
+Elapsed Time: 0.1s   User Time: 0.0s   CPU Time: 0.0s   Peak VM: 4KB
+INFO (XSTRM-234): Translation completed. '0' error(s) and '1' warning(s) found.

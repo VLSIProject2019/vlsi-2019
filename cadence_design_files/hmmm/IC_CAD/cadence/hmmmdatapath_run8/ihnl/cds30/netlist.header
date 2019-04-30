@@ -1,0 +1,22 @@
+// Library - HMMM, Cell - xor_1x_8, View - schematic
+// LAST TIME SAVED: Mar 20 19:28:25 2019
+// NETLIST TIME: Mar 22 03:55:43 2019
+`timescale 1ns / 100ps 
+
+module xor_1x_8 ( y, a, b );
+
+
+
+output [7:0]  y;
+
+input [7:0]  b;
+input [7:0]  a;
+
+
+
+specify 
+    specparam CDS_LIBNAME  = "HMMM";
+    specparam CDS_CELLNAME = "xor_1x_8";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+

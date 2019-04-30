@@ -1,0 +1,8 @@
+s1(21Mar2019:22:25:42):  ncverilog -l nc.log +access+r tristates.sv 
+s2(21Mar2019:22:26:18):  ncverilog -l nc.log +access+r tristates.sv 
+s3(21Mar2019:22:26:42):  ncverilog -l nc.log +access+r tristates.sv 
+s4(21Mar2019:22:31:05):  ncverilog -l nc.log +access+r tristates.sv 
+s5(21Mar2019:22:31:31):  ncverilog -l nc.log +access+r tristates.sv 
+s6(21Mar2019:22:45:09):  ncverilog -l nc.log +access+r +gui tristates.sv 
+s7(21Mar2019:23:00:05):  ncverilog -l nc.log +access+r tristates.sv 
+s8(21Mar2019:23:00:13):  ncverilog -l nc.log +access+r +gui tristates.sv 

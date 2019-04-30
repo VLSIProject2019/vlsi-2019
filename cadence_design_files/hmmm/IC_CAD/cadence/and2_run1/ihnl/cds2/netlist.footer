@@ -1,0 +1,4 @@
+inv I0 ( y, yb);
+nand2 I1 ( yb, a, b);
+
+endmodule

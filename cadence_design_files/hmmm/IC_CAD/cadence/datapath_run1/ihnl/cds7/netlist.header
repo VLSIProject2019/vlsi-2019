@@ -1,0 +1,20 @@
+// Library - mips8, Cell - yzdetect_8, View - schematic
+// LAST TIME SAVED: Feb 16 20:07:23 2012
+// NETLIST TIME: Feb 17 13:51:53 2019
+`timescale 1ns / 100ps 
+
+module yzdetect_8 ( yzero, a );
+
+output  yzero;
+
+
+input [7:0]  a;
+
+
+
+specify 
+    specparam CDS_LIBNAME  = "mips8";
+    specparam CDS_CELLNAME = "yzdetect_8";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+

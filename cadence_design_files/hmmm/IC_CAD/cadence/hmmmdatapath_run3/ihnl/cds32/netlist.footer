@@ -1,0 +1,7 @@
+inv_1x I1 ( net12, a);
+inv_1x I0 ( net11, b);
+nand2_1x I4 ( y, net9, net10);
+nand2_1x I3 ( net10, net11, a);
+nand2_1x I2 ( net9, net12, b);
+
+endmodule

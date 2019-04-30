@@ -1,0 +1,11 @@
+simVerilogNetlistFileList = '(
+    (("HMMM" "tristateInvCore") 
+	("cds0/netlist" "cds0/map" "cmos_sch")
+    )
+)
+simVerilogNetlistFileLibList = '("HMMM")
+simVerilogNetlistFileCellList = '(("HMMM" 
+	("tristateInvCore")
+    )
+)
+hnlIncrementalDirectory = '"ihnl"

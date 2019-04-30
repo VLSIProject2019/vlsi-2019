@@ -1,0 +1,19 @@
+// Library - UofU_Pads, Cell - pad_out, View - schematic
+// LAST TIME SAVED: Feb 16 19:03:52 2012
+// NETLIST TIME: Apr  7 17:47:13 2019
+`timescale 1ns / 100ps 
+
+module pad_out ( pad, DataOut );
+
+output  pad;
+
+input  DataOut;
+
+
+
+specify 
+    specparam CDS_LIBNAME  = "UofU_Pads";
+    specparam CDS_CELLNAME = "pad_out";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+

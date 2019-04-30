@@ -1,0 +1,32 @@
+// Verilog HDL and netlist files of
+// "HMMM_Synth controller schematic"
+
+// Netlisted models
+
+// netlist file - muddlib11, latch_c_1x, cmos_sch.
+ihnl/cds0/netlist
+// netlist file - muddlib11, inv_1x, cmos_sch.
+ihnl/cds1/netlist
+// netlist file - muddlib11, nand2_1x, cmos_sch.
+ihnl/cds2/netlist
+// netlist file - muddlib11, mux2_c_1x, cmos_sch.
+ihnl/cds3/netlist
+// netlist file - muddlib11, nor2_1x, cmos_sch.
+ihnl/cds4/netlist
+// netlist file - muddlib11, and2_1x, cmos_sch.
+ihnl/cds5/netlist
+// netlist file - muddlib11, nor3_1x, cmos_sch.
+ihnl/cds6/netlist
+// netlist file - muddlib11, nand3_1x, cmos_sch.
+ihnl/cds7/netlist
+// netlist file - muddlib11, a2o1_1x, cmos_sch.
+ihnl/cds8/netlist
+// netlist file - HMMM_Synth, controller, schematic.
+ihnl/cds9/netlist
+
+
+// End HDL models
+
+// globals file 
+hdlFilesDir/cds_globals.v
+

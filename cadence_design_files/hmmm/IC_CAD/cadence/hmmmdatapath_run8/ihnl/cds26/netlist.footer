@@ -1,0 +1,28 @@
+regramadrbuf I16 ( ra1b[2:0], ra1bb[2:0], ra2b[2:0], ra2bb[2:0],
+     wab[2:0], wabb[2:0], ra1[2:0], ra2[2:0], wa[2:0]);
+regramvector_dp I18 ( r1[7:0], r2[7:0], w[7:0], RegWrite, ph2,
+     {ra1b[2], ra1b[1], ra1b[0]}, {ra2b[2], ra2b[1], ra2b[0]}, {wab[2],
+     wab[1], wab[0]});
+regramvector_dp I9 ( r1[7:0], r2[7:0], w[7:0], RegWrite, ph2, {ra1b[2],
+     ra1b[1], ra1bb[0]}, {ra2b[2], ra2b[1], ra2bb[0]}, {wab[2], wab[1],
+     wabb[0]});
+regramvector_dp I10 ( r1[7:0], r2[7:0], w[7:0], RegWrite, ph2,
+     {ra1b[2], ra1bb[1], ra1b[0]}, {ra2b[2], ra2bb[1], ra2b[0]},
+     {wab[2], wabb[1], wab[0]});
+regramvector_dp I11 ( r1[7:0], r2[7:0], w[7:0], RegWrite, ph2,
+     {ra1bb[2], ra1b[1], ra1b[0]}, {ra2bb[2], ra2b[1], ra2b[0]},
+     {wabb[2], wab[1], wab[0]});
+regramvector_dp I12 ( r1[7:0], r2[7:0], w[7:0], RegWrite, ph2,
+     {ra1b[2], ra1bb[1], ra1bb[0]}, {ra2b[2], ra2bb[1], ra2bb[0]},
+     {wab[2], wabb[1], wabb[0]});
+regramvector_dp I13 ( r1[7:0], r2[7:0], w[7:0], RegWrite, ph2,
+     {ra1bb[2], ra1bb[1], ra1b[0]}, {ra2bb[2], ra2bb[1], ra2b[0]},
+     {wabb[2], wabb[1], wab[0]});
+regramvector_dp I14 ( r1[7:0], r2[7:0], w[7:0], RegWrite, ph2,
+     {ra1bb[2], ra1bb[1], ra1bb[0]}, {ra2bb[2], ra2bb[1], ra2bb[0]},
+     {wabb[2], wabb[1], wabb[0]});
+regramvector_dp I15 ( r1[7:0], r2[7:0], w[7:0], RegWrite, ph2,
+     {ra1bb[2], ra1b[1], ra1bb[0]}, {ra2bb[2], ra2b[1], ra2bb[0]},
+     {wabb[2], wab[1], wabb[0]});
+
+endmodule

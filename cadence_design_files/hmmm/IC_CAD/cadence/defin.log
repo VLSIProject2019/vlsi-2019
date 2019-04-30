@@ -1,0 +1,19 @@
+
+********************************************************************************
+Product   : Virtuoso(R) DEF In 
+Program   : @(#)$CDS: defin version 6.1.8-64b 10/01/2018 19:51 (ip-172-18-22-52) $
+SubVersion: sub-version  IC6.1.8-64b.83 
+Started at: 25-Mar-2019  02:24:44
+User Name : kpezeshki
+Host Name : DHCP-60-126.ST.HMC.Edu
+Directory : /proj/VLSI19S/G1/hmmm/IC_CAD/cadence
+DB Version: 	20181001 (SJ)
+CADENCE Design Systems, Inc.
+********************************************************************************
+Running: defin -lib HMMM_Synth -libPath /proj/VLSI19S/G1/hmmm/IC_CAD/cadence -def "/proj/VLSI19S/G1/hmmm/IC_CAD/controllerEncounter/controller.def" -cell controller -view layout
+WARNING: (OALEFDEF-50159): /proj/VLSI19S/G1/hmmm/IC_CAD/controllerEncounter/controller.def(50-93) : VIA viagen21_1: A matching via rule viagen21 is used for this via since there is no via rule specified. Use -useCustomVias option to create a custom via if the standard via created is not desirable.
+WARNING: (OALEFDEF-50159): /proj/VLSI19S/G1/hmmm/IC_CAD/controllerEncounter/controller.def(93-104) : VIA viagen21_3: A matching via rule viagen21 is used for this via since there is no via rule specified. Use -useCustomVias option to create a custom via if the standard via created is not desirable.
+
+Elapsed Time: 0.2s
+
+defin translation completed (errors: 0, warnings: 2).

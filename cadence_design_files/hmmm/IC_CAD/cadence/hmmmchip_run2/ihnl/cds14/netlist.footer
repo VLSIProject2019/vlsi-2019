@@ -1,0 +1,9 @@
+or2_1x I5 ( net22, net23, a[6]);
+or2_1x I4 ( net23, net24, a[5]);
+or2_1x I3 ( net24, a[4], net21);
+or2_1x I2 ( net21, a[3], net20);
+or2_1x I1 ( net20, a[2], net19);
+or2_1x I0 ( net19, a[1], a[0]);
+nor2_1x I7 ( y, net22, a[7]);
+
+endmodule

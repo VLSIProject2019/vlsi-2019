@@ -1,0 +1,6 @@
+CADENCE IHNL11144
+
+muddlib11 nand2_1x cmos_sch cds0
+muddlib11 inv_1x cmos_sch cds1
+muddlib11 nor2_1x cmos_sch cds2
+controller_cn aludec schematic cds3

@@ -1,0 +1,94 @@
+********************************************************************************
+Product   : Virtuoso(R) XStream In
+Program   : @(#)$CDS: strmin version 6.1.8-64b 10/01/2018 19:51 (ip-172-18-22-57) $
+          : sub-version  IC6.1.8-64b.83 
+Started at: 08-Apr-2019  02:59:10
+User Name : emeike
+Host Name : DHCP-60-126.ST.HMC.Edu
+Directory : /proj/VLSI19S/G1/hmmm/IC_CAD/cadence
+CADENCE Design Systems, Inc.
+********************************************************************************
+Info: Cellview Rev Num:99,  Tech Rev Num:59
+
+WARNING (XSTRM-75): Target library 'chip_gdsin' is attached to the technology library 'UofU_TechLib_ami06'. Therefore, the technology file is opened in read-only mode. All the undefined layer-purpose pairs will be dropped.
+WARNING (XSTRM-107): Existing cells in the target library will be overwritten if the cell names in the Stream file and the target library are the same. To prevent this, set the '-writeMode' option to 'noOverwrite'.
+INFO (XSTRM-217): Reading the layer map file, /proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap' contains a duplicate entry for Stream layer:datatype '53:0' at line '4'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap' contains a duplicate entry for Stream layer:datatype '53:0' at line '5'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap' contains a duplicate entry for Stream layer:datatype '42:0' at line '7'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap' contains a duplicate entry for Stream layer:datatype '42:0' at line '8'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap' contains a duplicate entry for Stream layer:datatype '41:0' at line '10'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap' contains a duplicate entry for Stream layer:datatype '41:0' at line '11'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap' contains a duplicate entry for Stream layer:datatype '43:0' at line '13'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap' contains a duplicate entry for Stream layer:datatype '43:0' at line '14'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap' contains a duplicate entry for Stream layer:datatype '43:0' at line '15'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap' contains a duplicate entry for Stream layer:datatype '43:0' at line '16'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap' contains a duplicate entry for Stream layer:datatype '43:0' at line '17'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap' contains a duplicate entry for Stream layer:datatype '43:0' at line '18'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap' contains a duplicate entry for Stream layer:datatype '43:0' at line '19'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap' contains a duplicate entry for Stream layer:datatype '43:0' at line '20'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap' contains a duplicate entry for Stream layer:datatype '46:0' at line '25'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap' contains a duplicate entry for Stream layer:datatype '46:0' at line '26'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap' contains a duplicate entry for Stream layer:datatype '46:0' at line '27'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap' contains a duplicate entry for Stream layer:datatype '46:0' at line '28'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap' contains a duplicate entry for Stream layer:datatype '49:0' at line '30'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap' contains a duplicate entry for Stream layer:datatype '49:0' at line '31'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap' contains a duplicate entry for Stream layer:datatype '49:0' at line '32'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap' contains a duplicate entry for Stream layer:datatype '49:0' at line '33'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap' contains a duplicate entry for Stream layer:datatype '25:0' at line '35'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap' contains a duplicate entry for Stream layer:datatype '25:0' at line '36'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap' contains a duplicate entry for Stream layer:datatype '25:0' at line '37'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap' contains a duplicate entry for Stream layer:datatype '25:0' at line '38'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap' contains a duplicate entry for Stream layer:datatype '25:0' at line '39'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap' contains a duplicate entry for Stream layer:datatype '25:0' at line '40'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap' contains a duplicate entry for Stream layer:datatype '25:0' at line '41'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap' contains a duplicate entry for Stream layer:datatype '25:0' at line '42'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap' contains a duplicate entry for Stream layer:datatype '25:0' at line '43'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap' contains a duplicate entry for Stream layer:datatype '25:0' at line '44'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap' contains a duplicate entry for Stream layer:datatype '25:0' at line '45'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap' contains a duplicate entry for Stream layer:datatype '25:0' at line '46'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap' contains a duplicate entry for Stream layer:datatype '25:0' at line '47'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap' contains a duplicate entry for Stream layer:datatype '25:0' at line '48'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap' contains a duplicate entry for Stream layer:datatype '51:0' at line '50'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap' contains a duplicate entry for Stream layer:datatype '51:0' at line '51'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap' contains a duplicate entry for Stream layer:datatype '51:0' at line '52'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap' contains a duplicate entry for Stream layer:datatype '51:0' at line '53'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap' contains a duplicate entry for Stream layer:datatype '50:0' at line '55'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap' contains a duplicate entry for Stream layer:datatype '50:0' at line '56'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap' contains a duplicate entry for Stream layer:datatype '50:0' at line '57'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap' contains a duplicate entry for Stream layer:datatype '50:0' at line '58'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap' contains a duplicate entry for Stream layer:datatype '62:0' at line '62'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap' contains a duplicate entry for Stream layer:datatype '62:0' at line '63'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap' contains a duplicate entry for Stream layer:datatype '62:0' at line '64'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap' contains a duplicate entry for Stream layer:datatype '62:0' at line '65'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap' contains a duplicate entry for Stream layer:datatype '61:0' at line '67'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap' contains a duplicate entry for Stream layer:datatype '61:0' at line '68'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap' contains a duplicate entry for Stream layer:datatype '61:0' at line '69'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap' contains a duplicate entry for Stream layer:datatype '61:0' at line '70'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap' contains a duplicate entry for Stream layer:datatype '56:0' at line '72'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap' contains a duplicate entry for Stream layer:datatype '56:0' at line '73'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap' contains a duplicate entry for Stream layer:datatype '56:0' at line '74'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap' contains a duplicate entry for Stream layer:datatype '56:0' at line '75'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap' contains a duplicate entry for Stream layer:datatype '25:0' at line '76'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap' contains a duplicate entry for Stream layer:datatype '25:0' at line '77'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap' contains a duplicate entry for Stream layer:datatype '25:0' at line '78'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap' contains a duplicate entry for Stream layer:datatype '25:0' at line '79'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap' contains a duplicate entry for Stream layer:datatype '25:0' at line '80'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap' contains a duplicate entry for Stream layer:datatype '34:0' at line '82'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap' contains a duplicate entry for Stream layer:datatype '34:0' at line '83'. Therefore, this entry will be ignored during translation.
+INFO (XSTRM-163): You have not used the viaMap option. If a viaMap file, corresponding techfile or technology library exist, then use the -viaMap option for creating oaVia instances in the Streamed-In library. Using the -viaMap option improves performance and VM usage of applications using the Streamed-In design. For details on the viaMap option, refer to the "Design Data Translator's Reference" guide for XStream.
+
+Summary of Options:
+	library				chip_gdsin
+	strmFile			/proj/VLSI19S/G1/hmmm/IC_CAD/cadence/chip_2.gds
+	logFile				strmIn.log
+	topCell				top_cell
+	view				layout
+	case				Preserve
+	layerMap			/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap
+	propSeparator			,
+	checkPolygon				
+
+ERROR (XSTRM-166): Translation Failed - The cell name "top_cell" does not exist in the input Stream file "/proj/VLSI19S/G1/hmmm/IC_CAD/cadence/chip_2.gds". Use a valid cell name with the -cell option.
+If problem persists, contact the Cadence Customer Support.
+INFO (XSTRM-273): Translation failed. '1' error(s) and '65' warning(s) found.

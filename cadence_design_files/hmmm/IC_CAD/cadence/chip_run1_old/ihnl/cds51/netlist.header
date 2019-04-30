@@ -1,0 +1,29 @@
+// Library - mips8, Cell - padframe, View - schematic
+// LAST TIME SAVED: Feb 16 23:07:22 2012
+// NETLIST TIME: Mar 25 03:32:29 2019
+`timescale 1ns / 100ps 
+
+module padframe ( adr, memdata_core, memread, memwrite, ph1_core,
+     ph2_core, reset_core, writedata, adr_core, memdata, memread_core,
+     memwrite_core, ph1, ph2, reset, writedata_core );
+
+output  memread, memwrite, ph1_core, ph2_core, reset_core;
+
+input  memread_core, memwrite_core, ph1, ph2, reset;
+
+output [7:0]  memdata_core;
+output [7:0]  writedata;
+output [7:0]  adr;
+
+input [7:0]  memdata;
+input [7:0]  writedata_core;
+input [7:0]  adr_core;
+
+
+
+specify 
+    specparam CDS_LIBNAME  = "mips8";
+    specparam CDS_CELLNAME = "padframe";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+

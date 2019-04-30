@@ -1,0 +1,82 @@
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.23s.
+INFO (DB-120008): oaSocket connection timeout value was set to 1 seconds.
+Loading .simrc from /proj/ncsu/rel/cdssetup/simrc.UofU
+
+Running simulation in directory: "/proj/VLSI19S/G1/hmmm/IC_CAD/cadence/LVS".
+
+
+
+Begin netlist:    Apr  8 15:20:27 2019
+	view name list	= ("auLvs" "extracted")
+	stop name list	= ("auLvs")
+	library name	= "HMMM"
+	cell name	= "chip"
+	view name	= "extracted"
+	globals lib	= "basic"
+Running Artist Flat Netlisting ...
+*WARNING* Parameter 'lxUseCell' already exists.
+End netlist:    Apr  8 15:20:29 2019
+
+Moving original netlist to extNetlist
+Removing parasitic components from netlist
+	presistors removed:  0
+	pcapacitors removed: 0
+	pinductors removed:  0
+	pdiodes removed:     0
+	trans lines removed: 0
+	2221 nodes merged into 2221 nodes
+
+
+Begin netlist:    Apr  8 15:20:29 2019
+	view name list	= ("auLvs" "cmos_sch" "schematic" "symbol")
+	stop name list	= ("auLvs")
+	library name	= "HMMM"
+	cell name	= "chip"
+	view name	= "schematic"
+	globals lib	= "basic"
+Running Artist Flat Netlisting ...
+*WARNING* Parameter 'lxUseCell' already exists.
+*WARNING* Parameter 'lxUseCell' already exists.
+*WARNING* Parameter 'lxUseCell' already exists.
+End netlist:    Apr  8 15:20:31 2019
+
+Moving original netlist to extNetlist
+Removing parasitic components from netlist
+	presistors removed:  0
+	pcapacitors removed: 0
+	pinductors removed:  0
+	pdiodes removed:     0
+	trans lines removed: 0
+	5282 nodes merged into 5282 nodes
+
+Running netlist comparison program:  LVS
+Begin comparison:    Apr  8 15:20:31 2019
+@(#)$CDS: LVS version 6.1.8-64b 10/01/2018 19:50 (ip-172-18-22-57) $
+
+The net-lists match.
+
+                             layout  schematic
+                                instances
+        un-matched              0       0      
+        rewired                 0       0      
+        size errors             0       0      
+        pruned                  0       0      
+        active                  5826    4136   
+        total                   5826    4136   
+
+                                  nets
+        un-matched              0       0      
+        merged                  0       0      
+        pruned                  0       0      
+        active                  2120    2120   
+        total                   2120    2120   
+
+                                terminals
+        un-matched              0       0      
+        matched but
+        different type          0       0      
+        total                   0       31     
+End comparison:      Apr  8 15:20:32 2019
+
+
+Comparison program completed successfully.

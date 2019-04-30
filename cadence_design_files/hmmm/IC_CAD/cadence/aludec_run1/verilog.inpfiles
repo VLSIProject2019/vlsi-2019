@@ -1,0 +1,20 @@
+// Verilog HDL and netlist files of
+// "controller_cn aludec schematic"
+
+// Netlisted models
+
+// netlist file - muddlib11, nand2_1x, cmos_sch.
+ihnl/cds0/netlist
+// netlist file - muddlib11, inv_1x, cmos_sch.
+ihnl/cds1/netlist
+// netlist file - muddlib11, nor2_1x, cmos_sch.
+ihnl/cds2/netlist
+// netlist file - controller_cn, aludec, schematic.
+ihnl/cds3/netlist
+
+
+// End HDL models
+
+// globals file 
+hdlFilesDir/cds_globals.v
+

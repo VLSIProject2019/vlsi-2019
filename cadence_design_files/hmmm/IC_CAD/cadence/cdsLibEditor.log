@@ -1,0 +1,45 @@
+\o Program:		@(#)$CDS: cdsLibEditor version 6.1.8 - CAT37 09/24/2018 21:03 (ip-172-18-22-224) $
+\o Sub version:		sub-version  p015 
+\o Arguments:		-display localhost:10.0 -mpssession virtuoso55417 -mpshost tera.eng.hmc.edu -namespace CDBA -cdslib /hdd/home/cnorfleet/IC_CAD/cadence/cds.lib 
+\o Working Directory:	tera.eng.hmc.edu:/hdd/home/cnorfleet/IC_CAD/cadence
+\o 64-bit offsets
+\a nrSetWindowVisibility(cdsLibEditor "show")
+\o Qt version: 		5.9.1
+\a nrSetCurrentWindow(cdsLibEditor)
+\a nrResizeWindow(cdsLibEditor list(34 57 500 400))
+\a nrListItemAction(cdsLibEditor->mainTable 17 0)
+\o Active cell: 17 0 ""
+\a nrResizeWindow(cdsLibEditor list(708 117 500 400))
+\a nrListItemRename(cdsLibEditor->mainTable, 17 0 "muddlib11")
+\a nrListItemAction(cdsLibEditor->mainTable 17 1)
+\o Active cell: 17 1 ""
+\a nrListItemRename(cdsLibEditor->mainTable, 17 1 "muddlib11")
+\a nrListItemAction(cdsLibEditor->mainTable 18 0)
+\o Active cell: 18 0 ""
+\a nrListItemRename(cdsLibEditor->mainTable, 18 0 "wordlib8")
+\a nrListItemAction(cdsLibEditor->mainTable 18 1)
+\o Active cell: 18 1 ""
+\a nrListItemRename(cdsLibEditor->mainTable, 18 1 "wordlib8")
+\a nrListItemAction(cdsLibEditor->mainTable 19 0)
+\o Active cell: 19 0 ""
+\a nrListItemRename(cdsLibEditor->mainTable, 19 0 "mips8")
+\a nrListItemAction(cdsLibEditor->mainTable 19 1)
+\o Active cell: 19 1 ""
+\a nrListItemRename(cdsLibEditor->mainTable, 19 1 "mips8")
+\a nrListItemAction(cdsLibEditor->mainTable 20 0)
+\o Active cell: 20 0 ""
+\a cdsLibEditor->fileSaveAsButton->value = t
+\a saveAsGroupDialog->saveAsLibDefsCheckBox->value = nil
+\a saveAsGroupDialog->unionUsageRadioB->value = nil
+\a nrSetWindowVisibility(saveAsGroupDialog "show")
+\a nrSetCurrentWindow(saveAsGroupDialog)
+\a nrResizeWindow(saveAsGroupDialog list(3 26 551 351))
+\a saveAsGroupDialog->okButton->value = t
+\o QUESTION (CLE-140): Caution\n\n"/hdd/home/cnorfleet/IC_CAD/cadence/cds.lib" already exists. \n\nDo you want to overwrite this file? 
+\a nrSetWindowVisibility(genericDialog "show")
+\a nrSetCurrentWindow(genericDialog)
+\a nrResizeWindow(genericDialog list(755 227 403 162))
+\a genericDialog->genericYesButton->value = t
+\a nrSetCurrentWindow(saveAsGroupDialog)
+\a nrSetCurrentWindow(cdsLibEditor)
+\a exit(0)

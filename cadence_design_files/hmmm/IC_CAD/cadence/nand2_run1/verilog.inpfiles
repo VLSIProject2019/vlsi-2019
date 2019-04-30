@@ -1,0 +1,14 @@
+// Verilog HDL and netlist files of
+// "lab1_cn nand2 cmos_sch"
+
+// Netlisted models
+
+// netlist file - lab1_cn, nand2, cmos_sch.
+ihnl/cds0/netlist
+
+
+// End HDL models
+
+// globals file 
+hdlFilesDir/cds_globals.v
+

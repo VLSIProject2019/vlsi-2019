@@ -1,0 +1,22 @@
+
+Design          Type    Object                  New Name
+--------------------------------------------------------------------------------
+controller_synth cell   statelog/statereg/slave/q_reg[3] statelog_statereg_slave_q_reg_3_
+controller_synth cell   statelog/statereg/master/q_reg[2] statelog_statereg_master_q_reg_2_
+controller_synth cell   statelog/statereg/slave/q_reg[2] statelog_statereg_slave_q_reg_2_
+controller_synth cell   statelog/statereg/master/q_reg[1] statelog_statereg_master_q_reg_1_
+controller_synth cell   statelog/statereg/slave/q_reg[1] statelog_statereg_slave_q_reg_1_
+controller_synth cell   statelog/statereg/master/q_reg[0] statelog_statereg_master_q_reg_0_
+controller_synth cell   statelog/statereg/slave/q_reg[0] statelog_statereg_slave_q_reg_0_
+controller_synth cell   statelog/statereg/master/q_reg[3] statelog_statereg_master_q_reg_3_
+controller_synth net    statelog/ns             statelog_ns
+controller_synth net    statelog/ns[3]          statelog_ns[3]
+controller_synth net    statelog/ns[2]          statelog_ns[2]
+controller_synth net    statelog/ns[1]          statelog_ns[1]
+controller_synth net    statelog/ns[0]          statelog_ns[0]
+controller_synth net    statelog/statereg/mid   statelog_statereg_mid
+controller_synth net    statelog/statereg/mid[3] statelog_statereg_mid[3]
+controller_synth net    statelog/statereg/mid[2] statelog_statereg_mid[2]
+controller_synth net    statelog/statereg/mid[1] statelog_statereg_mid[1]
+controller_synth net    statelog/statereg/mid[0] statelog_statereg_mid[0]
+1

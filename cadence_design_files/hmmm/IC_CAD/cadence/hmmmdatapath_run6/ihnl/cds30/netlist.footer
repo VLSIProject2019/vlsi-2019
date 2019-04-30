@@ -1,0 +1,3 @@
+xor_1x xor_1x[7:0] ( y[7:0], a[7:0], b[7:0]);
+
+endmodule

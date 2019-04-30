@@ -1,0 +1,73 @@
+// Library - HMMM, Cell - padframe, View - schematic
+// LAST TIME SAVED: Mar 25 04:21:47 2019
+// NETLIST TIME: Mar 25 04:22:47 2019
+`timescale 1ns / 100ps 
+
+module padframe ( Adr, MemWrite, ph1_core, ph2_core, reset_core,
+     test_extra, test_in_core, test_out, MemData, Adr_core,
+     MemWrite_core, ph1, ph2, reset, test_extra_core, test_in,
+     test_out_core );
+
+output  MemWrite, ph1_core, ph2_core, reset_core, test_extra,
+     test_in_core, test_out;
+
+
+input  MemWrite_core, ph1, ph2, reset, test_extra_core, test_in,
+     test_out_core;
+
+output [7:0]  Adr;
+
+inout [14:0]  MemData;
+
+input [7:0]  Adr_core;
+
+
+
+specify 
+    specparam CDS_LIBNAME  = "HMMM";
+    specparam CDS_CELLNAME = "padframe";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+
+pad_gnd I30 ( );
+pad_gnd I32 ( );
+pad_gnd I34 ( );
+pad_gnd I37 ( );
+pad_gnd I39 ( );
+pad_out I0 ( Adr[5], Adr_core[5]);
+pad_out I1 ( Adr[4], Adr_core[4]);
+pad_out I2 ( Adr[3], Adr_core[3]);
+pad_out I4 ( Adr[2], Adr_core[2]);
+pad_out I5 ( Adr[1], Adr_core[1]);
+pad_out I6 ( Adr[0], Adr_core[0]);
+pad_out I10 ( Adr[6], Adr_core[6]);
+pad_out I13 ( Adr[7], Adr_core[7]);
+pad_out I12 ( test_out, test_out_core);
+pad_out I14 ( MemWrite, MemWrite_core);
+pad_out I15 ( test_extra, test_extra_core);
+pad_in I3 ( ph2_core, net60, ph2);
+pad_in I7 ( ph1_core, net48, ph1);
+pad_in I8 ( reset_core, net066, reset);
+pad_in I11 ( test_in_core, net067, test_in);
+pad_vdd I31 ( );
+pad_vdd I33 ( );
+pad_vdd I35 ( );
+pad_vdd I40 ( );
+pad_vdd I38 ( );
+pad_io_nores I42 ( MemData[14]);
+pad_io_nores I20 ( MemData[13]);
+pad_io_nores I21 ( MemData[12]);
+pad_io_nores I22 ( MemData[11]);
+pad_io_nores I23 ( MemData[10]);
+pad_io_nores I24 ( MemData[9]);
+pad_io_nores I27 ( MemData[8]);
+pad_io_nores I28 ( MemData[7]);
+pad_io_nores I25 ( MemData[6]);
+pad_io_nores I26 ( MemData[5]);
+pad_io_nores I29 ( MemData[4]);
+pad_io_nores I41 ( MemData[3]);
+pad_io_nores I19 ( MemData[2]);
+pad_io_nores I18 ( MemData[1]);
+pad_io_nores I17 ( MemData[0]);
+
+endmodule

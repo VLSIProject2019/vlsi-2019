@@ -1,0 +1,28 @@
+// Library - wordlib8, Cell - adder_8, View - schematic
+// LAST TIME SAVED: Feb 16 23:00:06 2012
+// NETLIST TIME: Apr  7 17:47:12 2019
+`timescale 1ns / 100ps 
+
+module adder_8 ( cout, s, a, b, cin );
+
+output  cout;
+
+input  cin;
+
+output [7:0]  s;
+
+input [7:0]  a;
+input [7:0]  b;
+
+
+// Buses in the design
+
+wire  [6:0]  c;
+
+
+specify 
+    specparam CDS_LIBNAME  = "wordlib8";
+    specparam CDS_CELLNAME = "adder_8";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+

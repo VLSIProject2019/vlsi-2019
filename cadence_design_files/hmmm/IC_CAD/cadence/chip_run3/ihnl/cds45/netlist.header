@@ -1,0 +1,35 @@
+// Library - HMMM, Cell - chip, View - schematic
+// LAST TIME SAVED: Mar 25 04:21:53 2019
+// NETLIST TIME: Mar 25 04:22:47 2019
+`timescale 1ns / 100ps 
+
+module chip ( Adr, MemWrite, test_extra, test_out, MemData, ph1, ph2,
+     reset, test_in );
+
+output  MemWrite, test_extra, test_out;
+
+
+input  ph1, ph2, reset, test_in;
+
+output [7:0]  Adr;
+
+inout [14:0]  MemData;
+
+
+// Buses in the design
+
+wire  [0:1]  net43;
+
+wire  [0:1]  net44;
+
+wire  [14:8]  instr1;
+
+wire  [0:7]  net45;
+
+
+specify 
+    specparam CDS_LIBNAME  = "HMMM";
+    specparam CDS_CELLNAME = "chip";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+

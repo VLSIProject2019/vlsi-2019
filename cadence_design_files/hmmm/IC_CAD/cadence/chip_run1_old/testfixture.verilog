@@ -1,0 +1,16 @@
+
+// Verilog stimulus file.
+// Please do not create a module in this file.
+
+
+// Default verilog stimulus. 
+
+initial
+begin 
+
+   memdata[7:0] = 8'b00000000;
+
+   ph1 = 1'b0;
+   ph2 = 1'b0;
+   reset = 1'b0;
+end 

@@ -1,0 +1,105 @@
+********************************************************************************
+Product   : Virtuoso(R) XStream In
+Program   : @(#)$CDS: strmin version 6.1.8-64b 10/01/2018 19:51 (ip-172-18-22-57) $
+          : sub-version  IC6.1.8-64b.83 
+Started at: 08-Apr-2019  03:22:33
+User Name : emeike
+Host Name : DHCP-60-126.ST.HMC.Edu
+Directory : /proj/VLSI19S/G1/hmmm/IC_CAD/cadence
+CADENCE Design Systems, Inc.
+********************************************************************************
+Info: Cellview Rev Num:99,  Tech Rev Num:59
+
+WARNING (XSTRM-75): Target library 'chip_gdsin1' is attached to the technology library 'UofU_TechLib_ami06'. Therefore, the technology file is opened in read-only mode. All the undefined layer-purpose pairs will be dropped.
+INFO (XSTRM-217): Reading the layer map file, /proj/ncsu/rel/pipo/stream4gds.map
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/rel/pipo/stream4gds.map' contains a duplicate entry for Stream layer:datatype '34:0' at line '2'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/rel/pipo/stream4gds.map' contains a duplicate entry for Stream layer:datatype '43:0' at line '6'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/rel/pipo/stream4gds.map' contains a duplicate entry for Stream layer:datatype '43:0' at line '7'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/rel/pipo/stream4gds.map' contains a duplicate entry for Stream layer:datatype '46:0' at line '11'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/rel/pipo/stream4gds.map' contains a duplicate entry for Stream layer:datatype '49:0' at line '16'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/rel/pipo/stream4gds.map' contains a duplicate entry for Stream layer:datatype '51:0' at line '17'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/rel/pipo/stream4gds.map' contains a duplicate entry for Stream layer:datatype '62:0' at line '18'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/rel/pipo/stream4gds.map' contains a duplicate entry for Stream layer:datatype '25:0' at line '20'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/rel/pipo/stream4gds.map' contains a duplicate entry for Stream layer:datatype '25:0' at line '21'. Therefore, this entry will be ignored during translation.
+WARNING (XSTRM-31): Layer map file '/proj/ncsu/rel/pipo/stream4gds.map' contains a duplicate entry for Stream layer:datatype '25:0' at line '22'. Therefore, this entry will be ignored during translation.
+INFO (XSTRM-163): You have not used the viaMap option. If a viaMap file, corresponding techfile or technology library exist, then use the -viaMap option for creating oaVia instances in the Streamed-In library. Using the -viaMap option improves performance and VM usage of applications using the Streamed-In design. For details on the viaMap option, refer to the "Design Data Translator's Reference" guide for XStream.
+
+Summary of Options:
+	library				chip_gdsin1
+	strmFile			/proj/VLSI19S/G1/hmmm/IC_CAD/cadence/chip_5.gds
+	logFile				strmIn5435.log
+	topCell				chip
+	view				layout
+	case				Preserve
+	layerMap			/proj/ncsu/rel/pipo/stream4gds.map
+	propSeparator			,
+	attachTechFileOfLib				UofU_TechLib_ami06
+	checkPolygon				
+
+INFO (XSTRM-220): 1. Translating STRUCTURE inv_1x as cellView chip_gdsin1/inv_1x/layout.
+INFO (XSTRM-220): 2. Translating STRUCTURE clkinvbuf_4x as cellView chip_gdsin1/clkinvbuf_4x/layout.
+INFO (XSTRM-220): 3. Translating STRUCTURE clkinvbufdual_4x as cellView chip_gdsin1/clkinvbufdual_4x/layout.
+INFO (XSTRM-220): 4. Translating STRUCTURE flop_dp_1x as cellView chip_gdsin1/flop_dp_1x/layout.
+INFO (XSTRM-220): 5. Translating STRUCTURE flop_1x_8 as cellView chip_gdsin1/flop_1x_8/layout.
+INFO (XSTRM-220): 6. Translating STRUCTURE invbuf_4x as cellView chip_gdsin1/invbuf_4x/layout.
+INFO (XSTRM-220): 7. Translating STRUCTURE mux2_dp_1x as cellView chip_gdsin1/mux2_dp_1x/layout.
+INFO (XSTRM-220): 8. Translating STRUCTURE mux2_1x_8 as cellView chip_gdsin1/mux2_1x_8/layout.
+INFO (XSTRM-220): 9. Translating STRUCTURE mux3_dp_1x as cellView chip_gdsin1/mux3_dp_1x/layout.
+INFO (XSTRM-220): 10. Translating STRUCTURE mux3_1x_8 as cellView chip_gdsin1/mux3_1x_8/layout.
+INFO (XSTRM-220): 11. Translating STRUCTURE nand3_1x as cellView chip_gdsin1/nand3_1x/layout.
+INFO (XSTRM-220): 12. Translating STRUCTURE nand5_1x as cellView chip_gdsin1/nand5_1x/layout.
+INFO (XSTRM-220): 13. Translating STRUCTURE regram_zipper as cellView chip_gdsin1/regram_zipper/layout.
+INFO (XSTRM-220): 14. Translating STRUCTURE regram_dp as cellView chip_gdsin1/regram_dp/layout.
+INFO (XSTRM-220): 15. Translating STRUCTURE regram_8 as cellView chip_gdsin1/regram_8/layout.
+INFO (XSTRM-220): 16. Translating STRUCTURE regramvector_dp as cellView chip_gdsin1/regramvector_dp/layout.
+INFO (XSTRM-220): 17. Translating STRUCTURE regramadrbuf as cellView chip_gdsin1/regramadrbuf/layout.
+INFO (XSTRM-220): 18. Translating STRUCTURE regramarray_dp_hmmm as cellView chip_gdsin1/regramarray_dp_hmmm/layout.
+INFO (XSTRM-220): 19. Translating STRUCTURE and2_1x as cellView chip_gdsin1/and2_1x/layout.
+INFO (XSTRM-220): 20. Translating STRUCTURE and2_1x_8 as cellView chip_gdsin1/and2_1x_8/layout.
+INFO (XSTRM-220): 21. Translating STRUCTURE nand2_1x as cellView chip_gdsin1/nand2_1x/layout.
+INFO (XSTRM-220): 22. Translating STRUCTURE xor_1x as cellView chip_gdsin1/xor_1x/layout.
+INFO (XSTRM-220): 23. Translating STRUCTURE xor_1x_8 as cellView chip_gdsin1/xor_1x_8/layout.
+INFO (XSTRM-220): 24. Translating STRUCTURE fulladder as cellView chip_gdsin1/fulladder/layout.
+INFO (XSTRM-220): 25. Translating STRUCTURE adder_8 as cellView chip_gdsin1/adder_8/layout.
+INFO (XSTRM-220): 26. Translating STRUCTURE or2_1x as cellView chip_gdsin1/or2_1x/layout.
+INFO (XSTRM-220): 27. Translating STRUCTURE nor2_1x as cellView chip_gdsin1/nor2_1x/layout.
+INFO (XSTRM-220): 28. Translating STRUCTURE nor_8wide as cellView chip_gdsin1/nor_8wide/layout.
+INFO (XSTRM-220): 29. Translating STRUCTURE inv_4x as cellView chip_gdsin1/inv_4x/layout.
+INFO (XSTRM-220): 30. Translating STRUCTURE flopenr_dp_1x as cellView chip_gdsin1/flopenr_dp_1x/layout.
+INFO (XSTRM-220): 31. Translating STRUCTURE flopenr_1x_8 as cellView chip_gdsin1/flopenr_1x_8/layout.
+INFO (XSTRM-220): 32. Translating STRUCTURE mux2_c_1x as cellView chip_gdsin1/mux2_c_1x/layout.
+INFO (XSTRM-220): 33. Translating STRUCTURE buf_1x as cellView chip_gdsin1/buf_1x/layout.
+INFO (XSTRM-220): 34. Translating STRUCTURE datapath as cellView chip_gdsin1/datapath/layout.
+INFO (XSTRM-220): 35. Translating STRUCTURE latch_c_1x as cellView chip_gdsin1/latch_c_1x/layout.
+INFO (XSTRM-220): 36. Translating STRUCTURE nor3_1x as cellView chip_gdsin1/nor3_1x/layout.
+INFO (XSTRM-220): 37. Translating STRUCTURE a2o1_1x as cellView chip_gdsin1/a2o1_1x/layout.
+INFO (XSTRM-220): 38. Translating STRUCTURE fill_1_wide as cellView chip_gdsin1/fill_1_wide/layout.
+INFO (XSTRM-220): 39. Translating STRUCTURE controller as cellView chip_gdsin1/controller/layout.
+INFO (XSTRM-220): 40. Translating STRUCTURE padboxx as cellView chip_gdsin1/padboxx/layout.
+INFO (XSTRM-220): 41. Translating STRUCTURE padbox as cellView chip_gdsin1/padbox/layout.
+INFO (XSTRM-220): 42. Translating STRUCTURE pad_gnd as cellView chip_gdsin1/pad_gnd/layout.
+INFO (XSTRM-220): 43. Translating STRUCTURE pad_in as cellView chip_gdsin1/pad_in/layout.
+INFO (XSTRM-220): 44. Translating STRUCTURE pad_out as cellView chip_gdsin1/pad_out/layout.
+INFO (XSTRM-220): 45. Translating STRUCTURE pad_vdd as cellView chip_gdsin1/pad_vdd/layout.
+INFO (XSTRM-220): 46. Translating STRUCTURE pad_corner as cellView chip_gdsin1/pad_corner/layout.
+INFO (XSTRM-220): 47. Translating STRUCTURE pad_bidirhe as cellView chip_gdsin1/pad_bidirhe/layout.
+INFO (XSTRM-220): 48. Translating STRUCTURE padframe as cellView chip_gdsin1/padframe/layout.
+INFO (XSTRM-220): 49. Translating STRUCTURE chip as cellView chip_gdsin1/chip/layout.
+
+Summary of Objects Translated:
+	Instances:                              642
+	CustomVias:                             0
+	StandardVias:                           626
+	CdsGenVias:                             0
+	Arrays:                                 14
+	Polygons:                               448
+	Paths:                                  1107
+	PathSegs:                               0
+	Rectangles:                             59394
+	Text:                                   0
+	Node:                                   0
+	Line:                                   0
+	Cells:                                  49
+
+Elapsed Time: 1.1s   User Time: 0.2s   CPU Time: 0.2s   Peak VM: 77420KB
+INFO (XSTRM-234): Translation completed. '0' error(s) and '11' warning(s) found.

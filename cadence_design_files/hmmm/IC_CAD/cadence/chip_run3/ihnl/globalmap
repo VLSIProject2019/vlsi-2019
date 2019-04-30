@@ -1,0 +1,55 @@
+CADENCE IHNL11140
+$model
+HMMM/chip/schematic chip
+HMMM/tristate_1x/cmos_sch tristate_1x
+mips8/regram_8/schematic regram_8
+HMMM/xor_1x_8/schematic xor_1x_8
+mips8/regram_dp/cmos_sch regram_dp
+muddlib11/fulladder/cmos_sch fulladder
+mips8/regram_zipper/schematic regram_zipper
+HMMM/datapath/schematic datapath
+muddlib11/inv_1x/cmos_sch inv_1x
+muddlib11/or2_1x/cmos_sch or2_1x
+wordlib8/mux2_1x_8/schematic mux2_1x_8
+muddlib11/clkinvbuf_4x/cmos_sch clkinvbuf_4x
+muddlib11/flop_dp_1x/cmos_sch flop_dp_1x
+muddlib11/nor3_1x/cmos_sch nor3_1x
+mips8/regramvector_dp/schematic regramvector_dp
+muddlib11/flopenr_dp_1x/cmos_sch flopenr_dp_1x
+UofU_Pads/pad_in/schematic pad_in
+wordlib8/flop_1x_8/schematic flop_1x_8
+UofU_Pads/pad_gnd/schematic pad_gnd
+HMMM/xor_1x/schematic xor_1x
+HMMM/regramarray_dp_hmmm/schematic regramarray_dp_hmmm
+muddlib11/a2o1_1x/cmos_sch a2o1_1x
+wordlib8/and2_1x_8/schematic and2_1x_8
+UofU_Pads/pad_vdd/schematic pad_vdd
+HMMM/nor_8wide/schematic nor_8wide
+muddlib11/mux2_dp_1x/cmos_sch mux2_dp_1x
+muddlib11/clkinvbufdual_4x/schematic clkinvbufdual_4x
+mips8/regramadrbuf/schematic regramadrbuf
+wordlib8/adder_8/schematic adder_8
+muddlib11/and2_1x/cmos_sch and2_1x
+muddlib11/nor2_1x/cmos_sch nor2_1x
+muddlib11/mux2_c_1x/cmos_sch mux2_c_1x
+UofU_Pads/pad_io_nores/schematic pad_io_nores
+wordlib8/mux3_1x_8/schematic mux3_1x_8
+HMMM/tristate_1x_8/schematic tristate_1x_8
+muddlib11/nand5_1x/cmos_sch nand5_1x
+muddlib11/invbuf_4x/schematic invbuf_4x
+HMMM_Synth/controller/schematic controller
+muddlib11/nand3_1x/cmos_sch nand3_1x
+wordlib8/flopenr_1x_8/schematic flopenr_1x_8
+HMMM/padframe/schematic padframe
+muddlib11/latch_c_1x/cmos_sch latch_c_1x
+muddlib11/mux3_dp_1x/cmos_sch mux3_dp_1x
+muddlib11/nand2_1x/cmos_sch nand2_1x
+muddlib11/inv_4x/cmos_sch inv_4x
+UofU_Pads/pad_out/schematic pad_out
+$endmodel
+$net
+gnd! cds_globals.gnd_
+vdd! cds_globals.vdd_
+$endnet
+$param
+$endparam

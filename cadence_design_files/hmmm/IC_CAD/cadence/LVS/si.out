@@ -1,0 +1,81 @@
+@(#)$CDS: LVS version 6.1.8-64b 10/01/2018 19:50 (ip-172-18-22-57) $
+
+Command line: /cad/cds/IC618/tools.lnx86/dfII/bin/64bit/LVS -dir /proj/VLSI19S/G1/hmmm/IC_CAD/cadence/LVS -l -t /proj/VLSI19S/G1/hmmm/IC_CAD/cadence/LVS/layout /proj/VLSI19S/G1/hmmm/IC_CAD/cadence/LVS/schematic
+Like matching is enabled.
+Using terminal names as correspondence points.
+Compiling Diva LVS rules...
+
+    Net-list summary for /proj/VLSI19S/G1/hmmm/IC_CAD/cadence/LVS/layout/netlist
+       count
+        2120            nets
+        0               terminals
+        2917            pmos
+        2909            nmos
+
+    Net-list summary for /proj/VLSI19S/G1/hmmm/IC_CAD/cadence/LVS/schematic/netlist
+       count
+        2120            nets
+        31              terminals
+        2069            pmos
+        2067            nmos
+
+Devices in the rules but not in the netlist:
+        cap nfet pfet nmos4 pmos4
+
+The net-lists match.
+
+                             layout  schematic
+                                instances
+        un-matched              0       0      
+        rewired                 0       0      
+        size errors             0       0      
+        pruned                  0       0      
+        active                  5826    4136   
+        total                   5826    4136   
+
+                                  nets
+        un-matched              0       0      
+        merged                  0       0      
+        pruned                  0       0      
+        active                  2120    2120   
+        total                   2120    2120   
+
+                                terminals
+        un-matched              0       0      
+        matched but
+        different type          0       0      
+        total                   0       31     
+
+
+Probe files from /proj/VLSI19S/G1/hmmm/IC_CAD/cadence/LVS/schematic
+
+devbad.out:
+
+netbad.out:
+
+mergenet.out:
+
+termbad.out:
+
+prunenet.out:
+
+prunedev.out:
+
+audit.out:
+
+
+Probe files from /proj/VLSI19S/G1/hmmm/IC_CAD/cadence/LVS/layout
+
+devbad.out:
+
+netbad.out:
+
+mergenet.out:
+
+termbad.out:
+
+prunenet.out:
+
+prunedev.out:
+
+audit.out:

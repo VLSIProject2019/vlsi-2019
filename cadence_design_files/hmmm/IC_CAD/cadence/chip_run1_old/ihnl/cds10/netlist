@@ -1,0 +1,189 @@
+// Library - lab3_cn, Cell - controller_synth, View - schematic
+// LAST TIME SAVED: Feb 27 15:35:41 2019
+// NETLIST TIME: Mar 25 03:32:29 2019
+`timescale 1ns / 100ps 
+
+module controller_synth ( ph1, ph2, reset, op, zero, memread, memwrite,
+     alusrca, memtoreg, iord, pcen, regwrite, regdst, pcsrc, alusrcb,
+     aluop, irwrite );
+
+output  alusrca, iord, memread, memtoreg, memwrite, pcen, regdst,
+     regwrite;
+
+input  ph1, ph2, reset, zero;
+
+output [1:0]  pcsrc;
+output [1:0]  alusrcb;
+output [3:0]  irwrite;
+output [1:0]  aluop;
+
+input [5:0]  op;
+wire  [3:0]   statelog_ns;
+wire  [5:0]   op;
+wire    n95;
+wire    n94;
+wire    n93;
+wire    n92;
+wire    n91;
+wire    n90;
+wire    n89;
+wire    n87;
+wire    n86;
+wire    n85;
+wire    n84;
+wire    n83;
+wire    n82;
+wire    n81;
+wire    n80;
+wire    n79;
+wire    n78;
+wire  [3:0]   state;
+wire    n76;
+wire    n75;
+wire    n74;
+wire    n73;
+wire    n72;
+wire    n71;
+wire    n70;
+wire    n68;
+wire    n88;
+wire    n69;
+wire    n66;
+wire    n65;
+wire    n64;
+wire    n63;
+wire    n62;
+wire    n61;
+wire    n60;
+wire    n59;
+wire    n77;
+wire    n57;
+wire    n56;
+wire    n55;
+wire    n54;
+wire    n53;
+wire    n52;
+wire    n51;
+wire    n50;
+wire    n49;
+wire    n48;
+wire    n47;
+wire    n67;
+wire    ph2;
+wire    reset;
+wire    zero;
+wire    n58;
+wire  [1:0]   aluop;
+wire  [1:0]   alusrcb;
+wire  [1:0]   pcsrc;
+wire  [3:0]   irwrite;
+wire    ph1;
+wire  [3:0]   statelog_statereg_mid;
+wire    memread;
+wire    memwrite;
+wire    alusrca;
+wire    memtoreg;
+wire    iord;
+wire    pcen;
+wire    regwrite;
+wire    regdst;
+wire    n46;
+
+
+
+specify 
+    specparam CDS_LIBNAME  = "lab3_cn";
+    specparam CDS_CELLNAME = "controller_synth";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+
+latch_c_1x statelog_statereg_master_q_reg_3_ (
+     statelog_statereg_mid[3], statelog_ns[3], ph2);
+latch_c_1x statelog_statereg_master_q_reg_0_ (
+     statelog_statereg_mid[0], statelog_ns[0], ph2);
+latch_c_1x statelog_statereg_master_q_reg_1_ (
+     statelog_statereg_mid[1], statelog_ns[1], ph2);
+latch_c_1x statelog_statereg_master_q_reg_2_ (
+     statelog_statereg_mid[2], statelog_ns[2], ph2);
+latch_c_1x statelog_statereg_slave_q_reg_0_ ( state[0],
+     statelog_statereg_mid[0], ph1);
+latch_c_1x statelog_statereg_slave_q_reg_1_ ( state[1],
+     statelog_statereg_mid[1], ph1);
+latch_c_1x statelog_statereg_slave_q_reg_2_ ( state[2],
+     statelog_statereg_mid[2], ph1);
+latch_c_1x statelog_statereg_slave_q_reg_3_ ( state[3],
+     statelog_statereg_mid[3], ph1);
+inv_1x U109 ( n56, n88);
+inv_1x U71 ( n49, pcsrc[1]);
+inv_1x U72 ( n74, op[2]);
+inv_1x U78 ( aluop[0], n46);
+inv_1x U70 ( n46, pcsrc[0]);
+inv_1x U73 ( n76, op[1]);
+inv_1x U75 ( n86, alusrcb[1]);
+inv_1x U74 ( n91, op[3]);
+inv_1x U68 ( n53, state[0]);
+inv_1x U67 ( n55, state[1]);
+inv_1x U116 ( n90, n62);
+inv_1x U112 ( n80, n64);
+inv_1x U76 ( n60, n63);
+inv_1x U69 ( n51, n69);
+inv_1x U83 ( n47, state[3]);
+inv_1x U77 ( n66, state[2]);
+nand2_1x U87 ( n48, pcsrc[0], zero);
+nand2_1x U125 ( n87, n75, n74);
+nand2_1x U95 ( n50, n63, n55);
+nand2_1x U96 ( alusrcb[0], n73, n50);
+nand2_1x U84 ( n54, n55, n53);
+nand2_1x U92 ( n85, state[0], n55);
+nand2_1x U117 ( n79, state[2], n63);
+nand2_1x U97 ( memread, n51, n73);
+nand2_1x U86 ( n73, n66, n47);
+nand2_1x U80 ( n84, state[3], n66);
+nand2_1x U79 ( n72, state[1], state[0]);
+nor2_1x U138 ( statelog_ns[3], reset, n95);
+nor2_1x U136 ( n93, n92, n91);
+nor2_1x U132 ( statelog_ns[2], reset, n83);
+nor2_1x U130 ( n81, n92, op[3]);
+nor2_1x U128 ( n82, n79, n78);
+nor2_1x U123 ( statelog_ns[1], reset, n71);
+nor2_1x U121 ( n68, n85, n67);
+nor2_1x U120 ( n67, n66, n65);
+nor2_1x U99 ( alusrca, n53, n52);
+nor2_1x U100 ( memwrite, n84, n54);
+nor2_1x U107 ( n75, op[5], op[3]);
+nor2_1x U133 ( aluop[1], n85, n84);
+nor2_1x U106 ( n57, op[2], op[1]);
+nor2_1x U105 ( n62, op[4], op[0]);
+nor2_1x U93 ( irwrite[1], n85, n73);
+nor2_1x U90 ( n69, n55, n60);
+nor2_1x U89 ( n63, state[0], state[3]);
+nor2_1x U124 ( irwrite[3], n73, n72);
+nor2_1x U91 ( irwrite[2], state[2], n51);
+nor2_1x U81 ( pcsrc[0], n72, n84);
+nor3_1x U135 ( n94, state[0], n90, n89);
+nor3_1x U137 ( n95, aluop[1], n94, n93);
+nor3_1x U127 ( n78, n77, n80, state[1]);
+nor3_1x U126 ( n77, n76, n90, n87);
+nor3_1x U131 ( n83, n82, irwrite[3], n81);
+nor3_1x U118 ( n70, n90, n88, n79);
+nor3_1x U119 ( n65, state[3], op[3], n64);
+nor3_1x U122 ( n71, n70, n69, n68);
+nor3_1x U114 ( n61, state[1], n66, n59);
+nor3_1x U115 ( statelog_ns[0], reset, n61, n60);
+nor3_1x U102 ( regdst, state[0], n55, n84);
+nor3_1x U103 ( memtoreg, state[3], n66, n72);
+nor3_1x U94 ( irwrite[0], state[1], state[2], n60);
+nor3_1x U82 ( alusrcb[1], state[1], state[3], n66);
+nor3_1x U85 ( pcsrc[1], n66, n47, n54);
+nand3_1x U88 ( pcen, n73, n49, n48);
+nand3_1x U129 ( n92, state[0], n80, alusrcb[1]);
+nand3_1x U108 ( n88, op[2], n75, n76);
+nand3_1x U111 ( n64, n57, n62, op[5]);
+a2o1_1x U134 ( n89, n88, n87, n86);
+a2o1_1x U113 ( n59, n62, n58, n80);
+a2o1_1x U110 ( n58, n57, n91, n56);
+a2o1_1x U101 ( iord, n69, state[2], memwrite);
+and2_1x U98 ( n52, n86, n84);
+or2_1x U104 ( regwrite, regdst, memtoreg);
+
+endmodule

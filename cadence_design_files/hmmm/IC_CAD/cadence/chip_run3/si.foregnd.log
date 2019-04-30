@@ -1,0 +1,255 @@
+si: simSetDef().... simHostDiffers is initialized to "nil".
+si: simSetDef().... simPostAnalysisProcessingFunc is already set to
+vlogifPostBatchJobMessage. Redefinition to nil is ignored.
+si: simSetDef().... simNotifyKillActionFunc is initialized to "nil".
+si: simSetDef().... simDoNotDisplayDialogBox is already set to t. Redefinition
+to nil is ignored.
+si: simSetDef().... simUserDefineDefaultRunDirFunc is initialized to "nil".
+si: simSetDef().... simCommand is already set to prog((status) if((simHost ==
+"localhost") (status = vlogifRunLocalBatch()) (status = vlogifRunRemoteBatch()))
+return(status)). Redefinition to "" is ignored.
+si: simSetDef().... simSedFile is already set to
+"/cad/cds/IC618/tools.lnx86/dfII/etc/si/sed.ver". Redefinition to "" is
+ignored.
+si: simSetDef().... simDefaultSimulator is already set to "spice". Redefinition
+to nil is ignored.
+si: simSetDef().... simDefaultRunDir is already set to
+"/proj/VLSI19S/G1/hmmm/IC_CAD/cadence/chip_run1". Redefinition to nil is
+ignored.
+si: simSetDef().... simOtherInfo is initialized to "nil".
+si: simSetDef().... simIsFlattenP is initialized to "nil".
+si: simSetDef().... simNoSimdiff is initialized to "nil".
+si: simSetDef().... simDefaultControl is already set to "control.ver".
+Redefinition to nil is ignored.
+si: simSetDef().... simControlFile is already set to
+"/cad/cds/IC618/tools.lnx86/dfII/etc/si/control.ver". Redefinition to nil is
+ignored.
+si: simSetDef().... simNetlistHier is already set to t. Redefinition to nil is
+ignored.
+si: simSetDef().... simGlobalPrefix is already set to "cds_globals.".
+Redefinition to nil is ignored.
+si: simSetDef().... simHierarchyPrefix is already set to "test.top".
+Redefinition to nil is ignored.
+si: simSetDef().... simNoLeadingHierarchyDelim is initialized to "nil".
+si: simSetDef().... simPrefixHierarchyWithCV is initialized to "nil".
+si: simSetDef().... simNetNamePrefix is already set to "cdsNet". Redefinition to
+nil is ignored.
+si: simSetDef().... simInstNamePrefix is already set to "Inst_". Redefinition to
+nil is ignored.
+si: simSetDef().... simModelNamePrefix is already set to "hdl_". Redefinition to
+nil is ignored.
+si: simSetDef().... simTermNamePrefix is already set to "cdsTerm". Redefinition
+to nil is ignored.
+si: simSetDef().... simCheckTermMismatchAction is already set to "ignore".
+Redefinition to "error" is ignored.
+si: simSetDef().... simCleanFileList is initialized to "nil".
+si: simSetDef().... simSimulatorSaveVars is already set to
+(simVerilogLaiLmsiNetlisting verilogSimViewList simVerilogAutoNetlisting
+simVerilogTestFixtureFlag simVerilogTestFixtureTemplate
+simVerilogNetlistExplicit hnlVerilogTermSyncUp simVerilogFlattenBuses
+vtoolsUseUpperCaseFlag hnlVerilogCreatePM simVerilogTopLevelModuleName
+simHierarchyPrefix simNCVerilogHierPrefix verilogSimStopList
+simVerilogPwrNetList simVerilogGndNetList vtoolsifForceReNetlisting
+simVerilogLibNames vlogifInternalTestFixtureFlag simVerilogBusJustificationStr
+simVerilogTestFixtureTemplate simVerilogDropPortRange simVerilogHandleUseLib
+simVerilogHandleAliasPort simVerilogPrintStimulusNameMappingTable
+simVerilogProcessNullPorts simVerilogIncrementalNetlistConfigList
+hnlVerilogNetlistStopCellImplicit simVerilogOverWriteSchTimeScale
+vlogifCompatibilityMode simVerilogHandleSwitchRCData vlogifUseAssignsForAlias
+vlogifDeclareGlobalNetLocal vlogifSkipTimingInfo
+simVerilogEnableEscapeNameMapping simVerilogStopAfterCompilation
+simVerilogVhdlImport simVerilogTopCellCounter hnlSupportIterInst). Redefinition
+to nil is ignored.
+si: simSetDef().... simApplicationOptionsForm is initialized to "nil".
+si: simSetDef().... simSimulatorSaveFiles is initialized to "nil".
+si: simSetDef().... simDontCopyFileNetlistToRemoteRunDir is already set to t.
+Redefinition to nil is ignored.
+si: simSetDef().... simRsh is initialized to "nil".
+si: simSetDef().... simNotIncremental is initialized to "nil".
+si: simSetDef().... simReNetlistAll is initialized to "nil".
+si: simSetDef().... simDoNotForkNetlist is initialized to "nil".
+si: simSetDef().... interactiveTAP is initialized to "nil".
+si: simSetDef().... simPrintSilosCap is initialized to "nil".
+si: simSetDef().... simDoPostLayout is initialized to "nil".
+*** Loading .simrc from -> /courses/e158/15/cadence/.simrc.
+
+Running netlist
+Begin Incremental Netlisting Mar 25 04:22:44 2019
+si: simSetDef().... hnlMaxNameLength is already set to 64. Redefinition to 50 is
+ignored.
+si: simSetDef().... hnlCapability is initialized to "nil".
+si: simSetDef().... hnlBusCapability is initialized to "nil".
+INFO (VLOGNET-188): While generating implicit netlist, it is recommended to set
+the Terminal SyncUp option on the Netlist Setup form as 'Honor Switch
+Master'.
+Alternatively, you can set the hnlVerilogTermSyncUp variable as
+'honorSM'.
+This option automatically resolves any mismatch between the terminals
+of an instance and its switch master while generating an implicit netlist.
+
+INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the
+
+"/proj/VLSI19S/G1/hmmm/IC_CAD/cadence/chip_run3/testfixture.verilog" file. To
+print the stimulus name mapped table, set
+
+simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file
+
+before invoking Verilog netlister.
+ 
+INFO (VLOGNET-62): Database internal net names will be printed for floating
+instance ports. To prevent 
+them from being printed, set
+simVerilogProcessNullPorts = t either in CIW or 
+the .simrc file.
+ 
+INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist
+Configuration list. 
+If you want to print only those cellviews that need to be
+re-netlisted in the 
+list, set simVerilogIncrementalNetlistConfigList = t either
+in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-66): Module ports will be printed without the port ranges. If you
+have split busses 
+across module ports you may get an incorrect netlist. To
+print module ports 
+with the port ranges, set simVerilogDropPortRange = nil
+either in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to
+"z". To get inout 
+pins with initial state of "0", set
+hnlVerilogIOInitStimulusStr = "0" 
+either in CIW or the .simrc file.
+ 
+INFO (VLOGNET-116): Netlisting the resistive-switch properties.
+
+INFO (VLOGNET-120): Using connection by order (implicit connections) for all the
+stopping cells.
+
+WARNING (VLOGNET-105): Cannot drop port ranges because the cell
+'wordlib8/mux3_1x_8/schematic' has split busses 
+across module ports. Therefore,
+ignoring the flag simVerilogDropPortRange.
+ 
+WARNING (VLOGNET-105): Cannot drop port ranges because the cell
+'HMMM/nor_8wide/schematic' has split busses 
+across module ports. Therefore,
+ignoring the flag simVerilogDropPortRange.
+ 
+WARNING (VLOGNET-105): Cannot drop port ranges because the cell
+'HMMM/datapath/schematic' has split busses 
+across module ports. Therefore,
+ignoring the flag simVerilogDropPortRange.
+ 
+INFO (VLOGNET-169): Module port ordering for lib 'HMMM_Synth', cell
+'controller', view 'schematic' will be
+ done using the user specified port order
+as follows:
+
+ => "ph1" "ph2" "reset" "negative" "zero" "RegWLoadSrc" "RA1Src" "PCEnable" "AdrSrc"
+"InstrSrc" 
+     "RegWrite" "TwoRegs" "ALUSub" "PCSrc<1:0>" "RegWriteSrc<1:0>" "MemWrite"
+"MemData1<14:8>" 
+     "instr1<14:8>" 
+
+WARNING (VLOGNET-110): The cell 'UofU_Pads/pad_gnd/schematic' has no ports. Make
+sure that this was the intended 
+design.
+ 
+INFO (OSSHNL-251): Mismatch found in the direction of terminal 'pad' in the
+placed master
+'UofU_Pads/pad_in/symbol' and its corresponding terminal in the
+switch master 'UofU_Pads/pad_in/schematic',
+however, this terminal is printed in
+the netlist because the variable
+simCheckTermDirectionMismatch is either set to
+'ignore' or is not set.
+
+WARNING (VLOGNET-110): The cell 'UofU_Pads/pad_vdd/schematic' has no ports. Make
+sure that this was the intended 
+design.
+ 
+INFO (VLOGNET-169): Module port ordering for lib 'NCSU_Analog_Parts', cell
+'nmos4', view 'functional' will be
+ done using the user specified port order as
+follows:
+
+ => ("B" "D" "G" "S")
+
+INFO (VLOGNET-169): Module port ordering for lib 'NCSU_Analog_Parts', cell
+'pmos4', view 'functional' will be
+ done using the user specified port order as
+follows:
+
+ => ("B" "D" "G" "S")
+
+INFO (VLOGNET-126): ---------- Beginning netlist configuration information
+----------
+
+
+                (incremental data only)
+
+CELL NAME                   VIEW NAME            NOTE             
+---------                   ---------            ----             
+
+r_nmos                      functional           *Stopping View*  
+r_pmos                      functional           *Stopping View*  
+nmos                        functional           *Stopping View*  
+pmos                        functional           *Stopping View*  
+pmos4                       functional           *Stopping View*  
+nmos4                       functional           *Stopping View*  
+chip                        schematic                             
+padframe                    schematic                             
+pad_io_nores                schematic                             
+pad_vdd                     schematic                             
+pad_in                      schematic                             
+pad_out                     schematic                             
+pad_gnd                     schematic                             
+controller                  schematic                             
+a2o1_1x                     cmos_sch                              
+nor3_1x                     cmos_sch                              
+latch_c_1x                  cmos_sch                              
+datapath                    schematic                             
+mux2_c_1x                   cmos_sch                              
+tristate_1x_8               schematic                             
+tristate_1x                 cmos_sch                              
+xor_1x_8                    schematic                             
+xor_1x                      schematic                             
+nand2_1x                    cmos_sch                              
+inv_1x                      cmos_sch                              
+regramarray_dp_hmmm         schematic                             
+regramvector_dp             schematic                             
+regram_zipper               schematic                             
+nand5_1x                    cmos_sch                              
+nand3_1x                    cmos_sch                              
+regram_8                    schematic                             
+regram_dp                   cmos_sch                              
+regramadrbuf                schematic                             
+adder_8                     schematic                             
+fulladder                   cmos_sch                              
+and2_1x_8                   schematic                             
+and2_1x                     cmos_sch                              
+nor_8wide                   schematic                             
+nor2_1x                     cmos_sch                              
+or2_1x                      cmos_sch                              
+mux3_1x_8                   schematic                             
+mux3_dp_1x                  cmos_sch                              
+flopenr_1x_8                schematic                             
+flopenr_dp_1x               cmos_sch                              
+mux2_1x_8                   schematic                             
+invbuf_4x                   schematic                             
+inv_4x                      cmos_sch                              
+mux2_dp_1x                  cmos_sch                              
+flop_1x_8                   schematic                             
+clkinvbufdual_4x            schematic                             
+clkinvbuf_4x                cmos_sch                              
+flop_dp_1x                  cmos_sch                              
+
+---------- End of netlist configuration information   ----------
+INFO (VLOGNET-80): The library 'HMMM', cell 'chip', and view 'schematic' has
+been netlisted successfully.
+
+End netlisting Mar 25 04:22:47 2019

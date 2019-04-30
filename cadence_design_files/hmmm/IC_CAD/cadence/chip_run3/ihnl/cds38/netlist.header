@@ -1,0 +1,75 @@
+// Library - HMMM_Synth, Cell - controller, View - schematic
+// LAST TIME SAVED: Mar 25 02:11:37 2019
+// NETLIST TIME: Mar 25 04:22:46 2019
+`timescale 1ns / 100ps 
+
+module controller ( ph1, ph2, reset, negative, zero, RegWLoadSrc,
+     RA1Src, PCEnable, AdrSrc, InstrSrc, RegWrite, TwoRegs, ALUSub,
+     PCSrc, RegWriteSrc, MemWrite, MemData1, instr1 );
+
+output  ALUSub, AdrSrc, InstrSrc, MemWrite, PCEnable, RA1Src,
+     RegWLoadSrc, RegWrite, TwoRegs;
+
+input  negative, ph1, ph2, reset, zero;
+
+output [14:8]  instr1;
+output [1:0]  RegWriteSrc;
+output [1:0]  PCSrc;
+
+input [14:8]  MemData1;
+wire  [6:0]   instrReg1_nextQ;
+wire  [1:0]   PCSrc;
+wire  [14:8]   instrTemp1;
+wire    n35;
+wire    n32;
+wire    n34;
+wire    n33;
+wire    n36;
+wire    n29;
+wire    n28;
+wire    n30;
+wire    n26;
+wire    n23;
+wire    n27;
+wire    n22;
+wire    n25;
+wire    n24;
+wire    n19;
+wire    instrReg1_N6;
+wire    n20;
+wire    instrReg1_N8;
+wire    stateReg_nextQ_0_;
+wire    stateReg_N3;
+wire    instrReg1_N3;
+wire    instrReg1_N4;
+wire    instrReg1_N5;
+wire    n31;
+wire    instrReg1_N7;
+wire  [1:0]   RegWriteSrc;
+wire    ph2;
+wire    reset;
+wire    negative;
+wire    zero;
+wire    RegWLoadSrc;
+wire    RA1Src;
+wire  [14:8]   instr1;
+wire    n21;
+wire  [14:8]   MemData1;
+wire    ph1;
+wire    PCEnable;
+wire    AdrSrc;
+wire    InstrSrc;
+wire    RegWrite;
+wire    TwoRegs;
+wire    ALUSub;
+wire    MemWrite;
+wire    instrReg1_N9;
+
+
+
+specify 
+    specparam CDS_LIBNAME  = "HMMM_Synth";
+    specparam CDS_CELLNAME = "controller";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+

@@ -1,0 +1,46 @@
+rnmos #(0.1)  M18( net030, masterb, phb);
+rpmos #(0.1)  M15( net054, masterb, phbuf);
+`switch default
+nmos #(0.1)   (* const real width = 1.800, length = 0.600; *) M1(
+     master, cds_globals.gnd_, masterb);
+`switch default
+nmos #(0.1)   (* const real width = 1.800, length = 0.600; *) M2(
+     masterb, masterinb, phbuf);
+`switch default
+nmos #(0.1)   (* const real width = 1.800, length = 0.600; *) M32(
+     masterinb, cds_globals.gnd_, d);
+`switch default
+nmos #(0.1)   (* const real width = 1.200, length = 0.600; *) M14(
+     cds_globals.gnd_, net030, master);
+`switch default
+nmos #(0.1)   (* const real width = 2.100, length = 0.600; *) M35(
+     phbuf, cds_globals.gnd_, phb);
+`switch default
+nmos #(0.1)   (* const real width = 2.100, length = 0.600; *) M26( q,
+     cds_globals.gnd_, masterb);
+`switch default
+nmos #(0.1)   (* const real width = 2.100, length = 0.600; *) M34( phb,
+     cds_globals.gnd_, ph);
+`switch default
+pmos #(0.1)   (* const real width = 2.700, length = 0.600; *) M0(
+     master, cds_globals.vdd_, masterb);
+`switch default
+pmos #(0.1)   (* const real width = 1.800, length = 0.600; *) M3(
+     masterb, masterinb, phb);
+`switch default
+pmos #(0.1)   (* const real width = 1.200, length = 0.600; *) M16(
+     cds_globals.vdd_, net054, master);
+`switch default
+pmos #(0.1)   (* const real width = 3.000, length = 0.600; *) M36(
+     phbuf, cds_globals.vdd_, phb);
+`switch default
+pmos #(0.1)   (* const real width = 3.000, length = 0.600; *) M33( phb,
+     cds_globals.vdd_, ph);
+`switch default
+pmos #(0.1)   (* const real width = 3.000, length = 0.600; *) M27( q,
+     cds_globals.vdd_, masterb);
+`switch default
+pmos #(0.1)   (* const real width = 3.000, length = 0.600; *) M30(
+     masterinb, cds_globals.vdd_, d);
+
+endmodule

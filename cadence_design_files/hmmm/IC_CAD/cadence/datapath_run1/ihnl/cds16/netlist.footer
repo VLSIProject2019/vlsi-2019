@@ -1,0 +1,4 @@
+mux2_1x_8 I1 ( y[7:0], a[7:0], a_b[7:0], invert);
+inv_1x_8 I0 ( a_b[7:0], a[7:0]);
+
+endmodule

@@ -1,0 +1,13 @@
+CADENCE IHNL11140
+$model
+muddlib11/inv_1x/cmos_sch inv_1x
+muddlib11/nor2_1x/cmos_sch nor2_1x
+controller_cn/aludec/schematic aludec
+muddlib11/nand2_1x/cmos_sch nand2_1x
+$endmodel
+$net
+gnd! cds_globals.gnd_
+vdd! cds_globals.vdd_
+$endnet
+$param
+$endparam

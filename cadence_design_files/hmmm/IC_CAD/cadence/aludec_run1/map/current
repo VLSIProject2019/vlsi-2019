@@ -1,0 +1,37 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "aludec"
+  repList "behavioral functional schematic cmos_sch"
+  stopList "behavioral functional"
+  globalList "gnd! vdd!"
+  hierDelim "."
+  hierPrefix "test.top"
+  globalHierPrefix "cds_globals."
+  netlistDir "/hdd/home/cnorfleet/IC_CAD/cadence/aludec_run1"
+  busRef   "ORDERED"
+  netType   "BUS"
+  leftStr  "["
+  rangeStr  ":"
+  rightStr  "]"
+ )
+( defbus
+( "funct" 5 0  "funct" 5 0  )
+( "alucontrol" 2 0  "alucontrol" 2 0  )
+( "aluop" 1 0  "aluop" 1 0  )
+ )
+( net
+( "vdd!" "cds_globals.vdd_" )
+( "gnd!" "cds_globals.gnd_" )
+ )
+( model
+( "muddlib11/inv_1x/cmos_sch" "inv_1x" )
+( "muddlib11/nor2_1x/cmos_sch" "nor2_1x" )
+( "controller_cn/aludec/schematic" "aludec" )
+( "muddlib11/nand2_1x/cmos_sch" "nand2_1x" )
+ )
+( "nor2_1x" "ihnl/cds2/map" )
+( "inv_1x" "ihnl/cds1/map" )
+( "nand2_1x" "ihnl/cds0/map" )
+( "aludec" "ihnl/cds3/map" )
+ )

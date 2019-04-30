@@ -1,0 +1,38 @@
+
+Design          Type    Object                  New Name
+--------------------------------------------------------------------------------
+controller      cell    instrReg1/nextQ_reg[0]  instrReg1_nextQ_reg_0_
+controller      cell    instrReg1/nextQ_reg[1]  instrReg1_nextQ_reg_1_
+controller      cell    instrReg1/nextQ_reg[2]  instrReg1_nextQ_reg_2_
+controller      cell    instrReg1/nextQ_reg[3]  instrReg1_nextQ_reg_3_
+controller      cell    instrReg1/nextQ_reg[4]  instrReg1_nextQ_reg_4_
+controller      cell    instrReg1/nextQ_reg[5]  instrReg1_nextQ_reg_5_
+controller      cell    instrReg1/nextQ_reg[6]  instrReg1_nextQ_reg_6_
+controller      cell    instrReg1/q_reg[0]      instrReg1_q_reg_0_
+controller      cell    instrReg1/q_reg[1]      instrReg1_q_reg_1_
+controller      cell    instrReg1/q_reg[2]      instrReg1_q_reg_2_
+controller      cell    instrReg1/q_reg[3]      instrReg1_q_reg_3_
+controller      cell    instrReg1/q_reg[4]      instrReg1_q_reg_4_
+controller      cell    instrReg1/q_reg[5]      instrReg1_q_reg_5_
+controller      cell    instrReg1/q_reg[6]      instrReg1_q_reg_6_
+controller      cell    stateReg/q_reg[0]       stateReg_q_reg_0_
+controller      cell    stateReg/nextQ_reg[0]   stateReg_nextQ_reg_0_
+controller      net     instrReg1/nextQ         instrReg1_nextQ
+controller      net     instrReg1/nextQ[6]      instrReg1_nextQ[6]
+controller      net     instrReg1/nextQ[5]      instrReg1_nextQ[5]
+controller      net     instrReg1/nextQ[4]      instrReg1_nextQ[4]
+controller      net     instrReg1/nextQ[3]      instrReg1_nextQ[3]
+controller      net     instrReg1/nextQ[2]      instrReg1_nextQ[2]
+controller      net     instrReg1/nextQ[1]      instrReg1_nextQ[1]
+controller      net     instrReg1/nextQ[0]      instrReg1_nextQ[0]
+controller      net     N16                     RegWLoadSrc
+controller      net     instrReg1/N9            instrReg1_N9
+controller      net     instrReg1/N8            instrReg1_N8
+controller      net     instrReg1/N7            instrReg1_N7
+controller      net     instrReg1/N6            instrReg1_N6
+controller      net     instrReg1/N5            instrReg1_N5
+controller      net     instrReg1/N4            instrReg1_N4
+controller      net     instrReg1/N3            instrReg1_N3
+controller      net     stateReg/N3             stateReg_N3
+controller      net     stateReg/nextQ[0]       stateReg_nextQ_0_
+1

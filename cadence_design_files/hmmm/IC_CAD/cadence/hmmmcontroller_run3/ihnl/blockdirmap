@@ -1,0 +1,12 @@
+CADENCE IHNL111410
+
+muddlib11 latch_c_1x cmos_sch cds0
+muddlib11 inv_1x cmos_sch cds1
+muddlib11 nand2_1x cmos_sch cds2
+muddlib11 mux2_c_1x cmos_sch cds3
+muddlib11 nor2_1x cmos_sch cds4
+muddlib11 and2_1x cmos_sch cds5
+muddlib11 nor3_1x cmos_sch cds6
+muddlib11 nand3_1x cmos_sch cds7
+muddlib11 a2o1_1x cmos_sch cds8
+HMMM_Synth controller schematic cds9

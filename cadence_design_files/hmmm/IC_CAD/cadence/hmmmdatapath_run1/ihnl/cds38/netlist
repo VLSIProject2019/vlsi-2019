@@ -1,0 +1,95 @@
+// Library - HMMM, Cell - datapath, View - schematic
+// LAST TIME SAVED: Mar 21 18:31:25 2019
+// NETLIST TIME: Mar 21 19:02:29 2019
+`timescale 1ns / 100ps 
+
+module datapath ( Adr[7:0], negative, zero, MemData[7:0], ALUSub,
+     AdrSrc, Instr[10:8], InstrSrc, MemWrite, PCEnable, PCSrc[1:0],
+     RA1Src, RegWLoadSrc, RegWrite, RegWriteSrc[1:0], TwoRegs, ph1,
+     ph2, reset );
+
+output  negative, zero;
+
+
+input  ALUSub, AdrSrc, InstrSrc, MemWrite, PCEnable, RA1Src,
+     RegWLoadSrc, RegWrite, TwoRegs, ph1, ph2, reset;
+
+output [7:0]  Adr;
+
+inout [7:0]  MemData;
+
+input [1:0]  RegWriteSrc;
+input [1:0]  PCSrc;
+input [10:0]  Instr;
+
+
+// Buses in the design
+
+wire  [0:7]  net7;
+
+wire  [0:2]  net057;
+
+wire  [0:7]  net47;
+
+wire  [0:7]  net45;
+
+wire  [0:7]  net11;
+
+wire  [0:7]  net4;
+
+wire  [0:7]  net31;
+
+wire  [0:7]  net46;
+
+wire  [0:7]  net28;
+
+wire  [0:7]  net50;
+
+wire  [0:7]  net3;
+
+wire  [0:7]  net14;
+
+wire  [7:0]  r1;
+
+// List of all aliases
+
+
+cds_alias #(1) cds_alias_inst1(r1[7], negative);
+
+
+specify 
+    specparam CDS_LIBNAME  = "HMMM";
+    specparam CDS_CELLNAME = "datapath";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+
+flop_1x_8 wd3Reg ( net3[0:7], net4[0:7], ph1, ph2);
+flop_1x_8 InstrReg ( net7[0:7], MemData[7:0], ph1, ph2);
+mux2_1x_8 AdrMux2 ( Adr[7:0], net50[0:7], net11[0:7], AdrSrc);
+mux2_1x_8 WD3LoadMux2 ( net14[0:7], net3[0:7], net4[0:7], RegWLoadSrc);
+mux2_1x_8 InstrMux2 ( Instr[7:0], net7[0:7], MemData[7:0], InstrSrc);
+flopenr_1x_8 PCReg ( net50[0:7], net28[0:7], PCEnable, ph1, ph2,
+     reset);
+mux3_1x_8 PCSrcMux3 ( net28[0:7], net31[0:7], MemData[7:0], r1[7:0],
+     PCSrc[1], PCSrc[0]);
+mux3_1x_8 wd3Mux3 ( net4[0:7], Instr[7:0], MemData[7:0], net47[0:7],
+     RegWriteSrc[1], RegWriteSrc[0]);
+nor_8wide I7 ( zero, negative, r1[6], r1[5], r1[4], r1[3], r1[2],
+     r1[1], r1[0]);
+and2_1x_8 TwoRegsAND ( net45[0:7], {TwoRegs, TwoRegs, TwoRegs, TwoRegs,
+     TwoRegs, TwoRegs, TwoRegs, TwoRegs}, r1[7:0]);
+adder_8 FullAdder ( net43, net47[0:7], net46[0:7], net45[0:7], ALUSub);
+adder_8 PCAdder ( net48, net31[0:7], {cds_globals.gnd_,
+     cds_globals.gnd_, cds_globals.gnd_, cds_globals.gnd_,
+     cds_globals.gnd_, cds_globals.gnd_, cds_globals.gnd_,
+     cds_globals.vdd_}, net50[0:7], cds_globals.gnd_);
+regramarray_dp rf ( r1[7:0], net11[0:7], RegWrite, ph2, net057[0:2],
+     Instr[4:2], net14[0:7], Instr[10:8]);
+xor_1x_8 SubtractXOR ( net46[0:7], {ALUSub, ALUSub, ALUSub, ALUSub,
+     ALUSub, ALUSub, ALUSub, ALUSub}, net11[0:7]);
+tristate_1x_8 MemDataTristates ( MemData[7:0], r1[7:0], MemWrite,
+     net037);
+inv_1x I0 ( net037, MemWrite);
+mux2_3 I8 ( net057[0:2], Instr[7:5], Instr[10:8], RA1Src);
+
+endmodule

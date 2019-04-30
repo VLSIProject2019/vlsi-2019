@@ -1,0 +1,4 @@
+regram0_zipper I3 ( read1, read2, ra1[2:0], ra2[2:0]);
+regram0 regram0[7:0] ( r1[7:0], r2[7:0], read1, read2);
+
+endmodule

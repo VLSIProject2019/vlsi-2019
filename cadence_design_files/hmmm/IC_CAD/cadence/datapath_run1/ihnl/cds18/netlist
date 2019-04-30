@@ -1,0 +1,25 @@
+// Library - wordlib8, Cell - or2_1x_8, View - schematic
+// LAST TIME SAVED: Feb 17 13:00:38 2019
+// NETLIST TIME: Feb 17 13:51:53 2019
+`timescale 1ns / 100ps 
+
+module or2_1x_8 ( y, a, b );
+
+
+
+output [7:0]  y;
+
+input [7:0]  b;
+input [7:0]  a;
+
+
+
+specify 
+    specparam CDS_LIBNAME  = "wordlib8";
+    specparam CDS_CELLNAME = "or2_1x_8";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+
+or2_1x or2_1x[7:0] ( y[7:0], a[7:0], b[7:0]);
+
+endmodule

@@ -1,0 +1,59 @@
+// Library - mips8, Cell - datapath, View - schematic
+// LAST TIME SAVED: Feb 17 16:51:22 2019
+// NETLIST TIME: Mar 25 03:32:29 2019
+`timescale 1ns / 100ps 
+
+module datapath ( adr[7:0], instr[5:0], instr[31:26], writedata[7:0],
+     zero, ALUControl[2:0], ALUSrcA, ALUSrcB[1:0], IRWrite[3:0], IorD,
+     MemtoReg, PCEn, PCSrc[1:0], RegDst, RegWrite, memdata[7:0], ph1,
+     ph2, reset );
+
+output  zero;
+
+input  ALUSrcA, IorD, MemtoReg, PCEn, RegDst, RegWrite, ph1, ph2,
+     reset;
+
+output [7:0]  adr;
+output [7:0]  writedata;
+output [31:0]  instr;
+
+input [1:0]  ALUSrcB;
+input [7:0]  memdata;
+input [2:0]  ALUControl;
+input [1:0]  PCSrc;
+input [3:0]  IRWrite;
+
+
+// Buses in the design
+
+wire  [0:2]  net208;
+
+wire  [7:0]  a;
+
+wire  [7:0]  aluout;
+
+wire  [7:0]  wrdata;
+
+wire  [7:0]  rd1;
+
+wire  [7:0]  rd2;
+
+wire  [7:0]  pc;
+
+wire  [7:0]  data;
+
+wire  [7:0]  scra;
+
+wire  [7:0]  scrb;
+
+wire  [7:0]  aluresult;
+
+wire  [7:0]  pcmux_out;
+
+
+specify 
+    specparam CDS_LIBNAME  = "mips8";
+    specparam CDS_CELLNAME = "datapath";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+

@@ -1,0 +1,25 @@
+// Library - HMMM, Cell - condcheck, View - schematic
+// LAST TIME SAVED: Mar 25 01:15:00 2019
+// NETLIST TIME: Mar 25 03:46:49 2019
+`timescale 1ns / 100ps 
+
+module condcheck ( condBranch, branchType, negative, zero );
+
+output  condBranch;
+
+input  negative, zero;
+
+input [1:0]  branchType;
+
+
+// Buses in the design
+
+wire  [0:1]  cdsbus0;
+
+
+specify 
+    specparam CDS_LIBNAME  = "HMMM";
+    specparam CDS_CELLNAME = "condcheck";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+

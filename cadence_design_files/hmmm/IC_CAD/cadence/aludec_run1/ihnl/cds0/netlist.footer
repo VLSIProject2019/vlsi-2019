@@ -1,0 +1,14 @@
+`switch default
+pmos #(0.1)   (* const real width = 3.600, length = 0.600; *) M2( y,
+     cds_globals.vdd_, b);
+`switch default
+pmos #(0.1)   (* const real width = 3.600, length = 0.600; *) M3( y,
+     cds_globals.vdd_, a);
+`switch default
+nmos #(0.1)   (* const real width = 3.600, length = 0.600; *) M0( y,
+     mid, b);
+`switch default
+nmos #(0.1)   (* const real width = 3.600, length = 0.600; *) M1( mid,
+     cds_globals.gnd_, a);
+
+endmodule

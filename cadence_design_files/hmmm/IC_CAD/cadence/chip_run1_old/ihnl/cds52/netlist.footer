@@ -1,0 +1,13 @@
+aludec I0 ( net044[0:2], net046[0:1], net043[0:5]);
+controller_synth I1 ( net09, net010, net013, net17[0:5], net35, net018,
+     net019, net031, net028, net029, net027, net024, net025, net7[0:1],
+     net045[0:1], net046[0:1], net039[0:3]);
+datapath I2 ( net041[0:7], net043[0:5], net17[0:5], net042[0:7], net35,
+     net044[0:2], net031, net045[0:1], net039[0:3], net029, net028,
+     net027, net7[0:1], net025, net024, net040[0:7], net09, net010,
+     net013);
+padframe I4 ( adr[7:0], net040[0:7], memread, memwrite, net09, net010,
+     net013, writedata[7:0], net041[0:7], memdata[7:0], net018, net019,
+     ph1, ph2, reset, net042[0:7]);
+
+endmodule

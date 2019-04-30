@@ -1,0 +1,56 @@
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : controller
+Version: L-2016.03-SP4
+Date   : Mon Mar 18 03:08:33 2019
+****************************************
+
+
+Library(s) Used:
+
+    muddlib (File: /courses/e158/15/lab3/muddlib.db)
+
+
+Operating Conditions: typical   Library: muddlib
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+controller             5k                muddlib
+
+
+Global Operating Voltage = 5    
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  = 276.6390 uW   (58%)
+  Net Switching Power  = 202.1866 uW   (42%)
+                         ---------
+Total Dynamic Power    = 478.8257 uW  (100%)
+
+Cell Leakage Power     =   2.0436 nW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           0.1116        1.7496e-02            0.3002            0.1291  (  26.95%)
+sequential     2.2134e-02        5.3366e-03            0.3002        2.7471e-02  (   5.74%)
+combinational      0.1429            0.1794            1.4432            0.3223  (  67.31%)
+--------------------------------------------------------------------------------------------------
+Total              0.2766 mW         0.2022 mW         2.0436 nW         0.4788 mW
+1

@@ -1,0 +1,11 @@
+setAnalysisMode -clkSrcPath true -clockPropagation sdcControl
+setTrialRouteMode -fixAirConnect true
+setExtractRCMode  -engine preRoute
+setDelayCalMode -engine default
+setCTSMode -moveGateLimit 25
+setNanoRouteMode -quiet -routeWithSiDriven false
+setNanoRouteMode -quiet -routeWithTimingDriven false
+
+setPlaceMode -congRepairForceTrialRoute false -fp false -ignoreScan true -relaxSoftBlockageMode 2 -timingDriven false
+setIlmMode -highFanoutPort true -loopBack false 
+setVerifyGeometryMode -antenna false -area 0 0 0 0 -diffCellViol true -error 1000 -implantCheck true -insuffMetalOverlap true -maxNonPrefLength -1 -maxWidth true -minArea true -minHole true -minimumCut true -minSpacing true -minStep true -minWidth true -offMGrid true -offRGrid false -overlap true -padFillerCellsOverlap true -pinInBlkg false -regRoutingOnly false -routingBlkgPinOverlap true -routingCellBlkgOverlap true -sameCellViol false -sameNet true -short true -stackedViasOnRegNet false -useNonDefaultSpacing false -viaEnclosure true -viaOverlap false -warning 50 -wireExt true

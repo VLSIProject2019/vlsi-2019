@@ -1,0 +1,36 @@
+
+`timescale 1ns / 100ps
+
+module test;
+
+
+wire  ALUSub, AdrSrc, InstrSrc, MemWrite, PCEnable, RA1Src, RegWLoadSrc
+     , RegWrite, TwoRegs;
+
+reg  negative, ph1, ph2, reset, zero;
+
+wire [1:0]  RegWriteSrc;
+wire [7:0]  instr1;
+wire [1:0]  PCSrc;
+
+reg [6:0]  MemData1;
+
+// Buses in the design
+
+wire  [7:0]  instrTemp1;
+
+wire  [1:0]  branchType;
+
+// List of all aliases
+
+
+cds_alias #(1) cds_alias_inst3(branchType[1], TwoRegs);
+
+     cds_alias #(1) cds_alias_inst4(branchType[0], ALUSub);
+
+
+
+controller top(ALUSub, AdrSrc, InstrSrc, MemWrite, PCEnable, PCSrc[1:0]
+     , RA1Src, RegWLoadSrc, RegWrite, RegWriteSrc[1:0], TwoRegs, 
+     instr1[6:0], MemData1[6:0], negative, ph1, ph2, reset, zero); 
+ 

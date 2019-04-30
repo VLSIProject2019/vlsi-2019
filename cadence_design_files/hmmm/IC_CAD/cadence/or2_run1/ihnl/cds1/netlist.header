@@ -1,0 +1,19 @@
+// Library - lab1_cn, Cell - inv, View - cmos_sch
+// LAST TIME SAVED: Feb 10 13:14:48 2019
+// NETLIST TIME: Feb 10 22:28:33 2019
+`timescale 1ns / 100ps 
+
+module inv ( y, a );
+
+output  y;
+
+input  a;
+
+
+
+specify 
+    specparam CDS_LIBNAME  = "lab1_cn";
+    specparam CDS_CELLNAME = "inv";
+    specparam CDS_VIEWNAME = "cmos_sch";
+endspecify
+

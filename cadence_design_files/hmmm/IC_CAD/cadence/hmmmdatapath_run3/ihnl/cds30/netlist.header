@@ -1,0 +1,19 @@
+// Library - muddlib11, Cell - inv_1x, View - cmos_sch
+// LAST TIME SAVED: Feb 16 22:56:15 2012
+// NETLIST TIME: Mar 21 23:52:36 2019
+`timescale 1ns / 100ps 
+
+module inv_1x ( y, a );
+
+output  y;
+
+input  a;
+
+
+
+specify 
+    specparam CDS_LIBNAME  = "muddlib11";
+    specparam CDS_CELLNAME = "inv_1x";
+    specparam CDS_VIEWNAME = "cmos_sch";
+endspecify
+

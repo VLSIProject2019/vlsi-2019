@@ -1,0 +1,14 @@
+// Verilog HDL and netlist files of
+// "HMMM tristateInvCore cmos_sch"
+
+// Netlisted models
+
+// netlist file - HMMM, tristateInvCore, cmos_sch.
+ihnl/cds0/netlist
+
+
+// End HDL models
+
+// globals file 
+hdlFilesDir/cds_globals.v
+

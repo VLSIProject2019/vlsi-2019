@@ -1,0 +1,4604 @@
+\# Program start time:     UTC 2019.03.23 02:15:34.891
+\# Local time: EDT (UTC-04:00) 2019.03.22 22:15:34.891
+\o Program:		@(#)$CDS: virtuoso version 6.1.8-64b 10/01/2018 20:02 (ip-172-18-22-57) $
+\o Hierarchy:		/cad/cds/IC618/tools.lnx86/dfII/
+\o Sub version:		sub-version  IC6.1.8-64b.83  (64-bit addresses)
+\# Command line:	/cad/cds/IC618/tools/dfII/bin/64bit/virtuoso
+\# Host name (type):	DHCP-60-126.ST.HMC.Edu (x86_64)
+\# Operating system:	Linux 3.10.0-957.5.1.el7.x86_64 #1 SMP Fri Feb 1 14:54:57 UTC 2019
+\# Linux /etc/issue:	\S
+\# Linux /etc/issue:	Kernel \r on an \m
+\# X display name (WxH):	localhost:11.0 (1280x720)
+\# Available geometry:			TL(0:0) BR(1279:719)
+\# X server:			Colin Harrison
+\# Depth of Visual (Root):	24 (24)
+\# Number of Planes Used:	24
+\# X version:		11.0 (vendor release 60900031)
+\# X resource pool:	base 0xa00000, mask 0x1fffff (2097151), shift 0
+\# 			current id 0x0, current max 0x1ffffa (2097146)
+\# Max data seg size:	     unlimited
+\# Max process size:	     unlimited
+\# Initial sbrk value:	        514 MB
+\# Available memory:	     59,902 MB
+\# System memory:	     65,287 MB
+\# Maximum memory size:	     64,916 MB
+\# Max mem available:	     60,044 MB
+\# Initial memory used:	        142 MB
+\#        process size:	      1,293 MB
+\# Thread usage limits (effective/default):	maxthreads 4096/4096 maxload 20.00/20.00
+\# Qt version:		5.9.1
+\# Window Manager:	other
+\# User Name:		cnorfleet
+\o Working Directory:	DHCP-60-126.ST.HMC.Edu:/home/cnorfleet/IC_CAD/cadence
+\# Process Id:		22297
+\o 
+\o COPYRIGHT (C) 1992-2018  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+\o           (C) 1992-2018  UNIX SYSTEMS Laboratories INC.,
+\o                          Reproduced with permission.
+\o 
+\o This Cadence Design Systems program and online documentation are
+\o proprietary/confidential information and may be disclosed/used only
+\o as authorized in a license agreement controlling such use and disclosure.
+\o 
+\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
+\o Use/reproduction/disclosure is subject to restriction
+\o set forth at FAR 1252.227-19 or its equivalent.
+\w Qt Warning: QXcbConnection: XCB error: 170 (Unknown), sequence: 172, resource id: 90, major code: 146 (Unknown), minor code: 20
+\# Memory report: using         305 MB, process size 1,473 MB at UTC 2019.03.23 02:15:44.941
+\# Available memory:         59,872 MB at UTC 2019.03.23 02:16:00.457
+\# Memory report: Maximum memory size now 60,183 MB at UTC 2019.03.23 02:16:00.457
+\# Thread usage report: 23 active threads, active load 1.00 at UTC 2019.03.23 02:16:00.457
+\o Loading geView.cxt 
+\o Loading menuBuilder.cxt 
+\o Loading schView.cxt 
+\o Loading selectSv.cxt 
+\o Loading wireEdit.cxt 
+\o Loading pte2.cxt 
+\o Loading xlUI.cxt 
+\o Loading auCore.cxt 
+\o Loading vhdl.cxt 
+\o Loading seismic.cxt 
+\o Loading ci.cxt 
+\o Loading layers.cxt 
+\o Loading ams.cxt 
+\o Loading cli.cxt 
+\o Loading cle.cxt 
+\o Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.24s.
+\o Loading NCSU CDK 1.6.0 beta customizations...
+\o loading vars from /proj/ncsu/ncsu-cdk-1.6.0.beta/cdssetup/cdsenv for tool adle
+\o loading vars from /proj/ncsu/ncsu-cdk-1.6.0.beta/cdssetup/cdsenv for tool asimenv
+\o loading vars from /proj/ncsu/ncsu-cdk-1.6.0.beta/cdssetup/cdsenv for tool ddserv
+\o loading vars from /proj/ncsu/ncsu-cdk-1.6.0.beta/cdssetup/cdsenv for tool layout
+\o loading vars from /proj/ncsu/ncsu-cdk-1.6.0.beta/cdssetup/cdsenv for tool schematic
+\o loading vars from /proj/ncsu/ncsu-cdk-1.6.0.beta/cdssetup/cdsenv for tool ui
+\o loading vars from ~/.cdsenv for tool license
+\o Loading NCSU SKILL routines...
+\o libManager Qt Warning: QXcbConnection: XCB error: 1 (BadRequest), sequence: 170, resource id: 90, major code: 146 (Unknown), minor code: 31
+\o libManager Qt Warning: failed to get the primary output of the screen
+\o libGL error: unable to load driver: swrast_dri.so
+\o libGL error: failed to load driver: swrast
+\o libManager Qt Warning: QXcbConnection: XCB error: 170 (Unknown), sequence: 172, resource id: 90, major code: 146 (Unknown), minor code: 20
+\o libManager Qt Warning: QXcbConnection: XCB error: 1 (BadRequest), sequence: 170, resource id: 90, major code: 146 (Unknown), minor code: 31
+\o libManager Qt Warning: failed to get the primary output of the screen
+\o libGL error: unable to load driver: swrast_dri.so
+\o libGL error: failed to load driver: swrast
+\o libManager Qt Warning: QXcbConnection: XCB error: 170 (Unknown), sequence: 172, resource id: 90, major code: 146 (Unknown), minor code: 20
+\o Done loading NCSU_CDK customizations.
+\p > 
+\o Loading pe.cxt 
+\w *WARNING* could not load font "-*-courier-medium-r-*-*-12-*", using font "fixed"
+\a _treeSetOpcGUI(t)
+\r t
+\a hiResizeWindow(window(1) list(655:42 1263:283))
+\r t
+\i libManCreateLib("cdkCreateNewLib" "HMMM" "" "" "" "")
+\p > 
+\a hiiSetCurrentForm('NCSU_createLibForm)
+\r t
+\a NCSU_createLibForm->libName->value="HMMM_Unused"
+\r "HMMM_Unused"
+\a NCSU_createLibForm->tfRadioField->value="Attach to existing tech library"
+\r "Attach to existing tech library"
+\a hiFormDone(NCSU_createLibForm)
+\o Library creation successfully completed.
+\r t
+\o t
+\o Loading simui.cxt 
+\o Info (ccp): Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.04s.
+\o 
+\o Info (ccp): ccpDFIIChecker: Starting ...
+\o Info (ccp): ccpDFIIChecker: End running.
+\o Loading schHDL.cxt 
+\o Loading mtv.cxt 
+\o Loading oasis.cxt 
+\o Loading dal.cxt 
+\o Loading awv.cxt 
+\o Loading socket.cxt 
+\o Loading analog.cxt 
+\o Loading par.cxt 
+\o Loading asimenv.cxt 
+\o Loading alvs.cxt 
+\o Loading caa.cxt 
+\o Loading amps.cxt 
+\o Loading adexlCore.cxt 
+\o Loading adexl.cxt 
+\o Loading lx.cxt 
+\o Loading lce.cxt 
+\o Loading le.cxt 
+\# Memory report: using         449 MB, process size 1,702 MB at UTC 2019.03.23 02:21:33.602
+\w *WARNING* could not load font "-*-helvetica-medium-r-*-*-12-*", using font "fixed"
+\w *WARNING* Font name -*-helvetica-medium-r-*-*-12-* is invalid 
+\w *WARNING* Font name -*-helvetica-medium-r-*-*-12-* is invalid 
+\w *WARNING* Font name -*-helvetica-medium-r-*-*-12-* is invalid 
+\w *WARNING* Font name -*-helvetica-medium-r-*-*-12-* is invalid 
+\w *WARNING* Font name -*-helvetica-medium-r-*-*-12-* is invalid 
+\w *WARNING* Font name -*-helvetica-medium-r-*-*-12-* is invalid 
+\o Loading rte.cxt 
+\o Loading te.cxt 
+\i ddsServOpen("HMMM" "datapath_backup_3-22-19" "schematic" "edit" nil)
+\# Displaying modal dbox "_icLicLicenseQuestionDBox", title "Next License"
+\p > 
+\a hiDBoxUser(_icLicLicenseQuestionDBox nil 1)
+\r t
+\o Getting schematic propert bagLoading schematic.cxt 
+\o Loading ddui.cxt 
+\# Thread usage report: 21 active threads, active load 1.00 at UTC 2019.03.23 02:24:55.254
+\o Loading vb.cxt 
+\o Loading nt.cxt 
+\o Loading oi.cxt 
+\o Loading see.cxt 
+\o Loading treeAssistant.cxt 
+\o Loading asst.cxt 
+\o Loading drdEdit.cxt 
+\a _treeNavToggleColumn(dwindow('treeAssistant1) "8" "t")
+\r t
+\a _treeNavActivateOpc(dwindow('treeAssistant1) "Objects/Instances")
+\r t
+\a _treeNavToggleColumn(dwindow('treeAssistant1) "8" "nil")
+\r t
+\o Loading hsm.cxt 
+\a when(dwindow('oiAssistant1) hiMapWindow(dwindow('oiAssistant1)))
+\r t
+\a when(dwindow('treeAssistant1) hiMapWindow(dwindow('treeAssistant1)))
+\r t
+\a _treeNavToggleColumn(dwindow('treeAssistant1) "8" "t")
+\r t
+\a _treeNavToggleColumn(dwindow('treeAssistant1) "8" "nil")
+\r t
+\a hiZoomRelativeScale(getCurrentWindow() 1.25)
+\r t
+\a hiZoomRelativeScale(getCurrentWindow() 1.25)
+\r t
+\a hiZoomRelativeScale(getCurrentWindow() 1.25)
+\r t
+\a hiCloseWindow(swindow(1))
+\o Getting schematic propert bagLoading cph.cxt 
+\r t
+\o Info (ccp): Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.24s.
+\o 
+\o Info (ccp): ccpDFIIChecker: Starting ...
+\o Info (ccp): ccpDFIIChecker: End running.
+\o Info (ccp): Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.24s.
+\o 
+\o Info (ccp): ccpDFIIUpdtr: Starting ...
+\o Info (ccp): ccpDFIIUpdtr: End running.
+\o  
+\o Library Manager deleting cell "HMMM/datapath_backup_3-22-19".
+\i ddDeleteLocal(ddGetObj("HMMM" "datapath_backup_3-22-19" "" ""))
+\o Deleted cell 'HMMM/datapath_backup_3-22-19'.
+\i ddsServOpen("HMMM_Unused" "datapath_backup_3-22-19" "schematic" "edit" nil)
+\a _treeNavToggleColumn(dwindow('treeAssistant2) "8" "t")
+\r Getting schematic propert bagt
+\a _treeNavActivateOpc(dwindow('treeAssistant2) "Objects/Instances")
+\r t
+\a _treeNavToggleColumn(dwindow('treeAssistant2) "8" "nil")
+\r t
+\a when(dwindow('oiAssistant2) hiMapWindow(dwindow('oiAssistant2)))
+\r t
+\a when(dwindow('treeAssistant2) hiMapWindow(dwindow('treeAssistant2)))
+\r t
+\a _treeNavToggleColumn(dwindow('treeAssistant2) "8" "t")
+\r t
+\a _treeNavToggleColumn(dwindow('treeAssistant2) "8" "nil")
+\r t
+\a hiZoomRelativeScale(getCurrentWindow() 1.25)
+\r t
+\a hiZoomRelativeScale(getCurrentWindow() 1.25)
+\r t
+\a hiZoomRelativeScale(getCurrentWindow() 1.25)
+\r t
+\a hiCloseWindow(swindow(2))
+\r Getting schematic propert bagt
+\i ddsServOpen("HMMM" "datapath" "schematic" "edit" nil)
+\a _treeNavToggleColumn(dwindow('treeAssistant3) "8" "t")
+\r Getting schematic propert bagt
+\a _treeNavActivateOpc(dwindow('treeAssistant3) "Objects/Instances")
+\r t
+\a _treeNavToggleColumn(dwindow('treeAssistant3) "8" "nil")
+\r t
+\a when(dwindow('oiAssistant3) hiMapWindow(dwindow('oiAssistant3)))
+\r t
+\a when(dwindow('treeAssistant3) hiMapWindow(dwindow('treeAssistant3)))
+\r t
+\a _treeNavToggleColumn(dwindow('treeAssistant3) "8" "t")
+\r t
+\a _treeNavToggleColumn(dwindow('treeAssistant3) "8" "nil")
+\r t
+\a hiZoomRelativeScale(getCurrentWindow() 1.25)
+\r t
+\a hiZoomRelativeScale(getCurrentWindow() 1.25)
+\r t
+\a hiZoomRelativeScale(getCurrentWindow() 1.25)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a hiZoomRelativeScale(getCurrentWindow() 1.25)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a hiZoomRelativeScale(getCurrentWindow() 1.25)
+\r t
+\a geScroll(nil "e"     nil)
+\r t
+\a showClickInfo()
+\i 5.5625:1.6875
+\o 
+\o mux2_3 (instance "I8", library "HMMM")
+\r window:4
+\a schHiDelete()
+\r t
+\a hiUndo()
+\r t
+\a schHiCreateInst()
+\p > 
+\a hiResizeWindow(window(5) list(8:-85 228:329))
+\r t
+\a hiiSetCurrentForm('schCreateInstForm)
+\r t
+\a schCreateInstForm->libraryName->value="mips8"
+\r "mips8"
+\a hiResizeWindow(window(5) list(93:98 313:512))
+\r t
+\a schCreateInstForm->libraryName->value="wordlib8"
+\r "wordlib8"
+\a schiCreateInstBrowseButtonCB(schCreateInstForm)
+\r t
+\a hiResizeWindow(window(5) list(93:82 313:512))
+\r t
+\a schCreateInstForm->libraryName->value=""
+\o Loading cdf.cxt 
+\r ""
+\a schCreateInstForm->libraryName->value="muddlib11"
+\r "muddlib11"
+\a schComponentBrowserForm->schBrowserListBox1->value= '( "mux2_c_1x" )
+\r ("mux2_c_1x")
+\a schCreateInstForm->instanceName->value="RA1Mux"
+\r "RA1Mux"
+\a hiiToggleEnterForm(schCreateInstForm)
+\r t
+\a hiResizeWindow(window(5) list(93:66 313:512))
+\r t
+\a hiSetCurrentWindow(window(4))
+\r t
+\a mouseAddPt(t)
+\i 6.94375:2.9875
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\i ddsServOpen("muddlib11" "mux2_c_1x" "" "edit" nil)
+\p > 
+\a hiiSetCurrentForm('deOpenForm)
+\r t
+\a hiFormCancel(deOpenForm) 
+\r t
+\i ddsServOpen("muddlib11" "mux2_c_1x" "cmos_sch" "edit" nil)
+\a _treeNavToggleColumn(dwindow('treeAssistant4) "8" "t")
+\r Getting schematic propert bagt
+\a _treeNavActivateOpc(dwindow('treeAssistant4) "Objects/Instances")
+\r t
+\a _treeNavToggleColumn(dwindow('treeAssistant4) "8" "nil")
+\r t
+\a when(dwindow('oiAssistant4) hiMapWindow(dwindow('oiAssistant4)))
+\r t
+\a when(dwindow('treeAssistant4) hiMapWindow(dwindow('treeAssistant4)))
+\r t
+\a _treeNavToggleColumn(dwindow('treeAssistant4) "8" "t")
+\r t
+\a _treeNavToggleColumn(dwindow('treeAssistant4) "8" "nil")
+\r t
+\a hiZoomInAtMouse()
+\i -0.3125:-1.0625
+\r t
+\w *WARNING* Parameter 'lxUseCell' already exists.
+\w *WARNING* Parameter 'lxUseCell' already exists.
+\a hiCloseWindow(swindow(4))
+\r Getting schematic propert bagt
+\a _hiSetCurrentWinNum(5)
+\r t
+\a hiSetCurrentWindow(window(4))
+\r t
+\a hiUndo()
+\r t
+\a showClickInfo()
+\i 5.6875:1.875
+\o 
+\o mux2_3 (instance "I8", library "HMMM")
+\r window:4
+\a _oiSelectItem(dwindow('oiAssistant3) "3" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant3) "3" 1 "RA1Mux")
+\r t
+\a showClickInfo()
+\i 2.6875:3.1875
+\r window:4
+\a schHiCheckAndSave()
+\o INFO (SCH-1170): Extracting "datapath schematic"
+\o INFO (SCH-1426): Schematic check completed with no errors.
+\o Getting schematic propert bagGetting schematic propert bagINFO (SCH-1181): "HMMM datapath schematic" saved.
+\r t
+\a _treeNavSelectionClear(dwindow('treeAssistant3))
+\r t
+\a _treeNavSelect(dwindow('treeAssistant3) "/I7(schematic) Inst")
+\r t
+\a _oiSelectItem(dwindow('oiAssistant3) "4" 1)
+\r t
+\a _oiSetItem(dwindow('oiAssistant3) "4" 1 "ZeroDetectNOR")
+\r t
+\a _treeNavSelectionClear(dwindow('treeAssistant3))
+\r t
+\a _treeNavSelect(dwindow('treeAssistant3) "/I0(symbol) Inst")
+\r t
+\a showClickInfo()
+\i 11.25:-1.9375
+\r window:4
+\a schHiCheckAndSave()
+\o INFO (SCH-1170): Extracting "datapath schematic"
+\o INFO (SCH-1426): Schematic check completed with no errors.
+\o Getting schematic propert bagGetting schematic propert bagINFO (SCH-1181): "HMMM datapath schematic" saved.
+\r t
+\a hiCloseWindow(window(5))
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\o Info (ccp): Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.03s.
+\o 
+\o Info (ccp): ccpDFIIChecker: Starting ...
+\o Info (ccp): ccpDFIIChecker: End running.
+\o  
+\o Library Manager deleting cell "HMMM/flopr_8".
+\i ddDeleteLocal(ddGetObj("HMMM" "flopr_8" "" ""))
+\o Deleted cell 'HMMM/flopr_8'.
+\o Info (ccp): Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.06s.
+\o 
+\o Info (ccp): ccpDFIIChecker: Starting ...
+\o Info (ccp): ccpDFIIChecker: End running.
+\o  
+\o Library Manager deleting cell "HMMM/or_8wide".
+\i ddDeleteLocal(ddGetObj("HMMM" "or_8wide" "" ""))
+\o Deleted cell 'HMMM/or_8wide'.
+\o Info (ccp): Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.03s.
+\o 
+\o Info (ccp): ccpDFIIChecker: Starting ...
+\o Info (ccp): ccpDFIIChecker: End running.
+\o  
+\o Library Manager deleting cell "HMMM/tristateInv".
+\i ddDeleteLocal(ddGetObj("HMMM" "tristateInv" "" ""))
+\o Deleted cell 'HMMM/tristateInv'.
+\a schHiCheckAndSave()
+\o INFO (SCH-1170): Extracting "datapath schematic"
+\o INFO (SCH-1426): Schematic check completed with no errors.
+\o Getting schematic propert bagGetting schematic propert bagINFO (SCH-1181): "HMMM datapath schematic" saved.
+\r t
+\a schHiCheckAndSave()
+\o INFO (SCH-1170): Extracting "datapath schematic"
+\o INFO (SCH-1426): Schematic check completed with no errors.
+\o Getting schematic propert bagGetting schematic propert bagINFO (SCH-1181): "HMMM datapath schematic" saved.
+\r t
+\a hiCloseWindow(swindow(3))
+\r Getting schematic propert bagt
+\o  
+\o Library Manager new cellview request for cell "HMMM xor_1x".
+\i deNew('(nil libName "HMMM" cellName "xor_1x"))
+\p > 
+\a hiiSetCurrentForm('deNewForm)
+\r t
+\a deNewForm->viewType->value="layout"
+\r "layout"
+\a hiFormDone(deNewForm)
+\r t
+\# Displaying modal dbox "_icLicLicenseQuestionDBox", title "Next License"
+\p > 
+\a hiDBoxUser(_icLicLicenseQuestionDBox nil 1)
+\r t
+\o Loading soi.cxt 
+\o Getting layout propert bagLoading wsp.cxt 
+\o Load shared object file /cad/cds/ASSURA615/tools.lnx86/assura/lib/64bit/libavview.so
+\w *WARNING* dlopen: /cad/cds/ASSURA615/tools.lnx86/assura/lib/64bit/libavview.so: /cad/cds/ASSURA615/tools.lnx86/assura/lib/64bit/libavview.so: undefined symbol: _XmStrings
+\w *WARNING* Failed to open shared object file /cad/cds/ASSURA615/tools.lnx86/assura/lib/64bit/libavview.so
+\w *WARNING* (LE-104272): Assura has not been installed in this hierarchy.
+\o Loading mpt.cxt 
+\a when(dwindow('ptePaletteAssistant1) hiMapWindow(dwindow('ptePaletteAssistant1)))
+\r t
+\a showClickInfo()
+\i nil
+\e *Error* geSingleSelectPoint: Invalid point - nil
+\r ERROR
+\a hiResizeWindow(swindow(5) list(0:40 1280:697))
+\r t
+\i ddsServOpen("HMMM" "xor_1x" "schematic" "edit" nil)
+\a _treeNavToggleColumn(dwindow('treeAssistant6) "8" "t")
+\r Getting schematic propert bagt
+\a _treeNavActivateOpc(dwindow('treeAssistant6) "Objects/Instances")
+\r t
+\a _treeNavToggleColumn(dwindow('treeAssistant6) "8" "nil")
+\r t
+\a when(dwindow('oiAssistant6) hiMapWindow(dwindow('oiAssistant6)))
+\r t
+\a when(dwindow('treeAssistant6) hiMapWindow(dwindow('treeAssistant6)))
+\r t
+\a _treeNavToggleColumn(dwindow('treeAssistant6) "8" "t")
+\r t
+\a _treeNavToggleColumn(dwindow('treeAssistant6) "8" "nil")
+\r t
+\a hiZoomInAtMouse()
+\i -2.4375:-0.1875
+\r t
+\a hiZoomOutAtMouse()
+\i -2.25:-0.375
+\r t
+\a hiZoomOutAtMouse()
+\i -2.1875:-0.375
+\r t
+\a hiZoomInAtMouse()
+\i -2.6875:-0.8125
+\r t
+\a hiZoomInAtMouse()
+\i -2.25:-0.25
+\r t
+\a hiZoomOutAtMouse()
+\i -2.25:-0.0625
+\r t
+\a hiSetCurrentWindow(window(7))
+\r t
+\a leHiCreateInst()
+\o Loading techComp.cxt 
+\p > 
+\a hiiToggleEnterForm(leCreateInstLForm) 
+\r t
+\a _deUpdateWindowMenu('leSessionWindowMenu7 7)
+\r t
+\a leHiEditDisplayOptions()
+\r t
+\a leDisplayOptionsForm->gridSpacing->value=0.3
+\r 0.3
+\a leDisplayOptionsForm->majorSpacing->value=3.0
+\r 3.0
+\a leDisplayOptionsForm->xSnap->value=0.3
+\r 0.3
+\a leDisplayOptionsForm->ySnap->value=0.3
+\r 0.3
+\a hiFormDone(leDisplayOptionsForm)
+\r t
+\a leHiCreateInst()
+\r t
+\a hiiSetCurrentForm('leCreateInstLForm)
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a leHiCreateInst()
+\p > 
+\a hiiSetCurrentForm('leCreateInstLForm)
+\r t
+\a hiResizeWindow(swindow(6) list(0:40 1280:697))
+\r t
+\i ddsServOpen("mips8" "datapath" "layout" "edit" nil)
+\o Getting layout propert bagLoad shared object file /cad/cds/ASSURA615/tools.lnx86/assura/lib/64bit/libavview.so
+\w *WARNING* dlopen: /cad/cds/ASSURA615/tools.lnx86/assura/lib/64bit/libavview.so: /cad/cds/ASSURA615/tools.lnx86/assura/lib/64bit/libavview.so: undefined symbol: _XmStrings
+\w *WARNING* Failed to open shared object file /cad/cds/ASSURA615/tools.lnx86/assura/lib/64bit/libavview.so
+\w *WARNING* (LE-104272): Assura has not been installed in this hierarchy.
+\a when(dwindow('ptePaletteAssistant2) hiMapWindow(dwindow('ptePaletteAssistant2)))
+\r t
+\a hiZoomInAtMouse()
+\i 639.15:17.25
+\r t
+\a hiZoomInAtMouse()
+\i 639.15:17.25
+\r t
+\a hiZoomInAtMouse()
+\i 639.45:17.55
+\r t
+\a geScroll(nil "e"     nil)
+\r t
+\a geScroll(nil "e"     nil)
+\r t
+\a hiResizeWindow(swindow(7) list(0:40 1280:697))
+\r t
+\a hiZoomInAtMouse()
+\i nil
+\r nil
+\a hiZoomRelativeScale(getCurrentWindow() 1.25)
+\r t
+\a hiZoomRelativeScale(getCurrentWindow() 1.25)
+\r t
+\a hiZoomRelativeScale(getCurrentWindow() 1.25)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "e"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a hiZoomInAtMouse()
+\i -3.75:97.65
+\r t
+\a hiZoomInAtMouse()
+\i -3.75:97.65
+\r t
+\a hiZoomOutAtMouse()
+\i -0.45:95.85
+\r t
+\a hiZoomOutAtMouse()
+\i -0.6:95.85
+\r t
+\a hiZoomOutAtMouse()
+\i -0.45:94.95
+\r t
+\a hiCloseWindow(swindow(7))
+\r Getting layout propert bagt
+\a _hiSetCurrentWinNum(8)
+\r t
+\a hiSetCurrentWindow(window(7))
+\r t
+\a leHiCreateInst()
+\r t
+\a hiiSetCurrentForm('leCreateInstLForm)
+\r t
+\a leCreateInstLForm->libName->value="muddlib11"
+\r "muddlib11"
+\a leCreateInstLForm->libName->value="wordlib8"
+\r "wordlib8"
+\a hiiToggleEnterForm(leCreateInstLForm) 
+\r t
+\a hiCloseWindow(swindow(5))
+\r Getting layout propert bagt
+\r nil
+\a _hiSetCurrentWinNum(8)
+\r t
+\o  
+\o Library Manager new cellview request for cell "HMMM xor_1x_8".
+\i deNew('(nil libName "HMMM" cellName "xor_1x_8"))
+\p > 
+\a hiiSetCurrentForm('deNewForm)
+\r t
+\a hiFormDone(deNewForm)
+\r t
+\o Getting layout propert bagLoad shared object file /cad/cds/ASSURA615/tools.lnx86/assura/lib/64bit/libavview.so
+\w *WARNING* dlopen: /cad/cds/ASSURA615/tools.lnx86/assura/lib/64bit/libavview.so: /cad/cds/ASSURA615/tools.lnx86/assura/lib/64bit/libavview.so: undefined symbol: _XmStrings
+\w *WARNING* Failed to open shared object file /cad/cds/ASSURA615/tools.lnx86/assura/lib/64bit/libavview.so
+\w *WARNING* (LE-104272): Assura has not been installed in this hierarchy.
+\a when(dwindow('ptePaletteAssistant3) hiMapWindow(dwindow('ptePaletteAssistant3)))
+\r t
+\a leHiCreateInst()
+\p > 
+\a hiiSetCurrentForm('leCreateInstLForm)
+\r t
+\a leCreateInstLForm->cellName->value="inv_1x_8"
+\r "inv_1x_8"
+\a hiiToggleEnterForm(leCreateInstLForm)
+\r t
+\a mouseAddPt(t)
+\i 1.235:-0.017
+\r t
+\a mouseAddPt(t)
+\i 8.534:0.019
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a leHiEditDisplayOptions()
+\r t
+\a leDisplayOptionsForm->gridSpacing->value=0.3
+\r 0.3
+\a leDisplayOptionsForm->majorSpacing->value=0.3
+\r 0.3
+\a leDisplayOptionsForm->xSnap->value=0.3
+\r 0.3
+\a leDisplayOptionsForm->ySnap->value=0.3
+\r 0.3
+\a leDisplayOptionsForm->majorSpacing->value=3.0
+\r 3.0
+\a leDisplayOptionsForm->stop->value=2
+\r 2
+\a hiFormDone(leDisplayOptionsForm)
+\r t
+\a showClickInfo()
+\i 9.3:0.6
+\o 
+\o inv_1x_8 (instance "I2", library "wordlib8")
+\r window:10
+\a leHiMove()
+\p > 
+\a cancelEnterFun()
+\r t
+\r nil
+\a showClickInfo()
+\i 1.5:-2.7
+\r window:10
+\a leHiMove()
+\p > 
+\a hiZoomInAtMouse()
+\i 1.8:0
+\r t
+\a mouseAddPt(t)
+\i 1.983:0.241
+\r t
+\a mouseAddPt(t)
+\i 0.874:0.188
+\r t
+\a mouseAddPt(t)
+\i 9.408:0.349
+\r t
+\a mouseAddPt(t)
+\i 5.74:0.707
+\r t
+\a leHiEditDisplayOptions()
+\r t
+\a leDisplayOptionsForm->xSnap->value=0.15
+\r 0.15
+\a hiFormDone(leDisplayOptionsForm)
+\r t
+\a mouseAddPt(t)
+\i 6.42:0.492
+\r t
+\a mouseAddPt(t)
+\i 6.331:0.456
+\r t
+\a leHiEditDisplayOptions()
+\r t
+\a leDisplayOptionsForm->xSnap->value=0.3
+\r 0.3
+\a hiFormDone(leDisplayOptionsForm)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a hiZoomOutAtMouse()
+\i 2.4:12
+\r t
+\a hiZoomOutAtMouse()
+\i 2.1:12
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "e"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a leHiCreateInst()
+\r t
+\a hiiSetCurrentForm('leCreateInstLForm)
+\r t
+\i ddsServOpen("wordlib8" "or2_1x_8" "layout" "edit" nil)
+\o Getting layout propert bagGetting schematic propert bagLoading cfde.cxt 
+\a _ciAssistantReplay_newAssistantByName(dwindow('ciProspector1) "Rapid Analog Prototype")
+\r t
+\a _treeNavToggleColumn(dwindow('treeAssistant9) "8" "t")
+\r t
+\a _treeNavActivateOpc(dwindow('treeAssistant9) "Objects/Instances")
+\r t
+\w *WARNING* (LCE-2011): Cannot determine the function of layers 'nactive pactive active pwell nwell gwell elec ca' in constraint group 'virtuosoDefaultExtractorSetup' of technology 'UofU_TechLib_ami06'. For accurate connectivity extraction, set the function to one of the predefined values and reload the technology library.
+\w *WARNING* (LCE-2012): Cannot find the mask number of layers 'nactive pactive active pwell nwell gwell ca cc' in constraint group 'virtuosoDefaultExtractorSetup' of technology 'UofU_TechLib_ami06'. For accurate connectivity extraction, set the layer mask number to a correct value and reload the technology library.
+\w *WARNING* (LCE-2063): Via definition 'SUBTAP' of technology 'UofU_TechLib_ami06' has layer 'pselect' in 'implant1' that does not have a valid function. Correct the via definition or set the layer function to either 'pplus', 'nplus', 'diff', 'pdiff', 'ndiff', 'pwell', or 'nwell'.
+\w *WARNING* (LCE-2063): Via definition 'NTAP' of technology 'UofU_TechLib_ami06' has layer 'nselect' in 'implant1' that does not have a valid function. Correct the via definition or set the layer function to either 'pplus', 'nplus', 'diff', 'pdiff', 'ndiff', 'pwell', or 'nwell'.
+\w *WARNING* (LCE-2063): Via definition 'NTAP' of technology 'UofU_TechLib_ami06' has layer 'nactive' in 'implant2' that does not have a valid function. Correct the via definition or set the layer function to either 'pplus', 'nplus', 'diff', 'pdiff', 'ndiff', 'pwell', or 'nwell'.
+\w *WARNING* (LCE-2063): Via definition 'M1_N' of technology 'UofU_TechLib_ami06' has layer 'nselect' in 'implant1' that does not have a valid function. Correct the via definition or set the layer function to either 'pplus', 'nplus', 'diff', 'pdiff', 'ndiff', 'pwell', or 'nwell'.
+\w *WARNING* (LCE-2063): Via definition 'M1_P' of technology 'UofU_TechLib_ami06' has layer 'pselect' in 'implant1' that does not have a valid function. Correct the via definition or set the layer function to either 'pplus', 'nplus', 'diff', 'pdiff', 'ndiff', 'pwell', or 'nwell'.
+\w *WARNING* (LCE-2062): Constraint 'validLayers' in constraint group 'virtuosoDefaultExtractorSetup' of technology 'UofU_TechLib_ami06' contains a cut layer 'cp' but there is no via definition with this layer that is considered by the connectivity extractor. This incomplete setup can result in incorrect open markers. For accurate connectivity extraction, add a via definition containing this cut layer.
+\o Getting schematic propert bagGetting schematic propert bagINFO (BND-1003): Binder initialized for layout cellview 'wordlib8/or2_1x_8/layout' and source cellview 'wordlib8/or2_1x_8/schematic':
+\o 
+\o                  bound       unbound     ungenerated
+\o   terminals         24             0               0
+\o   nets              26             0               0
+\o   instances          1             0               7
+\o 
+\w *WARNING* (BND-2005): Layout instances and terminals do not match the source.
+\w Use 'XL Status' in the Navigator or run 'Connectivity - Check - Against Source' for more details.
+\w If the bindings are correct, run the 'Update from Source' commands,
+\w otherwise run 'Connectivity - Update - Binding'.
+\o Load shared object file /cad/cds/ASSURA615/tools.lnx86/assura/lib/64bit/libavview.so
+\w *WARNING* dlopen: /cad/cds/ASSURA615/tools.lnx86/assura/lib/64bit/libavview.so: /cad/cds/ASSURA615/tools.lnx86/assura/lib/64bit/libavview.so: undefined symbol: _XmStrings
+\w *WARNING* Failed to open shared object file /cad/cds/ASSURA615/tools.lnx86/assura/lib/64bit/libavview.so
+\w *WARNING* (LE-104272): Assura has not been installed in this hierarchy.
+\o Loading ia.cxt 
+\o Loading ev20.cxt 
+\o Loading vfp.cxt 
+\o Loading smd.cxt 
+\o Loading ncl.cxt 
+\w *WARNING* (VIA-3201): Incomplete layer maskNumbers, the order of the vias may not be correct.
+\w Attempting to use lppPriority numbers.
+\# Memory report: using         550 MB, process size 1,803 MB at UTC 2019.03.23 02:59:27.289
+\o Loading apInfra.cxt 
+\o Loading vca.cxt 
+\a when(dwindow('oiAssistant9) hiMapWindow(dwindow('oiAssistant9)))
+\r t
+\a when(dwindow('treeAssistant9) hiMapWindow(dwindow('treeAssistant9)))
+\r t
+\a hiResizeWindow(swindow(9) list(0:40 1280:697))
+\r t
+\a when(dwindow('ptePaletteAssistant4) hiMapWindow(dwindow('ptePaletteAssistant4)))
+\r t
+\w *WARNING* (VIA-3201): Incomplete layer maskNumbers, the order of the vias may not be correct.
+\w Attempting to use lppPriority numbers.
+\a _treeNavActivateOpc(dwindow('treeAssistant9) "Objects/Instances")
+\r t
+\a hiZoomInAtMouse()
+\i 10.8:106.35
+\r t
+\a hiZoomInAtMouse()
+\i 10.8:106.35
+\r t
+\a leHiEditDisplayOptions()
+\r t
+\a leDisplayOptionsForm->stop->value=10
+\r 10
+\a hiFormDone(leDisplayOptionsForm)
+\r t
+\a hiZoomInAtMouse()
+\i 3.45:107.4
+\r t
+\a hiZoomInAtMouse()
+\i -1.95:114.45
+\r t
+\a hiZoomOutAtMouse()
+\i -1.8:114.15
+\r t
+\a hiZoomOutAtMouse()
+\i 12.15:111.45
+\r t
+\a hiCloseWindow(swindow(9))
+\w *WARNING* GetPropBag: Bad Library ID.
+\a _treeNavActivateOpc(dwindow('treeAssistant9) "Objects/Instances")
+\w *WARNING* GetPropBag: Bad Library ID.
+\r Getting layout propert bagGetting schematic propert bagGetting schematic propert bagt
+\r t
+\a _hiSetCurrentWinNum(10)
+\r t
+\a hiiSetCurrentForm('leCreateInstLForm)
+\r t
+\a hiSetCurrentWindow(window(12))
+\r t
+\a hiCloseWindow(swindow(10))
+\r Getting schematic propert bagt
+\a _hiSetCurrentWinNum(10)
+\r t
+\a leCreateInstLForm->cellName->value=""
+\r ""
+\a hiiToggleEnterForm(leCreateInstLForm) 
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a leHiSave()
+\r Getting layout propert bagGetting layout propert bagt
+\a hiCloseWindow(swindow(8))
+\r Getting layout propert bagt
+\a _hiSetCurrentWinNum(8)
+\r t
+\o  
+\o Library Manager new cellview request for cell "HMMM xor_1x".
+\i deNew('(nil libName "HMMM" cellName "xor_1x"))
+\p > 
+\a hiiSetCurrentForm('deNewForm)
+\r t
+\a hiFormDone(deNewForm)
+\r t
+\o Getting layout propert bagLoad shared object file /cad/cds/ASSURA615/tools.lnx86/assura/lib/64bit/libavview.so
+\w *WARNING* dlopen: /cad/cds/ASSURA615/tools.lnx86/assura/lib/64bit/libavview.so: /cad/cds/ASSURA615/tools.lnx86/assura/lib/64bit/libavview.so: undefined symbol: _XmStrings
+\w *WARNING* Failed to open shared object file /cad/cds/ASSURA615/tools.lnx86/assura/lib/64bit/libavview.so
+\w *WARNING* (LE-104272): Assura has not been installed in this hierarchy.
+\a when(dwindow('ptePaletteAssistant5) hiMapWindow(dwindow('ptePaletteAssistant5)))
+\r t
+\a hiResizeWindow(swindow(11) list(0:40 1280:697))
+\r t
+\a leHiCreateInst()
+\p > 
+\a hiiSetCurrentForm('leCreateInstLForm)
+\r t
+\a leCreateInstLForm->libName->value=""
+\r ""
+\a leCreateInstLForm->libName->value="muddlib11"
+\r "muddlib11"
+\a leCreateInstLForm->cellName->value="inv_1x"
+\r "inv_1x"
+\a leHiEditDisplayOptions()
+\r t
+\a leDisplayOptionsForm->stop->value=2
+\r 2
+\a leDisplayOptionsForm->gridSpacing->value=0.3
+\r 0.3
+\a leDisplayOptionsForm->majorSpacing->value=3.0
+\r 3.0
+\a leDisplayOptionsForm->xSnap->value=0.3
+\r 0.3
+\a leDisplayOptionsForm->ySnap->value=0.3
+\r 0.3
+\a hiFormDone(leDisplayOptionsForm)
+\r t
+\a mouseAddPt(t)
+\i 0.089:-0.126
+\r t
+\a mouseAddPt(t)
+\i 4.741:0.125
+\r t
+\a leHiCreateInst()
+\r t
+\a hiiSetCurrentForm('leCreateInstLForm)
+\r t
+\a leCreateInstLForm->cellName->value="nand2_1x"
+\r "nand2_1x"
+\a mouseAddPt(t)
+\i 9.608:-0.126
+\r t
+\a mouseAddPt(t)
+\i 16.907:0.053
+\r t
+\a geScroll(nil "e"     nil)
+\r t
+\a mouseAddPt(t)
+\i 24.171:0.054
+\r t
+\a hiUndo()
+\r t
+\a mouseAddPt(t)
+\i 24.171:-0.017
+\r t
+\a hiUndo()
+\r t
+\a mouseAddPt(t)
+\i 24.064:0.09
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "e"     nil)
+\r t
+\a geScroll(nil "e"     nil)
+\r t
+\a leHiSave()
+\r Getting layout propert bagGetting layout propert bagt
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "e"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a pteSetActiveLpp("metal2 drawing")
+\r nil
+\a hiResizeWindow(swindow(6) list(0:63 1280:720))
+\r t
+\a leHiCreatePath()
+\p > 
+\a hiiToggleEnterForm(le0PathForm) 
+\r t
+\a leHiCreateChoiceOfPin()
+\r t
+\a lePinForm->pinConnModel->value="Weak"
+\r "Weak"
+\a lePinForm->termDirection->value="input"
+\r "input"
+\a lePinForm->termName->value="a b"
+\r "a b"
+\a hiiToggleEnterForm(lePinForm)
+\r t
+\a addPoint(hiGetCommandPoint())
+\i 0.6:12.6
+\r t
+\a addPoint(hiGetCommandPoint())
+\i 1.8:11.4
+\r t
+\a hiUndo()
+\r t
+\a leHiCreateChoiceOfPin()
+\r t
+\a lePinForm->createPinLabel->value= t
+\r t
+\a lePinForm->pinLabelPlacementMode->value="auto"
+\r "auto"
+\a lePinForm->termName->value="a b"
+\r "a b"
+\a hiiToggleEnterForm(lePinForm)
+\r t
+\a mouseAddPt(t)
+\i 0.626:12.471
+\r t
+\a mouseAddPt(t)
+\i 1.771:11.397
+\r t
+\a mouseAddPt(t)
+\i 5.421:12.542
+\r t
+\a mouseAddPt(t)
+\i 6.638:11.397
+\r t
+\a leHiCreateChoiceOfPin()
+\r t
+\a lePinForm->termName->value="y"
+\r "y"
+\a lePinForm->termDirection->value="output"
+\r "output"
+\a hiiToggleEnterForm(lePinForm)
+\r t
+\a mouseAddPt(t)
+\i 27.034:12.542
+\r t
+\a mouseAddPt(t)
+\i 28.179:11.361
+\r t
+\a leHiSave()
+\r Getting layout propert bagGetting layout propert bagt
+\a leHiCreateRect()
+\r t
+\a mouseAddPt(t)
+\i 0.662:11.469
+\r t
+\a mouseAddPt(t)
+\i 1.843:18.124
+\r t
+\a hiZoomRelativeScale(getCurrentWindow() 1.25)
+\r t
+\a mouseAddPt(t)
+\i 16.167:14.371
+\r t
+\a mouseAddPt(t)
+\i 14.993:18.035
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a mouseAddPt(t)
+\i 16.195:17.978
+\r t
+\a mouseAddPt(t)
+\i 0.565:16.775
+\r t
+\a leHiSave()
+\r Getting layout propert bagGetting layout propert bagt
+\a mouseAddPt(t)
+\i 7.865:11.422
+\r t
+\a mouseAddPt(t)
+\i 9.067:15.659
+\r t
+\a mouseAddPt(t)
+\i 7.865:15.544
+\r t
+\a mouseAddPt(t)
+\i 11.357:14.456
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "e"     nil)
+\r t
+\a mouseAddPt(t)
+\i 12.617:12.538
+\r t
+\a mouseAddPt(t)
+\i 13.762:8.96
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "e"     nil)
+\r t
+\a geScroll(nil "e"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "e"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a mouseAddPt(t)
+\i 19.86:11.422
+\r t
+\a mouseAddPt(t)
+\i 21.09:18.063
+\r t
+\a mouseAddPt(t)
+\i 19.917:18.006
+\r t
+\a mouseAddPt(t)
+\i 30.652:16.89
+\r t
+\a mouseAddPt(t)
+\i 30.595:18.035
+\r t
+\a mouseAddPt(t)
+\i 29.478:14.514
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "e"     nil)
+\r t
+\a geScroll(nil "e"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "e"     nil)
+\r t
+\a geScroll(nil "e"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a hiZoomRelativeScale(getCurrentWindow() 0.8)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "e"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "e"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "e"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a hiUndo()
+\r t
+\a hiUndo()
+\r t
+\a hiUndo()
+\r t
+\a mouseAddPt(t)
+\i 19.913:12.592
+\r t
+\a mouseAddPt(t)
+\i 25.818:11.411
+\r t
+\a hiUndo()
+\r t
+\a hiUndo()
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "e"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "e"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a hiZoomRelativeScale(getCurrentWindow() 1.25)
+\r t
+\a mouseAddPt(t)
+\i 5.403:12.575
+\r t
+\a mouseAddPt(t)
+\i 6.491:9.025
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "e"     nil)
+\r t
+\a mouseAddPt(t)
+\i 5.489:8.996
+\r t
+\a mouseAddPt(t)
+\i 18.572:10.17
+\r t
+\a mouseAddPt(t)
+\i 18.63:8.939
+\r t
+\a mouseAddPt(t)
+\i 17.484:15.61
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a mouseAddPt(t)
+\i 3.056:12.517
+\r t
+\a mouseAddPt(t)
+\i 4.287:6.505
+\r t
+\a mouseAddPt(t)
+\i 3.085:6.591
+\r t
+\a geScroll(nil "e"     nil)
+\r t
+\a mouseAddPt(t)
+\i 23.382:7.765
+\r t
+\a mouseAddPt(t)
+\i 23.439:6.505
+\r t
+\a mouseAddPt(t)
+\i 22.237:15.667
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "e"     nil)
+\r t
+\a mouseAddPt(t)
+\i 19.918:11.458
+\r t
+\a mouseAddPt(t)
+\i 21.063:17.957
+\r t
+\a mouseAddPt(t)
+\i 19.832:17.928
+\r t
+\a mouseAddPt(t)
+\i 25.758:16.726
+\r t
+\a mouseAddPt(t)
+\i 24.67:14.464
+\r t
+\a mouseAddPt(t)
+\i 25.758:18.014
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "e"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "e"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "e"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "e"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "e"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "e"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "e"     nil)
+\r t
+\a pteSetActiveLpp("metal3 drawing")
+\r nil
+\a mouseAddPt(t)
+\i 12.274:12.833
+\r t
+\a mouseAddPt(t)
+\i 30.797:11.058
+\r t
+\a geScroll(nil "e"     nil)
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a leHiMove()
+\a leMoveLForm->leMoveFormLayerField->value = "nwell drawing"
+\r "nwell drawing"
+\a leMoveLForm->leMoveFormLayerField->value = "As Is"
+\r "As Is"
+\p > 
+\a mouseAddPt(t)
+\i 30.338:11.458
+\r t
+\a mouseAddPt(t)
+\i 30.167:14.436
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "e"     nil)
+\r t
+\a pteSetActiveLpp("metal2 drawing")
+\r nil
+\a leHiCreateRect()
+\r t
+\a mouseAddPt(t)
+\i 12.646:11.43
+\r t
+\a mouseAddPt(t)
+\i 13.848:15.524
+\r t
+\a mouseAddPt(t)
+\i 29.422:15.581
+\r t
+\a mouseAddPt(t)
+\i 30.51:14.436
+\r t
+\a pteSetActiveLpp("via2 drawing")
+\r nil
+\a mouseAddPt(t)
+\i 12.875:15.237
+\r t
+\a mouseAddPt(t)
+\i 13.39:14.722
+\r t
+\a mouseAddPt(t)
+\i 29.737:15.209
+\r t
+\a mouseAddPt(t)
+\i 30.338:14.779
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a leHiSave()
+\r Getting layout propert bagGetting layout propert bagt
+\a setDRCForm()
+\o Loading layerProc.cxt 
+\r nil
+\a hiiSetCurrentForm('ivDRCOptionsForm)
+\r t
+\a hiFormDone(ivDRCOptionsForm)
+\o DRC started at Fri Mar 22 23:24:35 2019
+\o 
+\o Validating hierarchy instantiation for:
+\o library: HMMM
+\o cell:    xor_1x
+\o view:    layout
+\o Rules come from library UofU_TechLib_ami06.
+\o Rules path is divaDRC.rul.
+\o Inclusion limit is set to 1000.
+\o Parsing drcExtractRules of "/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/divaDRC.rul"...
+\o Using UofU enhancements to Diva derived layer definitions
+\o Optimizing rules...
+\o removing unused task: nwellResEdge = geomGetEdge(nwellRes coincident nwell)
+\o removing unused task: polyResEdge = geomGetEdge(polyRes coincident poly)
+\o removing unused task: elecEdge = geomGetEdge(elec)
+\o removing unused task: padEdge = geomGetEdge(pad)
+\o removing unused task: ccEdge = geomGetEdge(cc)
+\o removing unused task: gselectEdge = geomGetEdge(gselect)
+\o removing unused task: gwellEdge = geomGetEdge(gwell)
+\o removing unused task: nwellRes = geomButting(geomAnd(res_id nwell) nBulk (keep == 2))
+\o removing unused task: polyRes = geomButting(geomAnd(res_id poly) fieldPoly (keep == 2))
+\o removing unused task: NwPdiode = geomAnd(dio_id geomOutside(nwell pNotOhmic))
+\o removing unused task: PNdiode = geomAnd(dio_id geomOutside(pNotOhmic poly))
+\o removing unused task: NPdiode = geomAnd(dio_id geomOutside(nNotOhmic poly))
+\o removing unused task: m3m2Cap = geomAnd(geomAnd(metal2 metal3) cap_id)
+\o removing unused task: m2m1Cap = geomAnd(geomAnd(metal1 metal2) cap_id)
+\o removing unused task: m1sCap = geomAnd(geomAndNot(metal1 poly) cap_id)
+\o removing unused task: m1pCap = geomAnd(geomAnd(poly metal1) cap_id)
+\o removing unused task: pChannelCap = geomButting(pChannel pDiff (keep == 1))
+\o removing unused task: nChannelCap = geomButting(nChannel nDiff (keep == 1))
+\o removing unused task: pChannelTran = geomButting(pChannel pDiff (keep == 2))
+\o removing unused task: nChannelTran = geomButting(nChannel nDiff (keep == 2))
+\o removing unused task: Space = geomNot(geomOr(active poly elec))
+\o removing unused task: pElecChannelCap = geomButting(pElecChannel pDiff (keep == 1))
+\o removing unused task: nElecChannelCap = geomButting(nElecChannel nDiff (keep == 1))
+\o removing unused task: pElecChannelTran = geomButting(pElecChannel pDiff (keep == 2))
+\o removing unused task: nElecChannelTran = geomButting(nElecChannel nDiff (keep == 2))
+\o removing unused task: pElecChannel = geomOutside(geomAnd(pNotOhmic elec) poly)
+\o removing unused task: nElecChannel = geomOutside(geomAnd(nNotOhmic elec) poly)
+\o removing unused task: pChannel = geomOutside(geomAnd(pNotOhmic poly) elec)
+\o removing unused task: nChannel = geomOutside(geomAnd(nNotOhmic poly) elec)
+\o removing unused task: dio_id = geomOr("dio_id")
+\o removing unused task: cap_id = geomOr("cap_id")
+\o removing unused task: nolpe = geomOr("nolpe")
+\o removing unused task: bkgnd = geomBkgnd()
+\o Running layout DRC analysis
+\o Flat mode
+\o Full checking.
+\o DRC started.......Fri Mar 22 23:24:35 2019
+\o     completed ....Fri Mar 22 23:24:36 2019
+\o     CPU TIME = 00:00:00  TOTAL TIME = 00:00:01
+\o *********   Summary of rule violations for cell "xor_1x layout"   *********
+\o    Total errors found: 0
+\o 
+\r t
+\a hiZoomRelativeScale(getCurrentWindow() 0.8)
+\r t
+\a hiZoomRelativeScale(getCurrentWindow() 0.8)
+\r t
+\a hiZoomAbsoluteScale(hiGetCurrentWindow() 0.9)
+\r t
+\a leHiSave()
+\r Getting layout propert bagGetting layout propert bagt
+\a hiResizeWindow(window(1) list(645:57 1286:352))
+\r t
+\a setExtForm()
+\r nil
+\a hiiSetCurrentForm('ivExtOptionsForm)
+\r t
+\a hiFormDone(ivExtOptionsForm)
+\o 
+\o Extraction started at Fri Mar 22 23:25:44 2019
+\o 
+\o Validating hierarchy instantiation for:
+\o library: HMMM
+\o cell:    xor_1x
+\o view:    layout
+\o Rules come from library UofU_TechLib_ami06.
+\o Rules path is divaEXT.rul.
+\o Inclusion limit is set to 1000.
+\o Parsing drcExtractRules of "/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/divaEXT.rul"...
+\o Using UofU enhancements to Diva derived layer definitions
+\o Using UofU enhancements to divaMultiLevel.il
+\o info: If short location check is desired later on, check the saveInterconnect
+\o  statement for correctness:
+\o  Interconnect layer nwell, pwell, pBulk not saved.
+\o  Interconnect layers merged on save: elecHighres, elecRes, polyRes, nwellRes.
+\o  Interconnect layers merged on save: cp, pDiffContact, nDiffContact, pOhmicContact, nOhmicContact, ce.
+\o  Interconnect layers merged on save: pDiff, nDiff, pOhmic, nOhmic.
+\o  
+\o Optimizing rules...
+\o removing unused task: TransistorElec = geomOverlap(elec geomNot(poly))
+\o removing unused task: m3m2Cap = geomAnd(geomAnd(metal2 metal3) cap_id)
+\o removing unused task: m2m1Cap = geomAnd(geomAnd(metal1 metal2) cap_id)
+\o removing unused task: m1sCap = geomAnd(geomAndNot(metal1 poly) cap_id)
+\o removing unused task: m1pCap = geomAnd(geomAnd(poly metal1) cap_id)
+\o removing unused task: pChannelCap = geomButting(pChannel pDiff (keep == 1))
+\o removing unused task: nChannelCap = geomButting(nChannel nDiff (keep == 1))
+\o removing unused task: Space = geomNot(geomOr(active poly elec))
+\o removing unused task: pElecChannelCap = geomButting(pElecChannel pDiff (keep == 1))
+\o removing unused task: nElecChannelCap = geomButting(nElecChannel nDiff (keep == 1))
+\o removing unused task: pad = geomOr(geomAndNot(("pad" "drawing") nodrc))
+\o removing unused task: glass = geomOr(geomAndNot(("glass" "drawing") nodrc))
+\o removing unused task: gselect = geomOr(geomAndNot(("gselect" "drawing") nodrc))
+\o removing unused task: gwell = geomOr(geomAndNot(("gwell" "drawing") nodrc))
+\o removing unused task: bkgnd = geomBkgnd()
+\o Running layout Extraction analysis
+\o flat mode
+\o Full checking.
+\o For layer nChannelTran :
+\o     8  shapes encountered.
+\o     8  nmos4 ivpcell NCSU_Analog_Parts devices well formed.
+\o For layer pChannelTran :
+\o     8  shapes encountered.
+\o     8  pmos4 ivpcell NCSU_Analog_Parts devices well formed.
+\o 0 cap ivpcell NCSU_Analog_Parts parasitics created.
+\o 0 cap ivpcell NCSU_Analog_Parts parasitics created.
+\o 0 cap ivpcell NCSU_Analog_Parts parasitics created.
+\o 0 cap ivpcell NCSU_Analog_Parts parasitics created.
+\o 0 cap ivpcell NCSU_Analog_Parts parasitics created.
+\o Extraction started.......Fri Mar 22 23:25:44 2019
+\o            completed ....Fri Mar 22 23:25:44 2019
+\o     CPU TIME = 00:00:00  TOTAL TIME = 00:00:00
+\o *********   Summary of rule violations for cell "xor_1x layout"   *********
+\o    Total errors found: 0
+\o 
+\o saving rep HMMM/xor_1x/extracted
+\r Getting layout propert bagGetting layout propert bagt
+\a cancelEnterFun()
+\r t
+\r nil
+\a setLVSForm()
+\e *Error* eval: unbound variable - ivLVSContentsDifferForm
+\r ERROR
+\a hiResizeWindow(window(14) list(491:96 936:604))
+\r t
+\a ivLVSEnvForm->extCellName->value="xor_1x"
+\r "xor_1x"
+\a ivLVSEnvForm->extViewName->value="extracted"
+\r "extracted"
+\a ivLVSRun()
+\o Loading seCore.cxt 
+\o Loading .simrc from /proj/ncsu/rel/cdssetup/simrc.UofU
+\o Loading .simrc from /proj/ncsu/rel/cdssetup/simrc.UofU
+\o Loading .simrc from /proj/ncsu/rel/cdssetup/simrc.UofU
+\o LVS job is now started...
+\r nil
+\o The LVS job has completed. The net-lists match.
+\o 
+\o Run Directory: /home/cnorfleet/IC_CAD/cadence/LVS
+\# Displaying modal dbox "ivDBox", title " "
+\p > 
+\a hiDBoxOK(ivDBox)
+\r t
+\a hiCloseWindow(window(14))
+\r t
+\a hiCloseWindow(swindow(11))
+\r Getting layout propert bagt
+\a _hiSetCurrentWinNum(8)
+\r t
+\i ddsServOpen("HMMM" "xor_1x" "layout" "edit" nil)
+\o Getting layout propert bagLoad shared object file /cad/cds/ASSURA615/tools.lnx86/assura/lib/64bit/libavview.so
+\w *WARNING* dlopen: /cad/cds/ASSURA615/tools.lnx86/assura/lib/64bit/libavview.so: /cad/cds/ASSURA615/tools.lnx86/assura/lib/64bit/libavview.so: undefined symbol: _XmStrings
+\w *WARNING* Failed to open shared object file /cad/cds/ASSURA615/tools.lnx86/assura/lib/64bit/libavview.so
+\w *WARNING* (LE-104272): Assura has not been installed in this hierarchy.
+\a when(dwindow('ptePaletteAssistant6) hiMapWindow(dwindow('ptePaletteAssistant6)))
+\r t
+\a hiResizeWindow(swindow(12) list(73:61 973:679))
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a hiResizeWindow(swindow(12) list(0:40 1280:697))
+\r t
+\a leHiEditDisplayOptions()
+\r t
+\a leDisplayOptionsForm->gridSpacing->value=0.3
+\r 0.3
+\a leDisplayOptionsForm->majorSpacing->value=3.0
+\r 3.0
+\w *WARNING* float field xSnap: invalid Skill expression
+\a leDisplayOptionsForm->ySnap->value=3.0
+\r 3.0
+\a leDisplayOptionsForm->xSnap->value=0.3
+\r 0.3
+\a leDisplayOptionsForm->ySnap->value=0.3
+\r 0.3
+\a leDisplayOptionsForm->stop->value=2
+\r 2
+\a hiFormDone(leDisplayOptionsForm)
+\r t
+\a leHiCreateChoiceOfPin()
+\p > 
+\a pteSetActiveLpp("metal1 drawing")
+\r nil
+\a lePinForm->termName->value="gnd! vdd!"
+\r "gnd! vdd!"
+\a hiiToggleEnterForm(lePinForm)
+\r t
+\a leHiCreateChoiceOfPin()
+\r t
+\a lePinForm->termDirection->value="inputOutput"
+\r "inputOutput"
+\a hiiToggleEnterForm(lePinForm)
+\r t
+\a hiZoomInAtMouse()
+\i 0:0.9
+\r t
+\a mouseAddPt(t)
+\i 0.062:1.103
+\r t
+\a geScroll(nil "e"     nil)
+\r t
+\a mouseAddPt(t)
+\i 31.222:-1.193
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a mouseAddPt(t)
+\i 0.032:28.208
+\r t
+\a geScroll(nil "e"     nil)
+\r t
+\a geScroll(nil "e"     nil)
+\r t
+\a geScroll(nil "e"     nil)
+\r t
+\a mouseAddPt(t)
+\i 31.221:25.733
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a hiZoomAbsoluteScale(hiGetCurrentWindow() 0.9)
+\r t
+\a leHiSave()
+\r Getting layout propert bagGetting layout propert bagt
+\a setDRCForm()
+\r nil
+\a hiiSetCurrentForm('ivDRCOptionsForm)
+\r t
+\a hiFormDone(ivDRCOptionsForm)
+\o DRC started at Fri Mar 22 23:30:11 2019
+\o 
+\o Validating hierarchy instantiation for:
+\o library: HMMM
+\o cell:    xor_1x
+\o view:    layout
+\o Rules come from library UofU_TechLib_ami06.
+\o Rules path is divaDRC.rul.
+\o Inclusion limit is set to 1000.
+\o Running layout DRC analysis
+\o Flat mode
+\o Full checking.
+\o DRC started.......Fri Mar 22 23:30:11 2019
+\o     completed ....Fri Mar 22 23:30:11 2019
+\o     CPU TIME = 00:00:00  TOTAL TIME = 00:00:00
+\o *********   Summary of rule violations for cell "xor_1x layout"   *********
+\o    Total errors found: 0
+\o 
+\r t
+\a leHiSave()
+\r Getting layout propert bagGetting layout propert bagt
+\a setExtForm()
+\r nil
+\a hiiSetCurrentForm('ivExtOptionsForm)
+\r t
+\a hiFormDone(ivExtOptionsForm)
+\o 
+\o Extraction started at Fri Mar 22 23:30:26 2019
+\o 
+\o Validating hierarchy instantiation for:
+\o library: HMMM
+\o cell:    xor_1x
+\o view:    layout
+\o Rules come from library UofU_TechLib_ami06.
+\o Rules path is divaEXT.rul.
+\o Inclusion limit is set to 1000.
+\o Running layout Extraction analysis
+\o flat mode
+\o Full checking.
+\o For layer nChannelTran :
+\o     8  shapes encountered.
+\o     8  nmos4 ivpcell NCSU_Analog_Parts devices well formed.
+\o For layer pChannelTran :
+\o     8  shapes encountered.
+\o     8  pmos4 ivpcell NCSU_Analog_Parts devices well formed.
+\o 0 cap ivpcell NCSU_Analog_Parts parasitics created.
+\o 0 cap ivpcell NCSU_Analog_Parts parasitics created.
+\o 0 cap ivpcell NCSU_Analog_Parts parasitics created.
+\o 0 cap ivpcell NCSU_Analog_Parts parasitics created.
+\o 0 cap ivpcell NCSU_Analog_Parts parasitics created.
+\o Extraction started.......Fri Mar 22 23:30:26 2019
+\o            completed ....Fri Mar 22 23:30:26 2019
+\o     CPU TIME = 00:00:00  TOTAL TIME = 00:00:00
+\o *********   Summary of rule violations for cell "xor_1x layout"   *********
+\o    Total errors found: 0
+\o 
+\o saving rep HMMM/xor_1x/extracted
+\r Getting layout propert bagGetting layout propert bagt
+\a setLVSForm()
+\e *Error* eval: unbound variable - ivLVSContentsDifferForm
+\r ERROR
+\a hiResizeWindow(window(16) list(184:37 629:545))
+\r t
+\a ivLVSRun()
+\o Loading .simrc from /proj/ncsu/rel/cdssetup/simrc.UofU
+\o Loading .simrc from /proj/ncsu/rel/cdssetup/simrc.UofU
+\o LVS job is now started...
+\r nil
+\o The LVS job has completed. The net-lists match.
+\o 
+\o Run Directory: /home/cnorfleet/IC_CAD/cadence/LVS
+\# Displaying modal dbox "ivDBox", title " "
+\p > 
+\a hiDBoxOK(ivDBox)
+\r t
+\a hiCloseWindow(window(16))
+\r t
+\a hiResizeWindow(window(1) list(552:179 1193:474))
+\r t
+\a hiCloseWindow(swindow(12))
+\r Getting layout propert bagt
+\r nil
+\a _hiSetCurrentWinNum(8)
+\r t
+\a hiResizeWindow(window(1) list(584:44 1225:339))
+\r t
+\i ddsServOpen("HMMM" "xor_1x_8" "layout" "edit" nil)
+\o Getting layout propert bagLoad shared object file /cad/cds/ASSURA615/tools.lnx86/assura/lib/64bit/libavview.so
+\w *WARNING* dlopen: /cad/cds/ASSURA615/tools.lnx86/assura/lib/64bit/libavview.so: /cad/cds/ASSURA615/tools.lnx86/assura/lib/64bit/libavview.so: undefined symbol: _XmStrings
+\w *WARNING* Failed to open shared object file /cad/cds/ASSURA615/tools.lnx86/assura/lib/64bit/libavview.so
+\w *WARNING* (LE-104272): Assura has not been installed in this hierarchy.
+\a when(dwindow('ptePaletteAssistant7) hiMapWindow(dwindow('ptePaletteAssistant7)))
+\r t
+\a hiResizeWindow(swindow(6) list(0:40 1280:697))
+\r t
+\a hiCloseWindow(swindow(6))
+\r Getting schematic propert bagt
+\i ddsServOpen("HMMM" "xor_1x_8" "schematic" "edit" nil)
+\a _treeNavToggleColumn(dwindow('treeAssistant14) "8" "t")
+\r Getting schematic propert bagt
+\a _treeNavActivateOpc(dwindow('treeAssistant14) "Objects/Instances")
+\r t
+\a _treeNavToggleColumn(dwindow('treeAssistant14) "8" "nil")
+\r t
+\a when(dwindow('oiAssistant14) hiMapWindow(dwindow('oiAssistant14)))
+\r t
+\a when(dwindow('treeAssistant14) hiMapWindow(dwindow('treeAssistant14)))
+\r t
+\a _treeNavToggleColumn(dwindow('treeAssistant14) "8" "t")
+\r t
+\a _treeNavToggleColumn(dwindow('treeAssistant14) "8" "nil")
+\r t
+\a hiSetCurrentWindow(window(17))
+\r t
+\a leHiDelete()
+\p > 
+\a mouseAddPt(t)
+\i nil
+\r nil
+\a mouseAddPt(t)
+\i -0.028:128.522
+\r t
+\a mouseAddPt(t)
+\i 6.197:126.966
+\r t
+\a leHiEditDisplayOptions()
+\r t
+\a leDisplayOptionsForm->stop->value=2
+\r 2
+\a leDisplayOptionsForm->gridSpacing->value=0.3
+\r 0.3
+\a leDisplayOptionsForm->majorSpacing->value=3.0
+\r 3.0
+\a leDisplayOptionsForm->xSnap->value=0.3
+\r 0.3
+\a leDisplayOptionsForm->ySnap->value=0.3
+\r 0.3
+\a hiFormDone(leDisplayOptionsForm)
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a geScroll(nil "s"     nil)
+\r t
+\a leHiCreateInst()
+\p > 
+\a hiZoomRelativeScale(getCurrentWindow() 1.25)
+\r t
+\a hiZoomRelativeScale(getCurrentWindow() 1.25)
+\r t
+\a hiZoomRelativeScale(getCurrentWindow() 1.25)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a hiiSetCurrentForm('leCreateInstLForm)
+\r t
+\a leCreateInstLForm->leInstMosaicDisclosure->value= t
+\r t
+\a leCreateInstLForm->leInstMosaicCreationButtonField->value= t
+\r t
+\a leCreateInstLForm->rows->value=8
+\r 8
+\a leCreateInstLForm->delY->value=33.0
+\r 33.0
+\a hiZoomInAtMouse()
+\i -1.2:-4.5
+\r t
+\a hiZoomInAtMouse()
+\i -0.6:-1.2
+\r t
+\a hiZoomInAtMouse()
+\i 55.2:-5.4
+\r t
+\a leCreateInstLForm->libName->value="HMMM"
+\r "HMMM"
+\a leCreateInstLForm->cellName->value="xor_1x"
+\r "xor_1x"
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a mouseAddPt(t)
+\i 0.073:0.04
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a geScroll(nil "e"     nil)
+\r t
+\a geScroll(nil "s" nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "s" nil)
+\r t
+\a geScroll(nil "s" nil)
+\r t
+\a hiZoomRelativeScale(getCurrentWindow() 0.8)
+\r t
+\a hiZoomRelativeScale(getCurrentWindow() 0.8)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a leHiCreateInst()
+\p > 
+\a hiiSetCurrentForm('leCreateInstLForm)
+\r t
+\a hiUndo()
+\r t
+\a leCreateInstLForm->delY->value=33.0
+\r 33.0
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a mouseAddPt(t)
+\i 0.065:-0.118
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a leHiSave()
+\r Getting layout propert bagGetting layout propert bagt
+\a leHiCreatePin()
+\p > 
+\a lePinForm->termName->value="a<0:7>"
+\r "a<0:7>"
+\a lePinForm->termDirection->value="input"
+\r "input"
+\a lePinForm->pinYSpacing->value=33.0
+\r 33.0
+\a lePinForm->termName->value="a<0:7> b<0:7>"
+\r "a<0:7> b<0:7>"
+\a hiiToggleEnterForm(lePinForm)
+\r t
+\a hiZoomInAtMouse()
+\i 0.6:12.6
+\r t
+\a addPoint(hiGetCommandPoint())
+\i 0.6:12.6
+\r t
+\a addPoint(hiGetCommandPoint())
+\i 1.8:11.4
+\r t
+\a hiUndo()
+\r t
+\a pteSetActiveLpp("metal2 drawing")
+\r nil
+\a pteFindPrev()
+\i Layers
+\r t
+\a hiResizeWindow(swindow(14) list(0:20 900:720))
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a leHiCreatePin()
+\p > 
+\a lePinForm->termName->value="a<0:7> b<0:7>"
+\r "a<0:7> b<0:7>"
+\a hiiToggleEnterForm(lePinForm)
+\r t
+\a addPoint(hiGetCommandPoint())
+\i 0.6:12.6
+\r t
+\a addPoint(hiGetCommandPoint())
+\i 1.8:11.4
+\r t
+\a addPoint(hiGetCommandPoint())
+\i 5.4:12.6
+\r t
+\a addPoint(hiGetCommandPoint())
+\i 6.6:11.4
+\r t
+\a geScroll(nil "e"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a leHiSave()
+\r Getting layout propert bagGetting layout propert bagt
+\a hiCloseWindow(swindow(13))
+\r Getting layout propert bagt
+\a _hiSetCurrentWinNum(18)
+\r t
+\i ddsServOpen("HMMM" "xor_1x" "layout" "edit" nil)
+\o Getting layout propert bagLoad shared object file /cad/cds/ASSURA615/tools.lnx86/assura/lib/64bit/libavview.so
+\w *WARNING* dlopen: /cad/cds/ASSURA615/tools.lnx86/assura/lib/64bit/libavview.so: /cad/cds/ASSURA615/tools.lnx86/assura/lib/64bit/libavview.so: undefined symbol: _XmStrings
+\w *WARNING* Failed to open shared object file /cad/cds/ASSURA615/tools.lnx86/assura/lib/64bit/libavview.so
+\w *WARNING* (LE-104272): Assura has not been installed in this hierarchy.
+\a when(dwindow('ptePaletteAssistant8) hiMapWindow(dwindow('ptePaletteAssistant8)))
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a leHiEditDisplayOptions()
+\r t
+\a leDisplayOptionsForm->gridSpacing->value=0.3
+\r 0.3
+\a leDisplayOptionsForm->majorSpacing->value=3.0
+\r 3.0
+\w *WARNING* float field xSnap: invalid Skill expression
+\a leDisplayOptionsForm->ySnap->value=3.0
+\r 3.0
+\a leDisplayOptionsForm->xSnap->value=0.3
+\r 0.3
+\a leDisplayOptionsForm->ySnap->value=0.3
+\r 0.3
+\a leDisplayOptionsForm->stop->value=10
+\r 10
+\a hiFormDone(leDisplayOptionsForm)
+\r t
+\a hiZoomInAtMouse()
+\i 6.6:11.7
+\r t
+\a hiZoomInAtMouse()
+\i nil
+\r nil
+\a pteSetActiveLpp("metal3 drawing")
+\r nil
+\a leHiCreateRect()
+\p > 
+\a hiiSetCurrentForm('leRectLForm)
+\r t
+\a mouseAddPt(t)
+\i 0.411:12.825
+\r t
+\a mouseAddPt(t)
+\i 16.601:11.125
+\r t
+\a setDRCForm()
+\r nil
+\a hiiSetCurrentForm('ivDRCOptionsForm)
+\r t
+\a hiFormDone(ivDRCOptionsForm)
+\o DRC started at Fri Mar 22 23:45:12 2019
+\o 
+\o Validating hierarchy instantiation for:
+\o library: HMMM
+\o cell:    xor_1x
+\o view:    layout
+\o Rules come from library UofU_TechLib_ami06.
+\o Rules path is divaDRC.rul.
+\o Inclusion limit is set to 1000.
+\o Running layout DRC analysis
+\o Flat mode
+\o Full checking.
+\o DRC started.......Fri Mar 22 23:45:12 2019
+\o     completed ....Fri Mar 22 23:45:12 2019
+\o     CPU TIME = 00:00:00  TOTAL TIME = 00:00:00
+\o *********   Summary of rule violations for cell "xor_1x layout"   *********
+\o    Total errors found: 0
+\o 
+\r t
+\a leHiDelete()
+\r t
+\a mouseAddPt(t)
+\i 1.484:16.313
+\r t
+\a geScroll(nil "e"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a mouseAddPt(t)
+\i 15.617:17.088
+\r t
+\a hiUndo()
+\r t
+\a mouseAddPt(t)
+\i 15.349:17.088
+\r t
+\a mouseAddPt(t)
+\i 15.349:17.088
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "e"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "e"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a pteSetActiveLpp("metal2 drawing")
+\r nil
+\a leHiCreateRect()
+\p > 
+\a mouseAddPt(t)
+\i 0.649:12.556
+\r t
+\a mouseAddPt(t)
+\i 1.842:11.364
+\r t
+\a mouseAddPt(t)
+\i 15.11:15.538
+\r t
+\a mouseAddPt(t)
+\i 16.124:11.483
+\r t
+\a pteSetActiveLpp("via2 drawing")
+\r nil
+\a mouseAddPt(t)
+\i 0.858:12.198
+\r t
+\a mouseAddPt(t)
+\i 1.454:11.662
+\r t
+\a mouseAddPt(t)
+\i 15.349:12.347
+\r t
+\a mouseAddPt(t)
+\i 15.826:11.721
+\r t
+\a leHiSave()
+\r Getting layout propert bagGetting layout propert bagt
+\a setDRCForm()
+\r nil
+\a hiiSetCurrentForm('ivDRCOptionsForm)
+\r t
+\a hiFormDone(ivDRCOptionsForm)
+\o DRC started at Fri Mar 22 23:47:01 2019
+\o 
+\o Validating hierarchy instantiation for:
+\o library: HMMM
+\o cell:    xor_1x
+\o view:    layout
+\o Rules come from library UofU_TechLib_ami06.
+\o Rules path is divaDRC.rul.
+\o Inclusion limit is set to 1000.
+\o Running layout DRC analysis
+\o Flat mode
+\o Full checking.
+\o DRC started.......Fri Mar 22 23:47:01 2019
+\o     completed ....Fri Mar 22 23:47:01 2019
+\o     CPU TIME = 00:00:00  TOTAL TIME = 00:00:00
+\o *********   Summary of rule violations for cell "xor_1x layout"   *********
+\o    Total errors found: 0
+\o 
+\r t
+\a leHiSave()
+\r Getting layout propert bagGetting layout propert bagt
+\a setExtForm()
+\r nil
+\a hiiSetCurrentForm('ivExtOptionsForm)
+\r t
+\a hiFormDone(ivExtOptionsForm)
+\o 
+\o Extraction started at Fri Mar 22 23:47:18 2019
+\o 
+\o Validating hierarchy instantiation for:
+\o library: HMMM
+\o cell:    xor_1x
+\o view:    layout
+\o Rules come from library UofU_TechLib_ami06.
+\o Rules path is divaEXT.rul.
+\o Inclusion limit is set to 1000.
+\o Running layout Extraction analysis
+\o flat mode
+\o Full checking.
+\o For layer nChannelTran :
+\o     8  shapes encountered.
+\o     8  nmos4 ivpcell NCSU_Analog_Parts devices well formed.
+\o For layer pChannelTran :
+\o     8  shapes encountered.
+\o     8  pmos4 ivpcell NCSU_Analog_Parts devices well formed.
+\o 0 cap ivpcell NCSU_Analog_Parts parasitics created.
+\o 0 cap ivpcell NCSU_Analog_Parts parasitics created.
+\o 0 cap ivpcell NCSU_Analog_Parts parasitics created.
+\o 0 cap ivpcell NCSU_Analog_Parts parasitics created.
+\o 0 cap ivpcell NCSU_Analog_Parts parasitics created.
+\o Extraction started.......Fri Mar 22 23:47:18 2019
+\o            completed ....Fri Mar 22 23:47:19 2019
+\o     CPU TIME = 00:00:00  TOTAL TIME = 00:00:01
+\o *********   Summary of rule violations for cell "xor_1x layout"   *********
+\o    Total errors found: 0
+\o 
+\o saving rep HMMM/xor_1x/extracted
+\r Getting layout propert bagGetting layout propert bagt
+\a setLVSForm()
+\e *Error* eval: unbound variable - ivLVSContentsDifferForm
+\r ERROR
+\a hiResizeWindow(window(20) list(100:132 545:640))
+\r t
+\a ivLVSRun()
+\o Loading .simrc from /proj/ncsu/rel/cdssetup/simrc.UofU
+\o Loading .simrc from /proj/ncsu/rel/cdssetup/simrc.UofU
+\o LVS job is now started...
+\r nil
+\o The LVS job has completed. The net-lists match.
+\o 
+\o Run Directory: /home/cnorfleet/IC_CAD/cadence/LVS
+\# Displaying modal dbox "ivDBox", title " "
+\p > 
+\a hiDBoxOK(ivDBox)
+\r t
+\a hiCloseWindow(window(20))
+\r t
+\a hiCloseWindow(swindow(15))
+\r Getting layout propert bagt
+\r nil
+\a _hiSetCurrentWinNum(18)
+\r t
+\i ddsServOpen("HMMM" "xor_1x_8" "layout" "edit" nil)
+\o Getting layout propert bagLoad shared object file /cad/cds/ASSURA615/tools.lnx86/assura/lib/64bit/libavview.so
+\w *WARNING* dlopen: /cad/cds/ASSURA615/tools.lnx86/assura/lib/64bit/libavview.so: /cad/cds/ASSURA615/tools.lnx86/assura/lib/64bit/libavview.so: undefined symbol: _XmStrings
+\w *WARNING* Failed to open shared object file /cad/cds/ASSURA615/tools.lnx86/assura/lib/64bit/libavview.so
+\w *WARNING* (LE-104272): Assura has not been installed in this hierarchy.
+\a when(dwindow('ptePaletteAssistant9) hiMapWindow(dwindow('ptePaletteAssistant9)))
+\r t
+\a hiResizeWindow(swindow(16) list(0:40 1280:697))
+\r t
+\a leHiEditDisplayOptions()
+\r t
+\a leDisplayOptionsForm->gridSpacing->value=0.3
+\r 0.3
+\a leDisplayOptionsForm->majorSpacing->value=3.0
+\r 3.0
+\a leDisplayOptionsForm->xSnap->value=0.3
+\r 0.3
+\a leDisplayOptionsForm->ySnap->value=0.3
+\r 0.3
+\a leDisplayOptionsForm->stop->value=2
+\r 2
+\a hiFormDone(leDisplayOptionsForm)
+\r t
+\a hiZoomRelativeScale(getCurrentWindow() 1.25)
+\r t
+\a hiZoomRelativeScale(getCurrentWindow() 1.25)
+\r t
+\a hiZoomRelativeScale(getCurrentWindow() 1.25)
+\r t
+\a hiZoomRelativeScale(getCurrentWindow() 1.25)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a hiZoomRelativeScale(getCurrentWindow() 1.25)
+\r t
+\a hiZoomRelativeScale(getCurrentWindow() 1.25)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a hiZoomRelativeScale(getCurrentWindow() 1.25)
+\r t
+\a hiZoomRelativeScale(getCurrentWindow() 1.25)
+\r t
+\a hiZoomRelativeScale(getCurrentWindow() 1.25)
+\r t
+\a hiZoomRelativeScale(getCurrentWindow() 1.25)
+\r t
+\a hiZoomRelativeScale(getCurrentWindow() 1.25)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a leHiCreatePin()
+\p > 
+\a lePinForm->termName->value="y<0:7>"
+\r "y<0:7>"
+\a lePinForm->termDirection->value="output"
+\r "output"
+\a pteSetActiveLpp("metal2 drawing")
+\r nil
+\a hiiToggleEnterForm(lePinForm)
+\r t
+\a mouseAddPt(t)
+\i 27.099:12.558
+\r t
+\a mouseAddPt(t)
+\i 28.213:11.488
+\r t
+\a pteSetActiveLpp("metal1 drawing")
+\r nil
+\a leHiCreatePin()
+\r t
+\a lePinForm->termName->value="gnd! vdd!"
+\r "gnd! vdd!"
+\a lePinForm->termDirection->value="inputOutput"
+\r "inputOutput"
+\a hiiToggleEnterForm(lePinForm)
+\r t
+\a mouseAddPt(t)
+\i 0.09:1.104
+\r t
+\a mouseAddPt(t)
+\i 31.199:-1.169
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a mouseAddPt(t)
+\i 0.135:28.112
+\r t
+\a hiZoomInAtMouse()
+\i 0.3:26.7
+\r t
+\a geScroll(nil "e"     nil)
+\r t
+\a geScroll(nil "e"     nil)
+\r t
+\a geScroll(nil "e"     nil)
+\r t
+\a mouseAddPt(t)
+\i 31.148:25.847
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a weScrollOrCycleDownWireViaAlignment()
+\r t
+\a weScrollOrCycleDownWireViaAlignment()
+\r t
+\a weScrollOrCycleDownWireViaAlignment()
+\r t
+\a weScrollOrCycleDownWireViaAlignment()
+\r t
+\a weScrollOrCycleDownWireViaAlignment()
+\r t
+\a hiZoomRelativeScale(getCurrentWindow() 0.8)
+\r t
+\a hiZoomRelativeScale(getCurrentWindow() 0.8)
+\r t
+\a hiZoomRelativeScale(getCurrentWindow() 0.8)
+\r t
+\a hiZoomRelativeScale(getCurrentWindow() 0.8)
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a showClickInfo()
+\i 3:0.6
+\r window:21
+\a showClickInfo()
+\i 1.8:0.9
+\o 
+\o metal1 drawing -> net: "gnd!" height: 2.40  width: 31.20
+\r window:21
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a leHiCopy()
+\p > 
+\a hiiSetCurrentForm('leCopyLForm)
+\r t
+\a leCopyLForm->leCopySpacingDisclosure->value=t
+\r t
+\a leCopyLForm->number->value=7
+\r 7
+\a leCopyLForm->copyYField->value=33.0
+\r 33.0
+\a _leApplyCopy(hiGetCurrentWindow())
+\r t
+\r t
+\a hiZoomOutAtMouse()
+\i 8.4:22.8
+\r t
+\a hiZoomOutAtMouse()
+\i 8.4:22.8
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a showClickInfo()
+\i -10.2:26.7
+\r window:21
+\a hiZoomInAtMouse()
+\i 1.8:27
+\r t
+\a hiZoomInAtMouse()
+\i 1.8:27
+\r t
+\a showClickInfo()
+\i 6.9:28.2
+\r window:21
+\a showClickInfo()
+\i 6.9:28.2
+\o 
+\o metal1 drawing -> net: "vdd!" height: 2.40  width: 31.20
+\r window:21
+\a leHiCopy()
+\p > 
+\a _leApplyCopy(hiGetCurrentWindow())
+\r t
+\r t
+\a hiZoomOutAtMouse()
+\i 4.5:26.1
+\r t
+\a hiZoomOutAtMouse()
+\i 4.8:26.4
+\r t
+\a hiZoomOutAtMouse()
+\i 4.8:26.4
+\r t
+\a hiZoomOutAtMouse()
+\i 4.8:26.4
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a hiZoomInAtMouse()
+\i 11.7:248.1
+\r t
+\a hiZoomInAtMouse()
+\i 11.4:247.8
+\r t
+\a hiZoomInAtMouse()
+\i 15:240
+\r t
+\a hiZoomInAtMouse()
+\i 15:240
+\r t
+\a hiZoomInAtMouse()
+\i 15:240
+\r t
+\a hiZoomInAtMouse()
+\i 15:240
+\r t
+\a hiZoomOutAtMouse()
+\i 15:239.4
+\r t
+\a hiZoomOutAtMouse()
+\i 15.3:239.4
+\r t
+\a hiZoomOutAtMouse()
+\i 15:239.1
+\r t
+\a hiZoomOutAtMouse()
+\i 15.3:239.1
+\r t
+\a hiZoomOutAtMouse()
+\i 15.3:239.1
+\r t
+\a hiZoomOutAtMouse()
+\i 15.3:239.1
+\r t
+\a hiZoomOutAtMouse()
+\i 8.4:239.4
+\r t
+\a hiZoomInAtMouse()
+\i 15:240.9
+\r t
+\a hiZoomInAtMouse()
+\i 15:249.6
+\r t
+\a hiZoomInAtMouse()
+\i 15.6:250.2
+\r t
+\a hiZoomInAtMouse()
+\i 15.6:247.8
+\r t
+\a hiZoomInAtMouse()
+\i 15.6:247.8
+\r t
+\a hiZoomOutAtMouse()
+\i 15.9:242.4
+\r t
+\a leHiSave()
+\r Getting layout propert bagGetting layout propert bagt
+\a showClickInfo()
+\i -9:245.7
+\r window:21
+\a setDRCForm()
+\r nil
+\a hiiSetCurrentForm('ivDRCOptionsForm)
+\r t
+\a hiFormDone(ivDRCOptionsForm)
+\o DRC started at Fri Mar 22 23:55:08 2019
+\o 
+\o Validating hierarchy instantiation for:
+\o library: HMMM
+\o cell:    xor_1x_8
+\o view:    layout
+\o Rules come from library UofU_TechLib_ami06.
+\o Rules path is divaDRC.rul.
+\o Inclusion limit is set to 1000.
+\o Running layout DRC analysis
+\o Flat mode
+\o Full checking.
+\o DRC started.......Fri Mar 22 23:55:08 2019
+\o     completed ....Fri Mar 22 23:55:08 2019
+\o     CPU TIME = 00:00:00  TOTAL TIME = 00:00:00
+\o *********  Summary of rule violations for cell "xor_1x_8 layout"  *********
+\o  # errors  Violated Rules
+\o         7  Label/Pin "vdd!" is causing two nets to have the same name.
+\o         7  Total errors found
+\o 
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a setDRCForm()
+\r nil
+\a ivDRCOptionsForm->joinSameNameNets->value= t
+\r t
+\a hiFormDone(ivDRCOptionsForm)
+\o DRC started at Fri Mar 22 23:55:24 2019
+\o 
+\o Validating hierarchy instantiation for:
+\o library: HMMM
+\o cell:    xor_1x_8
+\o view:    layout
+\o Rules come from library UofU_TechLib_ami06.
+\o Rules path is divaDRC.rul.
+\o Inclusion limit is set to 1000.
+\o Parsing drcExtractRules of "/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/divaDRC.rul"...
+\o Using UofU enhancements to Diva derived layer definitions
+\o Optimizing rules...
+\o removing unused task: nwellResEdge = geomGetEdge(nwellRes coincident nwell)
+\o removing unused task: polyResEdge = geomGetEdge(polyRes coincident poly)
+\o removing unused task: elecEdge = geomGetEdge(elec)
+\o removing unused task: padEdge = geomGetEdge(pad)
+\o removing unused task: ccEdge = geomGetEdge(cc)
+\o removing unused task: gselectEdge = geomGetEdge(gselect)
+\o removing unused task: gwellEdge = geomGetEdge(gwell)
+\o removing unused task: nwellRes = geomButting(geomAnd(res_id nwell) nBulk (keep == 2))
+\o removing unused task: polyRes = geomButting(geomAnd(res_id poly) fieldPoly (keep == 2))
+\o removing unused task: NwPdiode = geomAnd(dio_id geomOutside(nwell pNotOhmic))
+\o removing unused task: PNdiode = geomAnd(dio_id geomOutside(pNotOhmic poly))
+\o removing unused task: NPdiode = geomAnd(dio_id geomOutside(nNotOhmic poly))
+\o removing unused task: m3m2Cap = geomAnd(geomAnd(metal2 metal3) cap_id)
+\o removing unused task: m2m1Cap = geomAnd(geomAnd(metal1 metal2) cap_id)
+\o removing unused task: m1sCap = geomAnd(geomAndNot(metal1 poly) cap_id)
+\o removing unused task: m1pCap = geomAnd(geomAnd(poly metal1) cap_id)
+\o removing unused task: pChannelCap = geomButting(pChannel pDiff (keep == 1))
+\o removing unused task: nChannelCap = geomButting(nChannel nDiff (keep == 1))
+\o removing unused task: pChannelTran = geomButting(pChannel pDiff (keep == 2))
+\o removing unused task: nChannelTran = geomButting(nChannel nDiff (keep == 2))
+\o removing unused task: Space = geomNot(geomOr(active poly elec))
+\o removing unused task: pElecChannelCap = geomButting(pElecChannel pDiff (keep == 1))
+\o removing unused task: nElecChannelCap = geomButting(nElecChannel nDiff (keep == 1))
+\o removing unused task: pElecChannelTran = geomButting(pElecChannel pDiff (keep == 2))
+\o removing unused task: nElecChannelTran = geomButting(nElecChannel nDiff (keep == 2))
+\o removing unused task: pElecChannel = geomOutside(geomAnd(pNotOhmic elec) poly)
+\o removing unused task: nElecChannel = geomOutside(geomAnd(nNotOhmic elec) poly)
+\o removing unused task: pChannel = geomOutside(geomAnd(pNotOhmic poly) elec)
+\o removing unused task: nChannel = geomOutside(geomAnd(nNotOhmic poly) elec)
+\o removing unused task: dio_id = geomOr("dio_id")
+\o removing unused task: cap_id = geomOr("cap_id")
+\o removing unused task: nolpe = geomOr("nolpe")
+\o removing unused task: bkgnd = geomBkgnd()
+\o Running layout DRC analysis
+\o Flat mode
+\o Full checking.
+\o DRC started.......Fri Mar 22 23:55:24 2019
+\o     completed ....Fri Mar 22 23:55:24 2019
+\o     CPU TIME = 00:00:00  TOTAL TIME = 00:00:00
+\o *********   Summary of rule violations for cell "xor_1x_8 layout"   *********
+\o    Total errors found: 0
+\o 
+\r t
+\a leHiSave()
+\r Getting layout propert bagGetting layout propert bagt
+\a setExtForm()
+\r nil
+\a hiiSetCurrentForm('ivExtOptionsForm)
+\r t
+\a hiFormDone(ivExtOptionsForm)
+\o 
+\o Extraction started at Fri Mar 22 23:55:41 2019
+\o 
+\o Validating hierarchy instantiation for:
+\o library: HMMM
+\o cell:    xor_1x_8
+\o view:    layout
+\o Rules come from library UofU_TechLib_ami06.
+\o Rules path is divaEXT.rul.
+\o Inclusion limit is set to 1000.
+\o Running layout Extraction analysis
+\o flat mode
+\o Full checking.
+\o For layer nChannelTran :
+\o     64  shapes encountered.
+\o     64  nmos4 ivpcell NCSU_Analog_Parts devices well formed.
+\o For layer pChannelTran :
+\o     64  shapes encountered.
+\o     64  pmos4 ivpcell NCSU_Analog_Parts devices well formed.
+\o 0 cap ivpcell NCSU_Analog_Parts parasitics created.
+\o 0 cap ivpcell NCSU_Analog_Parts parasitics created.
+\o 0 cap ivpcell NCSU_Analog_Parts parasitics created.
+\o 0 cap ivpcell NCSU_Analog_Parts parasitics created.
+\o 0 cap ivpcell NCSU_Analog_Parts parasitics created.
+\o Extraction started.......Fri Mar 22 23:55:41 2019
+\o            completed ....Fri Mar 22 23:55:41 2019
+\o     CPU TIME = 00:00:00  TOTAL TIME = 00:00:00
+\o *********  Summary of rule violations for cell "xor_1x_8 layout"  *********
+\o  # errors  Violated Rules
+\o        14  Label/Pin "vdd!" is causing two nets to have the same name.
+\o        14  Total errors found
+\o 
+\o saving rep HMMM/xor_1x_8/extracted
+\r Getting layout propert bagGetting layout propert bagt
+\a setDRCForm()
+\r nil
+\a hiiSetCurrentForm('ivDRCOptionsForm)
+\r t
+\a hiFormDone(ivDRCOptionsForm)
+\o DRC started at Fri Mar 22 23:55:53 2019
+\o 
+\o Validating hierarchy instantiation for:
+\o library: HMMM
+\o cell:    xor_1x_8
+\o view:    layout
+\o Rules come from library UofU_TechLib_ami06.
+\o Rules path is divaDRC.rul.
+\o Inclusion limit is set to 1000.
+\o Running layout DRC analysis
+\o Flat mode
+\o Full checking.
+\o DRC started.......Fri Mar 22 23:55:53 2019
+\o     completed ....Fri Mar 22 23:55:54 2019
+\o     CPU TIME = 00:00:00  TOTAL TIME = 00:00:01
+\o *********   Summary of rule violations for cell "xor_1x_8 layout"   *********
+\o    Total errors found: 0
+\o 
+\r t
+\a setExtForm()
+\r nil
+\a hiiSetCurrentForm('ivExtOptionsForm)
+\r t
+\a ivExtOptionsForm->joinSameNameNets->value= t
+\r t
+\a hiFormDone(ivExtOptionsForm)
+\o 
+\o Extraction started at Fri Mar 22 23:56:05 2019
+\o 
+\o Validating hierarchy instantiation for:
+\o library: HMMM
+\o cell:    xor_1x_8
+\o view:    layout
+\o Rules come from library UofU_TechLib_ami06.
+\o Rules path is divaEXT.rul.
+\o Inclusion limit is set to 1000.
+\o Parsing drcExtractRules of "/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/divaEXT.rul"...
+\o Using UofU enhancements to Diva derived layer definitions
+\o Using UofU enhancements to divaMultiLevel.il
+\o info: If short location check is desired later on, check the saveInterconnect
+\o  statement for correctness:
+\o  Interconnect layer nwell, pwell, pBulk not saved.
+\o  Interconnect layers merged on save: elecHighres, elecRes, polyRes, nwellRes.
+\o  Interconnect layers merged on save: cp, pDiffContact, nDiffContact, pOhmicContact, nOhmicContact, ce.
+\o  Interconnect layers merged on save: pDiff, nDiff, pOhmic, nOhmic.
+\o  
+\o Optimizing rules...
+\o removing unused task: TransistorElec = geomOverlap(elec geomNot(poly))
+\o removing unused task: m3m2Cap = geomAnd(geomAnd(metal2 metal3) cap_id)
+\o removing unused task: m2m1Cap = geomAnd(geomAnd(metal1 metal2) cap_id)
+\o removing unused task: m1sCap = geomAnd(geomAndNot(metal1 poly) cap_id)
+\o removing unused task: m1pCap = geomAnd(geomAnd(poly metal1) cap_id)
+\o removing unused task: pChannelCap = geomButting(pChannel pDiff (keep == 1))
+\o removing unused task: nChannelCap = geomButting(nChannel nDiff (keep == 1))
+\o removing unused task: Space = geomNot(geomOr(active poly elec))
+\o removing unused task: pElecChannelCap = geomButting(pElecChannel pDiff (keep == 1))
+\o removing unused task: nElecChannelCap = geomButting(nElecChannel nDiff (keep == 1))
+\o removing unused task: pad = geomOr(geomAndNot(("pad" "drawing") nodrc))
+\o removing unused task: glass = geomOr(geomAndNot(("glass" "drawing") nodrc))
+\o removing unused task: gselect = geomOr(geomAndNot(("gselect" "drawing") nodrc))
+\o removing unused task: gwell = geomOr(geomAndNot(("gwell" "drawing") nodrc))
+\o removing unused task: bkgnd = geomBkgnd()
+\o Running layout Extraction analysis
+\o flat mode
+\o Full checking.
+\o For layer nChannelTran :
+\o     64  shapes encountered.
+\o     64  nmos4 ivpcell NCSU_Analog_Parts devices well formed.
+\o For layer pChannelTran :
+\o     64  shapes encountered.
+\o     64  pmos4 ivpcell NCSU_Analog_Parts devices well formed.
+\o 0 cap ivpcell NCSU_Analog_Parts parasitics created.
+\o 0 cap ivpcell NCSU_Analog_Parts parasitics created.
+\o 0 cap ivpcell NCSU_Analog_Parts parasitics created.
+\o 0 cap ivpcell NCSU_Analog_Parts parasitics created.
+\o 0 cap ivpcell NCSU_Analog_Parts parasitics created.
+\o Extraction started.......Fri Mar 22 23:56:05 2019
+\o            completed ....Fri Mar 22 23:56:06 2019
+\o     CPU TIME = 00:00:00  TOTAL TIME = 00:00:01
+\o *********   Summary of rule violations for cell "xor_1x_8 layout"   *********
+\o    Total errors found: 0
+\o 
+\o saving rep HMMM/xor_1x_8/extracted
+\r Getting layout propert bagGetting layout propert bagt
+\a leHiSave()
+\r Getting layout propert bagGetting layout propert bagt
+\a setLVSForm()
+\e *Error* eval: unbound variable - ivLVSContentsDifferForm
+\r ERROR
+\a ivLVSEnvForm->extCellName->value="xor_1x_8"
+\r "xor_1x_8"
+\a hiResizeWindow(window(22) list(32:137 477:645))
+\r t
+\a ivLVSEnvForm->schCellName->value="xor_1x_8"
+\r "xor_1x_8"
+\a ivLVSRun()
+\o Loading .simrc from /proj/ncsu/rel/cdssetup/simrc.UofU
+\o Loading .simrc from /proj/ncsu/rel/cdssetup/simrc.UofU
+\o LVS job is now started...
+\r nil
+\o The LVS job has completed. The net-lists match.
+\o 
+\o Run Directory: /home/cnorfleet/IC_CAD/cadence/LVS
+\# Displaying modal dbox "ivDBox", title " "
+\p > 
+\a hiDBoxOK(ivDBox)
+\r t
+\a hiCloseWindow(window(22))
+\r t
+\a hiCloseWindow(swindow(16))
+\r Getting layout propert bagt
+\a _hiSetCurrentWinNum(18)
+\r t
+\i ddsServOpen("HMMM" "tristate_1x" "schematic" "edit" nil)
+\a _treeNavToggleColumn(dwindow('treeAssistant17) "8" "t")
+\r Getting schematic propert bagt
+\a _treeNavActivateOpc(dwindow('treeAssistant17) "Objects/Instances")
+\r t
+\a _treeNavToggleColumn(dwindow('treeAssistant17) "8" "nil")
+\r t
+\a when(dwindow('oiAssistant17) hiMapWindow(dwindow('oiAssistant17)))
+\r t
+\a when(dwindow('treeAssistant17) hiMapWindow(dwindow('treeAssistant17)))
+\r t
+\a _treeNavToggleColumn(dwindow('treeAssistant17) "8" "t")
+\r t
+\a _treeNavToggleColumn(dwindow('treeAssistant17) "8" "nil")
+\r t
+\a hiResizeWindow(swindow(17) list(60:74 960:685))
+\r t
+\o  
+\o Library Manager new cellview request for cell "HMMM tristate_1x".
+\i deNew('(nil libName "HMMM" cellName "tristate_1x"))
+\p > 
+\a hiiSetCurrentForm('deNewForm)
+\r t
+\a hiFormDone(deNewForm)
+\r t
+\o Getting layout propert bagLoad shared object file /cad/cds/ASSURA615/tools.lnx86/assura/lib/64bit/libavview.so
+\w *WARNING* dlopen: /cad/cds/ASSURA615/tools.lnx86/assura/lib/64bit/libavview.so: /cad/cds/ASSURA615/tools.lnx86/assura/lib/64bit/libavview.so: undefined symbol: _XmStrings
+\w *WARNING* Failed to open shared object file /cad/cds/ASSURA615/tools.lnx86/assura/lib/64bit/libavview.so
+\w *WARNING* (LE-104272): Assura has not been installed in this hierarchy.
+\a when(dwindow('ptePaletteAssistant10) hiMapWindow(dwindow('ptePaletteAssistant10)))
+\r t
+\a hiCloseWindow(swindow(14))
+\r Getting schematic propert bagt
+\a leHiEditDisplayOptions()
+\r t
+\a leDisplayOptionsForm->gridSpacing->value=0.3
+\r 0.3
+\a leDisplayOptionsForm->majorSpacing->value=3.0
+\r 3.0
+\a leDisplayOptionsForm->xSnap->value=0.3
+\r 0.3
+\a leDisplayOptionsForm->ySnap->value=0.3
+\r 0.3
+\a leDisplayOptionsForm->stop->value=2
+\r 2
+\a hiFormDone(leDisplayOptionsForm)
+\r t
+\a leHiCreateInst()
+\p > 
+\a hiiSetCurrentForm('leCreateInstLForm)
+\r t
+\a leCreateInstLForm->libName->value="muddlib11"
+\r "muddlib11"
+\a leCreateInstLForm->cellName->value="inv_1x"
+\r "inv_1x"
+\a leCreateInstLForm->leInstMosaicCreationButtonField->value= nil
+\r nil
+\a mouseAddPt(t)
+\i 0.018:0.054
+\r t
+\a leCreateInstLForm->libName->value="HMMM"
+\r "HMMM"
+\a leCreateInstLForm->cellName->value="tristateInvCore"
+\r "tristateInvCore"
+\a mouseAddPt(t)
+\i 4.777:0.019
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "e"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "e"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "e"     nil)
+\r t
+\a leHiSave()
+\r Getting layout propert bagGetting layout propert bagt
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "e"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a leHiMove()
+\a leMoveLForm->leMoveFormLayerField->value = "nwell drawing"
+\r "nwell drawing"
+\a leMoveLForm->leMoveFormLayerField->value = "As Is"
+\r "As Is"
+\p > 
+\a mouseAddPt(t)
+\i 7.425:-0.053
+\r t
+\a mouseAddPt(t)
+\i 8.641:-0.053
+\r t
+\a hiZoomInAtMouse()
+\i 4.5:-0.6
+\r t
+\a hiZoomOutAtMouse()
+\i 5.4:-0.6
+\r t
+\a hiZoomOutAtMouse()
+\i 5.4:-1.2
+\r t
+\a hiZoomInAtMouse()
+\i 4.8:-0.3
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a leHiCreateRect()
+\a leRectLForm->slotLayer->value = "cc drawing"
+\r "cc drawing"
+\a leRectLForm->slotLayer->value = "cc drawing"
+\r "cc drawing"
+\a leRectLForm->slotLayer->value = "y0 drawing"
+\r "y0 drawing"
+\r t
+\a leHiEditEditorOptions()
+\r t
+\a hiFormCancel(leEditorOptionsForm) 
+\r t
+\a leHiEditDisplayOptions()
+\r t
+\a hiFormCancel(leDisplayOptionsForm) 
+\r t
+\a geHiDisplaySelectionForm()
+\p > 
+\a hiiSetCurrentForm('geLSelectForm)
+\r t
+\a hiFormCancel(geLSelectForm) 
+\r t
+\r nil
+\a mouseAddPt(t)
+\i 3.077:12.526
+\r t
+\a mouseAddPt(t)
+\i 7.908:11.488
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a pteSetActiveLpp("metal2 drawing")
+\r nil
+\a pteSetLSActive(?layerSets pteGetPrevLayerSets() ?turnOnVis t ?turnOnSel t ?turnOffAllVis t ?turnOffAllSel t ?deactivateOthers t)
+\r nil
+\a leHiCreatePath()
+\a le0PathForm->slottableObjectTab->page2->slotLayer->value = "cc drawing"
+\r "cc drawing"
+\a le0PathForm->slottableObjectTab->page2->slotLayer->value = "cc drawing"
+\r "cc drawing"
+\a le0PathForm->slottableObjectTab->page2->slotLayer->value = "y0 drawing"
+\r "y0 drawing"
+\r t
+\a hiiToggleEnterForm(le0PathForm) 
+\r t
+\a leHiCreatePin()
+\r t
+\a lePinForm->termName->value="a en enBar"
+\r "a en enBar"
+\a lePinForm->termDirection->value="input"
+\r "input"
+\a hiiToggleEnterForm(lePinForm)
+\r t
+\a mouseAddPt(t)
+\i 0.644:12.598
+\r t
+\a mouseAddPt(t)
+\i 1.932:11.346
+\r t
+\a mouseAddPt(t)
+\i 6.691:10.129
+\r t
+\a mouseAddPt(t)
+\i 7.944:8.984
+\r t
+\a mouseAddPt(t)
+\i 6.62:14.96
+\r t
+\a mouseAddPt(t)
+\i 7.836:13.85
+\r t
+\a leHiCreatePin()
+\r t
+\a lePinForm->termName->value="y"
+\r "y"
+\a lePinForm->termDirection->value="output"
+\r "output"
+\a hiiToggleEnterForm(lePinForm)
+\r t
+\a mouseAddPt(t)
+\i 10.556:12.562
+\r t
+\a mouseAddPt(t)
+\i 11.808:11.417
+\r t
+\a leHiCreatePin()
+\r t
+\a pteSetActiveLpp("metal1 drawing")
+\r nil
+\a lePinForm->termName->value="gnd! vdd!"
+\r "gnd! vdd!"
+\a lePinForm->termDirection->value="inputOutput"
+\r "inputOutput"
+\a hiiToggleEnterForm(lePinForm)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a mouseAddPt(t)
+\i 0.071:1.076
+\r t
+\a mouseAddPt(t)
+\i 12.309:-1.214
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a mouseAddPt(t)
+\i 0.036:28.163
+\r t
+\a mouseAddPt(t)
+\i 12.238:25.873
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a leHiSave()
+\r Getting layout propert bagGetting layout propert bagt
+\a hiZoomRelativeScale(getCurrentWindow() 1.25)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a pteSetActiveLpp("nselect drawing")
+\r nil
+\a leHiCreateRect()
+\p > 
+\a hiiSetCurrentForm('leRectLForm)
+\r t
+\a mouseAddPt(t)
+\i 0.082:28.231
+\r t
+\a mouseAddPt(t)
+\i 12.363:25.798
+\r t
+\a pteSetActiveLpp("nactive drawing")
+\r nil
+\a hiZoomRelativeScale(getCurrentWindow() 1.25)
+\r t
+\a hiZoomRelativeScale(getCurrentWindow() 1.25)
+\r t
+\a hiZoomRelativeScale(getCurrentWindow() 1.25)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a mouseAddPt(t)
+\i 5.42:27.616
+\r t
+\a mouseAddPt(t)
+\i 6.535:26.385
+\r t
+\a pteSetActiveLpp("cc drawing")
+\r nil
+\a mouseAddPt(t)
+\i 5.728:27.265
+\r t
+\a mouseAddPt(t)
+\i 6.359:26.693
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a pteSetActiveLpp("pactive drawing")
+\r nil
+\a mouseAddPt(t)
+\i 6.564:0.541
+\r t
+\a mouseAddPt(t)
+\i 5.45:-0.515
+\r t
+\a pteSetActiveLpp("cc drawing")
+\r nil
+\a mouseAddPt(t)
+\i 5.728:0.291
+\r t
+\a mouseAddPt(t)
+\i 6.373:-0.368
+\r t
+\a pteSetActiveLpp("pselect drawing")
+\r nil
+\a mouseAddPt(t)
+\i 0.011:1.215
+\r t
+\a mouseAddPt(t)
+\i 12.281:-1.145
+\r t
+\a leHiSave()
+\r Getting layout propert bagGetting layout propert bagt
+\a hiCloseWindow(swindow(18))
+\r Getting layout propert bagt
+\r nil
+\a _hiSetCurrentWinNum(23)
+\r t
+\i ddsServOpen("HMMM" "tristateInvCore" "layout" "edit" nil)
+\o Getting layout propert bagLoad shared object file /cad/cds/ASSURA615/tools.lnx86/assura/lib/64bit/libavview.so
+\w *WARNING* dlopen: /cad/cds/ASSURA615/tools.lnx86/assura/lib/64bit/libavview.so: /cad/cds/ASSURA615/tools.lnx86/assura/lib/64bit/libavview.so: undefined symbol: _XmStrings
+\w *WARNING* Failed to open shared object file /cad/cds/ASSURA615/tools.lnx86/assura/lib/64bit/libavview.so
+\w *WARNING* (LE-104272): Assura has not been installed in this hierarchy.
+\a when(dwindow('ptePaletteAssistant11) hiMapWindow(dwindow('ptePaletteAssistant11)))
+\r t
+\a hiZoomInAtMouse()
+\i 1.35:-0.45
+\r t
+\a hiZoomInAtMouse()
+\i -1.2:0.9
+\r t
+\a hiZoomInAtMouse()
+\i -1.2:0.75
+\r t
+\a hiResizeWindow(swindow(19) list(0:40 1280:697))
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "e"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a leHiMove()
+\a leMoveLForm->leMoveFormLayerField->value = "nwell drawing"
+\r "nwell drawing"
+\a leMoveLForm->leMoveFormLayerField->value = "As Is"
+\r "As Is"
+\p > 
+\a mouseAddPt(t)
+\i 0.703:-0.261
+\r t
+\a mouseAddPt(t)
+\i 1.94:-0.134
+\r t
+\a leHiCreateRect()
+\a leRectLForm->slotLayer->value = "cc drawing"
+\r "cc drawing"
+\a leRectLForm->slotLayer->value = "cc drawing"
+\r "cc drawing"
+\a leRectLForm->slotLayer->value = "y0 drawing"
+\r "y0 drawing"
+\r t
+\a hiiSetCurrentForm('leRectLForm)
+\r t
+\a hiiToggleEnterForm(leRectLForm) 
+\r t
+\a leHiEditDisplayOptions()
+\r t
+\a leDisplayOptionsForm->gridSpacing->value=0.3
+\r 0.3
+\a leDisplayOptionsForm->majorSpacing->value=3.0
+\r 3.0
+\a leDisplayOptionsForm->xSnap->value=0.3
+\r 0.3
+\a leDisplayOptionsForm->ySnap->value=0.3
+\r 0.3
+\a hiFormDone(leDisplayOptionsForm)
+\r t
+\a mouseAddPt(t)
+\i 1.046:0.022
+\r t
+\a mouseAddPt(t)
+\i -0.378:1.185
+\r t
+\a hiUndo()
+\r t
+\a leHiMove()
+\r t
+\a mouseAddPt(t)
+\i 1.083:0.209
+\r t
+\a mouseAddPt(t)
+\i 2.298:0.134
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a mouseAddPt(t)
+\i 1.523:27.45
+\r t
+\a mouseAddPt(t)
+\i 2.656:27.42
+\r t
+\a mouseAddPt(t)
+\i 1.292:27.077
+\r t
+\a mouseAddPt(t)
+\i 2.507:27.107
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a leHiSave()
+\r Getting layout propert bagGetting layout propert bagt
+\a setDRCForm()
+\r nil
+\a hiiSetCurrentForm('ivDRCOptionsForm)
+\r t
+\a ivDRCOptionsForm->joinSameNameNets->value= nil
+\r nil
+\a hiFormDone(ivDRCOptionsForm)
+\o DRC started at Sat Mar 23 00:12:08 2019
+\o 
+\o Validating hierarchy instantiation for:
+\o library: HMMM
+\o cell:    tristateInvCore
+\o view:    layout
+\o Rules come from library UofU_TechLib_ami06.
+\o Rules path is divaDRC.rul.
+\o Inclusion limit is set to 1000.
+\o Parsing drcExtractRules of "/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/divaDRC.rul"...
+\o Using UofU enhancements to Diva derived layer definitions
+\o Optimizing rules...
+\o removing unused task: nwellResEdge = geomGetEdge(nwellRes coincident nwell)
+\o removing unused task: polyResEdge = geomGetEdge(polyRes coincident poly)
+\o removing unused task: elecEdge = geomGetEdge(elec)
+\o removing unused task: padEdge = geomGetEdge(pad)
+\o removing unused task: ccEdge = geomGetEdge(cc)
+\o removing unused task: gselectEdge = geomGetEdge(gselect)
+\o removing unused task: gwellEdge = geomGetEdge(gwell)
+\o removing unused task: nwellRes = geomButting(geomAnd(res_id nwell) nBulk (keep == 2))
+\o removing unused task: polyRes = geomButting(geomAnd(res_id poly) fieldPoly (keep == 2))
+\o removing unused task: NwPdiode = geomAnd(dio_id geomOutside(nwell pNotOhmic))
+\o removing unused task: PNdiode = geomAnd(dio_id geomOutside(pNotOhmic poly))
+\o removing unused task: NPdiode = geomAnd(dio_id geomOutside(nNotOhmic poly))
+\o removing unused task: m3m2Cap = geomAnd(geomAnd(metal2 metal3) cap_id)
+\o removing unused task: m2m1Cap = geomAnd(geomAnd(metal1 metal2) cap_id)
+\o removing unused task: m1sCap = geomAnd(geomAndNot(metal1 poly) cap_id)
+\o removing unused task: m1pCap = geomAnd(geomAnd(poly metal1) cap_id)
+\o removing unused task: pChannelCap = geomButting(pChannel pDiff (keep == 1))
+\o removing unused task: nChannelCap = geomButting(nChannel nDiff (keep == 1))
+\o removing unused task: pChannelTran = geomButting(pChannel pDiff (keep == 2))
+\o removing unused task: nChannelTran = geomButting(nChannel nDiff (keep == 2))
+\o removing unused task: Space = geomNot(geomOr(active poly elec))
+\o removing unused task: pElecChannelCap = geomButting(pElecChannel pDiff (keep == 1))
+\o removing unused task: nElecChannelCap = geomButting(nElecChannel nDiff (keep == 1))
+\o removing unused task: pElecChannelTran = geomButting(pElecChannel pDiff (keep == 2))
+\o removing unused task: nElecChannelTran = geomButting(nElecChannel nDiff (keep == 2))
+\o removing unused task: pElecChannel = geomOutside(geomAnd(pNotOhmic elec) poly)
+\o removing unused task: nElecChannel = geomOutside(geomAnd(nNotOhmic elec) poly)
+\o removing unused task: pChannel = geomOutside(geomAnd(pNotOhmic poly) elec)
+\o removing unused task: nChannel = geomOutside(geomAnd(nNotOhmic poly) elec)
+\o removing unused task: dio_id = geomOr("dio_id")
+\o removing unused task: cap_id = geomOr("cap_id")
+\o removing unused task: nolpe = geomOr("nolpe")
+\o removing unused task: bkgnd = geomBkgnd()
+\o Running layout DRC analysis
+\o Flat mode
+\o Full checking.
+\o DRC started.......Sat Mar 23 00:12:08 2019
+\o     completed ....Sat Mar 23 00:12:08 2019
+\o     CPU TIME = 00:00:00  TOTAL TIME = 00:00:00
+\o *********   Summary of rule violations for cell "tristateInvCore layout"   *********
+\o    Total errors found: 0
+\o 
+\r t
+\a setExtForm()
+\r nil
+\a hiiSetCurrentForm('ivExtOptionsForm)
+\r t
+\a ivExtOptionsForm->joinSameNameNets->value= nil
+\r nil
+\a hiFormDone(ivExtOptionsForm)
+\o 
+\o Extraction started at Sat Mar 23 00:12:22 2019
+\o 
+\o Validating hierarchy instantiation for:
+\o library: HMMM
+\o cell:    tristateInvCore
+\o view:    layout
+\o Rules come from library UofU_TechLib_ami06.
+\o Rules path is divaEXT.rul.
+\o Inclusion limit is set to 1000.
+\o Parsing drcExtractRules of "/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/UofU_TechLib_ami06/divaEXT.rul"...
+\o Using UofU enhancements to Diva derived layer definitions
+\o Using UofU enhancements to divaMultiLevel.il
+\o info: If short location check is desired later on, check the saveInterconnect
+\o  statement for correctness:
+\o  Interconnect layer nwell, pwell, pBulk not saved.
+\o  Interconnect layers merged on save: elecHighres, elecRes, polyRes, nwellRes.
+\o  Interconnect layers merged on save: cp, pDiffContact, nDiffContact, pOhmicContact, nOhmicContact, ce.
+\o  Interconnect layers merged on save: pDiff, nDiff, pOhmic, nOhmic.
+\o  
+\o Optimizing rules...
+\o removing unused task: TransistorElec = geomOverlap(elec geomNot(poly))
+\o removing unused task: m3m2Cap = geomAnd(geomAnd(metal2 metal3) cap_id)
+\o removing unused task: m2m1Cap = geomAnd(geomAnd(metal1 metal2) cap_id)
+\o removing unused task: m1sCap = geomAnd(geomAndNot(metal1 poly) cap_id)
+\o removing unused task: m1pCap = geomAnd(geomAnd(poly metal1) cap_id)
+\o removing unused task: pChannelCap = geomButting(pChannel pDiff (keep == 1))
+\o removing unused task: nChannelCap = geomButting(nChannel nDiff (keep == 1))
+\o removing unused task: Space = geomNot(geomOr(active poly elec))
+\o removing unused task: pElecChannelCap = geomButting(pElecChannel pDiff (keep == 1))
+\o removing unused task: nElecChannelCap = geomButting(nElecChannel nDiff (keep == 1))
+\o removing unused task: pad = geomOr(geomAndNot(("pad" "drawing") nodrc))
+\o removing unused task: glass = geomOr(geomAndNot(("glass" "drawing") nodrc))
+\o removing unused task: gselect = geomOr(geomAndNot(("gselect" "drawing") nodrc))
+\o removing unused task: gwell = geomOr(geomAndNot(("gwell" "drawing") nodrc))
+\o removing unused task: bkgnd = geomBkgnd()
+\o Running layout Extraction analysis
+\o flat mode
+\o Full checking.
+\o For layer nChannelTran :
+\o     2  shapes encountered.
+\o     2  nmos4 ivpcell NCSU_Analog_Parts devices well formed.
+\o For layer pChannelTran :
+\o     2  shapes encountered.
+\o     2  pmos4 ivpcell NCSU_Analog_Parts devices well formed.
+\o 0 cap ivpcell NCSU_Analog_Parts parasitics created.
+\o 0 cap ivpcell NCSU_Analog_Parts parasitics created.
+\o 0 cap ivpcell NCSU_Analog_Parts parasitics created.
+\o 0 cap ivpcell NCSU_Analog_Parts parasitics created.
+\o 0 cap ivpcell NCSU_Analog_Parts parasitics created.
+\o Extraction started.......Sat Mar 23 00:12:22 2019
+\o            completed ....Sat Mar 23 00:12:23 2019
+\o     CPU TIME = 00:00:00  TOTAL TIME = 00:00:01
+\o *********   Summary of rule violations for cell "tristateInvCore layout"   *********
+\o    Total errors found: 0
+\o 
+\o saving rep HMMM/tristateInvCore/extracted
+\r Getting layout propert bagGetting layout propert bagt
+\a leHiSave()
+\r Getting layout propert bagGetting layout propert bagt
+\a setLVSForm()
+\e *Error* eval: unbound variable - ivLVSContentsDifferForm
+\r ERROR
+\a hiResizeWindow(window(26) list(161:55 606:563))
+\r t
+\a ivLVSEnvForm->schCellName->value="tristateInvCore"
+\r "tristateInvCore"
+\a ivLVSEnvForm->extCellName->value="tristateInvCore"
+\r "tristateInvCore"
+\a ivLVSRun()
+\o Loading .simrc from /proj/ncsu/rel/cdssetup/simrc.UofU
+\o Loading .simrc from /proj/ncsu/rel/cdssetup/simrc.UofU
+\o LVS job is now started...
+\r nil
+\# Displaying modal dbox "ivDBox", title " "
+\w *WARNING* The LVS job has failed to run to completion. Examine si.out and si.log in the run directory for more information.
+\w 
+\w Run Directory: /home/cnorfleet/IC_CAD/cadence/LVS
+\p > 
+\a hiDBoxOK(ivDBox)
+\r t
+\a ivLVSShowOutput( "si.out" )
+\# Displaying modal dbox "ivDBox", title " "
+\w *WARNING* Can't find/read file '/home/cnorfleet/IC_CAD/cadence/LVS/si.out'.
+\p > 
+\a hiDBoxOK(ivDBox)
+\r t
+\e *Error* eval: unbound variable - ivLVSShowForm
+\r ERROR
+\a ivLVSEnvForm->schViewName->value="cmos_sch"
+\r "cmos_sch"
+\a ivLVSRun()
+\o Loading .simrc from /proj/ncsu/rel/cdssetup/simrc.UofU
+\o Loading .simrc from /proj/ncsu/rel/cdssetup/simrc.UofU
+\o LVS job is now started...
+\r nil
+\o The LVS job has completed. The net-lists match.
+\o 
+\o Run Directory: /home/cnorfleet/IC_CAD/cadence/LVS
+\# Displaying modal dbox "ivDBox", title " "
+\p > 
+\a hiDBoxOK(ivDBox)
+\r t
+\a hiCloseWindow(window(26))
+\r t
+\a hiCloseWindow(swindow(19))
+\r Getting layout propert bagt
+\r nil
+\a _hiSetCurrentWinNum(23)
+\r t
+\a hiCloseWindow(swindow(17))
+\r Getting schematic propert bagt
+\i ddsServOpen("HMMM" "tristate_1x" "schematic" "edit" nil)
+\a _treeNavToggleColumn(dwindow('treeAssistant20) "8" "t")
+\r Getting schematic propert bagt
+\a _treeNavActivateOpc(dwindow('treeAssistant20) "Objects/Instances")
+\r t
+\a _treeNavToggleColumn(dwindow('treeAssistant20) "8" "nil")
+\r t
+\a when(dwindow('oiAssistant20) hiMapWindow(dwindow('oiAssistant20)))
+\r t
+\a when(dwindow('treeAssistant20) hiMapWindow(dwindow('treeAssistant20)))
+\r t
+\a _treeNavToggleColumn(dwindow('treeAssistant20) "8" "t")
+\r t
+\a _treeNavToggleColumn(dwindow('treeAssistant20) "8" "nil")
+\r t
+\a hiCloseWindow(swindow(20))
+\r Getting schematic propert bagt
+\i ddsServOpen("HMMM" "tristate_1x" "layout" "edit" nil)
+\o Getting layout propert bagLoad shared object file /cad/cds/ASSURA615/tools.lnx86/assura/lib/64bit/libavview.so
+\w *WARNING* dlopen: /cad/cds/ASSURA615/tools.lnx86/assura/lib/64bit/libavview.so: /cad/cds/ASSURA615/tools.lnx86/assura/lib/64bit/libavview.so: undefined symbol: _XmStrings
+\w *WARNING* Failed to open shared object file /cad/cds/ASSURA615/tools.lnx86/assura/lib/64bit/libavview.so
+\w *WARNING* (LE-104272): Assura has not been installed in this hierarchy.
+\a when(dwindow('ptePaletteAssistant12) hiMapWindow(dwindow('ptePaletteAssistant12)))
+\r t
+\a leHiEditDisplayOptions()
+\r t
+\a leDisplayOptionsForm->gridSpacing->value=0.3
+\r 0.3
+\a leDisplayOptionsForm->majorSpacing->value=3.0
+\r 3.0
+\a leDisplayOptionsForm->xSnap->value=0.3
+\r 0.3
+\a leDisplayOptionsForm->ySnap->value=0.3
+\r 0.3
+\a leDisplayOptionsForm->stop->value=2
+\r 2
+\a hiFormDone(leDisplayOptionsForm)
+\r t
+\a hiZoomInAtMouse()
+\i 5.4:26.7
+\r t
+\a hiZoomInAtMouse()
+\i 5.4:26.7
+\r t
+\a hiZoomInAtMouse()
+\i 5.4:26.7
+\r t
+\a hiZoomInAtMouse()
+\i 5.1:26.4
+\r t
+\a hiZoomInAtMouse()
+\i 5.1:26.4
+\r t
+\a hiZoomInAtMouse()
+\i 5.1:26.4
+\r t
+\a hiZoomInAtMouse()
+\i 5.1:26.4
+\r t
+\a hiZoomInAtMouse()
+\i 5.1:26.4
+\r t
+\a hiZoomInAtMouse()
+\i 5.1:26.4
+\r t
+\a hiZoomOutAtMouse()
+\i 5.1:26.4
+\r t
+\a hiZoomOutAtMouse()
+\i 5.1:26.4
+\r t
+\a hiZoomOutAtMouse()
+\i 5.1:26.4
+\r t
+\a hiZoomOutAtMouse()
+\i 5.1:26.4
+\r t
+\a hiZoomOutAtMouse()
+\i 5.1:26.1
+\r t
+\a hiZoomOutAtMouse()
+\i 5.4:26.1
+\r t
+\a hiZoomOutAtMouse()
+\i 5.4:25.8
+\r t
+\a hiZoomOutAtMouse()
+\i 5.4:26.1
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "s" nil)
+\r t
+\a hiZoomRelativeScale(getCurrentWindow() 0.8)
+\r t
+\a geScroll(nil "e"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "e"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a setDRCForm()
+\r nil
+\a hiiSetCurrentForm('ivDRCOptionsForm)
+\r t
+\a hiFormDone(ivDRCOptionsForm)
+\o DRC started at Sat Mar 23 00:18:28 2019
+\o 
+\o Validating hierarchy instantiation for:
+\o library: HMMM
+\o cell:    tristate_1x
+\o view:    layout
+\o Rules come from library UofU_TechLib_ami06.
+\o Rules path is divaDRC.rul.
+\o Inclusion limit is set to 1000.
+\o Running layout DRC analysis
+\o Flat mode
+\o Full checking.
+\o DRC started.......Sat Mar 23 00:18:28 2019
+\o     completed ....Sat Mar 23 00:18:28 2019
+\o     CPU TIME = 00:00:00  TOTAL TIME = 00:00:00
+\o *********   Summary of rule violations for cell "tristate_1x layout"   *********
+\o    Total errors found: 0
+\o 
+\r t
+\a pteSetActiveLpp("metal2 drawing")
+\r nil
+\a leHiCreateRect()
+\a leRectLForm->slotLayer->value = "cc drawing"
+\r "cc drawing"
+\a leRectLForm->slotLayer->value = "cc drawing"
+\r "cc drawing"
+\a leRectLForm->slotLayer->value = "y0 drawing"
+\r "y0 drawing"
+\p > 
+\a hiiSetCurrentForm('leRectLForm)
+\r t
+\a mouseAddPt(t)
+\i 7.877:10.177
+\r t
+\a mouseAddPt(t)
+\i 5.017:9.161
+\r t
+\a hiUndo()
+\r t
+\a mouseAddPt(t)
+\i 4.867:8.973
+\r t
+\a mouseAddPt(t)
+\i 7.914:10.139
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a hiUndo()
+\r t
+\a mouseAddPt(t)
+\i 4.867:8.936
+\r t
+\a mouseAddPt(t)
+\i 6.108:15.106
+\r t
+\a hiZoomRelativeScale(getCurrentWindow() 1.25)
+\r t
+\a hiZoomRelativeScale(getCurrentWindow() 1.25)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a mouseAddPt(t)
+\i 4.875:9.007
+\r t
+\a mouseAddPt(t)
+\i 7.837:10.163
+\r t
+\a setDRCForm()
+\r nil
+\a hiiSetCurrentForm('ivDRCOptionsForm)
+\r t
+\a hiFormDone(ivDRCOptionsForm)
+\o DRC started at Sat Mar 23 00:19:39 2019
+\o 
+\o Validating hierarchy instantiation for:
+\o library: HMMM
+\o cell:    tristate_1x
+\o view:    layout
+\o Rules come from library UofU_TechLib_ami06.
+\o Rules path is divaDRC.rul.
+\o Inclusion limit is set to 1000.
+\o Running layout DRC analysis
+\o Flat mode
+\o Full checking.
+\o DRC started.......Sat Mar 23 00:19:39 2019
+\o     completed ....Sat Mar 23 00:19:39 2019
+\o     CPU TIME = 00:00:00  TOTAL TIME = 00:00:00
+\o *********  Summary of rule violations for cell "tristate_1x layout"  *********
+\o  # errors  Violated Rules
+\o         3  (SCMOS_SUBM Rule 9.2.b) metal2 spacing: 0.90 um
+\o         3  Total errors found
+\o 
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a hiUndo()
+\r t
+\a hiUndo()
+\r t
+\a hiUndo()
+\r t
+\a leHiMove()
+\a leMoveLForm->leMoveFormLayerField->value = "nwell drawing"
+\r "nwell drawing"
+\a leMoveLForm->leMoveFormLayerField->value = "As Is"
+\r "As Is"
+\r t
+\a hiiToggleEnterForm(leMoveLForm) 
+\r t
+\a hiZoomOutAtMouse()
+\i 8.4:8.1
+\r t
+\a mouseAddPt(t)
+\i 15.797:17.089
+\r t
+\a mouseAddPt(t)
+\i 15.46:16.656
+\r t
+\a geSingleSelectBox()
+\i 15.6:16.8
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 5.7:8.7
+\r t
+\r t
+\a mouseAddPt(t)
+\i 7.418:9.577
+\r t
+\a mouseAddPt(t)
+\i 8.911:9.866
+\r t
+\a hiUndo()
+\r t
+\a geSingleSelectBox()
+\i 17.4:16.5
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 4.8:7.8
+\r t
+\r t
+\a mouseAddPt(t)
+\i 7.37:8.999
+\r t
+\a mouseAddPt(t)
+\i 8.718:9.288
+\r t
+\a mouseAddPt(t)
+\i 10.452:8.71
+\r t
+\a hiZoomInAtMouse()
+\i 12:9.9
+\r t
+\a mouseAddPt(t)
+\i 11.611:9.545
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geSingleSelectBox()
+\i 4.8:29.7
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 7.2:25.2
+\r t
+\r t
+\a mouseAddPt(t)
+\i 5.977:26.857
+\r t
+\a mouseAddPt(t)
+\i 7.061:26.833
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geSingleSelectBox()
+\i 4.5:-1.8
+\p > 
+\a addPoint(hiGetCommandPoint())
+\i 6.9:0.9
+\r t
+\r t
+\a mouseAddPt(t)
+\i 6.122:0.059
+\r t
+\a mouseAddPt(t)
+\i 7.109:0.203
+\r t
+\a leHiStretch()
+\r t
+\a mouseAddPt(t)
+\i 12.358:0.733
+\r t
+\a mouseAddPt(t)
+\i 13.465:0.54
+\r t
+\a mouseAddPt(t)
+\i 12.31:0.95
+\r t
+\a mouseAddPt(t)
+\i 13.441:0.902
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a mouseAddPt(t)
+\i 7.783:12.459
+\r t
+\a mouseAddPt(t)
+\i 8.915:12.41
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a mouseAddPt(t)
+\i 12.382:28.109
+\r t
+\a mouseAddPt(t)
+\i 13.489:28.109
+\r t
+\a mouseAddPt(t)
+\i 12.31:28.013
+\r t
+\a mouseAddPt(t)
+\i 13.393:28.109
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a leHiSave()
+\r Getting layout propert bagGetting layout propert bagt
+\a geScroll(nil "w"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "n"     nil)
+\r t
+\a geScroll(nil "e"     nil)
+\r t
+\a geScroll(nil "s"     nil)
+\r t
+\a hiZoomOutAtMouse()
+\i 5.4:10.8
+\r t
+\a hiZoomInAtMouse()
+\i 5.1:10.8
+\r t
+\a hiZoomOutAtMouse()
+\i 5.7:9
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a leDoubleClick()
+\i 3.9:10.8
+\o Getting layout propert bagLoad shared object file /cad/cds/ASSURA615/tools.lnx86/assura/lib/64bit/libavview.so
+\w *WARNING* dlopen: /cad/cds/ASSURA615/tools.lnx86/assura/lib/64bit/libavview.so: /cad/cds/ASSURA615/tools.lnx86/assura/lib/64bit/libavview.so: undefined symbol: _XmStrings
+\w *WARNING* Failed to open shared object file /cad/cds/ASSURA615/tools.lnx86/assura/lib/64bit/libavview.so
+\w *WARNING* (LE-104272): Assura has not been installed in this hierarchy.
+\r t

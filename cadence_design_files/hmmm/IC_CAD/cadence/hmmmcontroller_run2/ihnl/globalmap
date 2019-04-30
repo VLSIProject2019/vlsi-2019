@@ -1,0 +1,27 @@
+CADENCE IHNL11140
+$model
+muddlib11/inv_1x/cmos_sch inv_1x
+muddlib11/or2_1x/cmos_sch or2_1x
+wordlib8/mux2_1x_8/schematic mux2_1x_8
+muddlib11/clkinvbuf_4x/cmos_sch clkinvbuf_4x
+HMMM/condcheck/schematic condcheck
+muddlib11/nor3_1x/cmos_sch nor3_1x
+muddlib11/flopenr_dp_1x/cmos_sch flopenr_dp_1x
+muddlib11/mux4_dp_1x/cmos_sch mux4_dp_1x
+muddlib11/mux2_dp_1x/cmos_sch mux2_dp_1x
+muddlib11/clkinvbufdual_4x/schematic clkinvbufdual_4x
+muddlib11/and2_1x/cmos_sch and2_1x
+muddlib11/buf_1x/cmos_sch buf_1x
+muddlib11/nor2_1x/cmos_sch nor2_1x
+muddlib11/mux2_c_1x/cmos_sch mux2_c_1x
+muddlib11/invbuf_4x/schematic invbuf_4x
+wordlib8/flopenr_1x_8/schematic flopenr_1x_8
+muddlib11/inv_4x/cmos_sch inv_4x
+HMMM/controller/schematic controller
+$endmodel
+$net
+gnd! cds_globals.gnd_
+vdd! cds_globals.vdd_
+$endnet
+$param
+$endparam

@@ -1,0 +1,23 @@
+\o Program:		@(#)$CDS: libManager version 6.1.8 - CAT37 09/24/2018 21:00 (ip-172-18-22-224) $
+\o Sub version:		sub-version  p015 
+\o Arguments:		-mpssession virtuoso15245 -mpshost DHCP-60-126.ST.HMC.Edu 
+\o Working Directory:	DHCP-60-126.ST.HMC.Edu:/proj/VLSI19S/G1/hmmm
+\o 64-bit offsets
+\o Qt version: 		5.9.1
+\o Log file is "/proj/VLSI19S/G1/hmmm/libManager.log".
+\o Opening libManager window.
+\a nrSetCurrentWindow(cdsLibManager)
+\o Loading customization file "./cdsLibMgr.il"
+\o Loading NCSU Library Manager customizations...done.
+\a nrResizeWindow(cdsLibManager list(567 110 718 410))
+\o changeWorkingDir("/proj/VLSI19S/G1/hmmm") unnecessary.
+\o ddSetForcedLib("") unnecessary.
+\o MPS service: map window
+\o Library Manager customization server connected.
+\a nrResizeWindow(cdsLibManager list(493 40 718 410))
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a _lmgrCloseIconify("cdsLibManager" 1)
+\a nrSetWindowVisibility(cdsLibManager "show")
+\o MPS service: shutdown
+\o libManager is exiting.
+\a exit(0)

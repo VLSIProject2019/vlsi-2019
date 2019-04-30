@@ -1,0 +1,51 @@
+CADENCE IHNL11140
+$model
+mips8/yzdetect_8/schematic yzdetect_8
+mips8/regram_8/schematic regram_8
+mips8/regram_dp/cmos_sch regram_dp
+muddlib11/fulladder/cmos_sch fulladder
+wordlib8/inv_1x_8/schematic inv_1x_8
+mips8/regram_zipper/schematic regram_zipper
+muddlib11/inv_1x/cmos_sch inv_1x
+wordlib8/flopen_1x_8/schematic flopen_1x_8
+wordlib8/or2_1x_8/schematic or2_1x_8
+mips8/regramvector0_dp/schematic regramvector0_dp
+muddlib11/or2_1x/cmos_sch or2_1x
+wordlib8/mux2_1x_8/schematic mux2_1x_8
+muddlib11/clkinvbuf_4x/cmos_sch clkinvbuf_4x
+muddlib11/flop_dp_1x/cmos_sch flop_dp_1x
+muddlib11/flopenr_dp_1x/cmos_sch flopenr_dp_1x
+mips8/regramvector_dp/schematic regramvector_dp
+wordlib8/flop_1x_8/schematic flop_1x_8
+wordlib8/and2_1x_8/schematic and2_1x_8
+mips8/condinv_8/schematic condinv_8
+muddlib11/mux4_dp_1x/cmos_sch mux4_dp_1x
+muddlib11/mux2_dp_1x/cmos_sch mux2_dp_1x
+muddlib11/clkinvbufdual_4x/schematic clkinvbufdual_4x
+mips8/regramadrbuf/schematic regramadrbuf
+wordlib8/adder_8/schematic adder_8
+mips8/regramarray_dp/schematic regramarray_dp
+mips8/alu/schematic alu
+muddlib11/and2_1x/cmos_sch and2_1x
+muddlib11/nor2_1x/cmos_sch nor2_1x
+muddlib11/mux2_c_1x/cmos_sch mux2_c_1x
+wordlib8/mux3_1x_8/schematic mux3_1x_8
+mips8/regram0/cmos_sch regram0
+muddlib11/nand5_1x/cmos_sch nand5_1x
+wordlib8/mux4_1x_8/schematic mux4_1x_8
+muddlib11/invbuf_4x/schematic invbuf_4x
+mips8/regram0_zipper/schematic regram0_zipper
+wordlib8/flopenr_1x_8/schematic flopenr_1x_8
+muddlib11/nand3_1x/cmos_sch nand3_1x
+muddlib11/mux3_dp_1x/cmos_sch mux3_dp_1x
+muddlib11/nand2_1x/cmos_sch nand2_1x
+muddlib11/inv_4x/cmos_sch inv_4x
+muddlib11/flopen_dp_1x/cmos_sch flopen_dp_1x
+mips8/datapath/schematic datapath
+$endmodel
+$net
+gnd! cds_globals.gnd_
+vdd! cds_globals.vdd_
+$endnet
+$param
+$endparam

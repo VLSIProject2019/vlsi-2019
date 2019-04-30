@@ -1,0 +1,3 @@
+s1(10Feb2019:12:49:21):  ncverilog -l nc.log +access+r nand2.sv 
+s2(10Feb2019:12:50:01):  ncverilog -l nc.log +access+r +gui nand2.sv 
+s3(18Mar2019:02:20:41):  ncverilog -l nc.log +access+r nand2.sv 

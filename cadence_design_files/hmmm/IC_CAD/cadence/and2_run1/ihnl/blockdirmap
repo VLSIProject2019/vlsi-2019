@@ -1,0 +1,5 @@
+CADENCE IHNL11143
+
+lab1_cn inv cmos_sch cds0
+lab1_cn nand2 cmos_sch cds1
+lab1_cn and2 schematic cds2

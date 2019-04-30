@@ -1,0 +1,20 @@
+// Verilog HDL and netlist files of
+// "HMMM tristate_1x_8 schematic"
+
+// Netlisted models
+
+// netlist file - HMMM, tristateInvCore, cmos_sch.
+ihnl/cds0/netlist
+// netlist file - muddlib11, inv_1x, cmos_sch.
+ihnl/cds1/netlist
+// netlist file - HMMM, tristate_1x, schematic.
+ihnl/cds2/netlist
+// netlist file - HMMM, tristate_1x_8, schematic.
+ihnl/cds3/netlist
+
+
+// End HDL models
+
+// globals file 
+hdlFilesDir/cds_globals.v
+

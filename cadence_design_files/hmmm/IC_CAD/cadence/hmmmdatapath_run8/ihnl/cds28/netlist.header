@@ -1,0 +1,19 @@
+// Library - muddlib11, Cell - nand2_1x, View - cmos_sch
+// LAST TIME SAVED: Mar 21 17:25:28 2019
+// NETLIST TIME: Mar 22 03:55:43 2019
+`timescale 1ns / 100ps 
+
+module nand2_1x ( y, a, b );
+
+output  y;
+
+input  a, b;
+
+
+
+specify 
+    specparam CDS_LIBNAME  = "muddlib11";
+    specparam CDS_CELLNAME = "nand2_1x";
+    specparam CDS_VIEWNAME = "cmos_sch";
+endspecify
+

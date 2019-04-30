@@ -1,0 +1,69 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "controller"
+  repList "behavioral functional schematic cmos_sch"
+  stopList "behavioral functional"
+  globalList "gnd! vdd!"
+  hierDelim "."
+  hierPrefix "test.top"
+  globalHierPrefix "cds_globals."
+  netlistDir "/proj/VLSI19S/G1/hmmm/IC_CAD/cadence/hmmmcontroller_run2"
+  busRef   "ORDERED"
+  netType   "BUS"
+  leftStr  "["
+  rangeStr  ":"
+  rightStr  "]"
+ )
+( defbus
+( "PCSrc" 1 0  "PCSrc" 1 0  )
+( "instr1" 7 0  "instr1" 7 0  )
+( "RegWriteSrc" 1 0  "RegWriteSrc" 1 0  )
+( "MemData1" 6 0  "MemData1" 6 0  )
+( "branchType" 1 0  "branchType" 1 0  )
+( "instrTemp1" 7 0  "instrTemp1" 7 0  )
+( "gnd!,MemData1<6:0>" 0 7  "{cds_globals.gnd_, MemData1[6:0]}" 0 7 t )
+ )
+( net
+( "vdd!" "cds_globals.vdd_" )
+( "gnd!" "cds_globals.gnd_" )
+ )
+( model
+( "muddlib11/inv_1x/cmos_sch" "inv_1x" )
+( "muddlib11/nor2_1x/cmos_sch" "nor2_1x" )
+( "muddlib11/mux2_c_1x/cmos_sch" "mux2_c_1x" )
+( "HMMM/controller/schematic" "controller" )
+( "muddlib11/buf_1x/cmos_sch" "buf_1x" )
+( "muddlib11/nor3_1x/cmos_sch" "nor3_1x" )
+( "muddlib11/mux4_dp_1x/cmos_sch" "mux4_dp_1x" )
+( "muddlib11/flopenr_dp_1x/cmos_sch" "flopenr_dp_1x" )
+( "muddlib11/and2_1x/cmos_sch" "and2_1x" )
+( "muddlib11/clkinvbuf_4x/cmos_sch" "clkinvbuf_4x" )
+( "wordlib8/mux2_1x_8/schematic" "mux2_1x_8" )
+( "wordlib8/flopenr_1x_8/schematic" "flopenr_1x_8" )
+( "muddlib11/inv_4x/cmos_sch" "inv_4x" )
+( "muddlib11/clkinvbufdual_4x/schematic" "clkinvbufdual_4x" )
+( "muddlib11/or2_1x/cmos_sch" "or2_1x" )
+( "muddlib11/mux2_dp_1x/cmos_sch" "mux2_dp_1x" )
+( "muddlib11/invbuf_4x/schematic" "invbuf_4x" )
+( "HMMM/condcheck/schematic" "condcheck" )
+ )
+( "inv_4x" "ihnl/cds3/map" )
+( "mux2_dp_1x" "ihnl/cds6/map" )
+( "nor2_1x" "ihnl/cds11/map" )
+( "flopenr_dp_1x" "ihnl/cds0/map" )
+( "invbuf_4x" "ihnl/cds4/map" )
+( "controller" "ihnl/cds17/map" )
+( "inv_1x" "ihnl/cds8/map" )
+( "or2_1x" "ihnl/cds10/map" )
+( "and2_1x" "ihnl/cds9/map" )
+( "clkinvbuf_4x" "ihnl/cds1/map" )
+( "condcheck" "ihnl/cds15/map" )
+( "clkinvbufdual_4x" "ihnl/cds2/map" )
+( "nor3_1x" "ihnl/cds12/map" )
+( "mux4_dp_1x" "ihnl/cds14/map" )
+( "mux2_c_1x" "ihnl/cds13/map" )
+( "flopenr_1x_8" "ihnl/cds5/map" )
+( "mux2_1x_8" "ihnl/cds7/map" )
+( "buf_1x" "ihnl/cds16/map" )
+ )

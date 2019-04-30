@@ -1,0 +1,288 @@
+04/07/2019 22:29:29 (491061-906284544 virtuoso): Initialization started (12.04-s027)...
+04/07/2019 22:29:29 (491061-906284544): FLEXnet version 11.11.1.1 build 119913
+04/07/2019 22:29:29 (491061-906284544): Process ID 9949
+04/07/2019 22:29:29 (491061-906284544): Using command line option -display for DISPLAY ((null))
+04/07/2019 22:29:29 (491061-906284544): Creating a new job ...
+04/07/2019 22:29:29 (491061-906284544): Validating server path: 5280@134.173.38.214:2222@theforce.eng.hmc.edu
+04/07/2019 22:29:29 (491061-906284544): Server path validation status: 0
+04/07/2019 22:29:29 (491061-906284544):   Configuration of license path is '5280@134.173.38.214:2222@theforce.eng.hmc.edu'.
+04/07/2019 22:29:29 (491061-906284544):   Configuration of recheck interval minimum is 290.
+04/07/2019 22:29:29 (491061-906284544):   Configuration of 2000000000 maximum retry calls.
+04/07/2019 22:29:29 (491061-906284544):   Configuration of sleep time value of 0.
+04/07/2019 22:29:29 (491061-906284544):   Configuration of display specification is 'localhost:11.0'.
+04/07/2019 22:29:29 (491061-906284544):   Licenses will be checked out using cnorfleet@DHCP-60-126.ST.HMC.Edu(localhost:11.0).
+04/07/2019 22:29:29 (491061-906284544):   (System spec would have been cnorfleet@DHCP-60-126.ST.HMC.Edu(/dev/pts/5) )
+04/07/2019 22:29:29 (491061-906284544): Job creation completed with status 0 (time 0).
+04/07/2019 22:29:29 (491061-906284544): Creating a new job ...
+04/07/2019 22:29:29 (491061-906284544):   Configuration of license path is '5280@134.173.38.214:2222@theforce.eng.hmc.edu'.
+04/07/2019 22:29:29 (491061-906284544):   Configuration of recheck interval minimum is 290.
+04/07/2019 22:29:29 (491061-906284544):   Configuration of 2000000000 maximum retry calls.
+04/07/2019 22:29:29 (491061-906284544):   Configuration of sleep time value of 0.
+04/07/2019 22:29:29 (491061-906284544):   Configuration of display specification is 'localhost:11.0'.
+04/07/2019 22:29:29 (491061-906284544):   Licenses will be checked out using cnorfleet@DHCP-60-126.ST.HMC.Edu(localhost:11.0).
+04/07/2019 22:29:29 (491061-906284544):   (System spec would have been cnorfleet@DHCP-60-126.ST.HMC.Edu(/dev/pts/5) )
+04/07/2019 22:29:29 (491061-906284544): Job creation completed with status 0 (time 0).
+04/07/2019 22:29:29 (491061-906284544): Creating a new job ...
+04/07/2019 22:29:29 (491061-906284544):   Configuration of license path is '5280@134.173.38.214:2222@theforce.eng.hmc.edu'.
+04/07/2019 22:29:29 (491061-906284544):   Configuration of recheck interval minimum is 290.
+04/07/2019 22:29:29 (491061-906284544):   Configuration of 2000000000 maximum retry calls.
+04/07/2019 22:29:29 (491061-906284544):   Configuration of sleep time value of 0.
+04/07/2019 22:29:29 (491061-906284544):   Configuration of display specification is 'localhost:11.0'.
+04/07/2019 22:29:29 (491061-906284544):   Licenses will be checked out using cnorfleet@DHCP-60-126.ST.HMC.Edu(localhost:11.0).
+04/07/2019 22:29:29 (491061-906284544):   (System spec would have been cnorfleet@DHCP-60-126.ST.HMC.Edu(/dev/pts/5) )
+04/07/2019 22:29:29 (491061-906284544): Job creation completed with status 0 (time 0).
+04/07/2019 22:29:29 (491061-906284544): Creating a new job ...
+04/07/2019 22:29:29 (491061-906284544):   Configuration of license path is '5280@134.173.38.214:2222@theforce.eng.hmc.edu'.
+04/07/2019 22:29:29 (491061-906284544):   Configuration of recheck interval minimum is 290.
+04/07/2019 22:29:29 (491061-906284544):   Configuration of 2000000000 maximum retry calls.
+04/07/2019 22:29:29 (491061-906284544):   Configuration of sleep time value of 0.
+04/07/2019 22:29:29 (491061-906284544):   Configuration of display specification is 'localhost:11.0'.
+04/07/2019 22:29:29 (491061-906284544):   Licenses will be checked out using cnorfleet@DHCP-60-126.ST.HMC.Edu(localhost:11.0).
+04/07/2019 22:29:29 (491061-906284544):   (System spec would have been cnorfleet@DHCP-60-126.ST.HMC.Edu(/dev/pts/5) )
+04/07/2019 22:29:29 (491061-906284544): Job creation completed with status 0 (time 0).
+04/07/2019 22:29:29 (491061-906284544): Creating a new job ...
+04/07/2019 22:29:29 (491061-906284544):   Configuration of license path is '5280@134.173.38.214:2222@theforce.eng.hmc.edu'.
+04/07/2019 22:29:29 (491061-906284544):   Configuration of recheck interval minimum is 290.
+04/07/2019 22:29:29 (491061-906284544):   Configuration of 2000000000 maximum retry calls.
+04/07/2019 22:29:29 (491061-906284544):   Configuration of sleep time value of 0.
+04/07/2019 22:29:29 (491061-906284544):   Configuration of display specification is 'localhost:11.0'.
+04/07/2019 22:29:29 (491061-906284544):   Licenses will be checked out using cnorfleet@DHCP-60-126.ST.HMC.Edu(localhost:11.0).
+04/07/2019 22:29:29 (491061-906284544):   (System spec would have been cnorfleet@DHCP-60-126.ST.HMC.Edu(/dev/pts/5) )
+04/07/2019 22:29:29 (491061-906284544): Job creation completed with status 0 (time 0).
+04/07/2019 22:29:29 (491061-906284544): Initialization completed with status 0 (time 0).
+04/07/2019 22:29:33 (491061-906284544): FeatureStatus started ....
+04/07/2019 22:29:33 (491061-906284544): FeatureStatus of 111 completed with status 1 (time 0).
+04/07/2019 22:29:33 (491061-906284544): Check-out started ....
+04/07/2019 22:29:33 (491061-906284544): Checking out 1 license(s) for 111 6.180...
+04/07/2019 22:29:33 (491061-906284544):   (Checked out from file '5280@134.173.38.214',
+             line '6.18 15-dec-2019 340 5E7DD6B58FE54C02AF6F ')
+04/07/2019 22:29:33 (491061-906284544): Check-out completed with status 0 (time 0).
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus started ....
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus of CICNG_812 completed with status 1 (time 0).
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus started ....
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus of debug completed with status 1 (time 0).
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus started ....
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus of debug completed with status 1 (time 0).
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus started ....
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus of debug completed with status 1 (time 0).
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus started ....
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus of debug completed with status 1 (time 0).
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus started ....
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus of skillDev completed with status 1 (time 0).
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus started ....
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus of debug completed with status 1 (time 0).
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus started ....
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus of debug completed with status 1 (time 0).
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus started ....
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus of debug completed with status 1 (time 0).
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus started ....
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus of debug completed with status 1 (time 0).
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus started ....
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus of debug completed with status 1 (time 0).
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus started ....
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus of debug completed with status 1 (time 0).
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus started ....
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus of debug completed with status 1 (time 0).
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus started ....
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus of debug completed with status 1 (time 0).
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus started ....
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus of debug completed with status 1 (time 0).
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus started ....
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus of debug completed with status 1 (time 0).
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus started ....
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus of debug completed with status 1 (time 0).
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus started ....
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus of debug completed with status 1 (time 0).
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus started ....
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus of debug completed with status 1 (time 0).
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus started ....
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus of debug completed with status 1 (time 0).
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus started ....
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus of debug completed with status 1 (time 0).
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus started ....
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus of debug completed with status 1 (time 0).
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus started ....
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus of debug completed with status 1 (time 0).
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus started ....
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus of debug completed with status 1 (time 0).
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus started ....
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus of debug completed with status 1 (time 0).
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus started ....
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus of debug completed with status 1 (time 0).
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus started ....
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus of debug completed with status 1 (time 0).
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus started ....
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus of debug completed with status 1 (time 0).
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus started ....
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus of debug completed with status 1 (time 0).
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus started ....
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus of debug completed with status 1 (time 0).
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus started ....
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus of debug completed with status 1 (time 0).
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus started ....
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus of debug completed with status 1 (time 0).
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus started ....
+04/07/2019 22:29:35 (491061-906284544): FeatureStatus of debug completed with status 1 (time 0).
+04/07/2019 22:29:36 (491061-906284544): FeatureStatus started ....
+04/07/2019 22:29:36 (491061-906284544): FeatureStatus of debug completed with status 1 (time 0).
+04/07/2019 22:29:36 (491061-906284544): FeatureStatus started ....
+04/07/2019 22:29:36 (491061-906284544): FeatureStatus of debug completed with status 1 (time 0).
+04/07/2019 22:29:36 (491061-906284544): FeatureStatus started ....
+04/07/2019 22:29:36 (491061-906284544): FeatureStatus of debug completed with status 1 (time 0).
+04/07/2019 22:29:38 (491061-906284544): FeatureStatus started ....
+04/07/2019 22:29:38 (491061-906284544): FeatureStatus of debug completed with status 1 (time 0).
+04/07/2019 22:29:38 (491061-906284544): FeatureStatus started ....
+04/07/2019 22:29:38 (491061-906284544): FeatureStatus of debug completed with status 1 (time 0).
+04/07/2019 22:29:38 (491061-906284544): FeatureStatus started ....
+04/07/2019 22:29:38 (491061-906284544): FeatureStatus of debug completed with status 1 (time 0).
+04/07/2019 22:29:38 (491061-906284544): FeatureStatus started ....
+04/07/2019 22:29:38 (491061-906284544): FeatureStatus of debug completed with status 1 (time 0).
+04/07/2019 22:29:38 (491061-906284544): FeatureStatus started ....
+04/07/2019 22:29:38 (491061-906284544): FeatureStatus of debug completed with status 1 (time 0).
+04/07/2019 22:29:38 (491061-906284544): FeatureStatus started ....
+04/07/2019 22:29:38 (491061-906284544): FeatureStatus of debug completed with status 1 (time 0).
+04/07/2019 22:29:38 (491061-906284544): FeatureStatus started ....
+04/07/2019 22:29:38 (491061-906284544): FeatureStatus of debug completed with status 1 (time 0).
+04/07/2019 22:29:38 (491061-906284544): FeatureStatus started ....
+04/07/2019 22:29:38 (491061-906284544): FeatureStatus of debug completed with status 1 (time 0).
+04/07/2019 22:29:38 (491061-906284544): FeatureStatus started ....
+04/07/2019 22:29:38 (491061-906284544): FeatureStatus of CICNG_801 completed with status 1 (time 0).
+04/07/2019 22:29:42 (125809 libSelect): Initialization started (12.04-s027)...
+04/07/2019 22:29:42 (125809): FLEXnet version 11.11.1.1 build 119913
+04/07/2019 22:29:42 (125809): Process ID 10132
+04/07/2019 22:29:42 (125809): Creating a new job ...
+04/07/2019 22:29:42 (125809): Validating server path: 5280@134.173.38.214:2222@theforce.eng.hmc.edu
+04/07/2019 22:29:42 (125809): Server path validation status: 0
+04/07/2019 22:29:42 (125809):   Configuration of license path is '5280@134.173.38.214:2222@theforce.eng.hmc.edu'.
+04/07/2019 22:29:42 (125809):   Configuration of recheck interval minimum is 290.
+04/07/2019 22:29:42 (125809):   Configuration of 2000000000 maximum retry calls.
+04/07/2019 22:29:42 (125809):   Configuration of sleep time value of 0.
+04/07/2019 22:29:42 (125809):   Configuration of display specification is 'localhost:11.0'.
+04/07/2019 22:29:42 (125809):   Licenses will be checked out using cnorfleet@DHCP-60-126.ST.HMC.Edu(localhost:11.0).
+04/07/2019 22:29:42 (125809):   (System spec would have been cnorfleet@DHCP-60-126.ST.HMC.Edu() )
+04/07/2019 22:29:42 (125809): Job creation completed with status 0 (time 0).
+04/07/2019 22:29:42 (125809): Creating a new job ...
+04/07/2019 22:29:42 (125809):   Configuration of license path is '5280@134.173.38.214:2222@theforce.eng.hmc.edu'.
+04/07/2019 22:29:42 (125809):   Configuration of recheck interval minimum is 290.
+04/07/2019 22:29:42 (125809):   Configuration of 2000000000 maximum retry calls.
+04/07/2019 22:29:42 (125809):   Configuration of sleep time value of 0.
+04/07/2019 22:29:42 (125809):   Configuration of display specification is 'localhost:11.0'.
+04/07/2019 22:29:42 (125809):   Licenses will be checked out using cnorfleet@DHCP-60-126.ST.HMC.Edu(localhost:11.0).
+04/07/2019 22:29:42 (125809):   (System spec would have been cnorfleet@DHCP-60-126.ST.HMC.Edu() )
+04/07/2019 22:29:42 (125809): Job creation completed with status 0 (time 0).
+04/07/2019 22:29:42 (125809): Creating a new job ...
+04/07/2019 22:29:42 (125809):   Configuration of license path is '5280@134.173.38.214:2222@theforce.eng.hmc.edu'.
+04/07/2019 22:29:42 (125809):   Configuration of recheck interval minimum is 290.
+04/07/2019 22:29:42 (125809):   Configuration of 2000000000 maximum retry calls.
+04/07/2019 22:29:42 (125809):   Configuration of sleep time value of 0.
+04/07/2019 22:29:42 (125809):   Configuration of display specification is 'localhost:11.0'.
+04/07/2019 22:29:42 (125809):   Licenses will be checked out using cnorfleet@DHCP-60-126.ST.HMC.Edu(localhost:11.0).
+04/07/2019 22:29:42 (125809):   (System spec would have been cnorfleet@DHCP-60-126.ST.HMC.Edu() )
+04/07/2019 22:29:42 (125809): Job creation completed with status 0 (time 0).
+04/07/2019 22:29:42 (125809): Creating a new job ...
+04/07/2019 22:29:42 (125809):   Configuration of license path is '5280@134.173.38.214:2222@theforce.eng.hmc.edu'.
+04/07/2019 22:29:42 (125809):   Configuration of recheck interval minimum is 290.
+04/07/2019 22:29:42 (125809):   Configuration of 2000000000 maximum retry calls.
+04/07/2019 22:29:42 (125809):   Configuration of sleep time value of 0.
+04/07/2019 22:29:42 (125809):   Configuration of display specification is 'localhost:11.0'.
+04/07/2019 22:29:42 (125809):   Licenses will be checked out using cnorfleet@DHCP-60-126.ST.HMC.Edu(localhost:11.0).
+04/07/2019 22:29:42 (125809):   (System spec would have been cnorfleet@DHCP-60-126.ST.HMC.Edu() )
+04/07/2019 22:29:42 (125809): Job creation completed with status 0 (time 0).
+04/07/2019 22:29:42 (125809): Creating a new job ...
+04/07/2019 22:29:42 (125809):   Configuration of license path is '5280@134.173.38.214:2222@theforce.eng.hmc.edu'.
+04/07/2019 22:29:42 (125809):   Configuration of recheck interval minimum is 290.
+04/07/2019 22:29:42 (125809):   Configuration of 2000000000 maximum retry calls.
+04/07/2019 22:29:42 (125809):   Configuration of sleep time value of 0.
+04/07/2019 22:29:42 (125809):   Configuration of display specification is 'localhost:11.0'.
+04/07/2019 22:29:42 (125809):   Licenses will be checked out using cnorfleet@DHCP-60-126.ST.HMC.Edu(localhost:11.0).
+04/07/2019 22:29:42 (125809):   (System spec would have been cnorfleet@DHCP-60-126.ST.HMC.Edu() )
+04/07/2019 22:29:42 (125809): Job creation completed with status 0 (time 0).
+04/07/2019 22:29:42 (125809): Initialization completed with status 0 (time 0).
+04/07/2019 22:29:42 (125809): FeatureStatus started ....
+04/07/2019 22:29:42 (125809): FeatureStatus of debug completed with status 1 (time 0).
+04/07/2019 22:29:46 (809893 libManager): Initialization started (12.04-s027)...
+04/07/2019 22:29:46 (809893): FLEXnet version 11.11.1.1 build 119913
+04/07/2019 22:29:46 (809893): Process ID 10286
+04/07/2019 22:29:46 (809893): Creating a new job ...
+04/07/2019 22:29:46 (809893): Validating server path: 5280@134.173.38.214:2222@theforce.eng.hmc.edu
+04/07/2019 22:29:46 (809893): Server path validation status: 0
+04/07/2019 22:29:46 (809893):   Configuration of license path is '5280@134.173.38.214:2222@theforce.eng.hmc.edu'.
+04/07/2019 22:29:46 (809893):   Configuration of recheck interval minimum is 290.
+04/07/2019 22:29:46 (809893):   Configuration of 2000000000 maximum retry calls.
+04/07/2019 22:29:46 (809893):   Configuration of sleep time value of 0.
+04/07/2019 22:29:46 (809893):   Configuration of display specification is 'localhost:11.0'.
+04/07/2019 22:29:46 (809893):   Licenses will be checked out using cnorfleet@DHCP-60-126.ST.HMC.Edu(localhost:11.0).
+04/07/2019 22:29:46 (809893):   (System spec would have been cnorfleet@DHCP-60-126.ST.HMC.Edu() )
+04/07/2019 22:29:46 (809893): Job creation completed with status 0 (time 0).
+04/07/2019 22:29:46 (809893): Creating a new job ...
+04/07/2019 22:29:46 (809893):   Configuration of license path is '5280@134.173.38.214:2222@theforce.eng.hmc.edu'.
+04/07/2019 22:29:46 (809893):   Configuration of recheck interval minimum is 290.
+04/07/2019 22:29:46 (809893):   Configuration of 2000000000 maximum retry calls.
+04/07/2019 22:29:46 (809893):   Configuration of sleep time value of 0.
+04/07/2019 22:29:46 (809893):   Configuration of display specification is 'localhost:11.0'.
+04/07/2019 22:29:46 (809893):   Licenses will be checked out using cnorfleet@DHCP-60-126.ST.HMC.Edu(localhost:11.0).
+04/07/2019 22:29:46 (809893):   (System spec would have been cnorfleet@DHCP-60-126.ST.HMC.Edu() )
+04/07/2019 22:29:46 (809893): Job creation completed with status 0 (time 0).
+04/07/2019 22:29:46 (809893): Creating a new job ...
+04/07/2019 22:29:46 (809893):   Configuration of license path is '5280@134.173.38.214:2222@theforce.eng.hmc.edu'.
+04/07/2019 22:29:46 (809893):   Configuration of recheck interval minimum is 290.
+04/07/2019 22:29:46 (809893):   Configuration of 2000000000 maximum retry calls.
+04/07/2019 22:29:46 (809893):   Configuration of sleep time value of 0.
+04/07/2019 22:29:46 (809893):   Configuration of display specification is 'localhost:11.0'.
+04/07/2019 22:29:46 (809893):   Licenses will be checked out using cnorfleet@DHCP-60-126.ST.HMC.Edu(localhost:11.0).
+04/07/2019 22:29:46 (809893):   (System spec would have been cnorfleet@DHCP-60-126.ST.HMC.Edu() )
+04/07/2019 22:29:46 (809893): Job creation completed with status 0 (time 0).
+04/07/2019 22:29:46 (809893): Creating a new job ...
+04/07/2019 22:29:46 (809893):   Configuration of license path is '5280@134.173.38.214:2222@theforce.eng.hmc.edu'.
+04/07/2019 22:29:46 (809893):   Configuration of recheck interval minimum is 290.
+04/07/2019 22:29:46 (809893):   Configuration of 2000000000 maximum retry calls.
+04/07/2019 22:29:46 (809893):   Configuration of sleep time value of 0.
+04/07/2019 22:29:46 (809893):   Configuration of display specification is 'localhost:11.0'.
+04/07/2019 22:29:46 (809893):   Licenses will be checked out using cnorfleet@DHCP-60-126.ST.HMC.Edu(localhost:11.0).
+04/07/2019 22:29:46 (809893):   (System spec would have been cnorfleet@DHCP-60-126.ST.HMC.Edu() )
+04/07/2019 22:29:46 (809893): Job creation completed with status 0 (time 0).
+04/07/2019 22:29:46 (809893): Creating a new job ...
+04/07/2019 22:29:46 (809893):   Configuration of license path is '5280@134.173.38.214:2222@theforce.eng.hmc.edu'.
+04/07/2019 22:29:46 (809893):   Configuration of recheck interval minimum is 290.
+04/07/2019 22:29:46 (809893):   Configuration of 2000000000 maximum retry calls.
+04/07/2019 22:29:46 (809893):   Configuration of sleep time value of 0.
+04/07/2019 22:29:46 (809893):   Configuration of display specification is 'localhost:11.0'.
+04/07/2019 22:29:46 (809893):   Licenses will be checked out using cnorfleet@DHCP-60-126.ST.HMC.Edu(localhost:11.0).
+04/07/2019 22:29:46 (809893):   (System spec would have been cnorfleet@DHCP-60-126.ST.HMC.Edu() )
+04/07/2019 22:29:46 (809893): Job creation completed with status 0 (time 0).
+04/07/2019 22:29:46 (809893): Initialization completed with status 0 (time 0).
+04/07/2019 22:29:46 (809893): FeatureStatus started ....
+04/07/2019 22:29:46 (809893): FeatureStatus of debug completed with status 1 (time 0).
+04/07/2019 22:29:46 (491061-906284544): FeatureStatus started ....
+04/07/2019 22:29:46 (491061-906284544): FeatureStatus of debug completed with status 1 (time 0).
+04/07/2019 22:29:46 (491061-906284544): Recheck started ....
+04/07/2019 22:29:46 (491061-906284544):   Checking feature 111
+04/07/2019 22:29:46 (491061-906284544):   Time spent in server Recheck was 0.
+04/07/2019 22:29:46 (491061-906284544): Re-check completed with status 0 (time 0).
+04/07/2019 22:29:47 (491061-906284544): Recheck started ....
+04/07/2019 22:29:47 (491061-906284544):   Actual recheck skipped due to recheck interval...
+04/07/2019 22:29:47 (491061-906284544): Re-check completed with status 0 (time 0).
+04/07/2019 22:30:00 (491061-906284544): Recheck started ....
+04/07/2019 22:30:00 (491061-906284544):   Actual recheck skipped due to recheck interval...
+04/07/2019 22:30:00 (491061-906284544): Re-check completed with status 0 (time 0).
+04/07/2019 22:30:01 (491061-906284544): Recheck started ....
+04/07/2019 22:30:01 (491061-906284544):   Actual recheck skipped due to recheck interval...
+04/07/2019 22:30:01 (491061-906284544): Re-check completed with status 0 (time 0).
+04/07/2019 22:30:02 (125809): Exit started ....
+04/07/2019 22:30:02 (125809): Exit completed with status 0 (time 0).
+04/07/2019 22:30:03 (809893): Exit started ....
+04/07/2019 22:30:03 (809893): Exit completed with status 0 (time 0).
+04/07/2019 22:30:04 (491061-906284544): Exit started ....
+04/07/2019 22:30:04 (491061-906284544): Creating a new job ...
+04/07/2019 22:30:04 (491061-906284544): Validating server path: 5280@134.173.38.214:2222@theforce.eng.hmc.edu
+04/07/2019 22:30:04 (491061-906284544): Server path validation status: 0
+04/07/2019 22:30:04 (491061-906284544):   Configuration of license path is '5280@134.173.38.214:2222@theforce.eng.hmc.edu'.
+04/07/2019 22:30:04 (491061-906284544):   Configuration of recheck interval minimum is 290.
+04/07/2019 22:30:04 (491061-906284544):   Configuration of 2000000000 maximum retry calls.
+04/07/2019 22:30:04 (491061-906284544):   Configuration of sleep time value of 0.
+04/07/2019 22:30:04 (491061-906284544):   Configuration of display specification is 'localhost:11.0'.
+04/07/2019 22:30:04 (491061-906284544):   Licenses will be checked out using cnorfleet@DHCP-60-126.ST.HMC.Edu(localhost:11.0).
+04/07/2019 22:30:04 (491061-906284544):   (System spec would have been cnorfleet@DHCP-60-126.ST.HMC.Edu(/dev/pts/5) )
+04/07/2019 22:30:04 (491061-906284544): Job creation completed with status 0 (time 0).
+04/07/2019 22:30:04 (491061-906284544): Check-in (Increment) of 111 completed with status 0 (time 0).
+04/07/2019 22:30:04 (491061-906284544): Exit completed with status 0 (time 0).

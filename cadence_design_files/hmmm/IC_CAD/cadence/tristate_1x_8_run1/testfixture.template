@@ -1,0 +1,26 @@
+
+`timescale 1ns / 100ps
+
+module test;
+
+
+
+reg  en, enBar;
+
+wire [7:0]  y;
+
+reg [7:0]  a;
+
+
+
+tristate_1x_8 top(y, a, en, enBar); 
+ 
+
+`ifdef verilog
+
+ //please enter any additional verilog stimulus in the /home/cnorfleet/IC_CAD/cadence/tristate_1x_8_run1/testfixture.verilog file
+`include "/home/cnorfleet/IC_CAD/cadence/tristate_1x_8_run1/testfixture.verilog"
+
+`endif
+
+endmodule 

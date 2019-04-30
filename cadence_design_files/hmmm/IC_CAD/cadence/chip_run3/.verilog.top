@@ -1,0 +1,35 @@
+
+`timescale 1ns / 100ps
+
+module test;
+
+
+wire  MemWrite, test_extra, test_out;
+
+
+reg  ph1, ph2, reset, test_in;
+
+wire [7:0]  Adr;
+
+wire [14:0]  MemData;
+
+// Buses in the design
+
+wire  [0:1]  net43;
+
+wire  [0:1]  net44;
+
+wire  [14:8]  instr1;
+
+wire  [0:7]  net45;
+
+reg  [14:0] io_MemData;
+
+
+// Inout assignments 
+cds_alias #(15) cds_alias_inst3(MemData, io_MemData);
+
+
+chip top(Adr, MemWrite, test_extra, test_out, MemData, ph1, ph2, reset
+     , test_in); 
+ 

@@ -1,0 +1,186 @@
+ncverilog: 15.20-s069: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s069: Started on Feb 16, 2019 at 10:26:31 PST
+ncverilog
+	-l
+	nc.log
+	+access+r
+	mips.sv
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncverilog: *W,DLCVAR (/proj/ncsu/ncsu-cdk-1.6.0.beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncverilog: *W,DLCVAR (/proj/ncsu/ncsu-cdk-1.6.0.beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncverilog: *W,DLCVAR (/proj/ncsu/ncsu-cdk-1.6.0.beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncverilog: *W,DLCVAR (/proj/ncsu/ncsu-cdk-1.6.0.beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncverilog: *W,DLCVAR (/proj/ncsu/ncsu-cdk-1.6.0.beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncvlog: *W,DLCVAR (/proj/ncsu/ncsu-cdk-1.6.0.beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+file: mips.sv
+	module worklib.testbench:sv
+		errors: 0, warnings: 0
+	module worklib.exmemory:sv
+		errors: 0, warnings: 0
+	module worklib.mips:sv
+		errors: 0, warnings: 0
+	module worklib.controller:sv
+		errors: 0, warnings: 0
+	module worklib.controller_synth:sv
+		errors: 0, warnings: 0
+	module worklib.statelogic:sv
+		errors: 0, warnings: 0
+	module worklib.outputlogic:sv
+		errors: 0, warnings: 0
+	module worklib.aludec:sv
+		errors: 0, warnings: 0
+	module worklib.datapath:sv
+		errors: 0, warnings: 0
+	module worklib.alu:sv
+		errors: 0, warnings: 0
+	module worklib.regfile:sv
+		errors: 0, warnings: 0
+	module worklib.zerodetect:sv
+		errors: 0, warnings: 0
+	module worklib.flop:sv
+		errors: 0, warnings: 0
+	module worklib.flopen:sv
+		errors: 0, warnings: 0
+	module worklib.flopenr:sv
+		errors: 0, warnings: 0
+	module worklib.latch:sv
+		errors: 0, warnings: 0
+	module worklib.mux2:sv
+		errors: 0, warnings: 0
+	module worklib.mux3:sv
+		errors: 0, warnings: 0
+	module worklib.mux4:sv
+		errors: 0, warnings: 0
+	module worklib.andN:sv
+		errors: 0, warnings: 0
+	module worklib.orN:sv
+		errors: 0, warnings: 0
+	module worklib.inv:sv
+		errors: 0, warnings: 0
+	module worklib.condinv:sv
+		errors: 0, warnings: 0
+	module worklib.adder:sv
+		errors: 0, warnings: 0
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncverilog: *W,DLCVAR (/proj/ncsu/ncsu-cdk-1.6.0.beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncverilog: *W,DLCVAR (/proj/ncsu/ncsu-cdk-1.6.0.beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncelab: *W,DLCVAR (/proj/ncsu/ncsu-cdk-1.6.0.beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: ....................
+    $readmemh("memfile.dat", mem);
+                               |
+ncelab: *W,MEMODR (./mips.sv,98|31): $readmem default memory order incompatible with IEEE1364.
+ Done
+	Generating native compiled code:
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncvlog_cg: *W,DLCVAR (/proj/ncsu/ncsu-cdk-1.6.0.beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+		worklib.adder:sv <0x2a421ce0>
+			streams:   1, words:   190
+		worklib.alu:sv <0x552b26b9>
+			streams:  12, words:  2664
+		worklib.aludec:sv <0x662cb99c>
+			streams:   1, words:   482
+		worklib.andN:sv <0x3df60dd9>
+			streams:   1, words:   160
+		worklib.condinv:sv <0x764468b0>
+			streams:   3, words:   730
+		worklib.controller:sv <0x3b33e8f5>
+			streams:  14, words:  4893
+		worklib.controller_synth:sv <0x42aa278f>
+			streams:  16, words:  5452
+		worklib.datapath:sv <0x61bb67b5>
+			streams:  37, words:  8922
+		worklib.exmemory:sv <0x4c4e2bb6>
+			streams:   9, words:  3977
+		worklib.flop:sv <0x606d2693>
+			streams:   3, words:   730
+		worklib.flop:sv <0x64f6cc80>
+			streams:   3, words:   718
+		worklib.flopen:sv <0x2e82f96e>
+			streams:   4, words:   845
+		worklib.flopenr:sv <0x7f0e0f5c>
+			streams:   5, words:  1029
+		worklib.inv:sv <0x5716fd4f>
+			streams:   1, words:   138
+		worklib.latch:sv <0x4d6c5fe6>
+			streams:   2, words:   291
+		worklib.latch:sv <0x7325c4e3>
+			streams:   2, words:   296
+		worklib.mips:sv <0x18f3b0ca>
+			streams:  30, words:  6835
+		worklib.mux2:sv <0x5539db9d>
+			streams:   1, words:   215
+		worklib.mux2:sv <0x70b43fba>
+			streams:   1, words:   220
+		worklib.mux2:sv <0x775b3691>
+			streams:   1, words:   215
+		worklib.mux3:sv <0x00ffc076>
+			streams:   1, words:   304
+		worklib.mux3:sv <0x49e0c8c9>
+			streams:   1, words:   355
+		worklib.mux4:sv <0x0a82bf68>
+			streams:   1, words:   343
+		worklib.mux4:sv <0x439db7d7>
+			streams:   1, words:   292
+		worklib.orN:sv <0x34871bc7>
+			streams:   1, words:   168
+		worklib.outputlogic:sv <0x7b398e8e>
+			streams:   1, words:  4553
+		worklib.regfile:sv <0x07153f77>
+			streams:   4, words:  1398
+		worklib.statelogic:sv <0x4a9848d8>
+			streams:   6, words:  2673
+		worklib.testbench:sv <0x0917ea92>
+			streams:  16, words:  6493
+		worklib.zerodetect:sv <0x1c034243>
+			streams:   1, words:   172
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                   Instances  Unique
+		Modules:                  66      24
+		Registers:               182     128
+		Scalar wires:             75       -
+		Expanded wires:            7       2
+		Vectored wires:          250       -
+		Always blocks:            32      11
+		Initial blocks:            2       2
+		Cont. assignments:        25      22
+		Pseudo assignments:      174     138
+		Assertions:                1       1
+		Compilation units:         1       1
+		Simulation timescale:  100ps
+	Writing initial simulation snapshot: worklib.testbench:sv
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncsim: *W,DLCVAR (/proj/ncsu/ncsu-cdk-1.6.0.beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+Loading snapshot worklib.testbench:sv .................... Done
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+ncsim> source /cad/cds/INCISIV1520/tools/inca/files/ncsimrc
+ncsim> run
+Simulation completed successfully
+Simulation complete via $finish(1) at time 996 NS + 0
+./mips.sv:80         $finish;
+ncsim> exit
+TOOL:	ncverilog	15.20-s069: Exiting on Feb 16, 2019 at 10:26:32 PST  (total: 00:00:01)

@@ -1,0 +1,6 @@
+nand3_1x I0 ( rd1, ra1[0], ra1[1], ra1[2]);
+nand3_1x I1 ( rd2, ra2[0], ra2[1], ra2[2]);
+invbuf_4x I3 ( net21, read1, rd1);
+invbuf_4x I4 ( net18, read2, rd2);
+
+endmodule

@@ -1,0 +1,3 @@
+SOFTINCLUDE /cad/cds/INCISIV1520/tools/inca/files/cds.lib
+include ../../../../../../../../proj/ncsu/ncsu-cdk-1.6.0.beta/cdssetup/cds.lib
+define worklib ../worklib

@@ -1,0 +1,4 @@
+clkinvbuf_4x I0 ( ph2b, ph2buf, ph2);
+clkinvbuf_4x I1 ( ph1b, ph1buf, ph1);
+
+endmodule

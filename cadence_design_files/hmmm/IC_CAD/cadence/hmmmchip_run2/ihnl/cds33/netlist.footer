@@ -1,0 +1,30 @@
+flop_1x_8 wd3Reg ( net3[0:7], net4[0:7], ph1, ph2);
+flop_1x_8 InstrReg ( net7[0:7], ReadData[7:0], ph1, ph2);
+mux2_1x_8 AdrMux2 ( Adr[7:0], net50[0:7], net11[0:7], AdrSrc);
+mux2_1x_8 WD3LoadMux2 ( net14[0:7], net3[0:7], net4[0:7], RegWLoadSrc);
+mux2_1x_8 InstrMux2 ( Instr[7:0], net7[0:7], ReadData[7:0], InstrSrc);
+flopenr_1x_8 PCReg ( net50[0:7], net28[0:7], PCEnable, ph1, ph2,
+     reset);
+mux3_1x_8 PCSrcMux3 ( net28[0:7], net31[0:7], ReadData[7:0],
+     WriteData[7:0], PCSrc[1], PCSrc[0]);
+mux3_1x_8 wd3Mux3 ( net4[0:7], Instr[7:0], ReadData[7:0], net47[0:7],
+     RegWriteSrc[1], RegWriteSrc[0]);
+nor_8wide ZeroDetectNOR ( zero, WriteData[7], WriteData[6],
+     WriteData[5], WriteData[4], WriteData[3], WriteData[2],
+     WriteData[1], WriteData[0]);
+and2_1x_8 TwoRegsAND ( net45[0:7], {TwoRegs, TwoRegs, TwoRegs, TwoRegs,
+     TwoRegs, TwoRegs, TwoRegs, TwoRegs}, WriteData[7:0]);
+adder_8 FullAdder ( net43, net47[0:7], net46[0:7], net45[0:7], ALUSub);
+adder_8 PCAdder ( net48, net31[0:7], {cds_globals.gnd_,
+     cds_globals.gnd_, cds_globals.gnd_, cds_globals.gnd_,
+     cds_globals.gnd_, cds_globals.gnd_, cds_globals.gnd_,
+     cds_globals.vdd_}, net50[0:7], cds_globals.gnd_);
+regramarray_dp_hmmm rf ( WriteData[7:0], net11[0:7], RegWrite, ph2,
+     net057[0:2], Instr[4:2], net14[0:7], Instr[10:8]);
+xor_1x_8 SubtractXOR ( net46[0:7], {ALUSub, ALUSub, ALUSub, ALUSub,
+     ALUSub, ALUSub, ALUSub, ALUSub}, net11[0:7]);
+mux2_c_1x mux2_c_1x[2:0] ( net057[0:2], Instr[7:5], Instr[10:8],
+     RA1Src);
+buf_1x I15 ( negative, WriteData[7]);
+
+endmodule

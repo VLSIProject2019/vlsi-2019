@@ -1,0 +1,38 @@
+TOOL:	ncxlmode	15.20-s069: Started on Feb 10, 2019 at 12:58:42 PST
+ncxlmode
+	+delay_mode_path
+	+typdelays
+	-l
+	simout.tmp
+	-sv
+	/hdd/home/cnorfleet/IC_CAD/cadence/nand2_run1/testfixture.template
+	-f /hdd/home/cnorfleet/IC_CAD/cadence/nand2_run1/verilog.inpfiles
+		ihnl/cds0/netlist
+		hdlFilesDir/cds_globals.v
+	+nostdout
+	+nocopyright
+	+ncvlogargs+" -neverwarn -nostdout -nocopyright "
+	+ncelabargs+" -neg_tchk  -nonotifier  -sdf_NOCheck_celltype  -access +r  -pulse_e 100  -pulse_r 100  -neverwarn  -timescale 1ns/100ps -nostdout -nocopyright"
+	+ncsimargs+" -neverwarn  -nocopyright -gui -input /hdd/home/cnorfleet/IC_CAD/cadence/nand2_run1/.simTmpNCCmd "
+	+mpssession+virtuoso55911
+	+mpshost+tera.eng.hmc.edu
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncxlmode: *W,DLCVAR (/proj/ncsu/ncsu-cdk-1.6.0.beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncxlmode: *W,DLCVAR (/proj/ncsu/ncsu-cdk-1.6.0.beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncxlmode: *W,DLCVAR (/proj/ncsu/ncsu-cdk-1.6.0.beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncxlmode: *W,DLCVAR (/proj/ncsu/ncsu-cdk-1.6.0.beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncxlmode: *W,DLCVAR (/proj/ncsu/ncsu-cdk-1.6.0.beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncxlmode: *W,DLCVAR (/proj/ncsu/ncsu-cdk-1.6.0.beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+ncsim: *E,STRPIN: Could not initialize SimVision connection: SimVision process terminated before a connection was established.
+TOOL:	ncxlmode	15.20-s069: Exiting on Feb 10, 2019 at 12:58:50 PST  (total: 00:00:08)

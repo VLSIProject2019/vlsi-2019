@@ -1,0 +1,32 @@
+
+`timescale 1ns / 100ps
+
+module test;
+
+
+wire  ALUSub, AdrSrc, InstrSrc, MemWrite, PCEnable, RA1Src, RegWLoadSrc
+     , RegWrite, TwoRegs;
+
+reg  negative, ph1, ph2, reset, zero;
+
+wire [14:8]  instr1;
+wire [1:0]  RegWriteSrc;
+wire [1:0]  PCSrc;
+
+reg [14:8]  MemData1;
+
+
+
+controller top(ph1, ph2, reset, negative, zero, RegWLoadSrc, RA1Src, 
+     PCEnable, AdrSrc, InstrSrc, RegWrite, TwoRegs, ALUSub, PCSrc, 
+     RegWriteSrc, MemWrite, MemData1, instr1); 
+ 
+
+`ifdef verilog
+
+ //please enter any additional verilog stimulus in the /proj/VLSI19S/G1/hmmm/IC_CAD/cadence/hmmmcontroller_run4/testfixture.verilog file
+`include "/proj/VLSI19S/G1/hmmm/IC_CAD/cadence/hmmmcontroller_run4/testfixture.verilog"
+
+`endif
+
+endmodule 

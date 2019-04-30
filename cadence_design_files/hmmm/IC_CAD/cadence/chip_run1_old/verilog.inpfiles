@@ -1,0 +1,130 @@
+// Verilog HDL and netlist files of
+// "mips8 chip schematic"
+
+// HDL models
+
+// HDL file - NCSU_Analog_Parts, nmos4, functional.
+/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/NCSU_Analog_Parts/nmos4/functional/verilog.v
+
+// HDL file - NCSU_Analog_Parts, pmos4, functional.
+/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/NCSU_Analog_Parts/pmos4/functional/verilog.v
+
+
+// End HDL models
+
+// Netlisted models
+sram.sv
+
+// netlist file - muddlib11, nand2_1x, cmos_sch.
+ihnl/cds0/netlist
+// netlist file - muddlib11, inv_1x, cmos_sch.
+ihnl/cds1/netlist
+// netlist file - muddlib11, nor2_1x, cmos_sch.
+ihnl/cds2/netlist
+// netlist file - controller_cn, aludec, schematic.
+ihnl/cds3/netlist
+// netlist file - muddlib11, latch_c_1x, cmos_sch.
+ihnl/cds4/netlist
+// netlist file - muddlib11, nor3_1x, cmos_sch.
+ihnl/cds5/netlist
+// netlist file - muddlib11, nand3_1x, cmos_sch.
+ihnl/cds6/netlist
+// netlist file - muddlib11, a2o1_1x, cmos_sch.
+ihnl/cds7/netlist
+// netlist file - muddlib11, and2_1x, cmos_sch.
+ihnl/cds8/netlist
+// netlist file - muddlib11, or2_1x, cmos_sch.
+ihnl/cds9/netlist
+// netlist file - lab3_cn, controller_synth, schematic.
+ihnl/cds10/netlist
+// netlist file - muddlib11, mux2_c_1x, cmos_sch.
+ihnl/cds11/netlist
+// netlist file - muddlib11, inv_4x, cmos_sch.
+ihnl/cds12/netlist
+// netlist file - muddlib11, invbuf_4x, schematic.
+ihnl/cds13/netlist
+// netlist file - muddlib11, mux3_dp_1x, cmos_sch.
+ihnl/cds14/netlist
+// netlist file - wordlib8, mux3_1x_8, schematic.
+ihnl/cds15/netlist
+// netlist file - mips8, yzdetect_8, schematic.
+ihnl/cds16/netlist
+// netlist file - muddlib11, mux4_dp_1x, cmos_sch.
+ihnl/cds17/netlist
+// netlist file - wordlib8, mux4_1x_8, schematic.
+ihnl/cds18/netlist
+// netlist file - muddlib11, fulladder, cmos_sch.
+ihnl/cds19/netlist
+// netlist file - wordlib8, adder_8, schematic.
+ihnl/cds20/netlist
+// netlist file - muddlib11, mux2_dp_1x, cmos_sch.
+ihnl/cds21/netlist
+// netlist file - wordlib8, mux2_1x_8, schematic.
+ihnl/cds22/netlist
+// netlist file - wordlib8, inv_1x_8, schematic.
+ihnl/cds23/netlist
+// netlist file - mips8, condinv_8, schematic.
+ihnl/cds24/netlist
+// netlist file - wordlib8, or2_1x_8, schematic.
+ihnl/cds25/netlist
+// netlist file - wordlib8, and2_1x_8, schematic.
+ihnl/cds26/netlist
+// netlist file - mips8, alu, schematic.
+ihnl/cds27/netlist
+// netlist file - mips8, regramadrbuf, schematic.
+ihnl/cds28/netlist
+// netlist file - mips8, regram_dp, cmos_sch.
+ihnl/cds29/netlist
+// netlist file - mips8, regram_8, schematic.
+ihnl/cds30/netlist
+// netlist file - muddlib11, nand5_1x, cmos_sch.
+ihnl/cds31/netlist
+// netlist file - mips8, regram_zipper, schematic.
+ihnl/cds32/netlist
+// netlist file - mips8, regramvector_dp, schematic.
+ihnl/cds33/netlist
+// netlist file - mips8, regram0_zipper, schematic.
+ihnl/cds34/netlist
+// netlist file - mips8, regram0, cmos_sch.
+ihnl/cds35/netlist
+// netlist file - mips8, regramvector0_dp, schematic.
+ihnl/cds36/netlist
+// netlist file - mips8, regramarray_dp, schematic.
+ihnl/cds37/netlist
+// netlist file - muddlib11, flopen_dp_1x, cmos_sch.
+ihnl/cds38/netlist
+// netlist file - muddlib11, clkinvbuf_4x, cmos_sch.
+ihnl/cds39/netlist
+// netlist file - muddlib11, clkinvbufdual_4x, schematic.
+ihnl/cds40/netlist
+// netlist file - wordlib8, flopen_1x_8, schematic.
+ihnl/cds41/netlist
+// netlist file - muddlib11, flop_dp_1x, cmos_sch.
+ihnl/cds42/netlist
+// netlist file - wordlib8, flop_1x_8, schematic.
+ihnl/cds43/netlist
+// netlist file - muddlib11, flopenr_dp_1x, cmos_sch.
+ihnl/cds44/netlist
+// netlist file - wordlib8, flopenr_1x_8, schematic.
+ihnl/cds45/netlist
+// netlist file - mips8, datapath, schematic.
+ihnl/cds46/netlist
+// netlist file - UofU_Pads, pad_gnd, schematic.
+ihnl/cds47/netlist
+// netlist file - UofU_Pads, pad_out, schematic.
+ihnl/cds48/netlist
+// netlist file - UofU_Pads, pad_in, schematic.
+ihnl/cds49/netlist
+// netlist file - UofU_Pads, pad_vdd, schematic.
+ihnl/cds50/netlist
+// netlist file - mips8, padframe, schematic.
+ihnl/cds51/netlist
+// netlist file - mips8, chip, schematic.
+ihnl/cds52/netlist
+
+
+// End HDL models
+
+// globals file 
+hdlFilesDir/cds_globals.v
+

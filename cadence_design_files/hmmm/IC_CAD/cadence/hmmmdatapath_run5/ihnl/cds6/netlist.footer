@@ -1,0 +1,4 @@
+inv_4x I2 ( sb_out, s);
+inv_4x I3 ( s_out, sb_out);
+
+endmodule

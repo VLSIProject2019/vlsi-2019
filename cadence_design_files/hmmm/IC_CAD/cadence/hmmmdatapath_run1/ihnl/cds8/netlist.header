@@ -1,0 +1,21 @@
+// Library - muddlib11, Cell - flopenr_dp_1x, View - cmos_sch
+// LAST TIME SAVED: Feb 16 22:56:16 2012
+// NETLIST TIME: Mar 21 19:02:29 2019
+`timescale 1ns / 100ps 
+
+module flopenr_dp_1x ( q, d, en, enb, ph1, ph1b, ph2, ph2b, resetb );
+
+output  q;
+
+input  d, en, enb, ph1, ph1b, ph2, ph2b, resetb;
+trireg    slaveb;
+trireg    masterb;
+
+
+
+specify 
+    specparam CDS_LIBNAME  = "muddlib11";
+    specparam CDS_CELLNAME = "flopenr_dp_1x";
+    specparam CDS_VIEWNAME = "cmos_sch";
+endspecify
+

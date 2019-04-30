@@ -1,0 +1,12 @@
+s1(18Mar2019:01:58:10):  ncverilog -l nc.log +access+r tristate.sv 
+s2(18Mar2019:01:58:59):  ncverilog -l nc.log +access+r tristate.sv 
+s3(18Mar2019:02:01:56):  ncverilog -l nc.log +access+r tristate.sv 
+s4(18Mar2019:02:02:41):  ncverilog -l nc.log +access+r +gui tristate.sv 
+s5(18Mar2019:02:12:15):  ncverilog -l nc.log +access+r +gui tristate.sv -s  
+s6(18Mar2019:02:16:57):  ncverilog -l nc.log +access+r tristate.sv 
+s7(18Mar2019:02:17:47):  ncverilog -l nc.log +access+r tristate.sv 
+s8(18Mar2019:02:25:45):  ncverilog -l nc.log +access+r tristate.sv 
+s9(18Mar2019:02:26:48):  ncverilog -l nc.log +access+r tristate.sv 
+s10(18Mar2019:02:29:02):  ncverilog -l nc.log +access+r tristate.sv 
+s11(18Mar2019:02:30:09):  ncverilog -l nc.log +access+r tristate.sv 
+s12(18Mar2019:02:45:20):  ncverilog -l nc.log +access+r tristate.sv 

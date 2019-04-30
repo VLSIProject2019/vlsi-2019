@@ -1,0 +1,33 @@
+// Library - lab1_cn, Cell - nand2, View - cmos_sch
+// LAST TIME SAVED: Feb 10 12:44:34 2019
+// NETLIST TIME: Feb 10 12:53:55 2019
+`timescale 1ns / 100ps 
+
+module nand2 ( y, a, b );
+
+output  y;
+
+input  a, b;
+
+
+
+specify 
+    specparam CDS_LIBNAME  = "lab1_cn";
+    specparam CDS_CELLNAME = "nand2";
+    specparam CDS_VIEWNAME = "cmos_sch";
+endspecify
+
+`switch default
+nmos #(0.1)   (* const real width = 3.600, length = 0.600; *) M1( mid,
+     cds_globals.gnd_, a);
+`switch default
+nmos #(0.1)   (* const real width = 3.600, length = 0.600; *) M0( y,
+     mid, b);
+`switch default
+pmos #(0.1)   (* const real width = 3.600, length = 0.600; *) M3( y,
+     cds_globals.vdd_, a);
+`switch default
+pmos #(0.1)   (* const real width = 3.600, length = 0.600; *) M2( y,
+     cds_globals.vdd_, b);
+
+endmodule

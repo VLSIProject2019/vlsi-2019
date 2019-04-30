@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      cnorfleet
+HostName                       DHCP-60-126.ST.HMC.Edu
+ProcessIdentifier              22297
+ProcessCreationTime_UTC        1553307388
+ProcessCreationTime_Readable   Fri Mar 22 22:16:28 2019 EDT
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /home/cnorfleet/IC_CAD/cadence/HMMM/xor_1x_8/schematic/sch.oa.cdslck
+TimeEditLocked                 Fri Mar 22 23:32:32 2019 EDT

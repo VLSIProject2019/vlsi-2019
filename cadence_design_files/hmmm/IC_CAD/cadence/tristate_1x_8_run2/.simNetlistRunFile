@@ -1,0 +1,24 @@
+simVerilogNetlistFileList = '(
+    (("HMMM" "tristate_1x_8") 
+	("cds3/netlist" "cds3/map" "schematic")
+    ) 
+    (("HMMM" "tristate_1x") 
+	("cds2/netlist" "cds2/map" "schematic")
+    ) 
+    (("muddlib11" "inv_1x") 
+	("cds1/netlist" "cds1/map" "cmos_sch")
+    ) 
+    (("HMMM" "tristateInvCore") 
+	("cds0/netlist" "cds0/map" "cmos_sch")
+    )
+)
+simVerilogNetlistFileLibList = '("HMMM" "muddlib11")
+simVerilogNetlistFileCellList = '(
+    ("HMMM" 
+	("tristateInvCore" "tristate_1x" "tristate_1x_8")
+    ) 
+    ("muddlib11" 
+	("inv_1x")
+    )
+)
+hnlIncrementalDirectory = '"ihnl"

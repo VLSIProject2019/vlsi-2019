@@ -1,0 +1,2 @@
+s1(16Feb2019:10:25:42):  ncverilog -l nc.log +access+r mips_cn.sv 
+s2(16Feb2019:10:26:31):  ncverilog -l nc.log +access+r mips.sv 

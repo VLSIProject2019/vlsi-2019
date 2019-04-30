@@ -1,0 +1,782 @@
+ncverilog: 15.20-s069: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s069: Started on Mar 22, 2019 at 03:03:39 EDT
+ncverilog
+	-l
+	nc.log
+	+access+r
+	+gui
+	testprocessor.sv
+	-f verilog.inpfiles
+		hdlFilesDir/cds_alias.v
+		ihnl/cds0/netlist
+		ihnl/cds1/netlist
+		ihnl/cds2/netlist
+		ihnl/cds3/netlist
+		ihnl/cds4/netlist
+		ihnl/cds5/netlist
+		ihnl/cds6/netlist
+		ihnl/cds7/netlist
+		ihnl/cds8/netlist
+		ihnl/cds9/netlist
+		ihnl/cds10/netlist
+		ihnl/cds11/netlist
+		ihnl/cds12/netlist
+		ihnl/cds13/netlist
+		ihnl/cds14/netlist
+		ihnl/cds15/netlist
+		ihnl/cds16/netlist
+		ihnl/cds17/netlist
+		ihnl/cds18/netlist
+		ihnl/cds19/netlist
+		ihnl/cds20/netlist
+		ihnl/cds21/netlist
+		ihnl/cds22/netlist
+		ihnl/cds23/netlist
+		ihnl/cds24/netlist
+		ihnl/cds25/netlist
+		ihnl/cds26/netlist
+		ihnl/cds27/netlist
+		ihnl/cds28/netlist
+		ihnl/cds29/netlist
+		ihnl/cds30/netlist
+		ihnl/cds31/netlist
+		ihnl/cds32/netlist
+		ihnl/cds33/netlist
+		ihnl/cds34/netlist
+		ihnl/cds35/netlist
+		hdlFilesDir/cds_globals.v
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncverilog: *W,DLCVAR (/proj/ncsu/ncsu-cdk-1.6.0.beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncverilog: *W,DLCVAR (/proj/ncsu/ncsu-cdk-1.6.0.beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncverilog: *W,DLCVAR (/proj/ncsu/ncsu-cdk-1.6.0.beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncverilog: *W,DLCVAR (/proj/ncsu/ncsu-cdk-1.6.0.beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncverilog: *W,DLCVAR (/proj/ncsu/ncsu-cdk-1.6.0.beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncvlog: *W,DLCVAR (/proj/ncsu/ncsu-cdk-1.6.0.beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+file: testprocessor.sv
+	module worklib.testbench:sv
+		errors: 0, warnings: 0
+	module worklib.sram:sv
+		errors: 0, warnings: 0
+	module worklib.top:sv
+		errors: 0, warnings: 0
+endmodule//*/
+           |
+ncvlog: *W,NOCMIC (testprocessor.sv,188|11): error-prone block comment nested within block comment [2.3(IEEE)].
+	module worklib.controller:sv
+		errors: 0, warnings: 0
+	module worklib.condcheck:sv
+		errors: 0, warnings: 0
+endmodule//*/
+           |
+ncvlog: *W,NOCMIC (testprocessor.sv,290|11): error-prone block comment nested within block comment [2.3(IEEE)].
+	module worklib.mux2:sv
+		errors: 0, warnings: 0
+	module worklib.mux3:sv
+		errors: 0, warnings: 0
+	module worklib.flop:sv
+		errors: 0, warnings: 0
+	module worklib.flopr:sv
+		errors: 0, warnings: 0
+	module worklib.flopenr:sv
+		errors: 0, warnings: 0
+file: hdlFilesDir/cds_alias.v
+	module worklib.cds_alias:v
+		errors: 0, warnings: 0
+file: ihnl/cds0/netlist
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds0/netlist,26|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds0/netlist,29|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds0/netlist,32|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds0/netlist,35|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds0/netlist,38|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds0/netlist,41|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds0/netlist,44|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds0/netlist,47|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds0/netlist,50|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds0/netlist,53|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds0/netlist,56|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds0/netlist,59|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds0/netlist,62|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds0/netlist,65|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds0/netlist,68|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds0/netlist,71|6): `switch: compiler directive ignored.
+	module worklib.flop_dp_1x:verilog
+		errors: 0, warnings: 16
+file: ihnl/cds1/netlist
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds1/netlist,20|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds1/netlist,23|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds1/netlist,26|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds1/netlist,29|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds1/netlist,32|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds1/netlist,35|6): `switch: compiler directive ignored.
+	module worklib.clkinvbuf_4x:verilog
+		errors: 0, warnings: 6
+file: ihnl/cds2/netlist
+	module worklib.clkinvbufdual_4x:verilog
+		errors: 0, warnings: 0
+file: ihnl/cds3/netlist
+	module worklib.flop_1x_8:verilog
+		errors: 0, warnings: 0
+file: ihnl/cds4/netlist
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds4/netlist,20|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds4/netlist,23|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds4/netlist,26|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds4/netlist,29|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds4/netlist,32|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds4/netlist,35|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds4/netlist,38|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds4/netlist,41|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds4/netlist,44|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds4/netlist,47|6): `switch: compiler directive ignored.
+	module worklib.mux2_dp_1x:verilog
+		errors: 0, warnings: 10
+file: ihnl/cds5/netlist
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds5/netlist,20|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds5/netlist,23|6): `switch: compiler directive ignored.
+	module worklib.inv_4x:verilog
+		errors: 0, warnings: 2
+file: ihnl/cds6/netlist
+	module worklib.invbuf_4x:verilog
+		errors: 0, warnings: 0
+file: ihnl/cds7/netlist
+	module worklib.mux2_1x_8:verilog
+		errors: 0, warnings: 0
+file: ihnl/cds8/netlist
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds8/netlist,26|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds8/netlist,29|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds8/netlist,32|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds8/netlist,35|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds8/netlist,38|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds8/netlist,41|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds8/netlist,44|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds8/netlist,47|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds8/netlist,50|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds8/netlist,53|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds8/netlist,56|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds8/netlist,59|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds8/netlist,62|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds8/netlist,65|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds8/netlist,68|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds8/netlist,71|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds8/netlist,74|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds8/netlist,77|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds8/netlist,80|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds8/netlist,83|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds8/netlist,86|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds8/netlist,89|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds8/netlist,92|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds8/netlist,95|6): `switch: compiler directive ignored.
+	module worklib.flopenr_dp_1x:verilog
+		errors: 0, warnings: 24
+file: ihnl/cds9/netlist
+	module worklib.flopenr_1x_8:verilog
+		errors: 0, warnings: 0
+file: ihnl/cds10/netlist
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds10/netlist,20|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds10/netlist,23|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds10/netlist,26|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds10/netlist,29|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds10/netlist,32|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds10/netlist,35|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds10/netlist,38|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds10/netlist,41|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds10/netlist,44|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds10/netlist,47|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds10/netlist,50|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds10/netlist,53|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds10/netlist,56|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds10/netlist,59|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds10/netlist,62|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds10/netlist,65|6): `switch: compiler directive ignored.
+	module worklib.mux3_dp_1x:verilog
+		errors: 0, warnings: 16
+file: ihnl/cds11/netlist
+	module worklib.mux3_1x_8:verilog
+		errors: 0, warnings: 0
+file: ihnl/cds12/netlist
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds12/netlist,20|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds12/netlist,23|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds12/netlist,26|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds12/netlist,29|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds12/netlist,32|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds12/netlist,35|6): `switch: compiler directive ignored.
+	module worklib.or2_1x:verilog
+		errors: 0, warnings: 6
+file: ihnl/cds13/netlist
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds13/netlist,20|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds13/netlist,23|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds13/netlist,26|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds13/netlist,29|6): `switch: compiler directive ignored.
+	module worklib.nor2_1x:verilog
+		errors: 0, warnings: 4
+file: ihnl/cds14/netlist
+	module worklib.nor_8wide:verilog
+		errors: 0, warnings: 0
+file: ihnl/cds15/netlist
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds15/netlist,20|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds15/netlist,23|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds15/netlist,26|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds15/netlist,29|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds15/netlist,32|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds15/netlist,35|6): `switch: compiler directive ignored.
+	module worklib.and2_1x:verilog
+		errors: 0, warnings: 6
+file: ihnl/cds16/netlist
+	module worklib.and2_1x_8:verilog
+		errors: 0, warnings: 0
+file: ihnl/cds17/netlist
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds17/netlist,20|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds17/netlist,23|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds17/netlist,26|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds17/netlist,29|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds17/netlist,32|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds17/netlist,35|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds17/netlist,38|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds17/netlist,41|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds17/netlist,44|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds17/netlist,47|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds17/netlist,50|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds17/netlist,53|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds17/netlist,56|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds17/netlist,59|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds17/netlist,62|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds17/netlist,65|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds17/netlist,68|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds17/netlist,71|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds17/netlist,74|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds17/netlist,77|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds17/netlist,80|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds17/netlist,83|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds17/netlist,86|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds17/netlist,89|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds17/netlist,92|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds17/netlist,95|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds17/netlist,98|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds17/netlist,101|6): `switch: compiler directive ignored.
+	module worklib.fulladder:verilog
+		errors: 0, warnings: 28
+file: ihnl/cds18/netlist
+	module worklib.adder_8:verilog
+		errors: 0, warnings: 0
+file: ihnl/cds19/netlist
+	module worklib.regramadrbuf:verilog
+		errors: 0, warnings: 0
+file: ihnl/cds20/netlist
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds20/netlist,24|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds20/netlist,27|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds20/netlist,30|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds20/netlist,33|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds20/netlist,36|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds20/netlist,39|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds20/netlist,42|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds20/netlist,45|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds20/netlist,48|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds20/netlist,51|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds20/netlist,54|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds20/netlist,57|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds20/netlist,60|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds20/netlist,63|6): `switch: compiler directive ignored.
+	module worklib.regram_dp:verilog
+		errors: 0, warnings: 14
+file: ihnl/cds21/netlist
+	module worklib.regram_8:verilog
+		errors: 0, warnings: 0
+file: ihnl/cds22/netlist
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds22/netlist,20|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds22/netlist,23|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds22/netlist,26|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds22/netlist,29|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds22/netlist,32|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds22/netlist,35|6): `switch: compiler directive ignored.
+	module worklib.nand3_1x:verilog
+		errors: 0, warnings: 6
+file: ihnl/cds23/netlist
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds23/netlist,20|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds23/netlist,23|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds23/netlist,26|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds23/netlist,29|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds23/netlist,32|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds23/netlist,35|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds23/netlist,38|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds23/netlist,41|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds23/netlist,44|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds23/netlist,47|6): `switch: compiler directive ignored.
+	module worklib.nand5_1x:verilog
+		errors: 0, warnings: 10
+file: ihnl/cds24/netlist
+	module worklib.regram_zipper:verilog
+		errors: 0, warnings: 0
+file: ihnl/cds25/netlist
+	module worklib.regramvector_dp:verilog
+		errors: 0, warnings: 0
+file: ihnl/cds26/netlist
+	module worklib.regramarray_dp_hmmm:verilog
+		errors: 0, warnings: 0
+file: ihnl/cds27/netlist
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds27/netlist,20|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds27/netlist,23|6): `switch: compiler directive ignored.
+	module worklib.inv_1x:verilog
+		errors: 0, warnings: 2
+file: ihnl/cds28/netlist
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds28/netlist,20|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds28/netlist,23|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds28/netlist,26|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds28/netlist,29|6): `switch: compiler directive ignored.
+	module worklib.nand2_1x:verilog
+		errors: 0, warnings: 4
+file: ihnl/cds29/netlist
+	module worklib.xor_1x:verilog
+		errors: 0, warnings: 0
+file: ihnl/cds30/netlist
+	module worklib.xor_1x_8:verilog
+		errors: 0, warnings: 0
+file: ihnl/cds31/netlist
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds31/netlist,20|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds31/netlist,23|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds31/netlist,26|6): `switch: compiler directive ignored.
+`switch default
+      |
+ncvlog: *W,DIRNOW (ihnl/cds31/netlist,29|6): `switch: compiler directive ignored.
+	module worklib.tristateInvCore:verilog
+		errors: 0, warnings: 4
+file: ihnl/cds32/netlist
+	module worklib.tristate_1x:verilog
+		errors: 0, warnings: 0
+file: ihnl/cds33/netlist
+	module worklib.tristate_1x_8:verilog
+		errors: 0, warnings: 0
+file: ihnl/cds34/netlist
+	module worklib.mux2_3:verilog
+		errors: 0, warnings: 0
+file: ihnl/cds35/netlist
+	module worklib.datapath:verilog
+		errors: 0, warnings: 0
+file: hdlFilesDir/cds_globals.v
+	module worklib.cds_globals:v
+		errors: 0, warnings: 0
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 3
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncverilog: *W,DLCVAR (/proj/ncsu/ncsu-cdk-1.6.0.beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncverilog: *W,DLCVAR (/proj/ncsu/ncsu-cdk-1.6.0.beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncelab: *W,DLCVAR (/proj/ncsu/ncsu-cdk-1.6.0.beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: ...................
+		$readmemb("memfile.dat", mem);
+		                           |
+ncelab: *W,MEMODR (./testprocessor.sv,100|29): $readmem default memory order incompatible with IEEE1364.
+. Done
+	Generating native compiled code:
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncvlog_cg: *W,DLCVAR (/proj/ncsu/ncsu-cdk-1.6.0.beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+		worklib.adder_8:verilog <0x6d066f0b>
+			streams:   0, words:     0
+		worklib.condcheck:sv <0x48e35b8e>
+			streams:   1, words:   356
+		worklib.controller:sv <0x70980d09>
+			streams:  17, words:  6401
+		worklib.datapath:verilog <0x649c6d80>
+			streams:   0, words:     0
+		worklib.flop:sv <0x550415f8>
+			streams:   4, words:   579
+		worklib.flopenr:sv <0x53b29c1a>
+			streams:   5, words:   936
+		worklib.flopr:sv <0x1e05a00f>
+			streams:   4, words:   692
+		worklib.flopr:sv <0x6d361b96>
+			streams:   4, words:   732
+		worklib.mux2:sv <0x4d03a876>
+			streams:   1, words:   286
+		worklib.mux3:sv <0x745a4254>
+			streams:   1, words:   347
+		worklib.regramarray_dp_hmmm:verilog <0x69d0a4c0>
+			streams:   0, words:     0
+		worklib.sram:sv <0x29eef101>
+			streams:   3, words:  1425
+		worklib.testbench:sv <0x3d524b64>
+			streams:  11, words:  4041
+		worklib.top:sv <0x1212779f>
+			streams:  30, words:  6733
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                   Instances  Unique
+		Modules:                 473      48
+		Primitives:             3236       4
+		Registers:                58      56
+		Scalar wires:            834       -
+		Expanded wires:           39       6
+		Vectored wires:           28       -
+		Always blocks:            11       9
+		Initial blocks:            2       2
+		Cont. assignments:        16      23
+		Pseudo assignments:       44      44
+		Simulation timescale:  100ps
+	Writing initial simulation snapshot: worklib.testbench:sv
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncsim: *W,DLCVAR (/proj/ncsu/ncsu-cdk-1.6.0.beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> source /cad/cds/INCISIV1520/tools/inca/files/ncsimrc
+ncsim> database -open waves -into waves.shm -default
+Created default SHM database waves
+ncsim> probe -create -shm testbench.dut.dp.PCReg.q testbench.we testbench.reset testbench.oe testbench.clk2 testbench.clk1 testbench.ce testbench.MemWrite testbench.MemData testbench.Adr testbench.mem.mem testbench.dut.ALUSub testbench.dut.Adr testbench.dut.AdrSrc testbench.dut.InstrSrc testbench.dut.MemData1 testbench.dut.MemData2 testbench.dut.MemWrite testbench.dut.PCEnable testbench.dut.PCSrc testbench.dut.RA1Src testbench.dut.RegWLoadSrc testbench.dut.RegWrite testbench.dut.RegWriteSrc testbench.dut.TwoRegs testbench.dut.WriteData testbench.dut.instr1 testbench.dut.negative testbench.dut.ph1 testbench.dut.ph2 testbench.dut.reset testbench.dut.zero testbench.dut.dp.Instr testbench.dut.dp.MemData
+Created probe 1
+ncsim> run
+Test Failed with MemData = zzzzzzzzxxxxxxxx
+Simulation stopped via $stop(1) at time 368 NS + 1
+ncsim> probe -create -shm testbench.dut.dp.rf.RegWrite testbench.dut.dp.rf.ph2 testbench.dut.dp.rf.r1 testbench.dut.dp.rf.r2 testbench.dut.dp.rf.ra1 testbench.dut.dp.rf.ra2 testbench.dut.dp.rf.w testbench.dut.dp.rf.wa
+Created probe 2
+ncsim> reset
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+Loaded snapshot worklib.testbench:sv
+ncsim> run
+Test Failed with MemData = zzzzzzzzxxxxxxxx
+Simulation stopped via $stop(1) at time 368 NS + 1
+ncsim> probe -create -shm testbench.dut.dp.tristates.y testbench.dut.dp.tristates.enBar testbench.dut.dp.tristates.en testbench.dut.dp.tristates.a testbench.dut.dp.tristates2.y testbench.dut.dp.tristates2.enBar testbench.dut.dp.tristates2.en testbench.dut.dp.tristates2.a
+Created probe 3
+ncsim> reset
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+Loaded snapshot worklib.testbench:sv
+ncsim> run
+Test Failed with MemData = zzzzzzzzxxxxxxxx
+Simulation stopped via $stop(1) at time 368 NS + 1
+ncsim> ^C
+ncsim> exit
+TOOL:	ncverilog	15.20-s069: Exiting on Mar 22, 2019 at 03:26:53 EDT  (total: 00:23:14)
