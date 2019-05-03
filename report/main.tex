@@ -105,7 +105,7 @@ The chip is split up into two main blocks: the datapath and the controller.  The
     \label{fig:sliceplan}
 \end{figure}
 
-The slice map (Figure 3) outlines the placement of leaf cells and the routing of signals for each of the bottom 8 rows in the datapath.  By summing the width of the leaf cells one can estimate the total size of the datapath (See Figure 7 for the full chip floorplan).
+The slice map (Figures 3 and 4) outlines the placement of leaf cells and the routing of signals for each of the bottom 8 rows in the datapath.  By summing the width of the leaf cells one can estimate the total size of the datapath (See Figures 7 and 8 for the full chip floorplan).
 
 %\begin{figure}[H]
 %    \begin{center}
@@ -139,7 +139,7 @@ The controller processes an input instruction to select multiplexer and ALU mode
 
 \subsection{Floorplan}
 
-The proposed and completed floorplans are given in Figure 6 and Figure 7, respectively. Notable is a $\approx 2\times$  underestimate of datapath width in the proposed floorplan. This was due to a mis-calculation of standard cell width in the project proposal. No major changes to the datapath were made between the proposal and final layout.
+The proposed and completed floorplans are given in Figure 7 and Figure 8, respectively. Notable is a $\approx 2\times$  underestimate of datapath width in the proposed floorplan. This was due to a mis-calculation of standard cell width in the project proposal. No major changes to the datapath were made between the proposal and final layout.
 
 This disparity is most clearly seen when examining the slice plans. The proposed and final datapath slice maps have an identical configuration, with the only difference the estimated and final width.
 
@@ -161,7 +161,7 @@ This disparity is most clearly seen when examining the slice plans. The proposed
 
 \subsection{Pinout}
 
-MOSIS packages the die in a 40 pin DIP. The package pinout in tabular form is provided in Figure 8. Figure 9 provides a graphical view of the device pinout. Pins 19 and 20 are tied to an inverter as a basic manufacturing test.
+MOSIS packages the die in a 40 pin DIP. The package pinout in tabular form is provided in Figure 9. Figure 10 provides a graphical view of the device pinout. Pins 19 and 20 are tied to an inverter as a basic manufacturing test.
 
 \begin{figure}[H]
     \begin{center}
@@ -203,7 +203,7 @@ MOSIS packages the die in a 40 pin DIP. The package pinout in tabular form is pr
 
 \section{Verification}
 
-The table in Figure 10 summarizes the verification status of HMMMM.
+The table in Figure 11 summarizes the verification status of HMMMM.
 
 \begin{figure}[H]
     \begin{center}
@@ -239,7 +239,7 @@ Successful program execution will lead to the value \texttt{0x2D} written in add
 
 \subsection{Layout Verification}
 
-After finishing each subsection of the chip, we performed LVS (Layout Vs Schematic) by extracting the schematic from our layout automatically and then comparing this to our original schematic. This allowed us to test each cell's final functionality and isolate issues before they became harder to debug later in the design process. We performed this on each schematic level on the chip from leaf cell to the full chip. We finally exported GDS of our chip and ran LVS after re-importing the final fabrication files to ensure that no parts of the chip were broken during the export process. 
+After finishing each subsection of the chip, we performed LVS (Layout vs Schematic) by extracting the schematic from our layout automatically and then comparing this to our original schematic. This allowed us to test each cell's final functionality and isolate issues before they became harder to debug later in the design process. We performed this on each schematic level on the chip from leaf cell to the full chip. We finally exported GDS of our chip and ran LVS after re-importing the final fabrication files to ensure that no parts of the chip were broken during the export process. 
 
 \subsection{Post-Fabrication Test Plan}
 
@@ -269,7 +269,7 @@ Finally, we will implement simple assembly programs seen in CSCI005 and CSCI042 
 
 \subsection{Design Time}
 
-The design time breakdown is illustrated in Figure 11.
+The design time breakdown is illustrated in Figure 12.
 
 \begin{figure}[H]
     \begin{center}
@@ -296,11 +296,9 @@ The design time breakdown is illustrated in Figure 11.
 
 \subsection{File Locations}
 
-All human-readable source files are included in the appendix to this report. Design and testbench HDL, testvectors, GDS, and PDF of this report are available on the project GitHub\footnote{https://github.com/VLSIProject2019/vlsi-2019}. 
+All human-readable source files are included in the appendix to this report. Design and testbench HDL, testvectors, GDS, and PDF\footnote{https://github.com/VLSIProject2019/vlsi-2019/blob/master/report/main.pdf}. of this report are available on the project GitHub\footnote{https://github.com/VLSIProject2019/vlsi-2019}. 
 
-Cadence design files are accessible in the repository under directory \texttt{cadence\_design\_files}. Design components are available under the following libraries and cells described in Figure 12.
-
-This PDF and GDS are available on the project GitHub\footnote{https://github.com/VLSIProject2019/vlsi-2019/blob/master/report/main.pdf}.
+Cadence design files are accessible in the repository under directory \texttt{cadence\_design\_files}. Design components are available under the following libraries and cells described in Figure 13.
 
 
 \begin{figure}[H]
