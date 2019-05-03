@@ -124,7 +124,7 @@ module top (input  logic        ph1, ph2, reset,
 					Adr, negative, zero);
 endmodule
 
-/*module datapath (input  logic        ph1, ph2, reset,
+module datapath (input  logic        ph1, ph2, reset,
 					  input  logic        PCEnable, AdrSrc, InstrSrc, RA1Src, RegWrite,
 					  input  logic        MemWrite, TwoRegs, ALUSub, RegWLoadSrc,
 					  input  logic [1:0]  PCSrc, RegWriteSrc,
@@ -248,7 +248,7 @@ module condcheck (input  logic[1:0] branchType,
 		endcase
 endmodule
 
-/*module adder #(parameter WIDTH=8)
+module adder #(parameter WIDTH=8)
 					    (input  logic [WIDTH-1:0] a, b,
 						  input  logic cin,
 						  output logic [WIDTH-1:0] y);
