@@ -239,6 +239,8 @@ Successful program execution will lead to the value \texttt{0x2D} written in add
 
 \subsection{Layout Verification}
 
+After finishing each subsection of the chip, we performed LVS (Layout Vs Schematic) by extracting the schematic from our layout automatically and then comparing this to our original schematic. This allowed us to test each cell's final functionality and isolate issues before they became harder to debug later in the design process. We performed this on each schematic level on the chip from leaf cell to the full chip. We finally exported GDS of our chip and ran LVS after re-importing the final fabrication files to ensure that no parts of the chip were broken during the export process. 
+
 \subsection{Post-Fabrication Test Plan}
 
 We aim to produce not just a functional chip, but a full demonstration system implementing a functional chip. This demonstration and testing system will provide:
