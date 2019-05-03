@@ -39,7 +39,7 @@
 
 CSCI005, Introduction to Computer Science, and CSCI042, Principles and Practice of Computer Science, teach many Harvey Mudd freshman low-level computer architecture through the Harvey Mudd Miniature Machine (HMMM) ISA (``Documentation for HMMM"). While the HMMM ISA provides an effective tool to learn assembly language, it can be difficult for students to connect the Python HMMM simulator to the physical computers they interact with daily.
 
-This report presents a physical implementation of a subset of the HMMM ISA which we have named the Harvey Mudd Miniature Machine Minified (HMMMM), designed for the 0.6$\mu m$ MOSIS process ($\lambda=0.3\mu m$) on a 1.5$\times$1.5mm die. We hope that a phyical implementation of the HMMM ISA will help connect high-level computer science concepts to real-world devices.
+This report presents a physical implementation of a subset of the HMMM ISA which we have named the Harvey Mudd Miniature Machine Minified (HMMMM), designed for the 0.6$\mu m$ AMI process ($\lambda=0.3\mu m$) on a 1.5$\times$1.5mm die. We hope that a phyical implementation of the HMMM ISA will help connect high-level computer science concepts to real-world devices.
 
 HMMMM implements a 15-bit-instruction dual-cycle CPU, which operates on 8-bit data words. The processor requires an external SRAM, as shared instruction and data memory, accessed over an 8-bit address bus. In the context of a larger system, users will be able to program the system through an external bank of switches.
 
@@ -329,8 +329,8 @@ Cadence design files are accessible in the repository under directory \texttt{ca
 \begin{appendices}
     \LARGE\textbf{Appendix}
     \section{HDL Source Code}
-    \section{HDL Testbench Code}
     \clearpage
+    \section{HDL Testbench Code}
     \subsection{Testbench}
     \clearpage
     \subsection{SRAM}
